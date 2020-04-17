@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:idls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+    xmlns:fes="http://www.opengis.net/fes/2.0"
+    xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0"
+    xmlns:util="http://www.opengis.net/wfs-util/2.0"
+    xmlns:ows="http://www.opengis.net/ows/1.1"
+    xmlns:f2i-plu="http://plu.fit2inspire.eu/plu3"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0">
+ <SOAP-ENV:Body>
+  <wfs:TransactionResponse version="">
+   <wfs:TransactionSummary>
+    <!-- extensibility element(s) -->
+    <wfs:totalInserted>0</wfs:totalInserted>
+    <wfs:totalUpdated>0</wfs:totalUpdated>
+    <wfs:totalReplaced>0</wfs:totalReplaced>
+    <wfs:totalDeleted>0</wfs:totalDeleted>
+   </wfs:TransactionSummary>
+   <wfs:InsertResults>
+    <!-- extensibility element(s) -->
+    <wfs:Feature handle="">
+     <!-- extensibility element(s) -->
+
+      <fes:ResourceId rid="" previousRid="" version="" startDate="2020-04-17T08:58:41Z" endDate="2020-04-17T08:58:41Z"></fes:ResourceId>
+     
+    </wfs:Feature>
+   </wfs:InsertResults>
+   <wfs:UpdateResults>
+    <!-- extensibility element(s) -->
+    <wfs:Feature handle="">
+     <!-- extensibility element(s) -->
+
+      <fes:ResourceId rid="" previousRid="" version="" startDate="2020-04-17T08:58:41Z" endDate="2020-04-17T08:58:41Z"></fes:ResourceId>
+     
+    </wfs:Feature>
+   </wfs:UpdateResults>
+   <wfs:ReplaceResults>
+    <!-- extensibility element(s) -->
+    <wfs:Feature handle="">
+     <!-- extensibility element(s) -->
+
+      <fes:ResourceId rid="" previousRid="" version="" startDate="2020-04-17T08:58:41Z" endDate="2020-04-17T08:58:41Z"></fes:ResourceId>
+     
+    </wfs:Feature>
+   </wfs:ReplaceResults>
+  </wfs:TransactionResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

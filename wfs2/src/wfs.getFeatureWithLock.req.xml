@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:idls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+    xmlns:fes="http://www.opengis.net/fes/2.0"
+    xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0"
+    xmlns:util="http://www.opengis.net/wfs-util/2.0"
+    xmlns:ows="http://www.opengis.net/ows/1.1"
+    xmlns:f2i-plu="http://plu.fit2inspire.eu/plu3"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0">
+ <SOAP-ENV:Body>
+   <wfs:GetFeatureWithLock expiry="1" lockAction="ALL" startIndex="0" count="0" resultType="results" outputFormat="application/gml+xml; version=3.2" resolve="none" resolveDepth="*" resolveTimeout="1" service="WFS" version="" handle="">
+    <!-- extensibility element(s) -->
+
+     <wfs:StoredQuery id="_6" handle="">
+      <!-- extensibility element(s) -->
+      <wfs:Parameter name="">
+       <!-- extensibility element(s) -->
+       <!-- extensibility element(s) -->
+       <!-- extensibility element(s) -->
+      </wfs:Parameter>
+     </wfs:StoredQuery>
+    
+   </wfs:GetFeatureWithLock>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,57 @@
+
+**  The gSOAP code generator for C and C++, soapcpp2 release 2.8.92
+**  Copyright (C) 2000-2019, Robert van Engelen, Genivia Inc.
+**  All Rights Reserved. This product is provided "as is", without any warranty.
+**  The soapcpp2 tool and its generated software are released under the GPL.
+**  ----------------------------------------------------------------------------
+**  A commercial use license is available from Genivia Inc., contact@genivia.com
+**  ----------------------------------------------------------------------------
+
+Using project directory path: src/
+Saving src/soapStub.h annotated copy of the source interface header file
+Saving src/soapH.h serialization functions to #include in projects
+
+ws-inspire-wfs2.h(18611): *WARNING*: struct '___fes__union_FilterType______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_FilterType'
+
+
+ws-inspire-wfs2.h(18611): *WARNING*: struct '___fes__union_BinaryLogicOpType_______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_BinaryLogicOpType_'
+
+
+ws-inspire-wfs2.h(18611): *WARNING*: struct '___fes__union_UnaryLogicOpType_______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_UnaryLogicOpType_'
+
+Using f2i_plu service name: wfssoap
+Using f2i_plu service style: document
+Using f2i_plu service encoding: literal
+Using f2i_plu schema namespace: http://plu.fit2inspire.eu/plu3
+Saving src/wfssoap.wfs.createStoredQuery.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.createStoredQuery.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.describeFeatureType.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.describeFeatureType.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.getFeature.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.getFeature.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.describeStoredQueries.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.describeStoredQueries.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.listStoredQueries.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.listStoredQueries.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.dropStoredQuery.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.dropStoredQuery.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.getCapabilities.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.getCapabilities.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.getFeatureWithLock.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.getFeatureWithLock.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.getPropertyValue.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.getPropertyValue.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.lockFeature.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.lockFeature.res.xml sample SOAP/XML response
+Saving src/wfssoap.wfs.transaction.req.xml sample SOAP/XML request
+Saving src/wfssoap.wfs.transaction.res.xml sample SOAP/XML response
+Saving src/wfssoap.nsmap namespace mapping table
+Saving src/soapTester.cpp auto-test echo server
+Saving src/soapClient.cpp client call stub functions
+Saving src/soapClientLib.cpp client stubs with serializers (use only for libs)
+Saving src/soapServer.cpp server request dispatcher
+Saving src/soapServerLib.cpp server request dispatcher with serializers (use only for libs)
+Saving src/soapC.cpp serialization functions
+
+Compilation successful (3 warnings)
+
