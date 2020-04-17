@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="f2i-plu3" targetNamespace="http://plu.fit2inspire.eu/plu3" 
+	xmlns:wfs-soap="http://www.opengis.net/wfs/soap/2.0" 
+	xmlns:ows="http://www.opengis.net/ows/1.1" 
+	xmlns:util="http://www.opengis.net/wfs-util/2.0" 
+	xmlns:wfs-req="http://www.opengis.net/wfs/requests/2.0" 
+	xmlns:wfs-resp="http://www.opengis.net/wfs/responses/2.0" 
+	xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" 
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:documentation>This WSDL describes the service implemented by its Fit2Inspire server. Copyright : OGC. Implementation : jeanloup.delaveau@gmail.com</wsdl:documentation>
+	<wsdl:types>
+	  <wsdl:documentation>
+         Convenience schema that defines all common WFS message elements.
+      </wsdl:documentation>
+	  <!-- 16/03/2013 JLd: fusion des 2 wsdl:types en un seul schéma -->
+      <xsd:schema targetNamespace="http://www.opengis.net/wfs/2.0"
+         xmlns:wfs="http://www.opengis.net/wfs/2.0"
+         xmlns:ogc="http://www.opengis.net/ogc/1.1"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         elementFormDefault="qualified" version="1.1.0">
+         <!--xsd:include schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/-->
+		     <xsd:include schemaLocation="wfs.xsd"/>
+         <xsd:import namespace="http://www.opengis.net/wfs-util/2.0"
+            schemaLocation="./wfs-util.xsd"/>
+         <xsd:import namespace="http://www.opengis.net/ows/1.1"
+            schemaLocation="http://schemas.opengis.net/ows/1.1.0/owsExceptionReport.xsd"/>
+         <xsd:import namespace="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+            schemaLocation="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd"/>
+      </xsd:schema>
+    </wsdl:types>
+	<wsdl:message name="ServiceExceptionReport">
+      <wsdl:part element="ows:ExceptionReport" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="GetCapabilitiesResponse">
+      <wsdl:part element="wfs:WFS_Capabilities" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="DescribeFeatureTypeResponse">
+      <wsdl:part element="util:DescribeFeatureTypeResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="GetPropertyValueResponse">
+      <wsdl:part element="wfs:ValueCollection" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="GetFeatureResponse">
+      <wsdl:part element="wfs:FeatureCollection" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="GetFeatureWithLockResponse">
+      <wsdl:part element="wfs:FeatureCollection" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="LockFeatureResponse">
+      <wsdl:part element="wfs:LockFeatureResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="TransactionResponse">
+      <wsdl:part element="wfs:TransactionResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="ListStoredQueriesResponse">
+      <wsdl:part element="wfs:ListStoredQueriesResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="DescribeStoredQueriesResponse">
+      <wsdl:part element="wfs:DescribeStoredQueriesResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="CreateStoredQueryResponse">
+      <wsdl:part element="wfs:CreateStoredQueryResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="DropStoredQueryResponse">
+      <wsdl:part element="wfs:DropStoredQueryResponse" name="Body"/>
+   </wsdl:message>
+   <wsdl:message name="GetCapabilitiesRequest">
+      <wsdl:part name="Body" element="wfs:GetCapabilities"/>
+   </wsdl:message>
+   <wsdl:message name="DescribeFeatureTypeRequest">
+      <wsdl:part name="Body" element="wfs:DescribeFeatureType"/>
+   </wsdl:message>
+   <wsdl:message name="GetPropertyValueRequest">
+      <wsdl:part name="Body" element="wfs:GetPropertyValue"/>
+   </wsdl:message>
+   <wsdl:message name="GetFeatureRequest">
+      <wsdl:part name="Body" element="wfs:GetFeature"/>
+   </wsdl:message>
+   <wsdl:message name="GetFeatureWithLockRequest">
+      <wsdl:part name="Body" element="wfs:GetFeatureWithLock"/>
+   </wsdl:message>
+   <wsdl:message name="LockFeatureRequest">
+      <wsdl:part name="Body" element="wfs:LockFeature"/>
+   </wsdl:message>
+   <wsdl:message name="TransactionRequest">
+      <wsdl:part name="Body" element="wfs:Transaction"/>
+   </wsdl:message>
+   <wsdl:message name="ListStoredQueriesRequest">
+      <wsdl:part name="Body" element="wfs:ListStoredQueries"/>
+   </wsdl:message>
+   <wsdl:message name="DescribeStoredQueriesRequest">
+      <wsdl:part name="Body" element="wfs:DescribeStoredQueries"/>
+   </wsdl:message>
+   <wsdl:message name="CreateStoredQueryRequest">
+      <wsdl:part name="Body" element="wfs:CreateStoredQuery"/>
+   </wsdl:message>
+   <wsdl:message name="DropStoredQueryRequest">
+      <wsdl:part name="Body" element="wfs:DropStoredQuery"/>
+   </wsdl:message>
+	<wsdl:portType name="wfs">
+		<wsdl:operation name="wfs.createStoredQuery">
+			<wsdl:input name="wfs-req:CreateStoredQueryRequest" message="CreateStoredQueryRequest"/>
+			<wsdl:output name="wfs-resp:CreateStoredQueryResponse" message="CreateStoredQueryResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.describeFeatureType">
+			<wsdl:input name="wfs-req:DescribeFeatureTypeRequest" message="DescribeFeatureTypeRequest"/>
+			<wsdl:output name="wfs-resp:DescribeFeatureTypeResponse" message="DescribeFeatureTypeResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.describeStoredQueries">
+			<wsdl:input name="wfs-req:DescribeStoredQueriesRequest" message="DescribeStoredQueriesRequest"/>
+			<wsdl:output name="wfs-resp:DescribeStoredQueriesResponse" message="DescribeStoredQueriesResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.dropStoredQuery">
+			<wsdl:input name="wfs-req:DropStoredQueryRequest" message="DropStoredQueryRequest"/>
+			<wsdl:output name="wfs-resp:DropStoredQueryResponse" message="DropStoredQueryResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getCapabilities">
+			<wsdl:input name="wfs-req:GetCapabilitiesRequest" message="GetCapabilitiesRequest"/>
+			<wsdl:output name="wfs-resp:GetCapabilitiesResponse" message="GetCapabilitiesResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getFeature">
+			<wsdl:input name="wfs-req:GetFeatureRequest" message="GetFeatureRequest"/>
+			<wsdl:output name="wfs-resp:GetFeatureResponse" message="GetFeatureResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getFeatureWithLock">
+			<wsdl:input name="wfs-req:GetFeatureWithLockRequest" message="GetFeatureWithLockRequest"/>
+			<wsdl:output name="wfs-resp:GetFeatureWithLockResponse" message="GetFeatureWithLockResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getPropertyValue">
+			<wsdl:input name="wfs-req:GetPropertyValueRequest" message="GetPropertyValueRequest"/>
+			<wsdl:output name="wfs-resp:GetPropertyValueResponse" message="GetPropertyValueResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.listStoredQueries">
+			<wsdl:input name="wfs-req:ListStoredQueriesRequest" message="ListStoredQueriesRequest"/>
+			<wsdl:output name="wfs-resp:ListStoredQueriesResponse" message="ListStoredQueriesResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.lockFeature">
+			<wsdl:input name="wfs-req:LockFeatureRequest" message="LockFeatureRequest"/>
+			<wsdl:output name="wfs-resp:LockFeatureResponse" message="LockFeatureResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.transaction">
+			<wsdl:input name="wfs-req:TransactionRequest" message="TransactionRequest"/>
+			<wsdl:output name="wfs-resp:TransactionResponse" message="TransactionResponse"/>
+			<wsdl:fault name="ServiceExceptionReport" message="ServiceExceptionReport"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="wfssoap" type="wfs">
+		<wsdl:documentation>WFS interface bound to SOAP over HTTP/1.1.</wsdl:documentation>
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="wfs.createStoredQuery">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:CreateStoredQueryRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:CreateStoredQueryResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.describeFeatureType">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:DescribeFeatureTypeRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:DescribeFeatureTypeResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getFeature">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:GetFeatureRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:GetFeatureResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.describeStoredQueries">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:DescribeStoredQueriesRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:DescribeStoredQueriesResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.listStoredQueries">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:ListStoredQueriesRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:ListStoredQueriesResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.dropStoredQuery">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:DropStoredQueryRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:DropStoredQueryResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getCapabilities">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:GetCapabilitiesRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:GetCapabilitiesResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getFeatureWithLock">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:GetFeatureWithLockRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:GetFeatureWithLockResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.getPropertyValue">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:GetPropertyValueRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:GetPropertyValueResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.lockFeature">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:LockFeatureRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:LockFeatureResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="wfs.transaction">
+			<soap:operation style="document"/>
+			<wsdl:input name="wfs-req:TransactionRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="wfs-resp:TransactionResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="ServiceExceptionReport">
+				<soap:fault name="ServiceExceptionReport" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="inspire.springeo">
+		<wsdl:documentation>A WFS-2.0 implementation. Includes alternative SOAP bindings for the WFS interfaces.</wsdl:documentation>
+		<!--wsdl:port name="wfs-SOAP-Port" binding="wfs-soap:wfs-SOAP">
+			<soap:address location="www.exampleLocation.com/Port1"/>
+		</wsdl:port-->
+		<wsdl:port name="download" binding="wfssoap">
+			<wsdl:documentation>Port d'accès aux opérations de téléchargement des données.</wsdl:documentation>
+			<soap:address location="http://inspire.springeo.fr/plu/download"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
