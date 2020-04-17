@@ -117,6 +117,8 @@ Reading 'ws-inspire-wfs2.wsdl'...
   Done reading 'wfs.xsd'
 Done reading 'ws-inspire-wfs2.wsdl'
 
+Warning: no port/endpoint 'download' binding '"":wfs' in wsdl definitions 'f2i-plu3' namespace 'http://plu.fit2inspire.eu/plu3'
+
 Note: option -p auto-enabled to generate wrappers for built-in types derived from xsd__anyType to support polymorphism in XML by (de)serializing any derived type of xsd:anyType (or xsd:anySimpleType) as elements annotated by xsi:type attributes in XML, use option -P to suppress and disable this feature
 
 To finalize code generation, execute:

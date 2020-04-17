@@ -292,14 +292,14 @@
 			</wsdl:fault>
 		</wsdl:operation>
 	</wsdl:binding>
-	<wsdl:service name="inspire.springeo">
+	<wsdl:service name="plu.fit2inspire">
 		<wsdl:documentation>A WFS-2.0 implementation. Includes alternative SOAP bindings for the WFS interfaces.</wsdl:documentation>
 		<!--wsdl:port name="wfs-SOAP-Port" binding="wfs-soap:wfs-SOAP">
 			<soap:address location="www.exampleLocation.com/Port1"/>
 		</wsdl:port-->
-		<wsdl:port name="download" binding="wfssoap">
+		<wsdl:port name="download" binding="wfs">
 			<wsdl:documentation>Port d'accès aux opérations de téléchargement des données.</wsdl:documentation>
-			<soap:address location="http://inspire.springeo.fr/plu/download"/>
+			<soap:address location="http://plu.fit2inspire.eu/plu3"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
