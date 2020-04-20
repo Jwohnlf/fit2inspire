@@ -1,4 +1,5 @@
 test : wfsTester
+	./wfsTester < wfs2/src/wfs.getCapabilities.req.xml 
 
 
 GSOAP=soapcpp2
