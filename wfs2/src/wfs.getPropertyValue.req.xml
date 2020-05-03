@@ -10,7 +10,7 @@
     xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0"
     xmlns:util="http://www.opengis.net/wfs-util/2.0"
     xmlns:ows="http://www.opengis.net/ows/1.1"
-    xmlns:f2i-plu="http://plu.fit2inspire.eu/plu3"
+    xmlns:f2i-plu="http://plu.fit2inspire.eu/"
     xmlns:wfs="http://www.opengis.net/wfs/2.0">
  <SOAP-ENV:Body>
    <wfs:GetPropertyValue valueReference="" resolvePath="" startIndex="0" count="0" resultType="results" outputFormat="application/gml+xml; version=3.2" resolve="none" resolveDepth="*" resolveTimeout="1" service="WFS" version="" handle="">

@@ -11,18 +11,19 @@ Using project directory path: src/
 Saving src/soapStub.h annotated copy of the source interface header file
 Saving src/soapH.h serialization functions to #include in projects
 
-ws-inspire-wfs2.h(18611): *WARNING*: struct '___fes__union_FilterType______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_FilterType'
+ws-inspire-wfs2.h(18656): *WARNING*: struct '___fes__union_FilterType______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_FilterType'
 
 
-ws-inspire-wfs2.h(18611): *WARNING*: struct '___fes__union_BinaryLogicOpType_______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_BinaryLogicOpType_'
+ws-inspire-wfs2.h(18656): *WARNING*: struct '___fes__union_BinaryLogicOpType_______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_BinaryLogicOpType_'
 
 
-ws-inspire-wfs2.h(18611): *WARNING*: struct '___fes__union_UnaryLogicOpType_______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_UnaryLogicOpType_'
+ws-inspire-wfs2.h(18656): *WARNING*: struct '___fes__union_UnaryLogicOpType_______' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_fes__union_UnaryLogicOpType_'
 
 Using f2i_plu service name: wfssoap
 Using f2i_plu service style: document
 Using f2i_plu service encoding: literal
-Using f2i_plu schema namespace: http://plu.fit2inspire.eu/plu3
+Using f2i_plu service location: http://plu.fit2inspire.eu/
+Using f2i_plu schema namespace: http://plu.fit2inspire.eu/
 Saving src/wfssoap.wfs.createStoredQuery.req.xml sample SOAP/XML request
 Saving src/wfssoap.wfs.createStoredQuery.res.xml sample SOAP/XML response
 Saving src/wfssoap.wfs.describeFeatureType.req.xml sample SOAP/XML request

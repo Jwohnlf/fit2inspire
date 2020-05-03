@@ -12,7 +12,7 @@ SOAP_NMAC struct Namespace namespaces[] = {
         { "icommon", "http://inspire.ec.europa.eu/schemas/common/1.0", NULL, NULL },
         { "util", "http://www.opengis.net/wfs-util/2.0", NULL, NULL },
         { "ows", "http://www.opengis.net/ows/1.1", NULL, NULL },
-        { "f2i-plu", "http://plu.fit2inspire.eu/plu3", NULL, NULL },
+        { "f2i-plu", "http://plu.fit2inspire.eu/", NULL, NULL },
         { "wfs", "http://www.opengis.net/wfs/2.0", NULL, NULL },
         { NULL, NULL, NULL, NULL}
     };

@@ -10,17 +10,17 @@
     xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0"
     xmlns:util="http://www.opengis.net/wfs-util/2.0"
     xmlns:ows="http://www.opengis.net/ows/1.1"
-    xmlns:f2i-plu="http://plu.fit2inspire.eu/plu3"
+    xmlns:f2i-plu="http://plu.fit2inspire.eu/"
     xmlns:wfs="http://www.opengis.net/wfs/2.0">
  <SOAP-ENV:Body>
-  <wfs:ValueCollection timeStamp="2020-04-17T08:58:41Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
+  <wfs:ValueCollection timeStamp="2020-05-03T21:39:58Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
    <wfs:member state="" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
     <!-- extensibility element(s) -->
     <!-- extensibility element(s) -->
     <!-- extensibility element(s) -->
    </wfs:member>
    <wfs:additionalValues>
-    <wfs:ValueCollection timeStamp="2020-04-17T08:58:41Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
+    <wfs:ValueCollection timeStamp="2020-05-03T21:39:58Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
      <!-- extensibility element(s) -->
      <wfs:member state="" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
       <!-- extensibility element(s) -->
@@ -28,7 +28,7 @@
       <!-- extensibility element(s) -->
      </wfs:member>
      <wfs:additionalValues>
-      <wfs:ValueCollection timeStamp="2020-04-17T08:58:41Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
+      <wfs:ValueCollection timeStamp="2020-05-03T21:39:58Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
        <!-- extensibility element(s) -->
        <wfs:member state="" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
         <!-- extensibility element(s) -->
@@ -36,7 +36,7 @@
         <!-- extensibility element(s) -->
        </wfs:member>
        <wfs:additionalValues>
-        <wfs:ValueCollection timeStamp="2020-04-17T08:58:41Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
+        <wfs:ValueCollection timeStamp="2020-05-03T21:39:58Z" numberMatched="" numberReturned="0" next="http://www.example.com/schema/anyURI" previous="http://www.example.com/schema/anyURI">
          <!-- extensibility element(s) -->
         </wfs:ValueCollection>
        </wfs:additionalValues>

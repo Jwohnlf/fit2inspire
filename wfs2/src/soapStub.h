@@ -3572,19 +3572,19 @@ class icommon__downloadService;	/* ws-inspire-wfs2.h:692 */
 class icommon__transformationService;	/* ws-inspire-wfs2.h:696 */
 class icommon__invokeService;	/* ws-inspire-wfs2.h:700 */
 class icommon__otherService;	/* ws-inspire-wfs2.h:704 */
-struct __f2i_plu__wfs_x002ecreateStoredQueryResponse;	/* ws-inspire-wfs2.h:15436 */
-struct __f2i_plu__wfs_x002ecreateStoredQuery;	/* ws-inspire-wfs2.h:15436 */
-struct __f2i_plu__wfs_x002edescribeFeatureType;	/* ws-inspire-wfs2.h:15503 */
-struct __f2i_plu__wfs_x002egetFeature;	/* ws-inspire-wfs2.h:15570 */
-struct __f2i_plu__wfs_x002edescribeStoredQueries;	/* ws-inspire-wfs2.h:15637 */
-struct __f2i_plu__wfs_x002elistStoredQueries;	/* ws-inspire-wfs2.h:15704 */
-struct __f2i_plu__wfs_x002edropStoredQueryResponse;	/* ws-inspire-wfs2.h:15771 */
-struct __f2i_plu__wfs_x002edropStoredQuery;	/* ws-inspire-wfs2.h:15771 */
-struct __f2i_plu__wfs_x002egetCapabilities;	/* ws-inspire-wfs2.h:15838 */
-struct __f2i_plu__wfs_x002egetFeatureWithLock;	/* ws-inspire-wfs2.h:15905 */
-struct __f2i_plu__wfs_x002egetPropertyValue;	/* ws-inspire-wfs2.h:15972 */
-struct __f2i_plu__wfs_x002elockFeature;	/* ws-inspire-wfs2.h:16039 */
-struct __f2i_plu__wfs_x002etransaction;	/* ws-inspire-wfs2.h:16106 */
+struct __f2i_plu__wfs_x002ecreateStoredQueryResponse;	/* ws-inspire-wfs2.h:15451 */
+struct __f2i_plu__wfs_x002ecreateStoredQuery;	/* ws-inspire-wfs2.h:15451 */
+struct __f2i_plu__wfs_x002edescribeFeatureType;	/* ws-inspire-wfs2.h:15521 */
+struct __f2i_plu__wfs_x002egetFeature;	/* ws-inspire-wfs2.h:15591 */
+struct __f2i_plu__wfs_x002edescribeStoredQueries;	/* ws-inspire-wfs2.h:15661 */
+struct __f2i_plu__wfs_x002elistStoredQueries;	/* ws-inspire-wfs2.h:15731 */
+struct __f2i_plu__wfs_x002edropStoredQueryResponse;	/* ws-inspire-wfs2.h:15801 */
+struct __f2i_plu__wfs_x002edropStoredQuery;	/* ws-inspire-wfs2.h:15801 */
+struct __f2i_plu__wfs_x002egetCapabilities;	/* ws-inspire-wfs2.h:15871 */
+struct __f2i_plu__wfs_x002egetFeatureWithLock;	/* ws-inspire-wfs2.h:15941 */
+struct __f2i_plu__wfs_x002egetPropertyValue;	/* ws-inspire-wfs2.h:16011 */
+struct __f2i_plu__wfs_x002elockFeature;	/* ws-inspire-wfs2.h:16081 */
+struct __f2i_plu__wfs_x002etransaction;	/* ws-inspire-wfs2.h:16151 */
 
 /* xsd.h:57 */
 #ifndef SOAP_TYPE_xsd__anyType
@@ -19226,7 +19226,7 @@ class SOAP_CMAC icommon__otherService : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15353 */
+/* ws-inspire-wfs2.h:15365 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Detail
 #define SOAP_TYPE_SOAP_ENV__Detail (1175)
@@ -19251,7 +19251,7 @@ struct SOAP_CMAC SOAP_ENV__Detail {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:15436 */
+/* ws-inspire-wfs2.h:15451 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQueryResponse
 #define SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQueryResponse (1181)
 /* Wrapper: */
@@ -19269,7 +19269,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002ecreateStoredQueryResponse {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15436 */
+/* ws-inspire-wfs2.h:15451 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQuery
 #define SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQuery (1182)
 /* Wrapper: */
@@ -19287,7 +19287,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002ecreateStoredQuery {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15503 */
+/* ws-inspire-wfs2.h:15521 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edescribeFeatureType
 #define SOAP_TYPE___f2i_plu__wfs_x002edescribeFeatureType (1186)
 /* Wrapper: */
@@ -19305,7 +19305,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edescribeFeatureType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15570 */
+/* ws-inspire-wfs2.h:15591 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetFeature
 #define SOAP_TYPE___f2i_plu__wfs_x002egetFeature (1190)
 /* Wrapper: */
@@ -19323,7 +19323,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetFeature {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15637 */
+/* ws-inspire-wfs2.h:15661 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edescribeStoredQueries
 #define SOAP_TYPE___f2i_plu__wfs_x002edescribeStoredQueries (1194)
 /* Wrapper: */
@@ -19341,7 +19341,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edescribeStoredQueries {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15704 */
+/* ws-inspire-wfs2.h:15731 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002elistStoredQueries
 #define SOAP_TYPE___f2i_plu__wfs_x002elistStoredQueries (1198)
 /* Wrapper: */
@@ -19359,7 +19359,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002elistStoredQueries {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15771 */
+/* ws-inspire-wfs2.h:15801 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edropStoredQueryResponse
 #define SOAP_TYPE___f2i_plu__wfs_x002edropStoredQueryResponse (1202)
 /* Wrapper: */
@@ -19377,7 +19377,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edropStoredQueryResponse {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15771 */
+/* ws-inspire-wfs2.h:15801 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edropStoredQuery
 #define SOAP_TYPE___f2i_plu__wfs_x002edropStoredQuery (1203)
 /* Wrapper: */
@@ -19395,7 +19395,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edropStoredQuery {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15838 */
+/* ws-inspire-wfs2.h:15871 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetCapabilities
 #define SOAP_TYPE___f2i_plu__wfs_x002egetCapabilities (1207)
 /* Wrapper: */
@@ -19413,7 +19413,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetCapabilities {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15905 */
+/* ws-inspire-wfs2.h:15941 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetFeatureWithLock
 #define SOAP_TYPE___f2i_plu__wfs_x002egetFeatureWithLock (1210)
 /* Wrapper: */
@@ -19431,7 +19431,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetFeatureWithLock {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15972 */
+/* ws-inspire-wfs2.h:16011 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetPropertyValue
 #define SOAP_TYPE___f2i_plu__wfs_x002egetPropertyValue (1214)
 /* Wrapper: */
@@ -19449,7 +19449,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetPropertyValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:16039 */
+/* ws-inspire-wfs2.h:16081 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002elockFeature
 #define SOAP_TYPE___f2i_plu__wfs_x002elockFeature (1218)
 /* Wrapper: */
@@ -19467,7 +19467,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002elockFeature {
 };
 #endif
 
-/* ws-inspire-wfs2.h:16106 */
+/* ws-inspire-wfs2.h:16151 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002etransaction
 #define SOAP_TYPE___f2i_plu__wfs_x002etransaction (1222)
 /* Wrapper: */
@@ -19485,7 +19485,7 @@ struct SOAP_CMAC __f2i_plu__wfs_x002etransaction {
 };
 #endif
 
-/* ws-inspire-wfs2.h:18611 */
+/* ws-inspire-wfs2.h:18656 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Header
 #define SOAP_TYPE_SOAP_ENV__Header (1223)
@@ -19502,7 +19502,7 @@ struct SOAP_CMAC SOAP_ENV__Header {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:18611 */
+/* ws-inspire-wfs2.h:18656 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Code
 #define SOAP_TYPE_SOAP_ENV__Code (1224)
@@ -19525,7 +19525,7 @@ struct SOAP_CMAC SOAP_ENV__Code {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:18611 */
+/* ws-inspire-wfs2.h:18656 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Reason
 #define SOAP_TYPE_SOAP_ENV__Reason (1226)
@@ -19545,7 +19545,7 @@ struct SOAP_CMAC SOAP_ENV__Reason {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:18611 */
+/* ws-inspire-wfs2.h:18656 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Fault
 #define SOAP_TYPE_SOAP_ENV__Fault (1227)
