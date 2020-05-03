@@ -55,10 +55,11 @@ Generate CPP source code
 
 Fix the PlannedLandUse_v3.0.h by removing redundant lines indicated in the generated  log file
 
-`$ src/1compil.log`
+`$ vi src/1compil.log`
 
 Launch soapcpp2 command again
 
 `$ soapcpp2 -d src -I /usr/local/share/gsoap:/usr/local/share/gsoap/import PlannedLandUse_v3.0.h 2> src/fcompile.log`
 
+Check that every warnings have been solved in fcompile.log file
 Done !
