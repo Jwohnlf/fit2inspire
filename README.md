@@ -1,9 +1,13 @@
 
+# fit2inspire
+
+Geospatial WFS2 server compliant to the EU directive INSPIRE (based on gSoap C++ framework)
+
 # INTRO
 
 Since 2007 the european INSPIRE Directive aims at building a large spatial data infrastructure accross Europe.  
 
-## Why Fit2Inspire
+## Why fit2Inspire
 
 By using this code you will be able to implement any complex geospatial webservice based on the GML standard.
 
@@ -18,5 +22,3 @@ Most of the code is generateg by the gSOAP framework by parsing the XML schema .
 I started this project in 2012 with the ambition to develop a small business in this emerging realm of the data interoperability promoted by Inspire.
 
 8 years later, the history leads me on another path. I recently decided to share my experience and the resulting code in this github repository, hoping this can help.
-
-# DEVELOPMENT ENVIRONMENT
