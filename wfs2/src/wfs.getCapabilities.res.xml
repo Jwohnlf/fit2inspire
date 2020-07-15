@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:idls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+    xmlns:fes="http://www.opengis.net/fes/2.0"
+    xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0"
+    xmlns:util="http://www.opengis.net/wfs-util/2.0"
+    xmlns:ows="http://www.opengis.net/ows/1.1"
+    xmlns:f2i-plu="http://plu.fit2inspire.eu/"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0">
+ <SOAP-ENV:Body>
+  <wfs:WFS_Capabilities version="" updateSequence="">
+   <wfs:WSDL>
+   </wfs:WSDL>
+   <wfs:FeatureTypeList>
+    <!-- extensibility element(s) -->
+    <wfs:FeatureType>
+     <!-- extensibility element(s) -->
+     <wfs:Name>xsd:string</wfs:Name>
+     <wfs:Title xml:lang="en"></wfs:Title>
+     <wfs:Abstract xml:lang="en"></wfs:Abstract>
+     <ows:Keywords>
+      <!-- extensibility element(s) -->
+      <ows:Keyword xml:lang=""></ows:Keyword>
+      <ows:Type codeSpace="http://www.example.com/schema/anyURI"></ows:Type>
+     </ows:Keywords>
+     <wfs:DefaultCRS>http://www.example.com/schema/anyURI</wfs:DefaultCRS>
+     <wfs:OtherCRS>http://www.example.com/schema/anyURI</wfs:OtherCRS>
+     <wfs:NoCRS>
+     </wfs:NoCRS>
+     <wfs:OutputFormats>
+      <!-- extensibility element(s) -->
+
+       <wfs:Format></wfs:Format>
+      
+     </wfs:OutputFormats>
+     <ows:WGS84BoundingBox crs="http://www.example.com/schema/anyURI" dimensions="1">
+      <!-- extensibility element(s) -->
+      <ows:LowerCorner></ows:LowerCorner>
+      <ows:UpperCorner></ows:UpperCorner>
+     </ows:WGS84BoundingBox>
+     <wfs:MetadataURL about="http://www.example.com/schema/anyURI" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad"></wfs:MetadataURL>
+     <wfs:ExtendedDescription>
+      <!-- extensibility element(s) -->
+      <wfs:Element name="" type="xsd:string">
+       <!-- extensibility element(s) -->
+       <ows:Metadata about="http://www.example.com/schema/anyURI" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
+        <!-- extensibility element(s) -->
+       </ows:Metadata>
+       <wfs:ValueList>
+        <!-- extensibility element(s) -->
+
+         <wfs:Value></wfs:Value>
+        
+       </wfs:ValueList>
+      </wfs:Element>
+     </wfs:ExtendedDescription>
+    </wfs:FeatureType>
+   </wfs:FeatureTypeList>
+   <fes:Filter_Capabilities>
+    <fes:Conformance>
+     <!-- extensibility element(s) -->
+     <fes:Constraint name="">
+      <!-- extensibility element(s) -->
+      <ows:AllowedValues>
+
+        <ows:Value></ows:Value>
+       
+      </ows:AllowedValues>
+      <ows:DefaultValue></ows:DefaultValue>
+      <ows:Meaning ows:reference="http://www.example.com/schema/anyURI"></ows:Meaning>
+      <ows:DataType ows:reference="http://www.example.com/schema/anyURI"></ows:DataType>
+      <ows:UOM ows:reference="http://www.example.com/schema/anyURI"></ows:UOM>
+      <ows:Metadata about="http://www.example.com/schema/anyURI" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
+       <!-- extensibility element(s) -->
+      </ows:Metadata>
+     </fes:Constraint>
+    </fes:Conformance>
+    <fes:Id_Capabilities>
+     <!-- extensibility element(s) -->
+     <fes:ResourceIdentifier name="xsd:string">
+      <!-- extensibility element(s) -->
+      <ows:Metadata about="http://www.example.com/schema/anyURI" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
+       <!-- extensibility element(s) -->
+      </ows:Metadata>
+     </fes:ResourceIdentifier>
+    </fes:Id_Capabilities>
+    <fes:Scalar_Capabilities>
+     <!-- extensibility element(s) -->
+     <fes:LogicalOperators>
+     </fes:LogicalOperators>
+     <fes:ComparisonOperators>
+      <!-- extensibility element(s) -->
+
+       <fes:ComparisonOperator name=""></fes:ComparisonOperator>
+      
+     </fes:ComparisonOperators>
+    </fes:Scalar_Capabilities>
+    <fes:Spatial_Capabilities>
+     <!-- extensibility element(s) -->
+     <fes:GeometryOperands>
+      <!-- extensibility element(s) -->
+      <fes:GeometryOperand name="xsd:string">
+      </fes:GeometryOperand>
+     </fes:GeometryOperands>
+     <fes:SpatialOperators>
+      <!-- extensibility element(s) -->
+      <fes:SpatialOperator name="">
+       <!-- extensibility element(s) -->
+       <fes:GeometryOperands>
+        <!-- extensibility element(s) -->
+        <fes:GeometryOperand name="xsd:string">
+        </fes:GeometryOperand>
+       </fes:GeometryOperands>
+      </fes:SpatialOperator>
+     </fes:SpatialOperators>
+    </fes:Spatial_Capabilities>
+    <fes:Temporal_Capabilities>
+     <!-- extensibility element(s) -->
+     <fes:TemporalOperands>
+      <!-- extensibility element(s) -->
+      <fes:TemporalOperand name="xsd:string">
+      </fes:TemporalOperand>
+     </fes:TemporalOperands>
+     <fes:TemporalOperators>
+      <!-- extensibility element(s) -->
+      <fes:TemporalOperator name="">
+       <!-- extensibility element(s) -->
+       <fes:TemporalOperands>
+        <!-- extensibility element(s) -->
+        <fes:TemporalOperand name="xsd:string">
+        </fes:TemporalOperand>
+       </fes:TemporalOperands>
+      </fes:TemporalOperator>
+     </fes:TemporalOperators>
+    </fes:Temporal_Capabilities>
+    <fes:Functions>
+     <!-- extensibility element(s) -->
+     <fes:Function name="">
+      <!-- extensibility element(s) -->
+      <ows:Metadata about="http://www.example.com/schema/anyURI" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
+       <!-- extensibility element(s) -->
+      </ows:Metadata>
+      <fes:Returns>xsd:string</fes:Returns>
+      <fes:Arguments>
+       <!-- extensibility element(s) -->
+       <fes:Argument name="">
+        <!-- extensibility element(s) -->
+        <ows:Metadata about="http://www.example.com/schema/anyURI" xlink:type="simple" xlink:href="http://www.example.com/schema/anyURI" xlink:role="http://www.example.com/schema/anyURI" xlink:arcrole="http://www.example.com/schema/anyURI" xlink:title="" xlink:show="new" xlink:actuate="onLoad">
+         <!-- extensibility element(s) -->
+        </ows:Metadata>
+        <fes:Type>xsd:string</fes:Type>
+       </fes:Argument>
+      </fes:Arguments>
+     </fes:Function>
+    </fes:Functions>
+    <fes:Extended_Capabilities>
+     <!-- extensibility element(s) -->
+     <fes:AdditionalOperators>
+      <!-- extensibility element(s) -->
+      <fes:Operator name="xsd:string"></fes:Operator>
+     </fes:AdditionalOperators>
+    </fes:Extended_Capabilities>
+   </fes:Filter_Capabilities>
+  </wfs:WFS_Capabilities>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
