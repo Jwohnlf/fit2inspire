@@ -63,3 +63,9 @@ Launch soapcpp2 command again
 
 Check that every warnings have been solved in fcompile.log file
 Done !
+
+## FIRST TEST
+
+Build and run the first instance of the webservice in the top directory.
+
+`$ make test`
