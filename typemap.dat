@@ -113,7 +113,7 @@ idls = "http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
 icommon = "http://inspire.ec.europa.eu/schemas/common/1.0"
 
 #	OGC prefix binding
-f2i-plu = "http://plu.fit2inspire.eu/"
+f2i-plu = "http://plu.fit2inspire.eu"
 wfs = "http://www.opengis.net/wfs/2.0"
 util = "http://www.opengis.net/wfs-util/2.0"
 ows = "http://www.opengis.net/ows/1.1"

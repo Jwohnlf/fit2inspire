@@ -299,7 +299,7 @@
 		</wsdl:port-->
 		<wsdl:port name="download" binding="wfssoap">
 			<wsdl:documentation>Acces port to WFS download service.</wsdl:documentation>
-			<soap:address location="http://plu.fit2inspire.eu/"/>
+			<soap:address location="http://plu.fit2inspire.eu"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>

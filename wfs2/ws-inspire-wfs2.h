@@ -15395,9 +15395,9 @@ mutable struct SOAP_ENV__Detail
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:CreateStoredQueryRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:CreateStoredQueryRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:CreateStoredQueryResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:CreateStoredQueryResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15442,8 +15442,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002ecreateStoredQuery SOAP
 //gsoap f2i-plu service method-style:	wfs_x002ecreateStoredQuery document
 //gsoap f2i-plu service method-encoding:	wfs_x002ecreateStoredQuery literal
-//gsoap f2i-plu service method-input-action:	wfs_x002ecreateStoredQuery http://plu.fit2inspire.eu//wfs/wfs-req:CreateStoredQueryRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002ecreateStoredQuery http://plu.fit2inspire.eu//wfs/wfs-resp:CreateStoredQueryResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002ecreateStoredQuery http://plu.fit2inspire.eu/wfs/wfs-req:CreateStoredQueryRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002ecreateStoredQuery http://plu.fit2inspire.eu/wfs/wfs-resp:CreateStoredQueryResponse
 //gsoap f2i-plu service method-fault:	wfs_x002ecreateStoredQuery ows__ExceptionReport
 int __f2i_plu__wfs_x002ecreateStoredQuery(
     wfs__CreateStoredQueryType*         wfs__CreateStoredQuery,	///< Input parameter
@@ -15465,9 +15465,9 @@ int __f2i_plu__wfs_x002ecreateStoredQuery(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:DescribeFeatureTypeRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:DescribeFeatureTypeRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:DescribeFeatureTypeResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:DescribeFeatureTypeResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15512,8 +15512,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002edescribeFeatureType SOAP
 //gsoap f2i-plu service method-style:	wfs_x002edescribeFeatureType document
 //gsoap f2i-plu service method-encoding:	wfs_x002edescribeFeatureType literal
-//gsoap f2i-plu service method-input-action:	wfs_x002edescribeFeatureType http://plu.fit2inspire.eu//wfs/wfs-req:DescribeFeatureTypeRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002edescribeFeatureType http://plu.fit2inspire.eu//wfs/wfs-resp:DescribeFeatureTypeResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002edescribeFeatureType http://plu.fit2inspire.eu/wfs/wfs-req:DescribeFeatureTypeRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002edescribeFeatureType http://plu.fit2inspire.eu/wfs/wfs-resp:DescribeFeatureTypeResponse
 //gsoap f2i-plu service method-fault:	wfs_x002edescribeFeatureType ows__ExceptionReport
 int __f2i_plu__wfs_x002edescribeFeatureType(
     wfs__DescribeFeatureTypeType*       wfs__DescribeFeatureType,	///< Input parameter
@@ -15535,9 +15535,9 @@ int __f2i_plu__wfs_x002edescribeFeatureType(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:GetFeatureRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:GetFeatureResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:GetFeatureResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15582,8 +15582,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002egetFeature SOAP
 //gsoap f2i-plu service method-style:	wfs_x002egetFeature document
 //gsoap f2i-plu service method-encoding:	wfs_x002egetFeature literal
-//gsoap f2i-plu service method-input-action:	wfs_x002egetFeature http://plu.fit2inspire.eu//wfs/wfs-req:GetFeatureRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002egetFeature http://plu.fit2inspire.eu//wfs/wfs-resp:GetFeatureResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002egetFeature http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002egetFeature http://plu.fit2inspire.eu/wfs/wfs-resp:GetFeatureResponse
 //gsoap f2i-plu service method-fault:	wfs_x002egetFeature ows__ExceptionReport
 int __f2i_plu__wfs_x002egetFeature(
     wfs__GetFeatureType*                wfs__GetFeature,	///< Input parameter
@@ -15605,9 +15605,9 @@ int __f2i_plu__wfs_x002egetFeature(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:DescribeStoredQueriesRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:DescribeStoredQueriesRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:DescribeStoredQueriesResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:DescribeStoredQueriesResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15652,8 +15652,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002edescribeStoredQueries SOAP
 //gsoap f2i-plu service method-style:	wfs_x002edescribeStoredQueries document
 //gsoap f2i-plu service method-encoding:	wfs_x002edescribeStoredQueries literal
-//gsoap f2i-plu service method-input-action:	wfs_x002edescribeStoredQueries http://plu.fit2inspire.eu//wfs/wfs-req:DescribeStoredQueriesRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002edescribeStoredQueries http://plu.fit2inspire.eu//wfs/wfs-resp:DescribeStoredQueriesResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002edescribeStoredQueries http://plu.fit2inspire.eu/wfs/wfs-req:DescribeStoredQueriesRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002edescribeStoredQueries http://plu.fit2inspire.eu/wfs/wfs-resp:DescribeStoredQueriesResponse
 //gsoap f2i-plu service method-fault:	wfs_x002edescribeStoredQueries ows__ExceptionReport
 int __f2i_plu__wfs_x002edescribeStoredQueries(
     wfs__DescribeStoredQueriesType*     wfs__DescribeStoredQueries,	///< Input parameter
@@ -15675,9 +15675,9 @@ int __f2i_plu__wfs_x002edescribeStoredQueries(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:ListStoredQueriesRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:ListStoredQueriesRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:ListStoredQueriesResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:ListStoredQueriesResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15722,8 +15722,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002elistStoredQueries SOAP
 //gsoap f2i-plu service method-style:	wfs_x002elistStoredQueries document
 //gsoap f2i-plu service method-encoding:	wfs_x002elistStoredQueries literal
-//gsoap f2i-plu service method-input-action:	wfs_x002elistStoredQueries http://plu.fit2inspire.eu//wfs/wfs-req:ListStoredQueriesRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002elistStoredQueries http://plu.fit2inspire.eu//wfs/wfs-resp:ListStoredQueriesResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002elistStoredQueries http://plu.fit2inspire.eu/wfs/wfs-req:ListStoredQueriesRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002elistStoredQueries http://plu.fit2inspire.eu/wfs/wfs-resp:ListStoredQueriesResponse
 //gsoap f2i-plu service method-fault:	wfs_x002elistStoredQueries ows__ExceptionReport
 int __f2i_plu__wfs_x002elistStoredQueries(
     wfs__ListStoredQueriesType*         wfs__ListStoredQueries,	///< Input parameter
@@ -15745,9 +15745,9 @@ int __f2i_plu__wfs_x002elistStoredQueries(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:DropStoredQueryRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:DropStoredQueryRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:DropStoredQueryResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:DropStoredQueryResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15792,8 +15792,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002edropStoredQuery SOAP
 //gsoap f2i-plu service method-style:	wfs_x002edropStoredQuery document
 //gsoap f2i-plu service method-encoding:	wfs_x002edropStoredQuery literal
-//gsoap f2i-plu service method-input-action:	wfs_x002edropStoredQuery http://plu.fit2inspire.eu//wfs/wfs-req:DropStoredQueryRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002edropStoredQuery http://plu.fit2inspire.eu//wfs/wfs-resp:DropStoredQueryResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002edropStoredQuery http://plu.fit2inspire.eu/wfs/wfs-req:DropStoredQueryRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002edropStoredQuery http://plu.fit2inspire.eu/wfs/wfs-resp:DropStoredQueryResponse
 //gsoap f2i-plu service method-fault:	wfs_x002edropStoredQuery ows__ExceptionReport
 int __f2i_plu__wfs_x002edropStoredQuery(
     _wfs__DropStoredQuery*              wfs__DropStoredQuery,	///< Input parameter
@@ -15815,9 +15815,9 @@ int __f2i_plu__wfs_x002edropStoredQuery(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:GetCapabilitiesRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:GetCapabilitiesRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:GetCapabilitiesResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:GetCapabilitiesResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15862,8 +15862,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002egetCapabilities SOAP
 //gsoap f2i-plu service method-style:	wfs_x002egetCapabilities document
 //gsoap f2i-plu service method-encoding:	wfs_x002egetCapabilities literal
-//gsoap f2i-plu service method-input-action:	wfs_x002egetCapabilities http://plu.fit2inspire.eu//wfs/wfs-req:GetCapabilitiesRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002egetCapabilities http://plu.fit2inspire.eu//wfs/wfs-resp:GetCapabilitiesResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002egetCapabilities http://plu.fit2inspire.eu/wfs/wfs-req:GetCapabilitiesRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002egetCapabilities http://plu.fit2inspire.eu/wfs/wfs-resp:GetCapabilitiesResponse
 //gsoap f2i-plu service method-fault:	wfs_x002egetCapabilities ows__ExceptionReport
 int __f2i_plu__wfs_x002egetCapabilities(
     ows__GetCapabilitiesType*           ows__GetCapabilities,	///< Input parameter
@@ -15885,9 +15885,9 @@ int __f2i_plu__wfs_x002egetCapabilities(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:GetFeatureWithLockRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureWithLockRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:GetFeatureWithLockResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:GetFeatureWithLockResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -15932,8 +15932,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002egetFeatureWithLock SOAP
 //gsoap f2i-plu service method-style:	wfs_x002egetFeatureWithLock document
 //gsoap f2i-plu service method-encoding:	wfs_x002egetFeatureWithLock literal
-//gsoap f2i-plu service method-input-action:	wfs_x002egetFeatureWithLock http://plu.fit2inspire.eu//wfs/wfs-req:GetFeatureWithLockRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002egetFeatureWithLock http://plu.fit2inspire.eu//wfs/wfs-resp:GetFeatureWithLockResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002egetFeatureWithLock http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureWithLockRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002egetFeatureWithLock http://plu.fit2inspire.eu/wfs/wfs-resp:GetFeatureWithLockResponse
 //gsoap f2i-plu service method-fault:	wfs_x002egetFeatureWithLock ows__ExceptionReport
 int __f2i_plu__wfs_x002egetFeatureWithLock(
     wfs__GetFeatureWithLockType*        wfs__GetFeatureWithLock,	///< Input parameter
@@ -15955,9 +15955,9 @@ int __f2i_plu__wfs_x002egetFeatureWithLock(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:GetPropertyValueRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:GetPropertyValueRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:GetPropertyValueResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:GetPropertyValueResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -16002,8 +16002,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002egetPropertyValue SOAP
 //gsoap f2i-plu service method-style:	wfs_x002egetPropertyValue document
 //gsoap f2i-plu service method-encoding:	wfs_x002egetPropertyValue literal
-//gsoap f2i-plu service method-input-action:	wfs_x002egetPropertyValue http://plu.fit2inspire.eu//wfs/wfs-req:GetPropertyValueRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002egetPropertyValue http://plu.fit2inspire.eu//wfs/wfs-resp:GetPropertyValueResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002egetPropertyValue http://plu.fit2inspire.eu/wfs/wfs-req:GetPropertyValueRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002egetPropertyValue http://plu.fit2inspire.eu/wfs/wfs-resp:GetPropertyValueResponse
 //gsoap f2i-plu service method-fault:	wfs_x002egetPropertyValue ows__ExceptionReport
 int __f2i_plu__wfs_x002egetPropertyValue(
     wfs__GetPropertyValueType*          wfs__GetPropertyValue,	///< Input parameter
@@ -16025,9 +16025,9 @@ int __f2i_plu__wfs_x002egetPropertyValue(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:LockFeatureRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:LockFeatureRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:LockFeatureResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:LockFeatureResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -16072,8 +16072,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002elockFeature SOAP
 //gsoap f2i-plu service method-style:	wfs_x002elockFeature document
 //gsoap f2i-plu service method-encoding:	wfs_x002elockFeature literal
-//gsoap f2i-plu service method-input-action:	wfs_x002elockFeature http://plu.fit2inspire.eu//wfs/wfs-req:LockFeatureRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002elockFeature http://plu.fit2inspire.eu//wfs/wfs-resp:LockFeatureResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002elockFeature http://plu.fit2inspire.eu/wfs/wfs-req:LockFeatureRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002elockFeature http://plu.fit2inspire.eu/wfs/wfs-resp:LockFeatureResponse
 //gsoap f2i-plu service method-fault:	wfs_x002elockFeature ows__ExceptionReport
 int __f2i_plu__wfs_x002elockFeature(
     wfs__LockFeatureType*               wfs__LockFeature,	///< Input parameter
@@ -16095,9 +16095,9 @@ int __f2i_plu__wfs_x002elockFeature(
   - Default endpoints:
     - http://plu.fit2inspire.eu/
 
-  - Addressing input action: "http://plu.fit2inspire.eu//wfs/wfs-req:TransactionRequest"
+  - Addressing input action: "http://plu.fit2inspire.eu/wfs/wfs-req:TransactionRequest"
 
-  - Addressing output action: "http://plu.fit2inspire.eu//wfs/wfs-resp:TransactionResponse"
+  - Addressing output action: "http://plu.fit2inspire.eu/wfs/wfs-resp:TransactionResponse"
 
   - Output Fault: "http://www.opengis.net/ows/1.1":ExceptionReport (literal)
 
@@ -16142,8 +16142,8 @@ Important: use soapcpp2 option '-j' (or '-i') to generate improved and easy-to-u
 //gsoap f2i-plu service method-protocol:	wfs_x002etransaction SOAP
 //gsoap f2i-plu service method-style:	wfs_x002etransaction document
 //gsoap f2i-plu service method-encoding:	wfs_x002etransaction literal
-//gsoap f2i-plu service method-input-action:	wfs_x002etransaction http://plu.fit2inspire.eu//wfs/wfs-req:TransactionRequest
-//gsoap f2i-plu service method-output-action:	wfs_x002etransaction http://plu.fit2inspire.eu//wfs/wfs-resp:TransactionResponse
+//gsoap f2i-plu service method-input-action:	wfs_x002etransaction http://plu.fit2inspire.eu/wfs/wfs-req:TransactionRequest
+//gsoap f2i-plu service method-output-action:	wfs_x002etransaction http://plu.fit2inspire.eu/wfs/wfs-resp:TransactionResponse
 //gsoap f2i-plu service method-fault:	wfs_x002etransaction ows__ExceptionReport
 int __f2i_plu__wfs_x002etransaction(
     wfs__TransactionType*               wfs__Transaction,	///< Input parameter
