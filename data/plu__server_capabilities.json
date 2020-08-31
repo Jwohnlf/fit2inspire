@@ -1,0 +1,255 @@
+{
+	"identifier":"plu-v0",
+	"@context": {
+    	"ows": "http://www.opengis.net/ows/",
+    	"title": { "@id": "ows:Title",  "@container": "@language"},
+    	"abstract": { "@id": "ows:Abstract",  "@container": "@language"},    	
+    	"keywords": { "@id": "ows:Keywords", "@container": "@language"},
+		"provider": { "@id": "ows:ServiceProvider"}
+	},
+	"title": {
+		"fr" : "Fit2Inspire - Démo de téléchargement WFS2 de données INSPIRE sur l'usage des sols",
+		"en" : "Fit2Inspire - WFS2 demo for download of INSPIRE Planned Land Use data"
+	},
+	"abstract": {
+		"fr":"Service de téléchargement direct de données géographiques conformes au thème INSPIRE Usage des sols. Ce serveur est développé par la société springeo et mis à ligne aux fins de démonstration. Les données utilisées sont diffusées et téléchargeables en OpenData par la DDT et le Conseil Général de l'Isère. Springeo met à disposition cette ressource à titre informatif, sans engagement ni garantie sur la continuité de service ou l'adéquation à une utilisation particulière.",
+		"en":"Service for direct access to compliant INSPIRE Planned Land Use data. This server is developed and made available by springeo for demonstration purpose only. It uses samples of opendata provided by the DDT and Conseil Général of Isère (France). This server is made available by springeo with no warranty on quality and lifetime of service or a particular fitness for use."
+	},
+	"keywords": {
+		"fr":["service de téléchargement direct","GML INSPIRE"],
+		"en":["direct download service","INSPIRE gml output","plu","ogc","wfs 2.0.0","demo","springeo"]
+	},
+	"provider":{
+		"name":"Fit2Inspire",
+		"city":"Lyon",
+		"zipcode":"69003",
+		"country":"France",
+		"mail":"fit2inspire@orange.fr",
+		"website":"http://www.fit2inspire.eu",
+		"individual":"Jean-Loup Delaveau",
+		"position":"geodata manager",
+		"phone":"+33(0)785530423",
+		"role":"originator"
+	},
+"featurelist": [
+	{
+	"@context":{
+    	"ows": "http://www.opengis.net/ows/",
+    	"wfs": "http://www.opengis.net/wfs/",
+    	"xsd": "http://www.w3.org/2001/XMLSchema#",
+    	"name": { "@id": "wfs:Name"},
+    	"title": { "@id": "wfs:Title",  "@container": "@language"},
+    	"abstract": { "@id": "wfs:Abstract",  "@container": "@language"},    	
+    	"keywords": { "@id": "ows:Keywords", "@container": "@language"},
+    	"defaultcrs": { "@id": "xsd:anyURI"},
+    	"othercrs": { "@id": "xsd:anyURI"},
+		"bbox": { "@id": "ows:WGS84BoundingBox"},
+		"metadataurl": { "@id": "wfs:MetadataURL", "@container": "@language"}
+	},
+	"name":"plu:SpatialPlan",
+	"title": {
+		"fr":"Plan local d'urbanisme",
+		"en":"Spatial planning document"
+	},
+	"abstract":	{
+		"fr":"Plans locaux d'urbanisme en projet ou ayant été approuvés à l'échelle communale. Le plan local d’urbanisme (PLU) est le principal document de planification à l’échelle communale ou dans certains cas intercommunale. Il a été créé par la loi Solidarité et Renouvellement Urbain (SRU) du 13 décembre 2000, non seulement pour se substituer au plan d’occupation des sols (POS) en matière de fixation des règles d’utilisation du sol, mais plus largement pour instituer l’établissement d’un projet de territoire dans un document stratégique local. Contrairement à son prédécesseur, il contient un projet d’aménagement et de développement durable (PADD), document non opposable explicitant une certaine vision pour le territoire. Des orientations d’aménagement opposables pouvant encadrer les actions et opérations d’aménagement sur les quartiers le rendent plus opérationnel. Tout document de planification communal ou intercommunal de type PLU ou POS en cours d'élaboration, opposable ou annulé existant sous forme de données géographiques numériques peut figurer dans cette classe d'objets.",
+		"en":"Documents that indicates a strategic direction for the development of a given geographic area, states the policies, priorities, programmes and land allocations that will implement the strategic direction and influences the distribution of people and activities in spaces of various scales."
+	},
+	"keywords": {
+		"fr":["plan local d'urbanisme","PLU"],
+		"en":["spatial plan", "planned land use"]
+	},
+	"defaultcrs":"urn:ogc:def:crs:EPSG::4326",
+	"othercrs":["urn:ogc:def:crs:EPSG::2154","urn:ogc:def:crs:EPSG::4171","urn:ogc:def:crs:EPSG::4258"],
+	"bbox":[5.02,45.55,5.34,45.7]
+	},
+	{
+	"@context":{
+		"f2i-plu":"http://plu.fit2inspire.eu",
+    	"ows": "http://www.opengis.net/ows/",
+    	"wfs": "http://www.opengis.net/wfs/",
+    	"xsd": "http://www.w3.org/2001/XMLSchema#",
+    	"name": { "@id": "wfs:Name"},
+    	"title": { "@id": "wfs:Title",  "@container": "@language"},
+    	"keywords": { "@id": "ows:Keywords", "@container": "@language"},
+    	"defaultcrs": { "@id": "xsd:anyURI", "@container": "@language"},
+    	"othercrs": { "@id": "xsd:anyURI", "@container": "@language"},
+		"bbox": { "@id": "ows:WGS84BoundingBox"},
+		"metadataurl": { "@id": "wfs:MetadataURL", "@container": "@language"}
+	},
+	"name":"plu:ZoningElement",
+	"title": {
+		"fr":"Zone d'un plan local d'urbanisme",
+		"en":"Zoning Element"
+	},
+	"abstract": {
+		"fr":"Zones d'urbanisme correspondant au plan de zonage du PLU : ces zones regroupent les zones urbaines (U), les zones à urbaniser (AU), les zones agricoles (A) et les zones naturelles et forestières (N). A chaque zone est attaché un règlement. Le règlement peut fixer des règles différentes, selon que la destination des constructions concerne l’habitation, l’hébergement hôtelier, les bureaux, le commerce, l’artisanat, l’industrie, l’exploitation agricole ou forestière ou la fonction d’entrepôt.",
+		"en":"A spatial object which is homogeneous regarding the permitted uses of land based on zoning which separate one set of land uses from another. Zoning elements refer to the regulation of the kinds of activities which will be acceptable on particular lots (such as open space, residential, agricultural, commercial or industrial)."
+	},
+	"keywords": {
+		"fr":["zone", "secteur", "zonage","plan local d'urbanisme","PLU","POS", "carte communale"],
+		"en":["spatial plan", "zoning element", "planned land use"]
+	},
+	"defaultcrs":"urn:ogc:def:crs:EPSG::4326",
+	"othercrs":["urn:ogc:def:crs:EPSG::2154","urn:ogc:def:crs:EPSG::4171","urn:ogc:def:crs:EPSG::4258"],
+	"bbox":[5.02,45.55,5.34,45.7]
+	},
+	{
+	"@context":{
+		"f2i-plu":"http://plu.fit2inspire.eu",
+    	"ows": "http://www.opengis.net/ows/",
+    	"wfs": "http://www.opengis.net/wfs/",
+    	"xsd": "http://www.w3.org/2001/XMLSchema#",
+    	"name": { "@id": "wfs:Name"},
+    	"title": { "@id": "wfs:Title",  "@container": "@language"},
+    	"keywords": { "@id": "ows:Keywords", "@container": "@language"},
+    	"defaultcrs": { "@id": "xsd:anyURI"},
+    	"othercrs": { "@id": "xsd:anyURI"},
+		"bbox": { "@id": "ows:WGS84BoundingBox"},
+		"metadataurl": { "@id": "wfs:MetadataURL", "@container": "@language"}
+	},
+	"name":"plu:SupplementaryRegulation",
+	"title": {
+		"fr":"Information ou prescription d'un plan local d'urbanisme",
+		"en":"Supplementary regulation"
+	},
+	"abstract": {
+		"fr":"Les prescriptions surfaciques, linéaires et ponctuelles se superposent à une zone du document d'urbanisme et exercent en général une contrainte supplémentaire au règlement de la zone. A chaque prescription est attaché un règlement. Les informations du plan local d'urbanisme sont des informations annexées ou reportées à titre informatif sur les documents graphiques du PLU.",
+		"en":"A spatial object (point, line or polygon) of a spatial plan that provides supplementary information and/or limitation of the use of land/water necessary for spatial planning reasons or to formalise external rules defined in legal text."
+	},
+	"keywords": {
+		"fr":["information", "prescription", "annexe", "plan local d'urbanisme","PLU","POS", "carte communale"],
+		"en":["supplementary regulation", "spatial plan","planned land use"]
+	},
+	"defaultcrs":"urn:ogc:def:crs:EPSG::4326",
+	"othercrs":["urn:ogc:def:crs:EPSG::2154","urn:ogc:def:crs:EPSG::4171","urn:ogc:def:crs:EPSG::4258"],
+	"bbox":[5.02,45.55,5.34,45.7]
+	},
+	{
+	"@context":{
+		"f2i-plu":"http://plu.fit2inspire.eu",
+    	"ows": "http://www.opengis.net/ows/",
+    	"wfs": "http://www.opengis.net/wfs/",
+    	"xsd": "http://www.w3.org/2001/XMLSchema#",
+    	"name": { "@id": "wfs:Name"},
+    	"title": { "@id": "wfs:Title",  "@container": "@language"},
+    	"keywords": { "@id": "ows:Keywords", "@container": "@language"},
+    	"defaultcrs": { "@id": "xsd:anyURI"},
+    	"othercrs": { "@id": "xsd:anyURI"},
+		"bbox": { "@id": "ows:WGS84BoundingBox"},
+		"metadataurl": { "@id": "wfs:MetadataURL", "@container": "@language"}
+	},
+	"name":"plu:OfficialDocumentation",
+	"title": {
+		"fr":"Documents réglementaires constituant le plan local d'urbanisme opposable. Ces règlements et autres documents littéraux sont indispensables à la compréhension du document d'urbanisme.",
+		"en":"official documentation"
+	},
+	"abstract": {
+		"fr":"Un plan local d'urbanisme (PLU) se compose d'un règlement de zonage, d'un rapport de présentation, d'un projet d’aménagement et de développement durable (PADD), document non opposable explicitant une certaine vision pour le territoire, d'orientations d’aménagement opposables pouvant encadrer les actions et opérations d’aménagement sur certains quartiers, de documents graphiques et de textes associés à des prescriptions ou informations annexées au PLU.",
+		"en":"The official documentation that composes the spatial plan; it may be composed of, the applicable legislation, the regulations, cartographic elements, descriptive elements that may be associated with the complete spatial plan, a zoning element or a supplementary regulation . In some Member States the actual textual regulation will be part of the data set, in other Member States the text will not be part of the data set and will be referenced via a reference to a document or a legal act. At least one of the three voidable values shall be provided."
+		},
+	"keywords": {
+		"fr":["Règlement", "Rapport de présentation", "PADD", "Annexes", "Plan local d'urbanisme","PLU","POS", "Carte communale"],
+		"en":["Official documentation", "Regulation text", "Spatial plan","Planned Land Use"]
+	},
+	"nocrs":true
+	}
+	],
+"operationlist": [
+	{
+	"name":"GetCapabilities",
+	"dcp": "http://plu.fit2inspire.eu",
+	"parameter":{
+				"AcceptVersions":["2.0.0"],
+				"AcceptFormats":["text/plain"],
+				"Sections":["ServiceIdentification", "ServiceProvider","OperationsMetadata", "FeatureTypeList","Filter_Capabilities"]
+				}
+	},
+	{
+	"name":"GetFeature",
+	"dcp": "http://plu.fit2inspire.eu",
+	"parameter":{
+				"outputFormat":["application/gml+xml;version=3.2"]				
+				}	
+	},
+	{
+	"name":"DescribeFeatureType",
+	"dcp": "http://plu.fit2inspire.eu",
+	"parameter":{
+				"outputFormat":["application/gml+xml;version=3.2"]				
+				}	
+	},
+	{
+	"name":"ListStoredQueries",
+	"dcp": "http://plu.fit2inspire.eu"
+	},
+	{
+	"name":"DescribeStoredQueries",
+	"dcp": "http://plu.fit2inspire.eu"
+	}
+	],
+"conformance":{
+	"ImplementsBasicWFS":true,
+	"ImplementsTransactionalWFS":false,
+	"ImplementsLockingWFS":false,
+	"KVPEncoding":true,
+	"XMLEncoding":false,
+	"SOAPEncoding":false,
+	"ImplementsInheritance":false,
+	"ImplementsRemoteResolve":false,
+	"ImplementsResultPaging":false,
+	"ImplementsStandardJoins":true,
+	"ImplementsSpatialJoins":false,
+	"ImplementsTemporalJoins":false,
+	"ImplementsFeatureVersioning":true,
+	"ManageStoredQueries":false	
+	},
+	"capacity":{
+		"PagingIsTransactionSafe":false,
+		"ResolveTimeoutDefault":false,
+		"SortLevelLimit":false,
+		"ResolveLocalScope":false,
+		"ResolveRemoteScope":false,
+		"ResponseCacheTimeout":false,
+		"QueryExpressions":false	
+	},
+	"storedquery":[
+		{
+			"id" : "urn:ogc:def:query:OGC-WFS::GetFeatureById",
+			"title": {
+				"en":"Get feature by Id",
+				"fr":"Retourne un objet à partir de son identifiant"
+				},
+			"abstract": {
+				"en":"Returns the single feature whose GML identifier is equal to the specified value of the ID argument",
+				"fr":"Retourne l'objet dont l'identifiant GML est égal à la valeur de l'argument ID passé en paramètre."
+				},
+			"parameter": [{
+				"name":"ID",
+				"title":"GML Identifier",
+				"type":"xsd:string",
+				"abstract":"Value of the feature gml:id attribute"
+				}]
+		},
+		{
+			"id" : "urn:ogc:def:query:springeo::GetSpatialPlanById",
+			"title": {
+				"en":"Get a full spatial plan data set by Id",
+				"fr":"Retourne les données d'un document d'urbanisme complet à partir de son identifiant"
+				},
+			"abstract": {
+				"en":"Returns a full spatial plan data set by its unique GML identifier. The plu:SpatialPlan feature found and all its associated features are provided in response",
+				"fr":"Retourne tous les éléments d'un document d'urbanisme à partir de son unique identifiant GML. L'objet de type plu:SpatialPlan et tous ses objets constitutifs figurent dans la réponse"
+				},
+			"returnfeaturetype": ["plu:SpatialPlan"],
+			"parameter": [{
+				"name":"ID",
+				"title":"GML Identifier",
+				"type":"xsd:string",
+				"abstract":"Value of the spatial plan gml:id attribute"
+				}]			
+		}
+	]
+}
+
+
