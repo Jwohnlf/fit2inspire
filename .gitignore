@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Fit2Inspire custom
+wfsTester
+capaWfsMongo
