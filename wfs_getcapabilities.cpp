@@ -35,10 +35,7 @@ int __f2i_plu__wfs_x002egetCapabilities(struct soap *soap, ows__GetCapabilitiesT
         mongocxx::instance inst{};
         mongocxx::client conn{mongocxx::uri{}};
 
-        bsoncxx::builder::stream::document document{};
-
-        //mongocxx::uri mongo("mongodb://localhost:27017");
-        //mongocxx::client client{mongo};
+        bsoncxx::builder::stream::document document{};        
 
         mongocxx::database db = conn["plu"];
         mongocxx::collection coll = conn["plu"]["server"];
@@ -254,10 +251,7 @@ int __f2i_plu__wfs_x002egetCapabilities(struct soap *soap, ows__GetCapabilitiesT
                                 preq->xlink__href = (char **)soap_malloc(soap, sizeof(char **));
                                 (*preq->xlink__href) = (char *)soap_malloc(soap, stmp.size()+1);
                                 strcpy((*preq->xlink__href), stmp.c_str());
-
-                                //DCP->union_DCP.HTTP.__size_HTTP = 1;
-                                //DCP->union_DCP.HTTP->__union_HTTP = soap_new___ows__union_HTTP(soap);
-
+                                
                                 __ows__union_HTTP union_HTTP;
                                 union_HTTP.__union_HTTP = 1;
                                 union_HTTP.union_HTTP.Get = preq;
@@ -290,7 +284,6 @@ int __f2i_plu__wfs_x002egetCapabilities(struct soap *soap, ows__GetCapabilitiesT
                         }));
                         //auto in_array = builder << "Version" << builder::stream::open_array;
                         //bsoncxx::builder::stream otmp {} << "Version" << BSON_ARRAY("2.0.0"));
-                        //auto etmp = btmp.view();
                         auto elem = btmp.view();
                         for( auto it : elem) {
                              pdom = init_ows_Domain(soap, it);
@@ -393,7 +386,6 @@ the Download Service in accordance with Table 4 and the idls:ExtendedCapabilitie
 
                         for( auto feature : features )
                         {
-                            //BSONObj o = vbe[i].Obj();
                             auto efeat = feature.get_document().view();
 
                             /* wfs:Name */
@@ -440,7 +432,6 @@ the Download Service in accordance with Table 4 and the idls:ExtendedCapabilitie
                             if( efeat["keywords"] ) {
                                 if ( efeat["keywords"].type() == bsoncxx::type::k_document ) {
                                     auto keysLang = efeat["keywords"].get_document().view();
-                                    //vector<BSONElement> vkey;
                                     ows__KeywordsType *wkw = soap_new_ows__KeywordsType(soap);
 
                                     for (auto keys: keysLang) {
@@ -452,7 +443,6 @@ the Download Service in accordance with Table 4 and the idls:ExtendedCapabilitie
                                         }
                                     }//for
                                     pfeat->ows__Keywords.insert(pfeat->ows__Keywords.end(), wkw);
-                                    //wkw++;
                                 }
                             } // if kw
 
@@ -522,8 +512,6 @@ the Download Service in accordance with Table 4 and the idls:ExtendedCapabilitie
                                 auto cursor = db["demosp"].aggregate(pipe);
 
                                 for (auto&& doc : cursor) {
-
-                                    //cout << bsoncxx::to_json(doc) << endl ;
 
                                     if (doc["_id"].type() == bsoncxx::type::k_utf8 )
                                     {

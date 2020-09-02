@@ -33,15 +33,11 @@ ows__DomainType * init_ows_Domain( struct soap *soap, element el )
     if (el.type() == bsoncxx::type::k_array) {
         auto vbval = el.get_array().value;
         pdom->union_UnNamedDomainType.AllowedValues = soap_new__ows__AllowedValues(soap);
-        //pdom->union_UnNamedDomainType.AllowedValues->__size_AllowedValues = el.length();
-        //pdom->union_UnNamedDomainType.AllowedValues->__union_AllowedValues = soap_new___ows__union_AllowedValues(soap, el.length());
-
+        
         for(auto element : vbval ) {
             pval = soap_new_ows__ValueType(soap);
             pval->__item.assign((string) element.get_utf8().value );
-            //(pdom->union_UnNamedDomainType.AllowedValues->__union_AllowedValues+i)->__union_AllowedValues = 1;
-            //(pdom->union_UnNamedDomainType.AllowedValues->__union_AllowedValues+i)->union_AllowedValues.Value = pval;
-
+            
             __ows__union_AllowedValues AllowedValue = __ows__union_AllowedValues();
             AllowedValue.__union_AllowedValues = 1;
             AllowedValue.union_AllowedValues.Value = pval;            
