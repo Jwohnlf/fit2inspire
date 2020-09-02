@@ -4,6 +4,8 @@ test : wfsTester
 capa : capaWfsMongo
 	./capaWfsMongo 8090 &
 
+debug : debug_capaWfsMongo
+
 GSOAP=soapcpp2
 CPP=g++
 SOAPCPP=/home/jeanloup/appli/gsoap-2.8/gsoap/stdsoap2.cpp
@@ -19,6 +21,9 @@ CFLAGS= $(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
 
 capaWfsMongo : soapC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_schema_instantiate.o wfs_getcapabilities.o webserver.c
 	$(CPP) webserver.c $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapServer.o soapC.o ows_schema_instantiate.o wfs_getcapabilities.o $(SOAPCPP) $(LIBW) $(LIBS) -o capaWfsMongo
+
+debug_capaWfsMongo : soapC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_schema_instantiate.o dwfs_getcapabilities.o webserver.c
+	$(CPP) webserver.c -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapServer.o soapC.o ows_schema_instantiate.o dwfs_getcapabilities.o $(SOAPCPP) $(LIBW) $(LIBS) -o debug_capaWfsMongo
 
 wfsTester : soapC.o soapServer.o wfs2/src/soapTester.cpp
 	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o wfsTester
@@ -44,6 +49,9 @@ threads.o:	/usr/local/share/gsoap/plugin/threads.c
 
 get.o : /usr/local/share/gsoap/plugin/httpget.c
 	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/httpget.c -o get.o
+
+dwfs_getcapabilities.o : wfs_getcapabilities.cpp
+	$(CPP) -g $(CFLAGS) -c wfs_getcapabilities.cpp -o dwfs_getcapabilities.o
 
 wfs_getcapabilities.o : wfs_getcapabilities.cpp
 	$(CPP) $(CFLAGS) -c wfs_getcapabilities.cpp -o wfs_getcapabilities.o
