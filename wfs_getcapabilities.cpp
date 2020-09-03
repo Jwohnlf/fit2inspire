@@ -32,7 +32,6 @@ int __f2i_plu__wfs_x002egetCapabilities(struct soap *soap, ows__GetCapabilitiesT
     /* Connection à la base de données Mongo */
     try {
 
-        mongocxx::instance inst{};
         mongocxx::client conn{mongocxx::uri{}};
 
         bsoncxx::builder::stream::document document{};        

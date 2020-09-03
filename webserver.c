@@ -293,6 +293,8 @@ int main(int argc, char **argv)
   soap_init(&soap);
   soap_set_omode(&soap, SOAP_XML_INDENT|SOAP_XML_NOTYPE|SOAP_C_UTFSTRING);
 
+  /* create one and only one instance of mongocxx::instance for the entirety of the program.*/
+  mongocxx::instance inst{};
 
   /* set up SSL locks */
   if (CRYPTO_thread_setup())
