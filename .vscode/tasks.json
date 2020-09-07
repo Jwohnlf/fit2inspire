@@ -22,6 +22,7 @@
             "dependsOn":["Build PLU server"],
             "command": "./capaWfsMongo",
             "args": [
+                "-k",
                 "8090 &"
             ],
             "problemMatcher": [],

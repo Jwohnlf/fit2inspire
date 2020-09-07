@@ -283,7 +283,7 @@ int main(int argc, char **argv)
     fprintf(stderr, "[Note: https://localhost:%d/test.html to test the server from browser]\n", port);
   else
     fprintf(stderr, "[Note: http://localhost:%d/test.html to test the server from browser]\n", port);
-  fprintf(stderr, " [Note: http://localhost:%d for settings, login: '"AUTH_USERID" ' and '"AUTH_PASSWD"']\n", port);
+  fprintf(stderr, " [Note: http://localhost:%d for settings, login: '" AUTH_USERID "' and '" AUTH_PASSWD "']\n", port);
   fprintf(stderr, "[Note: you should enable Linux/Unix SIGPIPE handlers to avoid broken pipe]\n");
 
   /* Init SSL (can skip or call multiple times, engine inits automatically) */
