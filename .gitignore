@@ -35,3 +35,6 @@
 wfsTester
 capaWfsMongo
 debug_capaWfsMongo
+
+# Log files
+*.log
