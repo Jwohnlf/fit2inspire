@@ -10,11 +10,11 @@ GSOAP=soapcpp2
 CPP=g++
 SOAPCPP=/home/jeanloup/appli/gsoap-2.8/gsoap/stdsoap2.cpp
 LIBS=-lgsoap++ -lpthread -lz -lssl -lcrypto
-LIBW=-lmongocxx -lbsoncxx -lboost_thread -lboost_system -lboost_regex
+LIBW=-lmongocxx -lbsoncxx
 
 COFLAGS=-O2
 CWFLAGS=-std=c++11 -Wno-deprecated-declarations
-MONGO = -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi
+MONGO = -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -I/home/jeanloup/appli/boost_1_58_0
 CIFLAGS=-I/usr/local/share/gsoap -I/usr/local/share/gsoap/plugin $(MONGO)
 CMFLAGS=-DWITH_COOKIES -DWITH_GZIP -DWITH_OPENSSL
 CFLAGS= $(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
