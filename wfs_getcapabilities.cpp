@@ -54,14 +54,11 @@ int __f2i_plu__wfs_x002egetCapabilities(struct soap *soap, ows__GetCapabilitiesT
                 lid = el.get_oid().value;
                 time_t t;
                 stringstream sDate ;
-
-                if(lid) {
-                    t = lid.get_time_t();
-                    sDate << put_time( gmtime(&t), "%F");
-
-                    wfs__WFS_x005fCapabilities.updateSequence = ::soap_new_std__string(soap);
-                    wfs__WFS_x005fCapabilities.updateSequence->append( sDate.str() );
-                }
+                
+                t = lid.get_time_t();
+                sDate << put_time( gmtime(&t), "%F");
+                wfs__WFS_x005fCapabilities.updateSequence = ::soap_new_std__string(soap);
+                wfs__WFS_x005fCapabilities.updateSequence->append( sDate.str() );
 
                 stmp.assign("2.0.0");
                 wfs__WFS_x005fCapabilities.version = stmp;
@@ -353,10 +350,8 @@ the Download Service in accordance with Table 4 and the idls:ExtendedCapabilitie
                         pextcapa->TemporalReference.insert(pextcapa->TemporalReference.end(), ptemp);
 
                         /* inspire_common:MetadataDate (Metadata Date) */
-                        if(lid) {
-                            pextcapa->MetadataDate = ::soap_new_std__string(soap);
-                            pextcapa->MetadataDate->append( sDate.str() );
-                        }
+                        pextcapa->MetadataDate = ::soap_new_std__string(soap);
+                        pextcapa->MetadataDate->append( sDate.str() );
 
                         /* inspire_common:SupportedLangages (Metadata Language) */
                         pextcapa->SupportedLanguages = soap_new_icommon__supportedLanguagesType(soap);
