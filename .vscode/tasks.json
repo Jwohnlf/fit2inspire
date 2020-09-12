@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build PLU server",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "capaWfsMongo"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build & run PLU server",
+            "type": "shell",
+            "dependsOn":["Build PLU server"],
+            "command": "./capaWfsMongo",
+            "args": [
+                "-k",
+                "8090 &"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}

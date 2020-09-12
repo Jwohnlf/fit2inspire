@@ -31,7 +31,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002ecreateStoredQuery(struct
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:CreateStoredQueryRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:CreateStoredQueryRequest";
 	soap_tmp___f2i_plu__wfs_x002ecreateStoredQuery.wfs__CreateStoredQuery = wfs__CreateStoredQuery;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -93,7 +93,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002edescribeFeatureType(stru
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:DescribeFeatureTypeRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:DescribeFeatureTypeRequest";
 	soap_tmp___f2i_plu__wfs_x002edescribeFeatureType.wfs__DescribeFeatureType = wfs__DescribeFeatureType;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -153,7 +153,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetFeature(struct soap *
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:GetFeatureRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureRequest";
 	soap_tmp___f2i_plu__wfs_x002egetFeature.wfs__GetFeature = wfs__GetFeature;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -213,7 +213,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002edescribeStoredQueries(st
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:DescribeStoredQueriesRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:DescribeStoredQueriesRequest";
 	soap_tmp___f2i_plu__wfs_x002edescribeStoredQueries.wfs__DescribeStoredQueries = wfs__DescribeStoredQueries;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -273,7 +273,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002elistStoredQueries(struct
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:ListStoredQueriesRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:ListStoredQueriesRequest";
 	soap_tmp___f2i_plu__wfs_x002elistStoredQueries.wfs__ListStoredQueries = wfs__ListStoredQueries;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -333,7 +333,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002edropStoredQuery(struct s
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:DropStoredQueryRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:DropStoredQueryRequest";
 	soap_tmp___f2i_plu__wfs_x002edropStoredQuery.wfs__DropStoredQuery = wfs__DropStoredQuery;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -395,7 +395,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetCapabilities(struct s
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:GetCapabilitiesRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetCapabilitiesRequest";
 	soap_tmp___f2i_plu__wfs_x002egetCapabilities.ows__GetCapabilities = ows__GetCapabilities;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -455,7 +455,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetFeatureWithLock(struc
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:GetFeatureWithLockRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureWithLockRequest";
 	soap_tmp___f2i_plu__wfs_x002egetFeatureWithLock.wfs__GetFeatureWithLock = wfs__GetFeatureWithLock;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -515,7 +515,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetPropertyValue(struct 
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:GetPropertyValueRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetPropertyValueRequest";
 	soap_tmp___f2i_plu__wfs_x002egetPropertyValue.wfs__GetPropertyValue = wfs__GetPropertyValue;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -575,7 +575,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002elockFeature(struct soap 
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:LockFeatureRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:LockFeatureRequest";
 	soap_tmp___f2i_plu__wfs_x002elockFeature.wfs__LockFeature = wfs__LockFeature;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */
@@ -635,7 +635,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002etransaction(struct soap 
 	if (soap_endpoint == NULL)
 		soap_endpoint = "http://plu.fit2inspire.eu/";
 	if (soap_action == NULL)
-		soap_action = "http://plu.fit2inspire.eu//wfs/wfs-req:TransactionRequest";
+		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:TransactionRequest";
 	soap_tmp___f2i_plu__wfs_x002etransaction.wfs__Transaction = wfs__Transaction;
 	soap_begin(soap);
 	soap->encodingStyle = NULL; /* use SOAP literal style */

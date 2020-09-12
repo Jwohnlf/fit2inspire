@@ -45,7 +45,33 @@
 #	appear at the start of a new line.
 #	For example, to include a note:
 #[
+
 #// TODO: Don't forget to bind the namespace prefixes!
+
+#	Prefix binding for local INSPIRE schema:
+
+plu = "http://inspire.ec.europa.eu/schemas/plu/3.0"
+base = "http://inspire.ec.europa.eu/schemas/base/3.3"
+base2 = "http://inspire.ec.europa.eu/schemas/base2/1.0"
+lunom = "http://inspire.ec.europa.eu/schemas/lunom/3.0"
+sc = "http://www.interactive-instruments.de/ShapeChange/AppInfo"
+gml = "http://www.opengis.net/gml/3.2"
+gmd = "http://www.isotc211.org/2005/gmd"
+gco = "http://www.isotc211.org/2005/gco"
+gss = "http://www.isotc211.org/2005/gss"
+gts = "http://www.isotc211.org/2005/gts"
+gsr = "http://www.isotc211.org/2005/gsr"
+idls = "http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+icommon = "http://inspire.ec.europa.eu/schemas/common/1.0"
+
+#	OGC prefix binding
+
+f2i-plu = "http://plu.fit2inspire.eu"
+wfs = "http://www.opengis.net/wfs/2.0"
+util = "http://www.opengis.net/wfs-util/2.0"
+ows = "http://www.opengis.net/ows/1.1"
+fes = "http://www.opengis.net/fes/2.0"
+
 #]
 #	This comment appears as the first line in the generated header file.
 #
@@ -96,28 +122,7 @@
 #xsd__duration = #import "custom/duration.h" | xsd__duration
 #xsd__duration = #import "import/xsd.h" | xsd__duration
 
-#	Prefix binding for local INSPIRE schema:
 
-plu = "http://inspire.ec.europa.eu/schemas/plu/3.0"
-base = "http://inspire.ec.europa.eu/schemas/base/3.3"
-base2 = "http://inspire.ec.europa.eu/schemas/base2/1.0"
-lunom = "http://inspire.ec.europa.eu/schemas/lunom/3.0"
-sc = "http://www.interactive-instruments.de/ShapeChange/AppInfo"
-gml = "http://www.opengis.net/gml/3.2"
-gmd = "http://www.isotc211.org/2005/gmd"
-gco = "http://www.isotc211.org/2005/gco"
-gss = "http://www.isotc211.org/2005/gss"
-gts = "http://www.isotc211.org/2005/gts"
-gsr = "http://www.isotc211.org/2005/gsr"
-idls = "http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
-icommon = "http://inspire.ec.europa.eu/schemas/common/1.0"
-
-#	OGC prefix binding
-f2i-plu = "http://plu.fit2inspire.eu/"
-wfs = "http://www.opengis.net/wfs/2.0"
-util = "http://www.opengis.net/wfs-util/2.0"
-ows = "http://www.opengis.net/ows/1.1"
-fes = "http://www.opengis.net/fes/2.0"
 
 #	xlink
 xlink = "http://www.w3.org/1999/xlink"
