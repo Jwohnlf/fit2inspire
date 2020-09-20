@@ -1,5 +1,5 @@
 /* wfs_getcapabilities.cpp
-    Generated for fit2inspire.eu service implementation
+   Generated for fit2inspire.eu service implementation
 
     Copyright(C) 2014-2020, Jean-Loup Delaveau, Fit2Inspire.eu
 
