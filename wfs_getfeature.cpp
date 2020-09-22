@@ -29,9 +29,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
         // Stored query GetFeatureById query in ?id=input
         if (!inputId.empty())
         {
-            wfs__StoredQueryType *storedQuery;
-            
-            storedQuery = soap_new_wfs__StoredQueryType(soap);
+            wfs__StoredQueryType *storedQuery = storedQuery = soap_new_wfs__StoredQueryType(soap);
 
             //Parse inputid to retrieve information needed to query the DB
             cout << "Stored query request received" << endl;
@@ -41,37 +39,57 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
             
             if(inputId.find("getspatialplanbyid") != string::npos)
             {
+                wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap);
+
                 storedQuery->id = (char*)soap_malloc(soap, 20); 
                 strcpy(storedQuery->id, "getspatialplanbyid");
                 string doc_urba = inputId.substr(inputId.find_first_of(",")+1);
                 doc_urba = doc_urba.substr(0,13);
                 doc_urba.insert(5,"_");
 
-                wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap);
-                paramStoredQuery->name.assign("id");
+                paramStoredQuery->name.assign("spatialplanid");
                 paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
                 strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
-                storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);                
+                storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);
             }
             else if (inputId.find("getfeaturebyid") != string::npos)
             {
+                storedQuery->id = (char*)soap_malloc(soap, 15); 
+                strcpy(storedQuery->id, "getfeaturebyid");
                 inputId = inputId.substr(inputId.find_first_of(",")+1);
                 string doc_urba = inputId.substr(0,13);
                 string gid = inputId.substr(doc_urba.length());
                 gid = gid.substr(0, gid.length()-16);
+                doc_urba.insert(5,"_");
+            
+                if( (gid.empty() || gid.find("doc")!=std::string::npos) && !doc_urba.empty() ) 
+                {
+                    wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap);
 
-                if( (gid.empty() || gid.find("doc")!=std::string::npos) && !doc_urba.empty() ) {
-                    doc_urba.insert(5,"_");
-                    //query_sp << "gid" << doc_urba << bsoncxx::builder::stream::finalize;
+                    paramStoredQuery->name.assign("gid_urba");
+                    paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
+                    strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
+                    storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);
                 }
                 else if(!gid.empty() && !doc_urba.empty())
                 {
-                    doc_urba.insert(5,"_");
-                    //query_ze << "gid_urba" << doc_urba << "gid" << gid << bsoncxx::builder::stream::finalize;
+                    wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap, 2);
+
+                    paramStoredQuery->name.assign("gid_urba");
+                    paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
+                    strcpy(paramStoredQuery->__any, doc_urba.c_str());
+
+                    storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);
+
+                    paramStoredQuery->name.assign("gid");
+                    paramStoredQuery->__any = (char*)soap_malloc(soap, gid.length()+1);
+                    strcpy(paramStoredQuery->__any, gid.c_str());
+
+                    storedQuery->Parameter.insert( storedQuery->Parameter.end(), paramStoredQuery);
                 }
-            }// else getfeaturebyid
+            } // else getfeaturebyid
             else {
                 e << "The requested stored query is not supported by this stored query";
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
@@ -91,9 +109,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
     }//try
     catch( exception e ) {
         return http_fget_error(soap, "OperationProcessingFailed", e.what(), "DBException" , 400);
-    }
-
-    
+    }    
 
 } // end fonction fgetfeature
 
@@ -114,6 +130,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
     try {        
         stringstream e;
         string doc_urba, gid;
+        bool adhocquery = true;
         mongocxx::uri mongo("mongodb://localhost:27017");
         mongocxx::client client{mongo};
 
@@ -124,8 +141,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         //auto_ptr<mongocxx::cursor> cursor_sp; //, cursor_ze, cursor_sr;
         bsoncxx::builder::stream::document query_sp {};
         bsoncxx::builder::stream::document query_ze {};
-        bsoncxx::builder::stream::document query_sr {};
-
+        
         // TODO : make an index with a unique key constraint
 
         // TODO : make an geospatial index for each queryable collections
@@ -133,44 +149,31 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         // Stored query GetFeatureById query in ?id=input
         if (wfs__GetFeature->__union_GetFeatureType->__unionAbstractQueryExpression == SOAP_UNION__wfs__union_GetFeatureType_StoredQuery)
         {
+            adhocquery = false;
             //Parse inputid to retrieve information needed to query the DB
             if(!wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->handle->compare("getspatialplanbyid"))
             {
                 doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
-                doc_urba = doc_urba.substr(0,13);
-                doc_urba.insert(5,"_");
                 query_sp << "gid" << doc_urba << bsoncxx::builder::stream::finalize;
                 query_ze << "gid_urba" << doc_urba << bsoncxx::builder::stream::finalize;
-                query_sr << "gid_urba" << doc_urba <<  bsoncxx::builder::stream::finalize;
             }
             else if (!wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->handle->compare("getfeaturebyid"))
             {
-                //inputId = inputId.substr(inputId.find_first_of(",")+1);
-                doc_urba = inputId.substr(0,13);
-                gid = inputId.substr(doc_urba.length());
-                gid = gid.substr(0, gid.length()-16);
-
-                if( (gid.empty() || gid.find("doc")!=std::string::npos) && !doc_urba.empty() ) {
-                    doc_urba.insert(5,"_");
+                if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 1) {
+                    doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
                     query_sp << "gid" << doc_urba << bsoncxx::builder::stream::finalize;
-
                 }
-                else if(!gid.empty() && !doc_urba.empty())
-                {
-                    doc_urba.insert(5,"_");
+                
+                if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 2) {
+                    doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
+                    gid.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[1]->__any);                
                     query_ze << "gid_urba" << doc_urba << "gid" << gid << bsoncxx::builder::stream::finalize;
-                }
+                }                
             }// else getfeaturebyid
             else {
                 e << "The requested stored query is not supported by this stored query";
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
-            outcrs = 4326;
-            bbox[0] = minLon;
-            bbox[1] = minLat;
-            bbox[2] = maxLon;
-            bbox[3] = maxLat;
-
         }
 
         auto cursor_sp = collsp.find( query_sp.extract() );
@@ -208,9 +211,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                    case 2 : it's an GetFeatureById query with an ID of an official document as parameter
                    case 3 : it's an GetSpatialPlanById query (all official documents are included by default)
             */
-            if( (plu["officialdocument"] && inputId.empty()) ||
-                (plu["officialdocument"] && !gid.empty()) ||
-                (plu["officialdocument"] && (inputId.find("getspatialplanbyid") != string::npos)) )
+            if( ( plu["officialdocument"] && adhocquery ) ||
+                ( plu["officialdocument"] && !gid.empty() ) ||
+                ( plu["officialdocument"] && !wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->handle->compare("getfeaturebyid")) )
             {
                 if(plu["officialdocument"].type() == bsoncxx::type::k_array) {
                     // get all documents associated to this Spatial Plan
