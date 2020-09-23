@@ -8,7 +8,7 @@
             "name": "(gdb) Lancer",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/debug_capaWfsMongo",
+            "program": "${workspaceFolder}/debug_plu3WfsMongo",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

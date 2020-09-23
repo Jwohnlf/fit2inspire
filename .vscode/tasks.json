@@ -8,7 +8,7 @@
             "type": "shell",
             "command": "make",
             "args": [
-                "capaWfsMongo"
+                "plu3WfsMongo"
             ],
             "problemMatcher": [],
             "group": {
@@ -20,7 +20,7 @@
             "label": "Build & run PLU server",
             "type": "shell",
             "dependsOn":["Build PLU server"],
-            "command": "./capaWfsMongo",
+            "command": "./plu3WfsMongo",
             "args": [
                 "-k",
                 "8090 &"
