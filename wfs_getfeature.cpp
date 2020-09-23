@@ -1,5 +1,5 @@
-/* wfs_getfeature.cpp
-       Generated for fit2inspire.eu service implementation
+/*  wfs_getfeature.cpp
+    Generated for fit2inspire.eu service implementation
 
     Copyright(C) 2014-2020, Jean-Loup Delaveau, Fit2Inspire.eu
 
@@ -10,6 +10,7 @@
 
 #include <ctime>
 #include "wfs_getfeature.h"
+#include "plu3/plu_schema_instantiate.h"
 
 
 /* 

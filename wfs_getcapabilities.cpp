@@ -1,5 +1,5 @@
-/* wfs_getcapabilities.cpp
-   Generated for fit2inspire.eu service implementation
+/*  wfs_getcapabilities.cpp
+    Generated for fit2inspire.eu service implementation
 
     Copyright(C) 2014-2020, Jean-Loup Delaveau, Fit2Inspire.eu
 
@@ -670,15 +670,6 @@ int __f2i_plu__wfs_x002ecreateStoredQuery(struct soap *soap, wfs__CreateStoredQu
 
 /** Auto-test server operation __f2i_plu__wfs_x002edescribeFeatureType */
 int __f2i_plu__wfs_x002edescribeFeatureType(struct soap *soap, wfs__DescribeFeatureTypeType *wfs__DescribeFeatureType, util__DescribeFeatureTypeResponseType &util__DescribeFeatureTypeResponse)
-{
-	(void)soap; /* appease -Wall -Werror */
-	/* Returns incomplete response containing some default data values */
-	return SOAP_OK;
-}
-
-
-/** Auto-test server operation __f2i_plu__wfs_x002egetFeature */
-int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__GetFeature, wfs__FeatureCollectionType &wfs__FeatureCollection)
 {
 	(void)soap; /* appease -Wall -Werror */
 	/* Returns incomplete response containing some default data values */

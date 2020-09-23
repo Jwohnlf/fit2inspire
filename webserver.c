@@ -129,7 +129,8 @@ A commercial use license is available from Genivia, Inc., contact@genivia.com
 */
 
 #include "wfs_getcapabilities.h"
-#include "wfs2/src/wfssoap.nsmap"      /* namespaces updated 4/4/13 */
+#include "wfs_getfeature.h"
+#include "wfs2/src/wfsplu3.nsmap"      /* namespaces updated 4/4/13 */
 #include "webserver/options.h"
 #include "httpget.h"
 #include "logging.h"
