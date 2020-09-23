@@ -16,7 +16,7 @@
 #include <bsoncxx/document/element.hpp>
 #include <bsoncxx/types.hpp>
 
-#include "../wfs2/src/soapH.h"
+#include "src/soapH.h"
 
 using namespace std;
 using bsoncxx::document::element;
