@@ -20,13 +20,13 @@ CMFLAGS=-DWITH_COOKIES -DWITH_GZIP -DWITH_OPENSSL
 CFLAGS= $(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
 
 plu3WfsMongo : soapC.o pluC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_si.o base_si.o gml_si.o plu_si.o wfs_getcapabilities.o wfs_getfeature.o webserver.c
-	$(CPP) webserver.c $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapC.o pluC.o soapServer.o ows_si.o base_si.o gml_si.o plu_si.o wfs_getcapabilities.o wfs_getfeature.o $(SOAPCPP) $(LIBW) $(LIBS) -o .obj/plu3WfsMongo
+	$(CPP) webserver.c $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapC.o pluC.o soapServer.o ows_si.o base_si.o gml_si.o plu_si.o wfs_getcapabilities.o wfs_getfeature.o $(SOAPCPP) $(LIBW) $(LIBS) -o plu3WfsMongo
 
 debug_plu3WfsMongo : soapC.o pluC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_si.o dgml_si.o dplu_si.o dwfs_getcapabilities.o dwfs_getfeature.o webserver.c
-	$(CPP) webserver.c -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapC.o pluC.o soapServer.o ows_si.o gml_si.o dplu_si.o dwfs_getcapabilities.o dwfs_getfeature.o $(SOAPCPP) $(LIBW) $(LIBS) -o .obj/debug_plu3WfsMongo
+	$(CPP) webserver.c -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapC.o pluC.o soapServer.o ows_si.o gml_si.o dplu_si.o dwfs_getcapabilities.o dwfs_getfeature.o $(SOAPCPP) $(LIBW) $(LIBS) -o debug_plu3WfsMongo
 
 wfsTester : soapC.o soapServer.o wfs2/src/soapTester.cpp
-	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o .obj/wfsTester
+	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o wfsTester
 
 options.o:	webserver/opt.h webserver/options.h webserver/options.c
 	$(GSOAP) -cnpopt -d webserver webserver/opt.h
