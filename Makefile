@@ -1,5 +1,8 @@
 test : wfsTester
-	./wfsTester < wfs2/src/wfs.getCapabilities.req.xml 
+	./wfsTester < wfs2/src/wfs.getCapabilities.req.xml
+
+mongo : mongoTester
+	./mongoTester
 
 capa : capaWfsMongo
 	./capaWfsMongo 8090 &
@@ -25,8 +28,16 @@ capaWfsMongo : soapC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o t
 debug_capaWfsMongo : soapC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_schema_instantiate.o dwfs_getcapabilities.o webserver.c
 	$(CPP) webserver.c -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapServer.o soapC.o ows_schema_instantiate.o dwfs_getcapabilities.o $(SOAPCPP) $(LIBW) $(LIBS) -o debug_capaWfsMongo
 
+mongoTester : mongo-cxx-test.cpp
+	$(CPP) $(CFLAGS) mongo-cxx-test.cpp \
+	-I/usr/local/include/mongocxx/v_noabi \
+	-I/usr/local/include/bsoncxx/v_noabi \
+	-L/usr/local/lib -lmongocxx -lbsoncxx \
+	-o mongoTester 
+
 wfsTester : soapC.o soapServer.o wfs2/src/soapTester.cpp
-	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o wfsTester
+	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o \
+	$(LIBS) -o wfsTester
 
 options.o:	webserver/opt.h webserver/options.h webserver/options.c
 	$(GSOAP) -cnpopt -d webserver webserver/opt.h
@@ -67,4 +78,3 @@ soapServer.o : wfs2/src/soapServer.cpp
 
 soapC.o : wfs2/src/soapC.cpp
 	$(CPP) $(CFLAGS) -c wfs2/src/soapC.cpp -o soapC.o
-
