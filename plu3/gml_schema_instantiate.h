@@ -40,19 +40,19 @@ int http_fget_error(struct soap *soap, const char* exceptionCode, string excepti
 
 gml__ReferenceType * init_gml_ReferenceType(struct soap *soap, mongocxx::stdx::string_view val, string uri);
 
-gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, double bbox[], int outcrs);
+gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem, double bbox[], int outcrs);
 
 gml__MultiSurfacePropertyType * init_gml_MultiSurfacePropertyType(struct soap *soap, view_or_value bgeom, int outcrs, double bbox[]);
 
 gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_value bgeom, int outcrs, double bbox[]);
 
-gml__LineStringType * init_gml_LineStringType(struct soap *soap, view_or_value belem, int outcrs, double bbox[]);
+gml__LineStringType * init_gml_LineStringType(struct soap *soap, element belem, int outcrs, double bbox[]);
 
-gml__DirectPositionListType * init_gml__DirectPositionListType(struct soap *soap, view_or_value belem, int outcrs, double bbox[]);
+gml__DirectPositionListType * init_gml__DirectPositionListType(struct soap *soap, element belem, int outcrs, double bbox[]);
 
-gml__DirectPositionType * init_gml__DirectPositionType(struct soap *soap, view_or_value belem, int outcrs, double bbox[]);
+gml__DirectPositionType * init_gml__DirectPositionType(struct soap *soap, element belem, int outcrs, double bbox[]);
 
-gml__PointType * init_gml_PointType(struct soap *soap, view_or_value belem, int outcrs, double bbox[]);
+gml__PointType * init_gml_PointType(struct soap *soap, element belem, int outcrs, double bbox[]);
 
 char* init_gml_id(struct soap *soap, string strval, oid lid);
 

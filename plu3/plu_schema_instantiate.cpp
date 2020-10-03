@@ -411,13 +411,11 @@ plu__OfficialDocumentationPropertyType * init_plu_OfficialDocumentation(soap *so
     }
 
     // ********* OfficialDocumentation InspireId & gml:id
-    // *****************
-    if(lid)
-    {
-        document->inspireId = init_base_Identifier(soap, identifier, lid, "http://dataproviderns/od");
-        document->gml__id = (char**) soap_malloc(soap, sizeof(char**));
-        *(document->gml__id) = init_gml_id(soap, identifier, lid);
-    }
+    // *****************    
+    document->inspireId = init_base_Identifier(soap, identifier, lid, "http://dataproviderns/od");
+    document->gml__id = (char**) soap_malloc(soap, sizeof(char**));
+    *(document->gml__id) = init_gml_id(soap, identifier, lid);
+    
 
     if(d.view()["regurl"] && d.view()["regname"])
     {
@@ -519,7 +517,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
     // Init ZoningElement inspireId et gml:id
     // *****************
     str.append("http://dataproviderns/ze");
-    if( elem["gid"] && elem["gid_urba"] && lid)
+    if( elem["gid"] && elem["gid_urba"] )
     {
         strview = elem["gid_urba"].get_utf8().value;
         code.append(strview.to_string());

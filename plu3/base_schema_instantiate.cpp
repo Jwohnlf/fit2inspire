@@ -21,14 +21,12 @@ base__IdentifierPropertyType *init_base_Identifier(soap *soap, string sid, oid l
 
     pinspireId->Identifier = soap_new_base__IdentifierType(soap);    
     pinspireId->Identifier->localId.append(sid);
-    if(lid.operator bool())
+    
+    if(pinspireId->Identifier->versionId = soap_new__base__IdentifierType_versionId(soap))
     {
-        if(pinspireId->Identifier->versionId = soap_new__base__IdentifierType_versionId(soap))
-        {
-            pinspireId->Identifier->versionId->__item.append(/*dateToISOStringUTC(*/lid.to_string());
-            pinspireId->Identifier->namespace_ = ns;
-        } // endif
-    } //endif lid
-
+        pinspireId->Identifier->versionId->__item.append(/*dateToISOStringUTC(*/lid.to_string());
+        pinspireId->Identifier->namespace_ = ns;
+    } // endif
+    
     return pinspireId;
 }
