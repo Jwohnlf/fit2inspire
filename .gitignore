@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Fit2Inspire custom
+wfsTester
+capaWfsMongo
+debug_capaWfsMongo
+
+# Log files
+*.log

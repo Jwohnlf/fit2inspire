@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"string": "cpp",
+			"*.nsmap": "c",
+			"array": "c",
+			"string_view": "c"
+		}
+	}
+}
