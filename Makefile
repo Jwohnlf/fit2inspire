@@ -6,6 +6,9 @@ plu3 : plu3WfsMongo
 
 debug : debug_capaWfsMongo
 
+clean:
+	rm -rf .obj/*.o
+
 GSOAP=soapcpp2
 CPP=g++
 SOAPCPP=/home/jeanloup/appli/gsoap-2.8/gsoap/stdsoap2.cpp
