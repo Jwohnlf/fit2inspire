@@ -83,9 +83,12 @@ gml__ReferenceType * init_gml_ReferenceType(struct soap *soap, mongocxx::stdx::s
 gml__MultiSurfacePropertyType * init_gml_MultiSurfacePropertyType(struct soap *soap, view_or_value bgeom, int outcrs, double bbox[])
 {
 
-    gml__MultiSurfacePropertyType *pret = soap_new_gml__MultiSurfacePropertyType(soap,-1);
-    if(!pret){
+    gml__MultiSurfacePropertyType *pret;
+    
+    if(!(pret = soap_new_gml__MultiSurfacePropertyType(soap,-1)))
+    {
         fprintf(stderr, "Allocation of MultiSurfacePropertyType pointer failed\n");
+        soap->error = SOAP_NULL;
         return NULL;
     }
 
@@ -93,7 +96,7 @@ gml__MultiSurfacePropertyType * init_gml_MultiSurfacePropertyType(struct soap *s
 
     msfseq->MultiSurface = init_gml_MultiSurfaceType(soap, bgeom, outcrs, bbox);
 
-    pret->__MultiSurfacePropertyType_sequence.insert(pret->__MultiSurfacePropertyType_sequence.begin(), *msfseq);
+    pret->__MultiSurfacePropertyType_sequence = msfseq;
 
     return pret;
 }
@@ -101,7 +104,7 @@ gml__MultiSurfacePropertyType * init_gml_MultiSurfacePropertyType(struct soap *s
 gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_value bgeom, int outcrs, double bbox[])
 {
     gml__MultiSurfaceType *pmsf = NULL;
-    std::vector<BSONElement> be_ring;
+    bsoncxx::array::view be_ring;
     int i=0;
     int ngeom = 0;
     char s[15];
@@ -122,20 +125,18 @@ gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_val
     *pmsf->srsName = (char*)soap_malloc(soap, strepsg.length()+1);
     strcpy(*pmsf->srsName, strepsg.c_str());
 
-    if(bgeom.hasField("nring") && bgeom.hasField("ngeom"))
+    if(bgeom.view()["nring"] && bgeom.view()["ngeom"])
     {
-        be_ring = bgeom.getField("nring").Array();
-        ngeom = bgeom.getIntField("ngeom");
+        be_ring = bgeom.view()["nring"].get_array();
+        ngeom = bgeom.view()["ngeom"].get_int32();        
     }
 
-    //for nGeom
-    gml__SurfacePropertyType *psf = NULL;
-    BSONElement begeo;
 
+    //for nGeom
     for(i=0; i<ngeom; i++)
     {
         int nring = 0;
-        psf = soap_new_gml__SurfacePropertyType(soap,-1);
+        gml__SurfacePropertyType *psf = soap_new_gml__SurfacePropertyType(soap,-1);
         if(!psf){
             fprintf(stderr, "Allocation of SurfacePropertyType pointer failed\n");
             soap->error = SOAP_NULL;
@@ -152,31 +153,31 @@ gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_val
         sfseq->__unionAbstractSurface = 7;
 
         sprintf(s,"coordinates%d",i);        
-        begeo = bgeom.getField(s);
-        if(begeo.eoo()) {
+        auto begeo = bgeom.view()[s];
+        if(!begeo) {
             fprintf(stderr, "Missing or corrupted DB geometry element\n");
             soap->error = SOAP_NULL;
             return NULL;
         }
 
-        nring = be_ring[i].numberInt();
+        nring = be_ring[i].length();
         if(0 == nring)
         {
             fprintf(stderr, "Missing or corrupted number of ring value (nring)\n");
             soap->error = SOAP_NULL;
             return NULL;
         }
+         
+        sfseq->union_SurfacePropertyType.Polygon = init_gml_PolygonType(soap, begeo, bbox, nring, outcrs);
 
-        sfseq->__union_SurfacePropertyType.Polygon = init_gml_PolygonType(soap, begeo,bbox, nring, outcrs);
-
-        psf->__SurfacePropertyType_sequence.insert(psf->__SurfacePropertyType_sequence.begin(), *sfseq);
+        psf->__SurfacePropertyType_sequence = sfseq;
         pmsf->surfaceMember.insert(pmsf->surfaceMember.begin(), psf);
     }//end for nGeom
 
     return pmsf;
 }
 
-gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem,  double bbox[], int nbRing=1, int outcrs=4326)
+gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  double bbox[], int nbRing=1, int outcrs=4326)
 {
     gml__PolygonType *ppoly = soap_new_gml__PolygonType(soap);   
     char sxy[50] = "";
@@ -184,6 +185,13 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, 
     string coord;
     double x, y;
 
+    // Récupération des coordonnées de l'enveloppe extérieure dans un tableau
+    if (belem.type() != bsoncxx::type::k_array){
+        fprintf(stderr, "Missing or corrupted DB geometry element\n");
+        soap->error = SOAP_NULL;
+        return NULL;
+    }
+    bsoncxx::array::view vecbe = belem.get_array();
 
     //Initialisation de l'attribut srsName correspondant à la projection de la géométrie
     ppoly->srsName = (char**)soap_malloc(soap, sizeof(char**));
@@ -207,16 +215,6 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, 
 
     coord.clear();
 
-    // Récupération des coordonnées de l'enveloppe extérieure dans un tableau
-    if (belem.type() != 4){
-        fprintf(stderr, "Missing or corrupted DB geometry element\n");
-        soap->error = SOAP_NULL;
-        return NULL;
-    }
-    std::vector<BSONElement> vecbe = belem.Array();
-
-
-    std::vector<BSONElement> b1 ;
     gml__AbstractRingPropertyType *pabring;
     gml__LinearRingType * pring;
     gml__DirectPositionListType *posList;
@@ -234,20 +232,13 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, 
         posList = soap_new_gml__DirectPositionListType(soap);
         npos =  (ULONG64 *)soap_malloc(soap, sizeof(ULONG64));
 
-        b1 = vecbe[j].Array();
-        *npos = b1.size();
+        auto b1 = vecbe[j];
+        *npos = vecbe[j].length();
         posList->count = npos;
         posList->srsDimension = nsrs;
 
         for (unsigned int i = 0; i<*npos; i++)
         {            
-            /* This doesn't work */
-            /* point = b1[i].wrap();
-            field = point.firstElementFieldName();
-            xyz = point.getObjectField(field.c_str());
-            xyz.getOwned();
-            coords = xyz.firstElement().Array();*/
-
             /* This works only with simple polygon without holes */
             /*sprintf(sxy, "%.10f %.10f ",
                  be[i].Array()[0].number(),
@@ -255,7 +246,7 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, 
             posList->__item.append(sxy);*/
 
             /* Add the 3D case */
-            coord = b1[i].toString(false);
+            coord = b1[i].get_utf8().value.to_string();
             sscanf(coord.substr(2,coord.length()-9).c_str(),"%lf, %lf,", &x, &y);
 
             if ( (bbox[0] < 0.0000001 && bbox[1] < 0.0000001) )
@@ -288,13 +279,13 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, 
 
         } //end for
 
-        if (nbRing>1)
-            b1.empty();
+        //if (nbRing>1)
+            //b1.empty();
 
         pring->__union_LinearRingType = 2;
         pring->union_LinearRingType.posList = posList;
         pabring->__unionAbstractRing = 2;
-        pabring->__union_AbstractRingPropertyType.LinearRing = pring;
+        pabring->union_AbstractRingPropertyType.LinearRing = pring;
 
         if (j == 0) {
             ppoly->exterior = pabring;
@@ -310,7 +301,7 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, view_or_value belem, 
 
 //init_gml_MultiCurvePropertyType
 
-gml__LineStringType * init_gml_LineStringType(struct soap *soap, view_or_value belem, int outcrs,  double bbox[])
+gml__LineStringType * init_gml_LineStringType(struct soap *soap, element belem, int outcrs,  double bbox[])
 {
     string stmp;
     char sName[30];
@@ -332,7 +323,7 @@ gml__LineStringType * init_gml_LineStringType(struct soap *soap, view_or_value b
     return plstring;
 }
 
-gml__PointType * init_gml_PointType(struct soap *soap, view_or_value belem, int outcrs, double bbox[])
+gml__PointType * init_gml_PointType(struct soap *soap, element belem, int outcrs, double bbox[])
 {
     string stmp;
     char sName[30];
@@ -354,18 +345,18 @@ gml__PointType * init_gml_PointType(struct soap *soap, view_or_value belem, int 
     return ppt;
 }
 
-gml__DirectPositionListType * init_gml__DirectPositionListType(struct soap *soap, view_or_value belem, int outcrs, double bbox[])
+gml__DirectPositionListType * init_gml__DirectPositionListType(struct soap *soap, element belem, int outcrs, double bbox[])
 {
     ULONG64 *npos;
     char sxy[50] = "";
     string coord;
     double x, y;
 
-    if(belem.type() == 4) {
+    if(belem.type() == bsoncxx::type::k_array) {
         // Set coordinates list in an array
-        std::vector<BSONElement> vecbe = belem.Array();
-        std::vector<BSONElement> b1 ;
-
+        //std::vector<BSONElement> vecbe = belem.Array();
+        bsoncxx::array::view vecbe = belem.get_array();
+        
         // Init of coordinates transformation parameters
         OGRSpatialReference oSourceSRS, oTargetSRS;
         OGRCoordinateTransformation *poCT = NULL;
@@ -392,20 +383,20 @@ gml__DirectPositionListType * init_gml__DirectPositionListType(struct soap *soap
 
         if(!vecbe.empty())
         {
-            b1 = vecbe[0].Array();
+            auto b1 = vecbe[0];
 
-            if (!b1.empty())
+            if (b1)
             {
                 npos = (ULONG64 *)soap_malloc(soap, sizeof(ULONG64));
                 if (npos)
-                    *npos = b1.size();
+                    *npos = b1.length();
                 posList->count = npos;
                 posList->srsDimension = nsrs;
 
                 for (unsigned int i = 0; i<*npos; i++)
                 {
                     /* Add the 3D case */
-                    coord = b1[i].toString(false);
+                    coord = b1[i].get_utf8().value.to_string();
                     sscanf(coord.substr(2,coord.length()-9).c_str(),"%lf, %lf,", &x, &y);
 
                     if ( (bbox[0] < 0.0000001 && bbox[1] < 0.0000001 && bbox[2] < 0.0000001 && bbox[3] < 0.0000001) )
@@ -447,15 +438,14 @@ gml__DirectPositionListType * init_gml__DirectPositionListType(struct soap *soap
     return NULL;
 }
 
-gml__DirectPositionType * init_gml__DirectPositionType(struct soap *soap, view_or_value belem, int outcrs, double bbox[])
+gml__DirectPositionType * init_gml__DirectPositionType(struct soap *soap, element belem, int outcrs, double bbox[])
 {
     char sxy[50] = "";
     string coord;
     double x, y;
 
-    std::vector<BSONElement> vecbe = belem.Array();
-    std::vector<BSONElement> b1 ;
-
+    bsoncxx::array::view vecbe = belem.get_array();
+    
     gml__DirectPositionType *pos = soap_new_gml__DirectPositionType(soap,-1);
     if(!pos)
     {
@@ -464,9 +454,9 @@ gml__DirectPositionType * init_gml__DirectPositionType(struct soap *soap, view_o
     }
     if(!vecbe.empty())
     {
-        b1 = vecbe[0].Array();
+        auto b1 = vecbe[0];
 
-        if (!b1.empty())
+        if (b1)
         {
             // Init of coordinates transformation parameters
             OGRSpatialReference oSourceSRS, oTargetSRS;
@@ -479,7 +469,7 @@ gml__DirectPositionType * init_gml__DirectPositionType(struct soap *soap, view_o
                 poCT = OGRCreateCoordinateTransformation( &oSourceSRS, &oTargetSRS );
             }
 
-            coord = b1[0].toString(false);
+            coord = b1[0].get_utf8().value.to_string();
             sscanf(coord.substr(2,coord.length()-9).c_str(),"%lf, %lf,", &x, &y);
 
             // we encountered a point

@@ -50,10 +50,16 @@ Done !
 
 # BUILD STANDALONE WFS SERVER
 
-First load into Mongo 3.6 the document containing the server capaibilities
+First load into Mongo 3.6 the document containing the server capabilities
 
 `$ mongoimport -d plu -c server data/plu__server_capabilities.json`
 
 Build and run the server building using the available Makefile
 
 `$ make capa`
+
+Then load data about planned land use documents
+
+`$ mongorestore -d plu -c demosp data/demosp.bson`
+`$ mongorestore -d plu -c demoze data/demoze.bson`
+`$ mongorestore -d plu -c demosr data/demosr.bson`
