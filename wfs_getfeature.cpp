@@ -95,7 +95,8 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 e << "The requested stored query is not supported by this stored query";
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
-            
+
+            getFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery = storedQuery;            
         }
 
         wfs__FeatureCollectionType featureCollection;
@@ -152,9 +153,11 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         {
             adhocquery = false;
             //Parse inputid to retrieve information needed to query the DB
-            if(!wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->handle->compare("getspatialplanbyid"))
+            if(!strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid"))
             {
-                doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
+                wfs__ParameterType* parameter = wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.at(0);
+
+                doc_urba.append(parameter->__any);                
                 query_sp << "gid" << doc_urba << bsoncxx::builder::stream::finalize;
                 query_ze << "gid_urba" << doc_urba << bsoncxx::builder::stream::finalize;
             }
@@ -192,7 +195,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         wfs__MemberPropertyType *document = NULL;
         for (auto plu : cursor_sp) {
             i++;
-            cout << "A plu found : " << i << endl;
+            cout << "Spatial plan found = " << i << endl;
 
             //binding plu sequence to wfs member type
             if( gid.empty() ) {
