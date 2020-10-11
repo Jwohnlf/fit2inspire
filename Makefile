@@ -1,5 +1,8 @@
 test : wfsTester
-	./wfsTester < wfs2/src/wfs.getCapabilities.req.xml 
+	./wfsTester < wfs2/src/wfs.getCapabilities.req.xml
+
+mongo : mongoTester
+	./mongoTester
 
 plu3 : plu3WfsMongo
 	./plu3WfsMongo 8090 &
