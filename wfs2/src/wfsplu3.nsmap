@@ -1,0 +1,29 @@
+
+#include "soapH.h"
+SOAP_NMAC struct Namespace namespaces[] =
+{
+	{"SOAP-ENV", "http://schemas.xmlsoap.org/soap/envelope/", "http://www.w3.org/*/soap-envelope", NULL},
+	{"SOAP-ENC", "http://schemas.xmlsoap.org/soap/encoding/", "http://www.w3.org/*/soap-encoding", NULL},
+	{"xsi", "http://www.w3.org/2001/XMLSchema-instance", "http://www.w3.org/*/XMLSchema-instance", NULL},
+	{"xsd", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/*/XMLSchema", NULL},
+    {"idls", "http://inspire.ec.europa.eu/schemas/inspire_dls/1.0", NULL, NULL},
+	{"xlink", "http://www.w3.org/1999/xlink", NULL, NULL},
+	{"fes", "http://www.opengis.net/fes/2.0", NULL, NULL},
+    {"icommon", "http://inspire.ec.europa.eu/schemas/common/1.0", NULL, NULL},
+	{"wfs-util", "http://www.opengis.net/wfs-util/2.0", NULL, NULL},
+	{"ows", "http://www.opengis.net/ows/1.1", NULL, NULL},
+	{"sgo", "http://inspire.springeo.fr/plu3", NULL, NULL},
+	{"wfs", "http://www.opengis.net/wfs/2.0", NULL, NULL},
+    {"sc", "http://www.interactive-instruments.de/ShapeChange/AppInfo", NULL, NULL},
+    {"lunom", "http://inspire.ec.europa.eu/schemas/lunom/3.0", NULL, NULL},
+    {"gco", "http://www.isotc211.org/2005/gco", NULL, NULL},
+    {"gss", "http://www.isotc211.org/2005/gss", NULL, NULL},
+    {"gts", "http://www.isotc211.org/2005/gts", NULL, NULL},
+    {"gsr", "http://www.isotc211.org/2005/gsr", NULL, NULL},
+    {"base2", "http://inspire.ec.europa.eu/schemas/base2/1.0", NULL, NULL},
+    {"gmd", "http://www.isotc211.org/2005/gmd", NULL, NULL},
+    {"plu", "http://inspire.ec.europa.eu/schemas/plu/3.0", NULL, NULL},
+    {"base", "http://inspire.ec.europa.eu/schemas/base/3.3", NULL, NULL},
+    {"gml", "http://www.opengis.net/gml/3.2", NULL, NULL},
+	{NULL, NULL, NULL, NULL}
+};

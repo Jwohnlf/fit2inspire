@@ -129,7 +129,8 @@ A commercial use license is available from Genivia, Inc., contact@genivia.com
 */
 
 #include "wfs_getcapabilities.h"
-#include "wfs2/src/wfssoap.nsmap"      /* namespaces updated 4/4/13 */
+#include "wfs_getfeature.h"
+#include "wfs2/src/wfsplu3.nsmap"      /* namespaces updated 4/4/13 */
 #include "webserver/options.h"
 #include "httpget.h"
 #include "logging.h"
@@ -150,7 +151,6 @@ using namespace std;
 #define AUTH_PASSWD "guest"     /* user pw to access admin pages */
 
 void sigpipe_handle(int x) { }
-int fgetcapabilities(struct soap *soap);
 
 
 /******************************************************************************\
@@ -967,30 +967,37 @@ int wfs2get(struct soap *soap)
         return http_fget_error(soap,"VersionNegotiationFailed", e.str(), "", 501);
     }
 
+    if (!req.compare("getfeature"))
+    {
+        if(!storedq.empty()) {
+            if(!inputid.empty() || inputid.compare("id")) {
+                storedq.append(",");
+                storedq.append(inputid);
+                return fgetfeature(soap, storedq, srs, typenames, bbox);
+            } else {
+                e << "This expected parameter value is missing in the request";
+                return http_fget_error(soap, "MissingParameterValue", e.str(), "ID", 400);
+            }
+        }
+        if(srs.empty() || typenames.empty() || bbox.empty())
+        {
+            e << "This expected parameter value is missing in the request";
+            if (srs.empty())
+                return http_fget_error(soap, "MissingParameterValue", e.str(), "srsName", 400);
+            else if (typenames.empty())
+                return http_fget_error(soap, "MissingParameterValue", e.str(), "typeNames", 400);
+            else if (bbox.empty())
+                return http_fget_error(soap, "MissingParameterValue", e.str(), "bbox", 400);
+        }
+        return fgetfeature(soap, inputid, srs, typenames, bbox);
+    }
+
     //The requested operation is unknown or not yet implemented by the server
     e << "The requested operation is not supported by this server";
     return http_fget_error(soap, "OperationNotSupported", e.str(), req, 501);
 
 } //end wfs2get
 
-
-
-int fgetcapabilities(struct soap *soap)
-{
-    wfs__WFS_x005fCapabilitiesType *wfs__WFS_x005fCapabilities;
-    wfs__WFS_x005fCapabilities = soap_new_wfs__WFS_x005fCapabilitiesType(soap);
-
-    cout << "getCapabilities request received" << endl;
-    __f2i_plu__wfs_x002egetCapabilities(soap, NULL,  *wfs__WFS_x005fCapabilities);
-
-    soap->http_content = "text/xml";
-    soap_response(soap, SOAP_FILE);
-    wfs__WFS_x005fCapabilities->soap_put(soap, "wfs:WFS_Capabilities", "");
-    soap_end_send(soap);
-
-    return SOAP_OK;
-
-} // end function fgetcapabilities
 
 
 /******************************************************************************\

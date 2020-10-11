@@ -4,16 +4,19 @@ test : wfsTester
 mongo : mongoTester
 	./mongoTester
 
-capa : capaWfsMongo
-	./capaWfsMongo 8090 &
+plu3 : plu3WfsMongo
+	./plu3WfsMongo 8090 &
 
 debug : debug_capaWfsMongo
+
+clean:
+	rm -rf .obj/*.o
 
 GSOAP=soapcpp2
 CPP=g++
 SOAPCPP=/home/jeanloup/appli/gsoap-2.8/gsoap/stdsoap2.cpp
 LIBS=-lgsoap++ -lpthread -lz -lssl -lcrypto
-LIBW=-lmongocxx -lbsoncxx
+LIBW=-lmongocxx -lbsoncxx -lgdal
 
 COFLAGS=-O2
 CWFLAGS=-std=c++11 -Wno-deprecated-declarations
@@ -22,59 +25,90 @@ CIFLAGS=-I/usr/local/share/gsoap -I/usr/local/share/gsoap/plugin $(MONGO)
 CMFLAGS=-DWITH_COOKIES -DWITH_GZIP -DWITH_OPENSSL
 CFLAGS= $(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
 
-capaWfsMongo : soapC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_schema_instantiate.o wfs_getcapabilities.o webserver.c
-	$(CPP) webserver.c $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapServer.o soapC.o ows_schema_instantiate.o wfs_getcapabilities.o $(SOAPCPP) $(LIBW) $(LIBS) -o capaWfsMongo
+OBJS=	.obj/logging.o \
+		.obj/get.o \
+		.obj/smdevp.o \
+		.obj/md5evp.o \
+		.obj/httpda.o \
+		.obj/threads.o \
+		.obj/options.o \
+	 	.obj/soapC.o \
+		.obj/pluC.o \
+		.obj/soapServer.o \
+		.obj/ows_si.o \
+		.obj/gml_si.o \
+		.obj/base_si.o \
+		.obj/plu_si.o \
+		.obj/wfs_getfeature.o \
+		.obj/wfs_getcapabilities.o
 
-debug_capaWfsMongo : soapC.o soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_schema_instantiate.o dwfs_getcapabilities.o webserver.c
-	$(CPP) webserver.c -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapServer.o soapC.o ows_schema_instantiate.o dwfs_getcapabilities.o $(SOAPCPP) $(LIBW) $(LIBS) -o debug_capaWfsMongo
 
-mongoTester : mongo-cxx-test.cpp
-	$(CPP) $(CFLAGS) mongo-cxx-test.cpp \
-	-I/usr/local/include/mongocxx/v_noabi \
-	-I/usr/local/include/bsoncxx/v_noabi \
-	-L/usr/local/lib -lmongocxx -lbsoncxx \
-	-o mongoTester 
+plu3WfsMongo : $(OBJS) webserver.c
+	$(CPP) $(CFLAGS) $^ $(SOAPCPP) $(LIBW) $(LIBS) -o plu3WfsMongo
 
-wfsTester : soapC.o soapServer.o wfs2/src/soapTester.cpp
-	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o \
-	$(LIBS) -o wfsTester
+debug_plu3WfsMongo : soapC.o pluC.po soapServer.o logging.o get.o smdevp.o md5evp.o httpda.o threads.o options.o ows_si.o dgml_si.o dplu_si.o dwfs_getcapabilities.o dwfs_getfeature.o webserver.c
+	$(CPP) webserver.c -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) logging.o get.o smdevp.o httpda.o md5evp.o threads.o options.o soapC.o pluC.o soapServer.o ows_si.o gml_si.o dplu_si.o dwfs_getcapabilities.o dwfs_getfeature.o $(SOAPCPP) $(LIBW) $(LIBS) -o debug_plu3WfsMongo
 
-options.o:	webserver/opt.h webserver/options.h webserver/options.c
+wfsTester : .obj/soapC.o .obj/soapServer.o wfs2/src/soapTester.cpp
+	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o wfsTester
+
+.obj/options.o:	webserver/opt.h webserver/options.h webserver/options.c
 	$(GSOAP) -cnpopt -d webserver webserver/opt.h
-	$(CPP) $(CFLAGS) -c webserver/options.c
+	$(CPP) $(CFLAGS) -c webserver/options.c -o .obj/options.o
 
-logging.o:	/usr/local/share/gsoap/plugin/logging.c
-	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/logging.c
+.obj/logging.o:	/usr/local/share/gsoap/plugin/logging.c
+	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/logging.c -o .obj/logging.o
 
-httpda.o:	/usr/local/share/gsoap/plugin/httpda.c
-	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/httpda.c
+.obj/httpda.o:	/usr/local/share/gsoap/plugin/httpda.c
+	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/httpda.c -o .obj/httpda.o
 	
-smdevp.o:	/usr/local/share/gsoap/plugin/smdevp.c
-	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/smdevp.c
+.obj/smdevp.o:	/usr/local/share/gsoap/plugin/smdevp.c
+	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/smdevp.c -o .obj/smdevp.o
 
-md5evp.o:	/usr/local/share/gsoap/plugin/md5evp.c
-	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/md5evp.c
+.obj/md5evp.o:	/usr/local/share/gsoap/plugin/md5evp.c
+	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/md5evp.c -o .obj/md5evp.o
 	
-threads.o:	/usr/local/share/gsoap/plugin/threads.c
-	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/threads.c
+.obj/threads.o:	/usr/local/share/gsoap/plugin/threads.c
+	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/threads.c -o .obj/threads.o
 
-get.o : /usr/local/share/gsoap/plugin/httpget.c
-	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/httpget.c -o get.o
+.obj/get.o : /usr/local/share/gsoap/plugin/httpget.c
+	$(CPP) $(CFLAGS) -c /usr/local/share/gsoap/plugin/httpget.c -o .obj/get.o
 
-dwfs_getcapabilities.o : wfs_getcapabilities.cpp
-	$(CPP) -g $(CFLAGS) -c wfs_getcapabilities.cpp -o dwfs_getcapabilities.o
+.obj/dwfs_getcapabilities.o : wfs_getcapabilities.cpp
+	$(CPP) -g $(CFLAGS) -c wfs_getcapabilities.cpp -o .obj/dwfs_getcapabilities.o
 
-wfs_getcapabilities.o : wfs_getcapabilities.cpp
-	$(CPP) $(CFLAGS) -c wfs_getcapabilities.cpp -o wfs_getcapabilities.o
+.obj/wfs_getcapabilities.o : wfs_getcapabilities.cpp
+	$(CPP) $(CFLAGS) -c wfs_getcapabilities.cpp -o .obj/wfs_getcapabilities.o
 
-ows_schema_instantiate.o : wfs2/ows_schema_instantiate.cpp
-	$(CPP) $(CFLAGS) -c wfs2/ows_schema_instantiate.cpp -o ows_schema_instantiate.o
+.obj/dwfs_getfeature.o : wfs_getfeature.cpp
+	$(CPP) -g $(CFLAGS) -c wfs_getfeature.cpp -o .obj/dwfs_getfeature.o
 
-soapTester.o : wfs2/src/soapTester.cpp
-	$(CPP) $(CFLAGS) -c wfs2/src/soapTester.cpp -o soapTester.o
+.obj/wfs_getfeature.o : wfs_getfeature.cpp
+	$(CPP) $(CFLAGS) -c wfs_getfeature.cpp -o .obj/wfs_getfeature.o
 
-soapServer.o : wfs2/src/soapServer.cpp
-	$(CPP) $(CFLAGS) -c wfs2/src/soapServer.cpp -o soapServer.o
+.obj/ows_si.o : wfs2/ows_schema_instantiate.cpp
+	$(CPP) $(CFLAGS) -c wfs2/ows_schema_instantiate.cpp -o .obj/ows_si.o
 
-soapC.o : wfs2/src/soapC.cpp
-	$(CPP) $(CFLAGS) -c wfs2/src/soapC.cpp -o soapC.o
+.obj/plu_si.o : plu3/plu_schema_instantiate.cpp
+	$(CPP) $(CFLAGS) -c plu3/plu_schema_instantiate.cpp -o .obj/plu_si.o
+
+.obj/base_si.o : plu3/base_schema_instantiate.cpp
+	$(CPP) -c $(CFLAGS) plu3/base_schema_instantiate.cpp -o .obj/base_si.o
+
+.obj/dgml_si.o : plu3/gml_schema_instantiate.cpp
+	$(CPP) -c -g $(CFLAGS) plu3/gml_schema_instantiate.cpp -o .obj/dgml_si.o
+
+.obj/gml_si.o : plu3/gml_schema_instantiate.cpp
+	$(CPP) -c $(CFLAGS) plu3/gml_schema_instantiate.cpp -o .obj/gml_si.o
+
+.obj/soapTester.o : wfs2/src/soapTester.cpp
+	$(CPP) $(CFLAGS) -c wfs2/src/soapTester.cpp -o .obj/soapTester.o
+
+.obj/soapServer.o : wfs2/src/soapServer.cpp
+	$(CPP) $(CFLAGS) -c wfs2/src/soapServer.cpp -o .obj/soapServer.o
+
+.obj/soapC.o : wfs2/src/soapC.cpp
+	$(CPP) $(CFLAGS) -c wfs2/src/soapC.cpp -o .obj/soapC.o
+
+.obj/pluC.o : plu3/src/pluC.cpp
+	$(CPP) $(CFLAGS) -c plu3/src/pluC.cpp -o .obj/pluC.o

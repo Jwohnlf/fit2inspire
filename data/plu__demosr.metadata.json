@@ -1,0 +1,1 @@
+{ "indexes" : [ { "v" : 1, "name" : "_id_", "key" : { "_id" : 1 }, "ns" : "test.demosr" }, { "v" : 1, "name" : "locid", "key" : { "gid" : 1 }, "ns" : "test.demosr" }, { "v" : 1, "name" : "forid", "key" : { "gid_urba" : 1 }, "ns" : "test.demosr" } ] }

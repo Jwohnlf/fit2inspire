@@ -33,7 +33,7 @@
 
 # Fit2Inspire custom
 wfsTester
-capaWfsMongo
+plu3WfsMongo
 debug_capaWfsMongo
 
 # Log files
