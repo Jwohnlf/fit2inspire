@@ -147,7 +147,7 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
 
     // ********* extent
     // *****************
-    if( elem["extent"] )
+    /*if( elem["extent"] )
     {
         auto bgeom = elem["extent"].get_document().value;
 
@@ -161,7 +161,7 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
             }
         }
     } // end extent
-
+*/
 
     // ********* beginLifespanVersion
     // *****************
@@ -543,7 +543,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
 
     // ********* geometry
     // *****************
-    if( elem["geometry"] )
+    /*if( elem["geometry"] )
     {
         auto bo = elem["geometry"].get_document().value;
         zone->geometry =  init_gml_MultiSurfacePropertyType(soap, bo, outcrs, bbox);
@@ -554,7 +554,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
             return NULL;
         }
     }//end if geometry
-
+*/
 
     // ********* validFrom
     // *****************
