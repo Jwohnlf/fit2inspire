@@ -44,8 +44,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
 
                 storedQuery->id = (char*)soap_malloc(soap, 20); 
                 strcpy(storedQuery->id, "getspatialplanbyid");
-                string doc_urba = inputId.substr(inputId.find_first_of(",")+1);
-                doc_urba = doc_urba.substr(0,13);
+                string doc_urba = inputId.substr(inputId.find_first_of(",")+1);                
                 doc_urba.insert(5,"_");
 
                 paramStoredQuery->name.assign("spatialplanid");
@@ -136,13 +135,11 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         mongocxx::uri mongo("mongodb://localhost:27017");
         mongocxx::client client{mongo};
 
-        //c.connect("localhost");
         mongocxx::database db = client["plu"];
         mongocxx::collection collsp = db["demosp"];        
-
-        //auto_ptr<mongocxx::cursor> cursor_sp; //, cursor_ze, cursor_sr;
-        bsoncxx::builder::stream::document query_sp {};
-        bsoncxx::builder::stream::document query_ze {};
+        
+        auto query_ze = bsoncxx::builder::stream::document{};
+        auto query_sp = bsoncxx::builder::stream::document{};
         
         // TODO : make an index with a unique key constraint
 
@@ -157,21 +154,20 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             {
                 wfs__ParameterType* parameter = wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.at(0);
 
-                doc_urba.append(parameter->__any);                
-                query_sp << "gid" << doc_urba << bsoncxx::builder::stream::finalize;
-                query_ze << "gid_urba" << doc_urba << bsoncxx::builder::stream::finalize;
+                doc_urba.append(parameter->__any);
+                query_sp << "gid" << doc_urba;
+                query_ze << "gid_urba" << doc_urba;
             }
-            else if (!wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->handle->compare("getfeaturebyid"))
+            else if (!strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getfeaturebyid"))
             {
                 if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 1) {
                     doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
-                    query_sp << "gid" << doc_urba << bsoncxx::builder::stream::finalize;
                 }
                 
                 if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 2) {
                     doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
                     gid.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[1]->__any);                
-                    query_ze << "gid_urba" << doc_urba << "gid" << gid << bsoncxx::builder::stream::finalize;
+                    query_ze << "gid_urba" << doc_urba << "gid" << gid;
                 }                
             }// else getfeaturebyid
             else {
@@ -180,7 +176,11 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             }
         }
 
-        auto cursor_sp = collsp.find( query_sp.extract() );
+        
+        bsoncxx::document::value sp_value = query_sp << bsoncxx::builder::stream::finalize;
+        std::cout << bsoncxx::to_json(sp_value) << std::endl;
+
+        auto cursor_sp = collsp.find( sp_value.view() );
         
         /* Init of a pointer used to answer the request */
         vector<wfs__MemberPropertyType*> *pwfsm;
@@ -217,7 +217,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             */
             if( ( plu["officialdocument"] && adhocquery ) ||
                 ( plu["officialdocument"] && !gid.empty() ) ||
-                ( plu["officialdocument"] && !wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->handle->compare("getfeaturebyid")) )
+                ( plu["officialdocument"] && !strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid")) )
             {
                 if(plu["officialdocument"].type() == bsoncxx::type::k_array) {
                     // get all documents associated to this Spatial Plan
@@ -258,7 +258,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
 
 
         mongocxx::collection collze = db["demoze"];
-        auto cursor_ze = collze.find( query_ze.extract() );
+        bsoncxx::document::value ze_value = query_ze << bsoncxx::builder::stream::finalize;
+
+        auto cursor_ze = collze.find( query_ze.view() );
 
         for (auto ze : cursor_ze) {            
 
@@ -286,7 +288,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         
     }//try
     catch( exception e ) {
-        return http_fget_error(soap, "OperationProcessingFailed", e.what(), "DBException" , 400);
+        return http_fget_error(soap, "OperationProcessingFailed", e.what(), "DBException2" , 400);
     }
 
 	/* Returns incomplete response containing some default data values */
