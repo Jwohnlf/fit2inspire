@@ -22,14 +22,10 @@ char* init_gml_id(struct soap *soap, string strval, oid lid)
     }
 
     std::time_t tstamp = lid.get_time_t();
-    strval.append(std::ctime(&tstamp));
-    //strval.append(timeToISOString(lid.asDateT().toTimeT()));
-    found = strval.find_first_of("-:.");
-    while (found!=std::string::npos)
-    {
-        strval.erase(found,1);
-        found=strval.find_first_of("-:.",found+1);
-    }
+    std::ostringstream ss;
+    ss << std::put_time(gmtime(&tstamp), "%Y%m%d%H%M%S%Z");
+    strval.append(ss.str());
+
     soap ? id = (char*)soap_malloc(soap, strval.length()+1) : id = (char*)malloc(strval.length()+1);
     strcpy(id, strval.c_str());
 
