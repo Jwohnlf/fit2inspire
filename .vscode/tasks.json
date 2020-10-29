@@ -11,15 +11,14 @@
                 "plu3WfsMongo"
             ],
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "Build & run PLU server",
             "type": "shell",
-            "dependsOn":["Build PLU server"],
+            "dependsOn": [
+                "Build PLU server"
+            ],
             "command": "./plu3WfsMongo",
             "args": [
                 "-k",
@@ -27,7 +26,7 @@
             ],
             "problemMatcher": [],
             "group": {
-                "kind": "test",
+                "kind": "build",
                 "isDefault": true
             }
         }
