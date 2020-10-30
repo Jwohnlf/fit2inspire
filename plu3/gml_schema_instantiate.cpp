@@ -103,7 +103,7 @@ gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_val
     bsoncxx::array::view be_ring;
     int i=0;
     int ngeom = 0;
-    char s[15];
+    stringstream s;
     string strepsg;
 
     pmsf = soap_new_gml__MultiSurfaceType(soap,-1);
@@ -115,8 +115,8 @@ gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_val
 
     //Initialisation de l'attribut srsName correspondant à la projection de la géométrie
     strepsg.assign("urn:ogc:def:crs:EPSG::");
-    sprintf(s, "%d", outcrs);
-    strepsg.append(s);
+    s << outcrs;
+    strepsg.append(s.str());
     pmsf->srsName = (char**)soap_malloc(soap, sizeof(char**));
     *pmsf->srsName = (char*)soap_malloc(soap, strepsg.length()+1);
     strcpy(*pmsf->srsName, strepsg.c_str());
@@ -148,8 +148,11 @@ gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_val
 
         sfseq->__unionAbstractSurface = 7;
 
-        sprintf(s,"coordinates%d",i);        
-        auto begeo = bgeom.view()[s];
+        char coord[20];
+        s.clear();
+        //sprintf(coord,"coordinates%d",i);
+        s << "coordinates" << i; 
+        auto begeo = bgeom.view()[s.str()];
         if(!begeo) {
             fprintf(stderr, "Missing or corrupted DB geometry element\n");
             soap->error = SOAP_NULL;
