@@ -95,7 +95,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
 
-            getFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery = storedQuery;            
+            getFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery = storedQuery;           
         }
 
         wfs__FeatureCollectionType featureCollection;
@@ -149,6 +149,10 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         if (wfs__GetFeature->__union_GetFeatureType->__unionAbstractQueryExpression == SOAP_UNION__wfs__union_GetFeatureType_StoredQuery)
         {
             adhocquery = false;
+
+            //Feature are returned using server default projection
+            outcrs = 4326;
+
             //Parse inputid to retrieve information needed to query the DB
             if(!strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid"))
             {

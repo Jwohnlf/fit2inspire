@@ -100,7 +100,6 @@ gml__MultiSurfacePropertyType * init_gml_MultiSurfacePropertyType(struct soap *s
 gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_value bgeom, int outcrs, double bbox[])
 {
     gml__MultiSurfaceType *pmsf = NULL;
-    bsoncxx::array::view be_ring;
     int i=0;
     int ngeom = 0;
     stringstream s;
@@ -113,70 +112,59 @@ gml__MultiSurfaceType * init_gml_MultiSurfaceType(struct soap *soap, view_or_val
         return NULL;
     }
 
-    //Initialisation de l'attribut srsName correspondant à la projection de la géométrie
-    strepsg.assign("urn:ogc:def:crs:EPSG::");
-    s << outcrs;
-    strepsg.append(s.str());
+    //Initialize srsName attribute value to indicate projection used for geometry
+    s << "urn:ogc:def:crs:EPSG::" << outcrs;
+    strepsg.append( s.str() );
     pmsf->srsName = (char**)soap_malloc(soap, sizeof(char**));
-    *pmsf->srsName = (char*)soap_malloc(soap, strepsg.length()+1);
+    *pmsf->srsName = (char*)soap_malloc(soap, strepsg.size()+1);
     strcpy(*pmsf->srsName, strepsg.c_str());
 
-    if(bgeom.view()["nring"] && bgeom.view()["ngeom"])
+    s.clear();
+
+    if(bgeom.view().cend() != bgeom.view().find("nring") && bgeom.view().cend() != bgeom.view().find("ngeom"))
     {
-        be_ring = bgeom.view()["nring"].get_array();
-        ngeom = bgeom.view()["ngeom"].get_int32();        
-    }
+        auto be_ring = bgeom.view()["nring"].get_array().value;
 
+        gml__SurfacePropertyType *psf = NULL;
 
-    //for nGeom
-    for(i=0; i<ngeom; i++)
-    {
-        int nring = 0;
-        gml__SurfacePropertyType *psf = soap_new_gml__SurfacePropertyType(soap,-1);
-        if(!psf){
-            fprintf(stderr, "Allocation of SurfacePropertyType pointer failed\n");
-            soap->error = SOAP_NULL;
-            return NULL;
-        }
-
-        __gml__SurfacePropertyType_sequence *sfseq = soap_new___gml__SurfacePropertyType_sequence(soap);
-        if(!sfseq){
-            fprintf(stderr, "Allocation of SurfacePropertyType_sequence pointer failed\n");
-            soap->error = SOAP_NULL;
-            return NULL;
-        }
-
-        sfseq->__unionAbstractSurface = 7;
-
-        char coord[20];
-        s.clear();
-        //sprintf(coord,"coordinates%d",i);
-        s << "coordinates" << i; 
-        auto begeo = bgeom.view()[s.str()];
-        if(!begeo) {
-            fprintf(stderr, "Missing or corrupted DB geometry element\n");
-            soap->error = SOAP_NULL;
-            return NULL;
-        }
-
-        nring = be_ring[i].length();
-        if(0 == nring)
+        for(auto ring : be_ring)
         {
-            fprintf(stderr, "Missing or corrupted number of ring value (nring)\n");
-            soap->error = SOAP_NULL;
-            return NULL;
-        }
-         
-        sfseq->union_SurfacePropertyType.Polygon = init_gml_PolygonType(soap, begeo, bbox, nring, outcrs);
+            int nring = 0;
+            psf = soap_new_gml__SurfacePropertyType(soap,-1);
+            if(!psf){
+                fprintf(stderr, "Allocation of SurfacePropertyType pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
 
-        psf->__SurfacePropertyType_sequence = sfseq;
-        pmsf->surfaceMember.insert(pmsf->surfaceMember.begin(), psf);
-    }//end for nGeom
+            __gml__SurfacePropertyType_sequence *sfseq = soap_new___gml__SurfacePropertyType_sequence(soap);
+            if(!sfseq){
+                fprintf(stderr, "Allocation of SurfacePropertyType_sequence pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+
+            sfseq->__unionAbstractSurface = 8; /**< union variant selector value for member Polygon */
+
+            auto begeo = bgeom.view()["coordinates0"];
+            if(!begeo) {
+                free(sfseq); free(psf); free(pmsf);
+                fprintf(stderr, "Missing or corrupted DB geometry for gml__MultiSurfaceType element\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+
+            sfseq->union_SurfacePropertyType.Polygon = init_gml_PolygonType(soap, begeo, bbox, outcrs);
+
+            psf->__SurfacePropertyType_sequence = sfseq;
+            pmsf->surfaceMember.insert(pmsf->surfaceMember.begin(), psf);
+        }//end for nGeom
+    }
 
     return pmsf;
 }
 
-gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  double bbox[], int nbRing=1, int outcrs=4326)
+gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  double bbox[], int outcrs=4326)
 {
     gml__PolygonType *ppoly = soap_new_gml__PolygonType(soap);   
     char sxy[50] = "";
@@ -190,9 +178,8 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  doubl
         soap->error = SOAP_NULL;
         return NULL;
     }
-    bsoncxx::array::view vecbe = belem.get_array();
 
-    //Initialisation de l'attribut srsName correspondant à la projection de la géométrie
+    //Initialize srsName attribute value to indicate projection used for geometry
     ppoly->srsName = (char**)soap_malloc(soap, sizeof(char**));
     coord.assign("urn:ogc:def:crs:EPSG::");
 
@@ -209,20 +196,24 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  doubl
     sprintf(sxy,"%d",outcrs);
     coord.append(sxy);
 
-    *ppoly->srsName = (char*)soap_malloc(soap, coord.length()+1);
+    *ppoly->srsName = (char*)soap_malloc(soap, coord.size()+1);
     strcpy(*ppoly->srsName, coord.c_str());
 
     coord.clear();
+
+    auto vecbe = belem.get_array().value;
 
     gml__AbstractRingPropertyType *pabring;
     gml__LinearRingType * pring;
     gml__DirectPositionListType *posList;
     ULONG64 *npos;
 
-    //Initialisation de l'attribut srsDimension correspondant au nombre de dimension du polygone
-    //A revoir pour tenir compte du cas 3D !!!
+    //Initialize srsDimension attribute corresponding to polygon dimension
+    //TODO : handle 3d case
     ULONG64 *nsrs = (ULONG64 *)soap_malloc(soap, sizeof(ULONG64));
     *nsrs = 2;
+
+    int nbRing = std::distance(vecbe.begin(), vecbe.end());
 
     for(int j=0; j < nbRing; j++)
     {
@@ -231,22 +222,24 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  doubl
         posList = soap_new_gml__DirectPositionListType(soap);
         npos =  (ULONG64 *)soap_malloc(soap, sizeof(ULONG64));
 
-        auto b1 = vecbe[j];
-        *npos = vecbe[j].length();
-        posList->count = npos;
+        auto b1 = vecbe[j].get_array().value;
+        if (npos) {
+            *npos = std::distance(b1.begin(), b1.end());
+            posList->count = npos;
+        }
         posList->srsDimension = nsrs;
 
-        for (unsigned int i = 0; i<*npos; i++)
-        {            
-            /* This works only with simple polygon without holes */
-            /*sprintf(sxy, "%.10f %.10f ",
-                 be[i].Array()[0].number(),
-                 be[i].Array()[1].number() );
-            posList->__item.append(sxy);*/
+        for (auto b1point : b1)
+        {                        
+            /* Add the 3D case */            
+            x = b1point[0].get_double().value;
+            y = b1point[1].get_double().value;
 
-            /* Add the 3D case */
-            coord = b1[i].get_utf8().value.to_string();
-            sscanf(coord.substr(2,coord.length()-9).c_str(),"%lf, %lf,", &x, &y);
+            if (b1point.type() != bsoncxx::type::k_array) {
+                fprintf(stderr, "Missing or corrupted DB geometry for gml__PolygonType point element\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
 
             if ( (bbox[0] < 0.0000001 && bbox[1] < 0.0000001) )
             {
@@ -276,10 +269,7 @@ gml__PolygonType * init_gml_PolygonType(struct soap *soap, element belem,  doubl
                 sprintf(sxy, "%.4f %.4f ", x, y);
             posList->__item.append(sxy);
 
-        } //end for
-
-        //if (nbRing>1)
-            //b1.empty();
+        } //end for       
 
         pring->__union_LinearRingType = 2;
         pring->union_LinearRingType.posList = posList;
