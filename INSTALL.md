@@ -42,6 +42,14 @@ sudo make install
 which wsdl2h
 ```
 
+### Zlib
+
+This library is necessary for message compression.
+
+```bash
+sudo apt install libzip-dev
+```
+
 ## Install Mongo CXX driver
 
 ### Mongo C Driver
