@@ -44,23 +44,25 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
 
                 storedQuery->id = (char*)soap_malloc(soap, 20); 
                 strcpy(storedQuery->id, "getspatialplanbyid");
+
                 string doc_urba = inputId.substr(inputId.find_first_of(",")+1);                
                 doc_urba.insert(5,"_");
 
                 paramStoredQuery->name.assign("spatialplanid");
-                paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
+                paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.size()+1);
                 strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
                 storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);
             }
             else if (inputId.find("getfeaturebyid") != string::npos)
             {
-                storedQuery->id = (char*)soap_malloc(soap, 15); 
+                storedQuery->id = (char*)soap_malloc(soap, 15);
                 strcpy(storedQuery->id, "getfeaturebyid");
+
                 inputId = inputId.substr(inputId.find_first_of(",")+1);
                 string doc_urba = inputId.substr(0,13);
-                string gid = inputId.substr(doc_urba.length());
-                gid = gid.substr(0, gid.length()-16);
+                string gid = inputId.substr(doc_urba.size());
+                //gid = gid.substr(0, gid.length()-16);
                 doc_urba.insert(5,"_");
             
                 if( (gid.empty() || gid.find("doc")!=std::string::npos) && !doc_urba.empty() ) 
@@ -68,7 +70,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                     wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap);
 
                     paramStoredQuery->name.assign("gid_urba");
-                    paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
+                    paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.size()+1);
                     strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
                     storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);
@@ -81,13 +83,13 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                     paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
                     strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
-                    storedQuery->Parameter.insert( storedQuery->Parameter.begin(), paramStoredQuery);
-
-                    paramStoredQuery->name.assign("gid");
-                    paramStoredQuery->__any = (char*)soap_malloc(soap, gid.length()+1);
-                    strcpy(paramStoredQuery->__any, gid.c_str());
-
                     storedQuery->Parameter.insert( storedQuery->Parameter.end(), paramStoredQuery);
+
+                    (paramStoredQuery+1)->name.assign("gid");
+                    (paramStoredQuery+1)->__any = (char*)soap_malloc(soap, gid.length()+1);
+                    strcpy((paramStoredQuery+1)->__any, gid.c_str());
+
+                    storedQuery->Parameter.insert( storedQuery->Parameter.end(), paramStoredQuery+1);
                 }
             } // else getfeaturebyid
             else {
@@ -165,13 +167,18 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             else if (!strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getfeaturebyid"))
             {
                 if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 1) {
-                    doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
+                    doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);
+                    query_sp << wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->name 
+                             << doc_urba;
                 }
                 
                 if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 2) {
                     doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
                     gid.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[1]->__any);                
-                    query_ze << "gid_urba" << doc_urba << "gid" << gid;
+                    query_ze << wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->name 
+                             << doc_urba
+                             << wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[1]->name 
+                             << gid;
                 }                
             }// else getfeaturebyid
             else {
@@ -180,105 +187,115 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             }
         }
 
-        
-        bsoncxx::document::value sp_value = query_sp << bsoncxx::builder::stream::finalize;
-        std::cout << bsoncxx::to_json(sp_value) << std::endl;
-
-        auto cursor_sp = collsp.find( sp_value.view() );
-        
         /* Init of a pointer used to answer the request */
-        vector<wfs__MemberPropertyType*> *pwfsm;
-        if(!(pwfsm = soap_new_std__vectorTemplateOfPointerTowfs__MemberPropertyType(soap, -1))){
+        vector<wfs__MemberPropertyType *> *pwfsm;
+        if (!(pwfsm = soap_new_std__vectorTemplateOfPointerTowfs__MemberPropertyType(soap, -1)))
+        {
             e << "Error nb " << soap->error;
-            return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing MemberProperty object" , 400);
+            return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing MemberProperty object", 400);
         }
 
         i = 0;
 
         wfs__MemberPropertyType *member = NULL;
         wfs__MemberPropertyType *document = NULL;
-        for (auto plu : cursor_sp) {
-            i++;
-            cout << "Spatial plan found = " << i << endl;
 
-            //binding plu sequence to wfs member type
-            if( gid.empty() ) {
-                member = (wfs__MemberPropertyType *) init_plu_SpatialPlan(soap, plu, outcrs, bbox);
-                if(!member)
+        bsoncxx::document::value sp_value = query_sp << bsoncxx::builder::stream::finalize;
+        std::cout << "sp_value : "<< bsoncxx::to_json(sp_value) << std::endl;
+
+        if(!sp_value.view().empty()) 
+        {
+            auto cursor_sp = collsp.find(sp_value.view());
+            
+            for (auto plu : cursor_sp)
+            {
+                i++;
+                cout << "Spatial plan found = " << i << endl;
+
+                //binding plu sequence to wfs member type
+                if (gid.empty())
                 {
-                    e << "Error nb " << soap->error;
-                    //return soap_receiver_fault(soap, "Internal server error initializing SpatialPlan Object", e.str().c_str());
-                    return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing SpatialPlan object" , 400);
+                    member = (wfs__MemberPropertyType *)init_plu_SpatialPlan(soap, plu, outcrs, bbox);
+                    if (!member)
+                    {
+                        e << "Error nb " << soap->error;
+                        //return soap_receiver_fault(soap, "Internal server error initializing SpatialPlan Object", e.str().c_str());
+                        return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing SpatialPlan object", 400);
+                    }
+
+                    pwfsm->insert(pwfsm->end(), member);
                 }
 
-                pwfsm->insert(pwfsm->end(),member);
-            }
-
-            /* Let include in the response the associated OfficialDocumentation
+                /* Let include in the response the associated OfficialDocumentation
                    case 1 : it's an ad hoc query (all official documents are included by default)
                    case 2 : it's an GetFeatureById query with an ID of an official document as parameter
                    case 3 : it's an GetSpatialPlanById query (all official documents are included by default)
-            */
-            if( ( plu["officialdocument"] && adhocquery ) ||
-                ( plu["officialdocument"] && !gid.empty() ) ||
-                ( plu["officialdocument"] && !strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid")) )
-            {
-                if(plu["officialdocument"].type() == bsoncxx::type::k_array) {
-                    // get all documents associated to this Spatial Plan
-                    auto docArray = plu["officialdocument"].get_array().value;
-
-                    int j = 0;
-                    int maxDoc = std::distance(docArray.begin(), docArray.end());
-                    while ( j <  maxDoc)
+                */
+                if ((plu["officialdocument"] && adhocquery) ||
+                    (plu["officialdocument"] && !gid.empty()) ||
+                    (plu["officialdocument"] && !strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid")))
+                {
+                    if (plu["officialdocument"].type() == bsoncxx::type::k_array)
                     {
-                        // get each official document associated to this SpatialPlan
-                        stringstream identifier;
-                        char n[8];
-                        //BSONElement elem;
-                        //p.getObjectID(elem);
-                        oid lid;
-                        lid = plu["_id"].get_oid().value;
+                        // get all documents associated to this Spatial Plan
+                        auto docArray = plu["officialdocument"].get_array().value;
 
-                        if(plu["gid"])
+                        int j = 0;
+                        int maxDoc = std::distance(docArray.begin(), docArray.end());
+                        while (j < maxDoc)
                         {
-                            mongocxx::stdx::string_view strview = plu["gid"].get_utf8().value;
-                            identifier <<  strview.to_string();
-                            identifier << "_";
-                        }
-                        identifier << "doc" << j;
+                            // get each official document associated to this SpatialPlan
+                            stringstream identifier;
+                            char n[8];
+                            //BSONElement elem;
+                            //p.getObjectID(elem);
+                            oid lid;
+                            lid = plu["_id"].get_oid().value;
 
-                        if(gid.empty() || gid.find(n)!=std::string::npos)
-                        {
-                            auto doc = docArray[j].get_document();
-                            document = (wfs__MemberPropertyType *) init_plu_OfficialDocumentation(soap, lid, doc.view(), identifier.str());
-                            pwfsm->insert(pwfsm->end(), document);
-                        }
-                        j++;
+                            if (plu["gid"])
+                            {
+                                mongocxx::stdx::string_view strview = plu["gid"].get_utf8().value;
+                                identifier << strview.to_string();
+                                identifier << "_";
+                            }
+                            identifier << "doc" << j;
 
-                    } //while
+                            if (gid.empty() || gid.find(n) != std::string::npos)
+                            {
+                                auto doc = docArray[j].get_document();
+                                document = (wfs__MemberPropertyType *)init_plu_OfficialDocumentation(soap, lid, doc.view(), identifier.str());
+                                pwfsm->insert(pwfsm->end(), document);
+                            }
+                            j++;
+
+                        } //while
+                    }
                 }
-            }
-        }// for cursor
-
+            } // for cursor
+        }
 
         mongocxx::collection collze = db["demoze"];
         bsoncxx::document::value ze_value = query_ze << bsoncxx::builder::stream::finalize;
+        std::cout << "ze_value : "<< bsoncxx::to_json(ze_value) << std::endl;
 
-        auto cursor_ze = collze.find( query_ze.view() );
+        if(!ze_value.view().empty()) 
+        {
+            auto cursor_ze = collze.find( ze_value.view() );
 
-        for (auto ze : cursor_ze) {            
+            for (auto ze : cursor_ze) {            
 
-            //binding zoningElement sequence to wfs member type
-            member = (wfs__MemberPropertyType *) init_plu_ZoningElement(soap, ze, outcrs, bbox);
-            if(!member)
-            {
-                e << "Error nb " << soap->error;
-                return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing ZoningElement object" , 400);
-            }
+                //binding zoningElement sequence to wfs member type
+                member = (wfs__MemberPropertyType *) init_plu_ZoningElement(soap, ze, outcrs, bbox);
+                if(!member)
+                {
+                    e << "Error nb " << soap->error;
+                    return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing ZoningElement object" , 400);
+                }
 
-            pwfsm->insert(pwfsm->end(), member);
-            i++;
-        } //end for cursor_ze
+                pwfsm->insert(pwfsm->end(), member);
+                i++;
+            } //end for cursor_ze
+        }
 
         //adding attributes to FeatureCollection
         wfs__FeatureCollection.numberReturned = i;
