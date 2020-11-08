@@ -17,6 +17,8 @@
 #include <bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/oid.hpp>
 #include <bsoncxx/builder/basic/kvp.hpp>
+#include <boost/algorithm/string.hpp>
+
 
 using namespace std;
 using bsoncxx::builder::stream::document;

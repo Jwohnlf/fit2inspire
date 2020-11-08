@@ -69,7 +69,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 {
                     wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap);
 
-                    paramStoredQuery->name.assign("gid_urba");
+                    paramStoredQuery->name.assign("gid");
                     paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.size()+1);
                     strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
@@ -93,7 +93,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 }
             } // else getfeaturebyid
             else {
-                e << "The requested stored query is not supported by this stored query";
+                e << "The requested stored query is not supported by this server";
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
 
@@ -152,11 +152,12 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         {
             adhocquery = false;
 
-            //Feature are returned using server default projection
+            //Features are returned using server default projection
             outcrs = 4326;
 
             //Parse inputid to retrieve information needed to query the DB
-            if(!strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid"))
+            boost::to_lower(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id);
+            if(strstr(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getspatialplanbyid") != NULL)
             {
                 wfs__ParameterType* parameter = wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.at(0);
 
@@ -164,25 +165,25 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                 query_sp << "gid" << doc_urba;
                 query_ze << "gid_urba" << doc_urba;
             }
-            else if (!strcmp(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getfeaturebyid"))
+            else if (strstr(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->id, "getfeaturebyid") != NULL)
             {
                 if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 1) {
                     doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);
-                    query_sp << wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->name 
+                    query_sp << "gid" 
                              << doc_urba;
                 }
                 
                 if (wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter.size() == 2) {
                     doc_urba.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->__any);                
                     gid.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[1]->__any);                
-                    query_ze << wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[0]->name 
+                    query_ze << "gid_urba" 
                              << doc_urba
-                             << wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery->Parameter[1]->name 
+                             << "gid" 
                              << gid;
                 }                
             }// else getfeaturebyid
             else {
-                e << "The requested stored query is not supported by this stored query";
+                e << "The requested stored query is not supported by this server";
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
         }
@@ -201,10 +202,10 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         wfs__MemberPropertyType *document = NULL;
 
         bsoncxx::document::value sp_value = query_sp << bsoncxx::builder::stream::finalize;
-        std::cout << "sp_value : "<< bsoncxx::to_json(sp_value) << std::endl;
 
         if(!sp_value.view().empty()) 
         {
+            std::cout << "sp_value : "<< bsoncxx::to_json(sp_value) << std::endl;
             auto cursor_sp = collsp.find(sp_value.view());
             
             for (auto plu : cursor_sp)
@@ -247,8 +248,6 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                             // get each official document associated to this SpatialPlan
                             stringstream identifier;
                             char n[8];
-                            //BSONElement elem;
-                            //p.getObjectID(elem);
                             oid lid;
                             lid = plu["_id"].get_oid().value;
 
@@ -276,10 +275,10 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
 
         mongocxx::collection collze = db["demoze"];
         bsoncxx::document::value ze_value = query_ze << bsoncxx::builder::stream::finalize;
-        std::cout << "ze_value : "<< bsoncxx::to_json(ze_value) << std::endl;
 
         if(!ze_value.view().empty()) 
         {
+            std::cout << "ze_value : "<< bsoncxx::to_json(ze_value) << std::endl;
             auto cursor_ze = collze.find( ze_value.view() );
 
             for (auto ze : cursor_ze) {            
@@ -309,7 +308,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         
     }//try
     catch( exception e ) {
-        return http_fget_error(soap, "OperationProcessingFailed", e.what(), "DBException2" , 400);
+        return http_fget_error(soap, "OperationProcessingFailed", e.what(), "DBException" , 400);
     }
 
 	/* Returns incomplete response containing some default data values */
