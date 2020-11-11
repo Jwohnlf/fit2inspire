@@ -46,7 +46,6 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 strcpy(storedQuery->id, "getspatialplanbyid");
 
                 string doc_urba = inputId.substr(inputId.find_first_of(",")+1);                
-                doc_urba.insert(5,"_");
 
                 paramStoredQuery->name.assign("spatialplanid");
                 paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.size()+1);
@@ -60,10 +59,9 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 strcpy(storedQuery->id, "getfeaturebyid");
 
                 inputId = inputId.substr(inputId.find_first_of(",")+1);
-                string doc_urba = inputId.substr(0,13);
+                string doc_urba = inputId.substr(0,14);
                 string gid = inputId.substr(doc_urba.size());
                 //gid = gid.substr(0, gid.length()-16);
-                doc_urba.insert(5,"_");
             
                 if( (gid.empty() || gid.find("doc")!=std::string::npos) && !doc_urba.empty() ) 
                 {
@@ -120,10 +118,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
 /** Auto-test server operation __f2i_plu__wfs_x002egetFeature */
 int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__GetFeature, wfs__FeatureCollectionType &wfs__FeatureCollection)
 {
-	//(void)soap; /* appease -Wall -Werror */
-
-    //auto_ptr<DBClientCursor> cursor_sp, cursor_ze, cursor_sr;
-    //wfs__FeatureCollectionType *wfs__FeatureCollection;
+    
     double bbox[4];
     double minLat = 0.0, minLon = 0.0, maxLat = 0.0, maxLon = 0.0;
 
