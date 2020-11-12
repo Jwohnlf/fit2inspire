@@ -20,7 +20,7 @@ LIBW=-lmongocxx -lbsoncxx -lgdal
 
 COFLAGS=-O2
 CWFLAGS=-std=c++11 -Wno-deprecated-declarations
-MONGO = -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -I/home/jeanloup/appli/boost_1_58_0
+MONGO = -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -I/usr/local/include/boost
 CIFLAGS=-I/usr/local/share/gsoap -I/usr/local/share/gsoap/plugin $(MONGO)
 CMFLAGS=-DWITH_COOKIES -DWITH_GZIP -DWITH_OPENSSL
 CFLAGS= $(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
