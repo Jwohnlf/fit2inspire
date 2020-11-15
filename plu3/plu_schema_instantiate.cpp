@@ -177,7 +177,7 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
         if( elem["beginlifespanversion"].type() == bsoncxx::type::k_date )
         {
             auto bls = elem["beginlifespanversion"].get_date().value;
-            time_t time = bls.count();
+            time_t time = bls.count()/1000;
             pplu->beginLifespanVersion->__item = time;
         }
         else
@@ -208,7 +208,7 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
         if( elem["endlifespanversion"].type() == bsoncxx::type::k_date )
         {
             auto els = elem["endlifespanversion"].get_date().value;
-            time_t time = els.count();
+            time_t time = els.count()/1000;
             pplu->endLifespanVersion->__item = time;
         }
     } //endif endlifespanversion
@@ -228,11 +228,11 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
         if( elem["validfrom"].type() == bsoncxx::type::k_date )
         {
             auto vfr = elem["validfrom"].get_date().value;
-            soap ? pplu->validFrom->__item = (char*)soap_malloc(soap,10+1) : pplu->validFrom->__item = (char*)malloc(10+1);
 
             stringstream sDate ;
-            time_t time = vfr.count();
+            time_t time = vfr.count()/1000;
             sDate << put_time( gmtime(&time), "F");
+            soap ? pplu->validFrom->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : pplu->validFrom->__item = (char*)malloc(sDate.gcount()+1);
             strcpy(pplu->validFrom->__item, sDate.str().c_str());
         }
     } //endif validFrom
@@ -251,11 +251,11 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
         if( elem["validto"].type() == bsoncxx::type::k_date )
         {
             auto vto = elem["validto"].get_date().value;
-            soap ? pplu->validTo->__item = (char*)soap_malloc(soap,10+1) : pplu->validTo->__item = (char*)malloc(10+1);
 
             stringstream sDate ;
-            time_t time = vto.count();
+            time_t time = vto.count()/1000;
             sDate << put_time( gmtime(&time), "F");
+            soap ? pplu->validFrom->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : pplu->validFrom->__item = (char*)malloc(sDate.gcount()+1);
             strcpy(pplu->validTo->__item, sDate.str().c_str());
         }
     } //endif validTo
@@ -273,7 +273,7 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
                 if(elem["backgroundmap_date"].type() == bsoncxx::type::k_date )
                 {
                     auto bmd = elem["backgroundmap_date"].get_date().value;
-                    time_t time = bmd.count();
+                    time_t time = bmd.count()/1000;
                     pplu->backgroundMap->BackgroundMapValue->backgroundMapDate = time;
                 }
             }
@@ -533,10 +533,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
         str.append(code);
         zone->gml__id = (char**) soap_malloc(soap, sizeof(char**));
         *zone->gml__id = init_gml_id(soap, str, lid);
-    }
-    /*else if(o.hasField("CodeINSEE")) {
-        zone->inspireId = init_base_Identifier(soap, o.getStringField("CodeINSEE"), lid, str);
-    }*/
+    }    
 
     str.clear();
     code.clear();
@@ -559,17 +556,17 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
     // ********* validFrom
     // *****************
 
-    if( elem["validfrom"] ){
+    if( elem["validfrom"] )
+    {
         if(!(zone->validFrom = soap_new__plu__ZoningElementType_validFrom(soap,-1))){
             fprintf(stderr, "ZE : Allocation of validFrom pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
         }
-        //soap ? zone->validFrom->__item = (char*)soap_malloc(soap,str.size()) : zone->validFrom->__item = (char*)malloc(str.size());        
         if( elem["validfrom"].type() == bsoncxx::type::k_date ){
             auto ldate = elem["validfrom"].get_date().value;
-            stringstream sDate ;
-            time_t t = ldate.count();
+            stringstream sDate ;            
+            time_t t = ldate.count()/1000;            
             sDate << put_time( gmtime(&t), "%F");
             soap ? zone->validFrom->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : zone->validFrom->__item = (char*)malloc(sDate.gcount()+1);
             strcpy(zone->validFrom->__item, sDate.str().c_str());
@@ -579,7 +576,8 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
 
     // ********* validTo
     // *****************
-    if( elem["validto"] ){
+    if( elem["validto"] )
+    {
         if(!(zone->validTo = soap_new__plu__ZoningElementType_validTo(soap,-1))) {
             fprintf(stderr, "ZE : Allocation of validTo pointer failed\n");
             soap->error = SOAP_NULL;
@@ -588,7 +586,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
         if( elem["validto"].type() == bsoncxx::type::k_date ){
             auto ldate = elem["validto"].get_date().value;
             stringstream sDate ;
-            time_t t = ldate.count();
+            time_t t = ldate.count()/1000;
             sDate << put_time( gmtime(&t), "%F");
             soap ? zone->validTo->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : zone->validFrom->__item = (char*)malloc(sDate.gcount()+1);
             strcpy(zone->validTo->__item, sDate.str().c_str());
@@ -608,7 +606,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
         if( elem["beginlifespanversion"].type() == bsoncxx::type::k_date )
         {
             auto bls = elem["beginlifespanversion"].get_date().value;
-            time_t time = bls.count();
+            time_t time = bls.count()/1000;
             zone->beginLifespanVersion->__item = time;
         }
         else
@@ -637,7 +635,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
             if( elem["endlifespanversion"].type() == bsoncxx::type::k_date )
             {
                 auto els = elem["endlifespanversion"].get_date().value;
-                time_t time = els.count();
+                time_t time = els.count()/1000;
                 zone->endLifespanVersion->__item = time;
             }
             else
