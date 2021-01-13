@@ -370,7 +370,7 @@ int main(int argc, char **argv)
   /* Unix SIGPIPE, this is OS dependent (win does not need this) */
   /* soap.accept_flags = SO_NOSIGPIPE; */       /* some systems like this */
   /* soap.socket_flags = MSG_NOSIGNAL; */       /* others need this */
-  /* signal(SIGPIPE, sigpipe_handle); */        /* and some older Unix systems may require a sigpipe handler */
+  signal(SIGPIPE, sigpipe_handle);        /* and some older Unix systems may require a sigpipe handler */
   master = soap_bind(&soap, NULL, port, backlog);
   if (!soap_valid_socket(master))
   {
