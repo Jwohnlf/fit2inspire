@@ -25,8 +25,7 @@ char* init_gml_id(struct soap *soap, string strval, oid lid)
     std::ostringstream ss;
     ss << std::put_time(gmtime(&tstamp), "%Y%m%d%H%M%S%Z");
     strval.append(ss.str());
-
-    soap ? id = (char*)soap_malloc(soap, strval.length()+1) : id = (char*)malloc(strval.length()+1);
+    id = (char*)soap_malloc(soap, strval.size()+1);
     strcpy(id, strval.c_str());
 
     return id;
@@ -53,7 +52,7 @@ gml__ReferenceType * init_gml_ReferenceType(struct soap *soap, mongocxx::stdx::s
     } // endif val empty
 
     if(!uri.empty()){
-        soap ? test = (char*)soap_malloc(soap, uri.length()+1) : test = (char*)malloc(uri.length()+1);
+        test = (char*)soap_malloc(soap, uri.length()+1);
         if(!test)
         {
             fprintf(stderr, "SP : Allocation of char test pointer failed\n");

@@ -26,25 +26,26 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
     mongocxx::stdx::string_view strview;
     string str, code;
     time_t ldate;
+    
     auto elem = p.view();
 
     plu__SpatialPlanPropertyType *eplu;
     __plu__SpatialPlanPropertyType_sequence *splu;
     plu__SpatialPlanType *pplu;
 
-    if(!(eplu = soap_new_plu__SpatialPlanPropertyType(soap, -1))){
+    if(!(eplu = soap_new_plu__SpatialPlanPropertyType(soap))){
         fprintf(stderr, "Allocation of SpatialPlanPropertyType pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
     }
 
-    if(!(pplu = soap_new_plu__SpatialPlanType(soap, -1))){
+    if(!(pplu = soap_new_plu__SpatialPlanType(soap))){
         fprintf(stderr, "Allocation of SpatialPlanType pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
     }
 
-    if(!(splu = soap_new___plu__SpatialPlanPropertyType_sequence(soap, -1))){
+    if(!(splu = soap_new___plu__SpatialPlanPropertyType_sequence(soap))){
         fprintf(stderr, "Allocation of SpatialPlanPropertyType_sequence pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
@@ -231,8 +232,8 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
 
             stringstream sDate ;
             time_t time = vfr.count()/1000;
-            sDate << put_time( gmtime(&time), "F");
-            soap ? pplu->validFrom->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : pplu->validFrom->__item = (char*)malloc(sDate.gcount()+1);
+            sDate << put_time( gmtime(&time), "%F");
+            pplu->validFrom->__item = (char*)soap_malloc(soap, sizeof(put_time( gmtime(&time), "%F"))+1);
             strcpy(pplu->validFrom->__item, sDate.str().c_str());
         }
     } //endif validFrom
@@ -254,8 +255,8 @@ plu__SpatialPlanPropertyType * init_plu_SpatialPlan(struct soap *soap, view_or_v
 
             stringstream sDate ;
             time_t time = vto.count()/1000;
-            sDate << put_time( gmtime(&time), "F");
-            soap ? pplu->validFrom->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : pplu->validFrom->__item = (char*)malloc(sDate.gcount()+1);
+            sDate << put_time( gmtime(&time), "%F");
+            pplu->validTo->__item = (char*)soap_malloc(soap, sizeof(put_time( gmtime(&time), "%F"))+1);
             strcpy(pplu->validTo->__item, sDate.str().c_str());
         }
     } //endif validTo
@@ -392,19 +393,19 @@ plu__OfficialDocumentationPropertyType * init_plu_OfficialDocumentation(soap *so
     string str;
 
 
-    if(!(retdoc = soap_new_plu__OfficialDocumentationPropertyType(soap, -1))){
+    if(!(retdoc = soap_new_plu__OfficialDocumentationPropertyType(soap))){
             fprintf(stderr, "Allocation of OfficialDocumentationPropertyType pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
     }
 
-    if(!(document = soap_new_plu__OfficialDocumentationType(soap, -1))){
+    if(!(document = soap_new_plu__OfficialDocumentationType(soap))){
         fprintf(stderr, "Allocation of OfficialDocumentationType pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
     }
 
-    if(!(dseq = soap_new___plu__OfficialDocumentationPropertyType_sequence(soap, -1))){
+    if(!(dseq = soap_new___plu__OfficialDocumentationPropertyType_sequence(soap))){
         fprintf(stderr, "Allocation of OfficialDocumentationPropertyType_sequence pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
@@ -425,7 +426,7 @@ plu__OfficialDocumentationPropertyType * init_plu_OfficialDocumentation(soap *so
         // Gestion des documents graphiques du spatial plan dans le type planDocument si le champ regurl contient "graphique"
         if(std::string::npos != url.to_string().find("graphique",6))
         {
-            document->planDocument = soap_new__plu__OfficialDocumentationType_planDocument(soap,-1);
+            document->planDocument = soap_new__plu__OfficialDocumentationType_planDocument(soap);
             __plu__OfficialDocumentationType_planDocument_sequence  *odseq = soap_new___plu__OfficialDocumentationType_planDocument_sequence(soap);
             odseq->__unionDocumentCitation = 1;
             odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation = soap_new_base2__DocumentCitationType(soap,1);
@@ -493,19 +494,19 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
 
     auto elem = o.view();
 
-    if(!(zoning = soap_new_plu__ZoningElementPropertyType(soap, -1))){
+    if(!(zoning = soap_new_plu__ZoningElementPropertyType(soap))){
             fprintf(stderr, "Allocation of ZoningElementPropertyType pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
     }
 
-    if(!(zone = soap_new_plu__ZoningElementType(soap, -1))){
+    if(!(zone = soap_new_plu__ZoningElementType(soap))){
             fprintf(stderr, "Allocation of ZoningElementType pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
     }
 
-    if(!(zseq = soap_new___plu__ZoningElementPropertyType_sequence(soap, -1))){
+    if(!(zseq = soap_new___plu__ZoningElementPropertyType_sequence(soap))){
         fprintf(stderr, "Allocation of ZoningElementPropertyType_sequence pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
@@ -533,7 +534,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
         str.append(code);
         zone->gml__id = (char**) soap_malloc(soap, sizeof(char**));
         *zone->gml__id = init_gml_id(soap, str, lid);
-    }    
+    }
 
     str.clear();
     code.clear();
@@ -558,7 +559,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
 
     if( elem["validfrom"] )
     {
-        if(!(zone->validFrom = soap_new__plu__ZoningElementType_validFrom(soap,-1))){
+        if(!(zone->validFrom = soap_new__plu__ZoningElementType_validFrom(soap))){
             fprintf(stderr, "ZE : Allocation of validFrom pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
@@ -568,17 +569,17 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
             stringstream sDate ;            
             time_t t = ldate.count()/1000;            
             sDate << put_time( gmtime(&t), "%F");
-            soap ? zone->validFrom->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : zone->validFrom->__item = (char*)malloc(sDate.gcount()+1);
+            zone->validFrom->__item = (char*)soap_malloc(soap, sizeof(put_time( gmtime(&t), "%F"))+1);
             strcpy(zone->validFrom->__item, sDate.str().c_str());
         }
     } // end validfrom
 
-
+    
     // ********* validTo
     // *****************
     if( elem["validto"] )
     {
-        if(!(zone->validTo = soap_new__plu__ZoningElementType_validTo(soap,-1))) {
+        if(!(zone->validTo = soap_new__plu__ZoningElementType_validTo(soap))) {
             fprintf(stderr, "ZE : Allocation of validTo pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
@@ -588,7 +589,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
             stringstream sDate ;
             time_t t = ldate.count()/1000;
             sDate << put_time( gmtime(&t), "%F");
-            soap ? zone->validTo->__item = (char*)soap_malloc(soap, sDate.gcount()+1) : zone->validFrom->__item = (char*)malloc(sDate.gcount()+1);
+            zone->validTo->__item = (char*)soap_malloc(soap, sizeof(put_time( gmtime(&t), "%F"))+1);
             strcpy(zone->validTo->__item, sDate.str().c_str());
         }
     } // validto
@@ -597,7 +598,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
 
     // ********* beginlifespanVersion
     // *****************
-    if(!(zone->beginLifespanVersion = soap_new__plu__ZoningElementType_beginLifespanVersion(soap,-1))){
+    if(!(zone->beginLifespanVersion = soap_new__plu__ZoningElementType_beginLifespanVersion(soap))){
         fprintf(stderr, "ZE : Allocation of beginLifespanVersion pointer failed\n");
         soap->error = SOAP_NULL;
         return NULL;
@@ -626,7 +627,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
     // ********* endLifespanVersion
     // *****************
     if( elem["endlifespanversion"] ){
-        if(!(zone->endLifespanVersion = soap_new__plu__ZoningElementType_endLifespanVersion(soap,-1))){
+        if(!(zone->endLifespanVersion = soap_new__plu__ZoningElementType_endLifespanVersion(soap))){
             fprintf(stderr, "ZE : Allocation of endLifespanVersion pointer failed\n");
             soap->error = SOAP_NULL;
             return NULL;
@@ -715,7 +716,7 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
         strtmp.assign( strview.to_string() );
         str.append( init_gml_id(soap, strtmp, *pluOid) );
         zone->plan = init_gml_ReferenceType(soap, "", str);
-    }
+    }    
 
     //binding zoningelement object to zoning sequence type
     zseq->ZoningElement = zone;

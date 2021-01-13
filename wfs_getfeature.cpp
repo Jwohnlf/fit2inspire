@@ -78,13 +78,13 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                     wfs__ParameterType* paramStoredQuery = soap_new_wfs__ParameterType(soap, 2);
 
                     paramStoredQuery->name.assign("gid_urba");
-                    paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.length()+1);
+                    paramStoredQuery->__any = (char*)soap_malloc(soap, doc_urba.size()+1);
                     strcpy(paramStoredQuery->__any, doc_urba.c_str());
 
                     storedQuery->Parameter.insert( storedQuery->Parameter.end(), paramStoredQuery);
 
                     (paramStoredQuery+1)->name.assign("gid");
-                    (paramStoredQuery+1)->__any = (char*)soap_malloc(soap, gid.length()+1);
+                    (paramStoredQuery+1)->__any = (char*)soap_malloc(soap, gid.size()+1);
                     strcpy((paramStoredQuery+1)->__any, gid.c_str());
 
                     storedQuery->Parameter.insert( storedQuery->Parameter.end(), paramStoredQuery+1);
@@ -185,9 +185,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
 
         /* Init of a pointer used to answer the request */
         vector<wfs__MemberPropertyType *> *pwfsm;
-        if (!(pwfsm = soap_new_std__vectorTemplateOfPointerTowfs__MemberPropertyType(soap, -1)))
+        if (!(pwfsm = soap_new_std__vectorTemplateOfPointerTowfs__MemberPropertyType(soap)))
         {
-            e << "Error nb " << soap->error;
+            e << "Error nb " << soap->error;            
             return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing MemberProperty object", 400);
         }
 
@@ -205,9 +205,6 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             
             for (auto plu : cursor_sp)
             {
-                i++;
-                cout << "Spatial plan found = " << i << endl;
-
                 //binding plu sequence to wfs member type
                 if (gid.empty())
                 {
@@ -220,6 +217,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                     }
 
                     pwfsm->insert(pwfsm->end(), member);
+                    i++;
                 }
 
                 /* Let include in the response the associated OfficialDocumentation
@@ -266,7 +264,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                     }
                 }
             } // for cursor
+            cout << i << " spatial plan found" << endl;
         }
+
 
         mongocxx::collection collze = db["demoze"];
         bsoncxx::document::value ze_value = query_ze << bsoncxx::builder::stream::finalize;
