@@ -13,7 +13,14 @@
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",
             "cppStandard": "c++11",
-            "intelliSenseMode": "clang-x64"
+            "intelliSenseMode": "clang-x64",
+            "browse": { 
+                "path": [
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/wfs2/src",
+                    "${workspaceFolder}/plu3/src"
+                ]
+            }
         }
     ],
     "version": 4

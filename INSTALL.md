@@ -116,3 +116,28 @@ make mongo
 
 ./mongoTester
 { "_id" : { "$oid" : "5f3a363dcc7eca47d43fd5f2" }, "hello" : "world" }
+
+## Install dependencies for build and runtime
+
+### Zlib
+
+This library is necessary for message compression.
+
+```bash
+sudo apt install libzip-dev
+```
+
+### Boost
+
+```bash
+curl -OL https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.gz
+tar -xzf boost_1_74_0.tar.gz
+cd boost_1_74_0
+./bootstrap.sh # this will generate ./b2
+# get the no of cpucores to make faster
+cpuCores=`cat /proc/cpuinfo | grep "cpu cores" | uniq | awk '{print $NF}'`
+echo "Available CPU cores: "$cpuCores
+sudo ./b2 --with=atomic,date_time,exception,filesystem,iostreams,locale,program_options,regex,signals,system,test,thread,timer,log -j $cpuCores install
+# check the version number of your installed lib
+cat /usr/local/include/boost/version.hpp | grep "BOOST_LIB_VERSION"
+```

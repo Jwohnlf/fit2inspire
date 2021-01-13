@@ -215,7 +215,7 @@
 	},
 	"storedquery":[
 		{
-			"id" : "urn:ogc:def:query:OGC-WFS::GetFeatureById",
+			"id" : "http://www.opengis.net/def/query/OGC-WFS/0/GetFeatureById",
 			"title": {
 				"en":"Get feature by Id",
 				"fr":"Retourne un objet à partir de son identifiant"
@@ -232,7 +232,7 @@
 				}]
 		},
 		{
-			"id" : "urn:ogc:def:query:springeo::GetSpatialPlanById",
+			"id" : "urn-x:wfs:StoredQueryId:fit2inspire::GetSpatialPlanById",
 			"title": {
 				"en":"Get a full spatial plan data set by Id",
 				"fr":"Retourne les données d'un document d'urbanisme complet à partir de son identifiant"
