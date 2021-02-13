@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build PLU server",
+            "label": "Build-PLU-server",
             "type": "shell",
             "command": "make",
             "args": [
@@ -14,10 +14,20 @@
             "group": "build"
         },
         {
-            "label": "Build & run PLU server",
+            "label": "Build-PLU-server-for-debug",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "debug"
+            ],
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "Run-PLU-server",
             "type": "shell",
             "dependsOn": [
-                "Build PLU server"
+                "Build-PLU-server"
             ],
             "command": "./plu3WfsMongo",
             "args": [
