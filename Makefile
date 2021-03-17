@@ -15,8 +15,8 @@ clean:
 GSOAP=soapcpp2
 CPP=g++
 SOAPCPP=/home/jeanloup/appli/gsoap-2.8/gsoap/stdsoap2.cpp
-LIBS=-lgsoap++ -lpthread -lz -lssl -lcrypto
-LIBW=-lmongocxx -lbsoncxx -lgdal
+LIBS=-lgsoap++
+LIBW=-lmongocxx -lbsoncxx -lgdal -lpthread -lz -lssl -lcrypto
 
 COFLAGS=-O2
 CWFLAGS=-std=c++11 -Wno-deprecated-declarations
@@ -63,10 +63,13 @@ plu3WfsMongo : $(OBJS) webserver.c
 	$(CPP) $(CFLAGS) $^ $(SOAPCPP) $(LIBW) $(LIBS) -o plu3WfsMongo
 
 debug_plu3WfsMongo : $(DOBJS) webserver.c
-	$(CPP) -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) $^ $(SOAPCPP) $(LIBW) $(LIBS) -o debug_plu3WfsMongo
+	$(CPP) -g -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) $^ $(SOAPCPP) $(LIBW) -o debug_plu3WfsMongo
 
 wfsTester : .obj/soapC.o .obj/soapServer.o wfs2/src/soapTester.cpp
 	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o wfsTester
+
+.obj/dstdsoap.o : $(SOAPCPP)
+	$(CPP) -g $(CFLAGS) -c $(SOAPCPP) -o .obj/dstdsoap.o
 
 .obj/options.o:	webserver/opt.h webserver/options.h webserver/options.c
 	$(GSOAP) -cnpopt -d webserver webserver/opt.h
