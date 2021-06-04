@@ -66,7 +66,7 @@ debug_plu3WfsMongo : $(DOBJS) webserver.c
 	$(CPP) -g -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) $^ $(SOAPCPP) $(LIBW) -o debug_plu3WfsMongo
 
 wfsTester : .obj/soapC.o .obj/soapServer.o wfs2/src/soapTester.cpp
-	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp soapC.o soapServer.o $(LIBS) -o wfsTester
+	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp .obj/soapC.o .obj/soapServer.o $(LIBS) -o wfsTester
 
 .obj/dstdsoap.o : $(SOAPCPP)
 	$(CPP) -g $(CFLAGS) -c $(SOAPCPP) -o .obj/dstdsoap.o
