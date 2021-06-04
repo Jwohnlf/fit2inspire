@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:idls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:wfs-util="http://www.opengis.net/wfs-util/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:f2i-plu="http://plu.fit2inspire.eu/" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:lunom="http://inspire.ec.europa.eu/schemas/lunom/3.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:base2="http://inspire.ec.europa.eu/schemas/base2/1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:plu="http://inspire.ec.europa.eu/schemas/plu/3.0" xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" xmlns:gml="http://www.opengis.net/gml/3.2">
+	<SOAP-ENV:Body>
+		<wfs:FeatureCollection timeStamp="2020-11-11T14:07:45Z" numberMatched="1" numberReturned="1">
+			<wfs:member>
+				<plu:ZoningElement gml:id="sgo.3805320010112Z520140902153229GMT">
+					<plu:inspireId>
+						<base:Identifier>
+							<base:localId>38053_20010112_Z5</base:localId>
+							<base:namespace>http://dataproviderns/ze</base:namespace>
+							<base:versionId>5405e30d44ae60f9a48f970e</base:versionId>
+						</base:Identifier>
+					</plu:inspireId>
+					<plu:geometry>
+						<gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::4326">
+							<gml:surfaceMember>
+								<gml:Polygon srsName="urn:ogc:def:crs:EPSG::4326">
+									<gml:exterior>
+										<gml:LinearRing>
+											<gml:posList count="31" srsDimension="2">45.58912808 5.29329264 45.58912208 5.29333088 45.58909861 5.29347874 45.58908438 5.29356271 45.58908100 5.29358246 45.58907905 5.29359405 45.58905916 5.29371230 45.58902647 5.29387094 45.58918437 5.29394689 45.58918012 5.29405373 45.58915320 5.29472828 45.58915736 5.29624517 45.58915579 5.29635327 45.58812688 5.29660228 45.58812366 5.29635413 45.58809882 5.29441095 45.58809752 5.29386150 45.58811281 5.29350044 45.58813134 5.29322342 45.58820669 5.29209489 45.58822305 5.29190696 45.58932292 5.29228181 45.58930480 5.29236613 45.58929519 5.29238702 45.58925993 5.29246409 45.58924363 5.29256530 45.58921499 5.29274592 45.58921323 5.29275739 45.58918614 5.29292808 45.58915711 5.29311062 45.58912808 5.29329264 </gml:posList>
+										</gml:LinearRing>
+									</gml:exterior>
+								</gml:Polygon>
+							</gml:surfaceMember>
+						</gml:MultiSurface>
+					</plu:geometry>
+					<plu:validFrom>33002-09-11</plu:validFrom>
+					<plu:hilucsLandUse xlink:href="http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses" xlink:title="5_2_ResidentialUseWithOtherCompatibleUses"></plu:hilucsLandUse>
+					<plu:beginLifespanVersion>46640-09-22T13:26:21Z</plu:beginLifespanVersion>
+					<plu:hilucsPresence xsi:nil="true"/>
+					<plu:specificLandUse xlink:href="http://inspire.ec.europa.eu/codelist/LandUseClassificationValue/AUc" xlink:title="AUc"></plu:specificLandUse>
+					<plu:specificPresence xsi:nil="true"/>
+					<plu:regulationNature xlink:href="http://inspire.ec.europa.eu/codelist/RegulationNatureValue/generallyBinding" xlink:title="generallyBinding"></plu:regulationNature>
+					<plu:processStepGeneral xsi:nil="true"/>
+					<plu:backgroundMap xsi:nil="true"/>
+					<plu:plan xlink:href="#380532001011220140623125328GMT"></plu:plan>
+				</plu:ZoningElement>
+			</wfs:member>
+		</wfs:FeatureCollection>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

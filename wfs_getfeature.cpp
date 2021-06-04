@@ -11,11 +11,12 @@
 #include <ctime>
 #include "wfs_getfeature.h"
 #include "plu3/plu_schema_instantiate.h"
+#include <ogr_spatialref.h>
 
 
 /* 
     fgetfeature : prepare WFS download after a get call 
-    This function initializes a wfs__FetFeatureClass according to query arguments 
+    This function initializes a wfs__GetFeatureClass according to query arguments 
     received from a dynamic HTTP GET application/x-www-form-urlencoded request
 */
 int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames, string BBox)
@@ -26,11 +27,12 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
     
     try {
         stringstream e;
+        int i = 0;        
 
         // Stored query GetFeatureById query in ?id=input
         if (!inputId.empty())
         {
-            wfs__StoredQueryType *storedQuery = storedQuery = soap_new_wfs__StoredQueryType(soap);
+            wfs__StoredQueryType *storedQuery = soap_new_wfs__StoredQueryType(soap);
 
             //Parse inputid to retrieve information needed to query the DB
             cout << "Stored query request received" << endl;
@@ -95,8 +97,13 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
 
-            getFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery = storedQuery;           
+            getFeature->__union_GetFeatureType->union_GetFeatureType.StoredQuery = storedQuery;
         }
+        else
+        {
+            wfs__QueryType *query = soap_new_wfs__QueryType(soap);
+
+        }//end if adhoc query
 
         wfs__FeatureCollectionType featureCollection;
         __f2i_plu__wfs_x002egetFeature(soap, getFeature, featureCollection);
@@ -115,7 +122,7 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
 } // end fonction fgetfeature
 
 
-/** Auto-test server operation __f2i_plu__wfs_x002egetFeature */
+/** Server operation __f2i_plu__wfs_x002egetFeature */
 int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__GetFeature, wfs__FeatureCollectionType &wfs__FeatureCollection)
 {
     
@@ -129,6 +136,13 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         stringstream e;
         string doc_urba, gid;
         bool adhocquery = true;
+        int outcrs = 0;
+        double bbox[4];
+        double minLat = 0.0, minLon = 0.0, maxLat = 0.0, maxLon = 0.0;
+        OGRSpatialReference oSourceSRS, oTargetSRS;
+        OGRCoordinateTransformation *poCT;
+
+
         mongocxx::uri mongo("mongodb://localhost:27017");
         mongocxx::client client{mongo};
 
@@ -182,7 +196,169 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
         }
+        else {
+            adhocquery = true;
+            // Ad hoc query
+            string srs;
+            char bbox_srs[14+1];
+            int epsgbbox = 0;
 
+            cout << "Ad hoc request received : " << *wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->handle << endl;
+
+            //Parse srsName parameter (should be of type http://www.opengis.net/def/crs/[epsg|ogc]/0/{code})
+            srs.append(*wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->srsName);
+            size_t pos = srs.find_last_of("/");
+            if( pos == string::npos) {
+                e << "The server failed in parsing srsName parameter";
+                return http_fget_error(soap, "InvalidParameterValue", e.str().c_str(), "srsName", 500);
+            }
+
+            if( !sscanf(srs.substr(pos+1).c_str(),"%d", &outcrs) )
+                return http_fget_ParseError(soap, "GetFeature", "srsName");
+
+            //Test if the requested SRS is supported by the server
+            //TODO : hardcoded for the demo. Parse capabilities document for dynamic testing
+            if( !(outcrs == 4326 || outcrs == 2154 || outcrs == 4171) ){
+                e << "The requested output projection is not currently supported by this server.";
+                return http_fget_error(soap,"OptionNotSupported", e.str(), "srsName", 501);
+            }
+
+            cout << "Valid input EPSG : " << outcrs << endl;
+            //query_sp->srsName = (char**)soap_malloc(soap, sizeof(char**));
+            //*query_sp->srsName = (char*)soap_malloc(soap, sizeof("http://www.opengis.net/def/crs/epsg/0/")+sizeof(outcrs)+1);
+
+            fes__BBOXType *BBox = wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->union_AbstractAdhocQueryExpressionType_.Filter->union_FilterType.BBOX;
+            cout << "bbox received : " << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
+            
+            //struct soap *soap1 = soap_new1(SOAP_XML_INDENT);
+            std::stringstream ss; //("<gml:Envelope><gml:lowerCorner>5.15 45.58</gml:lowerCorner><gml:upperCorner>5.21 45.68</gml:upperCorner></gml:Envelope>");
+            ss << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
+            soap->is = &ss;
+            gml__EnvelopeType *envl = soap_new_gml__EnvelopeType(soap, -1);
+            if (soap_read_gml__EnvelopeType(soap, envl) != SOAP_OK) {
+                e << "The server failed in parsing bbox parameter";
+                soap_print_fault(soap, stderr);
+                cout << "parsing error :" << endl;
+                soap_print_fault_location(soap, stderr);                
+                return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
+            }            
+            
+            bbox[0] = envl->lowerCorner->__item.at(0);
+            bbox[1] = envl->lowerCorner->__item.at(1);
+            bbox[2] = envl->upperCorner->__item.at(0);
+            bbox[3] = envl->upperCorner->__item.at(1);
+
+            cout << "Input bbox_ : minLon = " << bbox[0]
+                 << ", minLat = " << bbox[1]
+                 << ", maxLon = " << bbox[2]
+                 << ", maxLat = " << bbox[3]
+                 << ", with input srs = " << epsgbbox
+                 << endl;
+
+            //soap_destroy(soap1);
+            //soap_end(soap1);
+            //soap_free(soap1);
+
+            /*
+            if( !sscanf(BBox.c_str(), "%lf,%lf,%lf,%lf,urn:ogc:def:crs:%s", &minLon, &minLat, &maxLon, &maxLat, bbox_srs) ) {
+                e << "The server failed in parsing bbox parameter";
+                return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
+            }
+
+
+            //Parse WGS84BoundingBox of type "LatLC,LonLC,LatUC,LonUC"
+            if( !sscanf(BBox.c_str(), "%lf,%lf,%lf,%lf,urn:ogc:def:crs:%s", &minLon, &minLat, &maxLon, &maxLat, bbox_srs) ) {
+                e << "The server failed in parsing bbox parameter";
+                return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
+            }
+            sscanf(bbox_srs, "epsg::%d", &epsgbbox);
+
+
+            //Test of the bbox srsid parameter, and transformation in WGS84 coordinates if relevant
+            if ( epsgbbox == 4326 || epsgbbox == 4171 ) {
+                // Données stockées dans le système de coordonnées géographiques LatLon, inversion des coordonnées
+                double ftmp;
+                ftmp = minLon;
+                minLon = minLat;
+                minLat = ftmp;
+                ftmp = maxLon;
+                maxLon = maxLat;
+                maxLat = ftmp;
+            } // end transformation bbox
+            else if (epsgbbox != 0) {
+                // different projection, process transformation using GDAL
+                // transformation of Bbox in WGS84 geographic coordinates              
+                oSourceSRS.importFromEPSGA(epsgbbox);
+                oTargetSRS.importFromEPSG(4326);
+                poCT = OGRCreateCoordinateTransformation( &oSourceSRS, &oTargetSRS );
+                if(oSourceSRS.EPSGTreatsAsLatLong()) {
+                    double ftmp;
+                    ftmp = minLon;
+                    minLon = minLat;
+                    minLat = ftmp;
+                    ftmp = maxLon;
+                    maxLon = maxLat;
+                    maxLat = ftmp;
+                }
+                if( poCT == NULL || !poCT->Transform( 1, &minLon, &minLat ) || !poCT->Transform( 1, &maxLon, &maxLat ) )
+                {
+                    e << "The server failed to reproject the BBOX parameter ";
+                    poCT->~OGRCoordinateTransformation();
+                    return http_fget_error(soap, "OperationProcessingFailed", e.str().c_str(), "GetFeature", 500);
+                }
+            }
+            else
+                return http_fget_ParseError(soap, "GetFeature", "BBox");
+
+            bbox[0] = minLon;
+            bbox[1] = minLat;
+            bbox[2] = maxLon;
+            bbox[3] = maxLat;
+
+            cout << "Input bbox_ : minLon = " << bbox[0]
+                 << ", minLat = " << bbox[1]
+                 << ", maxLon = " << bbox[2]
+                 << ", maxLat = " << bbox[3]
+                 << ", with input srs = " << epsgbbox
+                 << endl;
+
+            //Check if bbox is not wrong or too small
+            if ( (maxLon == 0.0 && minLon == 0.0 && maxLat == 0.0 && minLat == 0.0) ||
+                 ( ((maxLon - minLon) < 0.000000001) || ((maxLat - minLat) < 0.000000001) ) )
+                return http_fget_ParseError(soap, "getFeature", "BBox");
+
+            //Implementation of the polygon used for the query intersection                       
+            BSONObj query = BSON("$geoWithin" << BSON("$polygon"
+                                                      << BSON_ARRAY( BSON_ARRAY(minLon<<minLat)
+                                                                     << BSON_ARRAY(minLon<<maxLat)
+                                                                     << BSON_ARRAY(maxLon<<maxLat)
+                                                                     << BSON_ARRAY(maxLon<<minLat)) ) );
+
+            //Parse typeNames which could contain multiple comma-separated values
+            std::vector<std::string> features;
+            boost::split(features, typeNames, boost::is_any_of(","), boost::token_compress_on);
+
+            while(!features.empty())
+            {
+                string feature = features.back();
+                //cout << "feature found :" << feature << endl;
+
+                //Selection of the 'feature' objets that interects the BBox (one point must be entirely within the bbox)
+
+                //On prend l'enveloppe extérieure car MongoDB 2.4 ne semble pas gérer le GeoJSON
+                if(0 == feature.compare("plu:spatialplan"))
+                    cursor_sp = c.query("test.demosp", BSON("extent.coordinates0.0" << query));
+                else if (0 == feature.compare("plu:zoningelement"))
+                    cursor_ze = c.query("test.demoze", BSON("geometry.coordinates0.0" << query));
+                else if (0 == feature.compare("plu:supplementaryregulation"))
+                    cursor_sr = c.query("test.demosr", BSON("geometry.coordinates0.0" << query));
+                else
+                    return http_fget_ParseError(soap, "GetFeature","typeNames");
+
+                features.pop_back();
+            }//end while
+*/
+        }
         /* Init of a pointer used to answer the request */
         vector<wfs__MemberPropertyType *> *pwfsm;
         if (!(pwfsm = soap_new_std__vectorTemplateOfPointerTowfs__MemberPropertyType(soap)))

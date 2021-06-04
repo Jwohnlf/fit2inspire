@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:idls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:icommon="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:wfs-util="http://www.opengis.net/wfs-util/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:sgo="http://inspire.springeo.fr/plu3" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:lunom="http://inspire.ec.europa.eu/schemas/lunom/3.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:base2="http://inspire.ec.europa.eu/schemas/base2/1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:plu="http://inspire.ec.europa.eu/schemas/plu/3.0" xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" xmlns:gml="http://www.opengis.net/gml/3.2">
+	<SOAP-ENV:Body>
+		<wfs:WFS_Capabilities updateSequence="2020-09-09" version="2.0.0">
+			<ows:ServiceIdentification>
+				<ows:Title xml:lang="fr">Fit2Inspire - Démo de téléchargement WFS2 de données INSPIRE sur l'usage des sols</ows:Title>
+				<ows:Title xml:lang="en">Fit2Inspire - WFS2 demo for download of INSPIRE Planned Land Use data</ows:Title>
+				<ows:Abstract xml:lang="fr">Service de téléchargement direct de données géographiques conformes au thème INSPIRE Usage des sols. Ce serveur est développé par la société springeo et mis à ligne aux fins de démonstration. Les données utilisées sont diffusées et téléchargeables en OpenData par la DDT et le Conseil Général de l'Isère. Springeo met à disposition cette ressource à titre informatif, sans engagement ni garantie sur la continuité de service ou l'adéquation à une utilisation particulière.</ows:Abstract>
+				<ows:Abstract xml:lang="en">Service for direct access to compliant INSPIRE Planned Land Use data. This server is developed and made available by springeo for demonstration purpose only. It uses samples of opendata provided by the DDT and Conseil Général of Isère (France). This server is made available by springeo with no warranty on quality and lifetime of service or a particular fitness for use.</ows:Abstract>
+				<ows:Keywords>
+					<ows:Keyword xml:lang="fr">service de téléchargement direct</ows:Keyword>
+					<ows:Keyword xml:lang="fr">GML INSPIRE</ows:Keyword>
+					<ows:Keyword xml:lang="en">direct download service</ows:Keyword>
+					<ows:Keyword xml:lang="en">INSPIRE gml output</ows:Keyword>
+					<ows:Keyword xml:lang="en">plu</ows:Keyword>
+					<ows:Keyword xml:lang="en">ogc</ows:Keyword>
+					<ows:Keyword xml:lang="en">wfs 2.0.0</ows:Keyword>
+					<ows:Keyword xml:lang="en">demo</ows:Keyword>
+					<ows:Keyword xml:lang="en">springeo</ows:Keyword>
+				</ows:Keywords>
+				<ows:ServiceType>urn:ogc:service:wfs</ows:ServiceType>
+				<ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+				<ows:Fees>None</ows:Fees>
+				<ows:AccessConstraints>None</ows:AccessConstraints>
+			</ows:ServiceIdentification>
+			<ows:ServiceProvider>
+				<ows:ProviderName>Fit2Inspire</ows:ProviderName>
+				<ows:ServiceContact>
+					<ows:IndividualName>Jean-Loup Delaveau</ows:IndividualName>
+					<ows:PositionName>geodata manager</ows:PositionName>
+					<ows:ContactInfo>
+						<ows:Phone>
+							<ows:Voice>+33(0)785530423</ows:Voice>
+						</ows:Phone>
+						<ows:Address>
+							<ows:City>Lyon</ows:City>
+							<ows:PostalCode>69003</ows:PostalCode>
+							<ows:Country>France</ows:Country>
+							<ows:ElectronicMailAddress>fit2inspire@orange.fr</ows:ElectronicMailAddress>
+						</ows:Address>
+						<ows:OnlineResource xlink:type="simple" xlink:href="http://www.fit2inspire.eu"></ows:OnlineResource>
+					</ows:ContactInfo>
+					<ows:Role>originator</ows:Role>
+				</ows:ServiceContact>
+			</ows:ServiceProvider>
+			<ows:OperationsMetadata>
+				<ows:Operation name="DescribeStoredQueries">
+					<ows:DCP>
+						<ows:HTTP>
+							<ows:Get xlink:type="simple" xlink:href="http://plu.fit2inspire.eu"></ows:Get>
+						</ows:HTTP>
+					</ows:DCP>
+				</ows:Operation>
+				<ows:Operation name="ListStoredQueries">
+					<ows:DCP>
+						<ows:HTTP>
+							<ows:Get xlink:type="simple" xlink:href="http://plu.fit2inspire.eu"></ows:Get>
+						</ows:HTTP>
+					</ows:DCP>
+				</ows:Operation>
+				<ows:Operation name="DescribeFeatureType">
+					<ows:DCP>
+						<ows:HTTP>
+							<ows:Get xlink:type="simple" xlink:href="http://plu.fit2inspire.eu"></ows:Get>
+						</ows:HTTP>
+					</ows:DCP>
+					<ows:Parameter name="outputFormat">
+						<ows:AllowedValues>
+							<ows:Value>application/gml+xml;version=3.2</ows:Value>
+						</ows:AllowedValues>
+					</ows:Parameter>
+				</ows:Operation>
+				<ows:Operation name="GetFeature">
+					<ows:DCP>
+						<ows:HTTP>
+							<ows:Get xlink:type="simple" xlink:href="http://plu.fit2inspire.eu"></ows:Get>
+						</ows:HTTP>
+					</ows:DCP>
+					<ows:Parameter name="outputFormat">
+						<ows:AllowedValues>
+							<ows:Value>application/gml+xml;version=3.2</ows:Value>
+						</ows:AllowedValues>
+					</ows:Parameter>
+				</ows:Operation>
+				<ows:Operation name="GetCapabilities">
+					<ows:DCP>
+						<ows:HTTP>
+							<ows:Get xlink:type="simple" xlink:href="http://plu.fit2inspire.eu"></ows:Get>
+						</ows:HTTP>
+					</ows:DCP>
+					<ows:Parameter name="AcceptVersions">
+						<ows:AllowedValues>
+							<ows:Value>2.0.0</ows:Value>
+						</ows:AllowedValues>
+					</ows:Parameter>
+					<ows:Parameter name="AcceptFormats">
+						<ows:AllowedValues>
+							<ows:Value>text/plain</ows:Value>
+						</ows:AllowedValues>
+					</ows:Parameter>
+					<ows:Parameter name="Sections">
+						<ows:AllowedValues>
+							<ows:Value>Filter_Capabilities</ows:Value>
+							<ows:Value>FeatureTypeList</ows:Value>
+							<ows:Value>OperationsMetadata</ows:Value>
+							<ows:Value>ServiceProvider</ows:Value>
+							<ows:Value>ServiceIdentification</ows:Value>
+						</ows:AllowedValues>
+					</ows:Parameter>
+				</ows:Operation>
+				<ows:Parameter name="Version">
+					<ows:AllowedValues>
+						<ows:Value>2.0.0</ows:Value>
+					</ows:AllowedValues>
+				</ows:Parameter>
+				<ows:ExtendedCapabilities>
+					<icommon:SupportedLanguages>
+						<icommon:DefaultLanguage>
+							<icommon:Language>fre</icommon:Language>
+						</icommon:DefaultLanguage>
+						<icommon:SupportedLanguage>
+							<icommon:Language>eng</icommon:Language>
+						</icommon:SupportedLanguage>
+					</icommon:SupportedLanguages>
+					<icommon:ResourceLocator>
+						<icommon:URL>http://localhost:8090/wfs</icommon:URL>
+						<icommon:MediaType>application/vnd.ogc.wfs_xml</icommon:MediaType>
+					</icommon:ResourceLocator>
+					<icommon:ResourceType>service</icommon:ResourceType>
+					<icommon:TemporalReference>
+						<icommon:DateOfPublication>2014-11-03</icommon:DateOfPublication>
+					</icommon:TemporalReference>
+					<icommon:Conformity>
+						<icommon:Specification>
+							<icommon:Title>D2.8.III.4 INSPIRE Data Specification on Land Use</icommon:Title>
+							<icommon:DateOfPublication>2013-12-10</icommon:DateOfPublication>
+							<icommon:ResourceLocator>
+								<icommon:URL>http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_LU_v3.0.pdf</icommon:URL>
+								<icommon:MediaType>application/pdf</icommon:MediaType>
+							</icommon:ResourceLocator>
+						</icommon:Specification>
+						<icommon:Degree>conformant</icommon:Degree>
+					</icommon:Conformity>
+					<icommon:MetadataDate>2020-09-09</icommon:MetadataDate>
+					<icommon:SpatialDataServiceType>download</icommon:SpatialDataServiceType>
+					<icommon:MandatoryKeyword>
+						<icommon:OriginatingControlledVocabulary>
+							<icommon:Title>Règlement (CE) n o 1205/2008</icommon:Title>
+							<icommon:DateOfPublication>2008-12_03</icommon:DateOfPublication>
+						</icommon:OriginatingControlledVocabulary>
+						<icommon:KeywordValue>infoFeatureAccessService</icommon:KeywordValue>
+					</icommon:MandatoryKeyword>
+				</ows:ExtendedCapabilities>
+			</ows:OperationsMetadata>
+			<wfs:FeatureTypeList>
+				<wfs:FeatureType>
+					<wfs:Name>plu:SpatialPlan</wfs:Name>
+					<wfs:Title xml:lang="fr">Plan local d'urbanisme</wfs:Title>
+					<wfs:Title>Spatial planning document</wfs:Title>
+					<wfs:Abstract xml:lang="fr">Plans locaux d'urbanisme en projet ou ayant été approuvés à l'échelle communale. Le plan local d’urbanisme (PLU) est le principal document de planification à l’échelle communale ou dans certains cas intercommunale. Il a été créé par la loi Solidarité et Renouvellement Urbain (SRU) du 13 décembre 2000, non seulement pour se substituer au plan d’occupation des sols (POS) en matière de fixation des règles d’utilisation du sol, mais plus largement pour instituer l’établissement d’un projet de territoire dans un document stratégique local. Contrairement à son prédécesseur, il contient un projet d’aménagement et de développement durable (PADD), document non opposable explicitant une certaine vision pour le territoire. Des orientations d’aménagement opposables pouvant encadrer les actions et opérations d’aménagement sur les quartiers le rendent plus opérationnel. Tout document de planification communal ou intercommunal de type PLU ou POS en cours d'élaboration, opposable ou annulé existant sous forme de données géographiques numériques peut figurer dans cette classe d'objets.</wfs:Abstract>
+					<wfs:Abstract>Documents that indicates a strategic direction for the development of a given geographic area, states the policies, priorities, programmes and land allocations that will implement the strategic direction and influences the distribution of people and activities in spaces of various scales.</wfs:Abstract>
+					<ows:Keywords>
+						<ows:Keyword xml:lang="fr">plan local d'urbanisme</ows:Keyword>
+						<ows:Keyword xml:lang="fr">PLU</ows:Keyword>
+						<ows:Keyword xml:lang="en">spatial plan</ows:Keyword>
+						<ows:Keyword xml:lang="en">planned land use</ows:Keyword>
+					</ows:Keywords>
+					<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::4326</wfs:DefaultCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::2154</wfs:OtherCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4171</wfs:OtherCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+					<wfs:OutputFormats>
+						<wfs:Format>application/gml+xml;version=3.2</wfs:Format>
+					</wfs:OutputFormats>
+					<ows:WGS84BoundingBox dimensions="0">
+						<ows:LowerCorner>5.020000 45.550000</ows:LowerCorner>
+						<ows:UpperCorner>5.340000 45.700000</ows:UpperCorner>
+					</ows:WGS84BoundingBox>
+					<wfs:MetadataURL xlink:type="simple" xlink:href="http://adelie.application.developpement-durable.gouv.fr/syntheseFiche.do?id=FR-120066022-MDLOT-27670"></wfs:MetadataURL>
+					<wfs:MetadataURL xlink:type="simple" xlink:href="http://adelie.application.developpement-durable.gouv.fr/syntheseFiche.do?id=FR-120066022-MDLOT-27669"></wfs:MetadataURL>
+					<wfs:MetadataURL xlink:type="simple" xlink:href="http://adelie.application.developpement-durable.gouv.fr/syntheseFiche.do?id=FR-120066022-MDLOT-24653"></wfs:MetadataURL>
+					<wfs:MetadataURL xlink:type="simple" xlink:href="http://adelie.application.developpement-durable.gouv.fr/syntheseFiche.do?id=FR-120066022-MDLOT-27084"></wfs:MetadataURL>
+					<wfs:MetadataURL xlink:type="simple" xlink:href="http://adelie.application.developpement-durable.gouv.fr/syntheseFiche.do?id=FR-120066022-MDLOT-150710"></wfs:MetadataURL>
+					<wfs:MetadataURL xlink:type="simple" xlink:href="http://adelie.application.developpement-durable.gouv.fr/syntheseFiche.do?id=FR-120066022-MDLOT-27661"></wfs:MetadataURL>
+				</wfs:FeatureType>
+				<wfs:FeatureType>
+					<wfs:Name>plu:ZoningElement</wfs:Name>
+					<wfs:Title xml:lang="fr">Zone d'un plan local d'urbanisme</wfs:Title>
+					<wfs:Title>Zoning Element</wfs:Title>
+					<wfs:Abstract xml:lang="fr">Zones d'urbanisme correspondant au plan de zonage du PLU : ces zones regroupent les zones urbaines (U), les zones à urbaniser (AU), les zones agricoles (A) et les zones naturelles et forestières (N). A chaque zone est attaché un règlement. Le règlement peut fixer des règles différentes, selon que la destination des constructions concerne l’habitation, l’hébergement hôtelier, les bureaux, le commerce, l’artisanat, l’industrie, l’exploitation agricole ou forestière ou la fonction d’entrepôt.</wfs:Abstract>
+					<wfs:Abstract>A spatial object which is homogeneous regarding the permitted uses of land based on zoning which separate one set of land uses from another. Zoning elements refer to the regulation of the kinds of activities which will be acceptable on particular lots (such as open space, residential, agricultural, commercial or industrial).</wfs:Abstract>
+					<ows:Keywords>
+						<ows:Keyword xml:lang="fr">zone</ows:Keyword>
+						<ows:Keyword xml:lang="fr">secteur</ows:Keyword>
+						<ows:Keyword xml:lang="fr">zonage</ows:Keyword>
+						<ows:Keyword xml:lang="fr">plan local d'urbanisme</ows:Keyword>
+						<ows:Keyword xml:lang="fr">PLU</ows:Keyword>
+						<ows:Keyword xml:lang="fr">POS</ows:Keyword>
+						<ows:Keyword xml:lang="fr">carte communale</ows:Keyword>
+						<ows:Keyword xml:lang="en">spatial plan</ows:Keyword>
+						<ows:Keyword xml:lang="en">zoning element</ows:Keyword>
+						<ows:Keyword xml:lang="en">planned land use</ows:Keyword>
+					</ows:Keywords>
+					<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::4326</wfs:DefaultCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::2154</wfs:OtherCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4171</wfs:OtherCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+					<wfs:OutputFormats>
+						<wfs:Format>application/gml+xml;version=3.2</wfs:Format>
+					</wfs:OutputFormats>
+					<ows:WGS84BoundingBox dimensions="0">
+						<ows:LowerCorner>5.020000 45.550000</ows:LowerCorner>
+						<ows:UpperCorner>5.340000 45.700000</ows:UpperCorner>
+					</ows:WGS84BoundingBox>
+				</wfs:FeatureType>
+				<wfs:FeatureType>
+					<wfs:Name>plu:SupplementaryRegulation</wfs:Name>
+					<wfs:Title xml:lang="fr">Information ou prescription d'un plan local d'urbanisme</wfs:Title>
+					<wfs:Title>Supplementary regulation</wfs:Title>
+					<wfs:Abstract xml:lang="fr">Les prescriptions surfaciques, linéaires et ponctuelles se superposent à une zone du document d'urbanisme et exercent en général une contrainte supplémentaire au règlement de la zone. A chaque prescription est attaché un règlement. Les informations du plan local d'urbanisme sont des informations annexées ou reportées à titre informatif sur les documents graphiques du PLU.</wfs:Abstract>
+					<wfs:Abstract>A spatial object (point, line or polygon) of a spatial plan that provides supplementary information and/or limitation of the use of land/water necessary for spatial planning reasons or to formalise external rules defined in legal text.</wfs:Abstract>
+					<ows:Keywords>
+						<ows:Keyword xml:lang="fr">information</ows:Keyword>
+						<ows:Keyword xml:lang="fr">prescription</ows:Keyword>
+						<ows:Keyword xml:lang="fr">annexe</ows:Keyword>
+						<ows:Keyword xml:lang="fr">plan local d'urbanisme</ows:Keyword>
+						<ows:Keyword xml:lang="fr">PLU</ows:Keyword>
+						<ows:Keyword xml:lang="fr">POS</ows:Keyword>
+						<ows:Keyword xml:lang="fr">carte communale</ows:Keyword>
+						<ows:Keyword xml:lang="en">supplementary regulation</ows:Keyword>
+						<ows:Keyword xml:lang="en">spatial plan</ows:Keyword>
+						<ows:Keyword xml:lang="en">planned land use</ows:Keyword>
+					</ows:Keywords>
+					<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::4326</wfs:DefaultCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::2154</wfs:OtherCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4171</wfs:OtherCRS>
+					<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+					<wfs:OutputFormats>
+						<wfs:Format>application/gml+xml;version=3.2</wfs:Format>
+					</wfs:OutputFormats>
+					<ows:WGS84BoundingBox dimensions="0">
+						<ows:LowerCorner>5.020000 45.550000</ows:LowerCorner>
+						<ows:UpperCorner>5.340000 45.700000</ows:UpperCorner>
+					</ows:WGS84BoundingBox>
+				</wfs:FeatureType>
+				<wfs:FeatureType>
+					<wfs:Name>plu:OfficialDocumentation</wfs:Name>
+					<wfs:Title xml:lang="fr">Documents réglementaires constituant le plan local d'urbanisme opposable. Ces règlements et autres documents littéraux sont indispensables à la compréhension du document d'urbanisme.</wfs:Title>
+					<wfs:Title>official documentation</wfs:Title>
+					<wfs:Abstract xml:lang="fr">Un plan local d'urbanisme (PLU) se compose d'un règlement de zonage, d'un rapport de présentation, d'un projet d’aménagement et de développement durable (PADD), document non opposable explicitant une certaine vision pour le territoire, d'orientations d’aménagement opposables pouvant encadrer les actions et opérations d’aménagement sur certains quartiers, de documents graphiques et de textes associés à des prescriptions ou informations annexées au PLU.</wfs:Abstract>
+					<wfs:Abstract>The official documentation that composes the spatial plan; it may be composed of, the applicable legislation, the regulations, cartographic elements, descriptive elements that may be associated with the complete spatial plan, a zoning element or a supplementary regulation . In some Member States the actual textual regulation will be part of the data set, in other Member States the text will not be part of the data set and will be referenced via a reference to a document or a legal act. At least one of the three voidable values shall be provided.</wfs:Abstract>
+					<ows:Keywords>
+						<ows:Keyword xml:lang="fr">Règlement</ows:Keyword>
+						<ows:Keyword xml:lang="fr">Rapport de présentation</ows:Keyword>
+						<ows:Keyword xml:lang="fr">PADD</ows:Keyword>
+						<ows:Keyword xml:lang="fr">Annexes</ows:Keyword>
+						<ows:Keyword xml:lang="fr">Plan local d'urbanisme</ows:Keyword>
+						<ows:Keyword xml:lang="fr">PLU</ows:Keyword>
+						<ows:Keyword xml:lang="fr">POS</ows:Keyword>
+						<ows:Keyword xml:lang="fr">Carte communale</ows:Keyword>
+						<ows:Keyword xml:lang="en">Official documentation</ows:Keyword>
+						<ows:Keyword xml:lang="en">Regulation text</ows:Keyword>
+						<ows:Keyword xml:lang="en">Spatial plan</ows:Keyword>
+						<ows:Keyword xml:lang="en">Planned Land Use</ows:Keyword>
+					</ows:Keywords>
+					<wfs:NoCRS></wfs:NoCRS>
+					<wfs:OutputFormats>
+						<wfs:Format>application/gml+xml;version=3.2</wfs:Format>
+					</wfs:OutputFormats>
+				</wfs:FeatureType>
+			</wfs:FeatureTypeList>
+			<fes:Filter_Capabilities>
+				<fes:Conformance>
+					<fes:Constraint name="ImplementsBasicWFS">
+						<ows:DefaultValue>true</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsTransactionalWFS">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsLockingWFS">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="KVPEncoding">
+						<ows:DefaultValue>true</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="XMLEncoding">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="SOAPEncoding">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsInheritance">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsRemoteResolve">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsResultPaging">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsStandardJoins">
+						<ows:DefaultValue>true</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsSpatialJoins">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsTemporalJoins">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ImplementsFeatureVersioning">
+						<ows:DefaultValue>true</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ManageStoredQueries">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="PagingIsTransactionSafe">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ResolveTimeoutDefault">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="SortLevelLimit">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ResolveLocalScope">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ResolveRemoteScope">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="ResponseCacheTimeout">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+					<fes:Constraint name="QueryExpressions">
+						<ows:DefaultValue>false</ows:DefaultValue>
+					</fes:Constraint>
+				</fes:Conformance>
+			</fes:Filter_Capabilities>
+		</wfs:WFS_Capabilities>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
