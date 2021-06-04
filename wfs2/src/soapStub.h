@@ -924,9 +924,9 @@ enum icommon__euLanguageIETF {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9803 */
+/* ws-inspire-wfs2.h:9811 */
 #ifndef SOAP_TYPE__icommon__classificationOfSpatialDataService_KeywordValue
-#define SOAP_TYPE__icommon__classificationOfSpatialDataService_KeywordValue (794)
+#define SOAP_TYPE__icommon__classificationOfSpatialDataService_KeywordValue (789)
 /* icommon:classificationOfSpatialDataService-KeywordValue */
 enum _icommon__classificationOfSpatialDataService_KeywordValue {
 	_icommon__classificationOfSpatialDataService_KeywordValue__chainDefinitionService = 0,
@@ -1010,513 +1010,513 @@ enum _icommon__classificationOfSpatialDataService_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9994 */
+/* ws-inspire-wfs2.h:10002 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL (796)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL (791)
 /* icommon:resLocInspireInteroperabilityRegulation_bul-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aBG_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:9999 */
+/* ws-inspire-wfs2.h:10007 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType (797)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType (792)
 /* icommon:resLocInspireInteroperabilityRegulation_bul-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10023 */
+/* ws-inspire-wfs2.h:10031 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL (798)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL (793)
 /* icommon:resLocInspireInteroperabilityRegulation_cze-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aCS_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10028 */
+/* ws-inspire-wfs2.h:10036 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType (799)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType (794)
 /* icommon:resLocInspireInteroperabilityRegulation_cze-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10052 */
+/* ws-inspire-wfs2.h:10060 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL (800)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL (795)
 /* icommon:resLocInspireInteroperabilityRegulation_dan-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aDA_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10057 */
+/* ws-inspire-wfs2.h:10065 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType (801)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType (796)
 /* icommon:resLocInspireInteroperabilityRegulation_dan-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10081 */
+/* ws-inspire-wfs2.h:10089 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL (802)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL (797)
 /* icommon:resLocInspireInteroperabilityRegulation_dut-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aNL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10086 */
+/* ws-inspire-wfs2.h:10094 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType (803)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType (798)
 /* icommon:resLocInspireInteroperabilityRegulation_dut-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10110 */
+/* ws-inspire-wfs2.h:10118 */
 #ifndef SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_URL
-#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_URL (804)
+#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_URL (799)
 /* icommon:resLocGEMETInspireThemes_eng-URL */
 enum _icommon__resLocGEMETInspireThemes_x005feng_URL {
 	_icommon__resLocGEMETInspireThemes_x005feng_URL__http_x003a_x002f_x002fwww_x002eeionet_x002eeuropa_x002eeu_x002fgemet_x002finspire_x005fthemes_x003flangcode_x003den = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10115 */
+/* ws-inspire-wfs2.h:10123 */
 #ifndef SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_MediaType
-#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_MediaType (805)
+#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_MediaType (800)
 /* icommon:resLocGEMETInspireThemes_eng-MediaType */
 enum _icommon__resLocGEMETInspireThemes_x005feng_MediaType {
 	_icommon__resLocGEMETInspireThemes_x005feng_MediaType__text_x002fhtml = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10139 */
+/* ws-inspire-wfs2.h:10147 */
 #ifndef SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_Title
-#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_Title (806)
+#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_Title (801)
 /* icommon:citationGEMETInspireThemes_eng-Title */
 enum _icommon__citationGEMETInspireThemes_x005feng_Title {
 	_icommon__citationGEMETInspireThemes_x005feng_Title__GEMET_x0020__x0020INSPIRE_x0020themes = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10148 */
+/* ws-inspire-wfs2.h:10156 */
 #ifndef SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_DateOfPublication
-#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_DateOfPublication (808)
+#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_DateOfPublication (803)
 /* icommon:citationGEMETInspireThemes_eng-DateOfPublication */
 enum _icommon__citationGEMETInspireThemes_x005feng_DateOfPublication {
 	_icommon__citationGEMETInspireThemes_x005feng_DateOfPublication__2008_06_01 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10179 */
+/* ws-inspire-wfs2.h:10187 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_URL (811)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_URL (806)
 /* icommon:resLocInspireInteroperabilityRegulation_eng-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005feng_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005feng_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEN_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10184 */
+/* ws-inspire-wfs2.h:10192 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType (812)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType (807)
 /* icommon:resLocInspireInteroperabilityRegulation_eng-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10208 */
+/* ws-inspire-wfs2.h:10216 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_URL (813)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_URL (808)
 /* icommon:resLocInspireInteroperabilityRegulation_est-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fest_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fest_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aET_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10213 */
+/* ws-inspire-wfs2.h:10221 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType (814)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType (809)
 /* icommon:resLocInspireInteroperabilityRegulation_est-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10237 */
+/* ws-inspire-wfs2.h:10245 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL (815)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL (810)
 /* icommon:resLocInspireInteroperabilityRegulation_fin-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aFI_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10242 */
+/* ws-inspire-wfs2.h:10250 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType (816)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType (811)
 /* icommon:resLocInspireInteroperabilityRegulation_fin-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10266 */
+/* ws-inspire-wfs2.h:10274 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL (817)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL (812)
 /* icommon:resLocInspireInteroperabilityRegulation_fre-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aFR_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10271 */
+/* ws-inspire-wfs2.h:10279 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType (818)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType (813)
 /* icommon:resLocInspireInteroperabilityRegulation_fre-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10295 */
+/* ws-inspire-wfs2.h:10303 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_URL (819)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_URL (814)
 /* icommon:resLocInspireInteroperabilityRegulation_ger-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fger_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fger_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aDE_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10300 */
+/* ws-inspire-wfs2.h:10308 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType (820)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType (815)
 /* icommon:resLocInspireInteroperabilityRegulation_ger-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10324 */
+/* ws-inspire-wfs2.h:10332 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL (821)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL (816)
 /* icommon:resLocInspireInteroperabilityRegulation_gle-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEN_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10329 */
+/* ws-inspire-wfs2.h:10337 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType (822)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType (817)
 /* icommon:resLocInspireInteroperabilityRegulation_gle-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10353 */
+/* ws-inspire-wfs2.h:10361 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL (823)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL (818)
 /* icommon:resLocInspireInteroperabilityRegulation_gre-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10358 */
+/* ws-inspire-wfs2.h:10366 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType (824)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType (819)
 /* icommon:resLocInspireInteroperabilityRegulation_gre-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10382 */
+/* ws-inspire-wfs2.h:10390 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL (825)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL (820)
 /* icommon:resLocInspireInteroperabilityRegulation_hun-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aHU_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10387 */
+/* ws-inspire-wfs2.h:10395 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType (826)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType (821)
 /* icommon:resLocInspireInteroperabilityRegulation_hun-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10411 */
+/* ws-inspire-wfs2.h:10419 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_URL (827)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_URL (822)
 /* icommon:resLocInspireInteroperabilityRegulation_ita-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fita_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fita_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aIT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10416 */
+/* ws-inspire-wfs2.h:10424 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType (828)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType (823)
 /* icommon:resLocInspireInteroperabilityRegulation_ita-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10440 */
+/* ws-inspire-wfs2.h:10448 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_URL (829)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_URL (824)
 /* icommon:resLocInspireInteroperabilityRegulation_lav-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005flav_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005flav_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aLV_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10445 */
+/* ws-inspire-wfs2.h:10453 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType (830)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType (825)
 /* icommon:resLocInspireInteroperabilityRegulation_lav-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10469 */
+/* ws-inspire-wfs2.h:10477 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_URL (831)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_URL (826)
 /* icommon:resLocInspireInteroperabilityRegulation_lit-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005flit_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005flit_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aLT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10474 */
+/* ws-inspire-wfs2.h:10482 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType (832)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType (827)
 /* icommon:resLocInspireInteroperabilityRegulation_lit-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10498 */
+/* ws-inspire-wfs2.h:10506 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL (833)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL (828)
 /* icommon:resLocInspireInteroperabilityRegulation_mlt-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aMT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10503 */
+/* ws-inspire-wfs2.h:10511 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType (834)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType (829)
 /* icommon:resLocInspireInteroperabilityRegulation_mlt-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10527 */
+/* ws-inspire-wfs2.h:10535 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL (835)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL (830)
 /* icommon:resLocInspireInteroperabilityRegulation_pol-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aPL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10532 */
+/* ws-inspire-wfs2.h:10540 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType (836)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType (831)
 /* icommon:resLocInspireInteroperabilityRegulation_pol-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10556 */
+/* ws-inspire-wfs2.h:10564 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL (837)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL (832)
 /* icommon:resLocInspireInteroperabilityRegulation_por-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aPT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10561 */
+/* ws-inspire-wfs2.h:10569 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType (838)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType (833)
 /* icommon:resLocInspireInteroperabilityRegulation_por-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10585 */
+/* ws-inspire-wfs2.h:10593 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_URL (839)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_URL (834)
 /* icommon:resLocInspireInteroperabilityRegulation_rum-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005frum_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005frum_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aRO_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10590 */
+/* ws-inspire-wfs2.h:10598 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType (840)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType (835)
 /* icommon:resLocInspireInteroperabilityRegulation_rum-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10614 */
+/* ws-inspire-wfs2.h:10622 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL (841)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL (836)
 /* icommon:resLocInspireInteroperabilityRegulation_slo-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aSK_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10619 */
+/* ws-inspire-wfs2.h:10627 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType (842)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType (837)
 /* icommon:resLocInspireInteroperabilityRegulation_slo-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10643 */
+/* ws-inspire-wfs2.h:10651 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL (843)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL (838)
 /* icommon:resLocInspireInteroperabilityRegulation_slv-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aSL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10648 */
+/* ws-inspire-wfs2.h:10656 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType (844)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType (839)
 /* icommon:resLocInspireInteroperabilityRegulation_slv-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10672 */
+/* ws-inspire-wfs2.h:10680 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL (845)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL (840)
 /* icommon:resLocInspireInteroperabilityRegulation_spa-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEN_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10677 */
+/* ws-inspire-wfs2.h:10685 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType (846)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType (841)
 /* icommon:resLocInspireInteroperabilityRegulation_spa-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10701 */
+/* ws-inspire-wfs2.h:10709 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL (847)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL (842)
 /* icommon:resLocInspireInteroperabilityRegulation_swe-URL */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL__http_x003a_x002f_x002feur_lex_x002eeuropa_x002eeu_x002fLexUriServ_x002fLexUriServ_x002edo_x003furi_x003dOJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aSV_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:10706 */
+/* ws-inspire-wfs2.h:10714 */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType (848)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType (843)
 /* icommon:resLocInspireInteroperabilityRegulation_swe-MediaType */
 enum _icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType {
 	_icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType__application_x002fpdf = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11229 */
+/* ws-inspire-wfs2.h:11241 */
 #ifndef SOAP_TYPE__icommon__dataset_ResourceType
-#define SOAP_TYPE__icommon__dataset_ResourceType (864)
+#define SOAP_TYPE__icommon__dataset_ResourceType (859)
 /* icommon:dataset-ResourceType */
 enum _icommon__dataset_ResourceType {
 	_icommon__dataset_ResourceType__dataset = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11312 */
+/* ws-inspire-wfs2.h:11324 */
 #ifndef SOAP_TYPE__icommon__series_ResourceType
-#define SOAP_TYPE__icommon__series_ResourceType (867)
+#define SOAP_TYPE__icommon__series_ResourceType (862)
 /* icommon:series-ResourceType */
 enum _icommon__series_ResourceType {
 	_icommon__series_ResourceType__series = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11483 */
+/* ws-inspire-wfs2.h:11495 */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_Title
-#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_Title (868)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_Title (863)
 /* icommon:originatingControlledVocabularyGemetInspireThemes-Title */
 enum _icommon__originatingControlledVocabularyGemetInspireThemes_Title {
 	_icommon__originatingControlledVocabularyGemetInspireThemes_Title__GEMET_x0020__x0020INSPIRE_x0020themes = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11492 */
+/* ws-inspire-wfs2.h:11504 */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication
-#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication (870)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication (865)
 /* icommon:originatingControlledVocabularyGemetInspireThemes-DateOfPublication */
 enum _icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication {
 	_icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication__2008_06_01 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11520 */
+/* ws-inspire-wfs2.h:11532 */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyMD_Title
-#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_Title (872)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_Title (867)
 /* icommon:originatingControlledVocabularyMD-Title */
 enum _icommon__originatingControlledVocabularyMD_Title {
 	_icommon__originatingControlledVocabularyMD_Title__GEMET_x0020__x0020INSPIRE_x0020themes = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11529 */
+/* ws-inspire-wfs2.h:11541 */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyMD_DateOfPublication
-#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_DateOfPublication (874)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_DateOfPublication (869)
 /* icommon:originatingControlledVocabularyMD-DateOfPublication */
 enum _icommon__originatingControlledVocabularyMD_DateOfPublication {
 	_icommon__originatingControlledVocabularyMD_DateOfPublication__2008_06_01 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11559 */
+/* ws-inspire-wfs2.h:11571 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fbul_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fbul_KeywordValue (876)
+#define SOAP_TYPE__icommon__inspireTheme_x005fbul_KeywordValue (871)
 /* icommon:inspireTheme_bul-KeywordValue */
 enum _icommon__inspireTheme_x005fbul_KeywordValue {
 	_icommon__inspireTheme_x005fbul_KeywordValue___x0410_x0434_x043c_x0438_x043d_x0438_x0441_x0442_x0440_x0430_x0442_x0438_x0432_x043d_x0438_x0020_x0435_x0434_x0438_x043d_x0438_x0446_x0438 = 0,
@@ -1556,36 +1556,36 @@ enum _icommon__inspireTheme_x005fbul_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11618 */
+/* ws-inspire-wfs2.h:11630 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_Title (877)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_Title (872)
 /* icommon:citationInspireInteroperabilityRegulation_bul-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fbul_Title___x0420_x0415_x0413_x041b_x0410_x041c_x0415_x041d_x0422_x0020_x0028_x0415_x0421_x0029_x0020_x2116_x00201089_x002f2010_x0020_x041d_x0410_x0020_x041a_x041e_x041c_x0418_x0421_x0418_x042f_x0422_x0410_x0020_x043e_x0442_x002023_x0020_x043d_x043e_x0435_x043c_x0432_x0440_x0438_x00202010_x0020_x0433_x043e_x0434_x0438_x043d_x0430_x0020_x0437_x0430_x0020_x043f_x0440_x0438_x043b_x0430_x0433_x0430_x043d_x0435_x0020_x043d_x0430_x0020_x0414_x0438_x0440_x0435_x043a_x0442_x0438_x0432_x0430_x00202007_x002f2_x002f_x0415_x041e_x0020_x043d_x0430_x0020_x0415_x0432_x0440_x043e_x043f_x0435_x0439_x0441_x043a_x0438_x044f_x0020_x043f_x0430_x0440_x043b_x0430_x043c_x0435_x043d_x0442_x0020_x0438_x0020_x043d_x0430_x0020_x0421_x044a_x0432_x0435_x0442_x0430_x0020_x043f_x043e_x0020_x043e_x0442_x043d_x043e_x0448_x0435_x043d_x0438_x0435_x0020_x043d_x0430_x0020_x043e_x043f_x0435_x0440_x0430_x0442_x0438_x0432_x043d_x0430_x0442_x0430_x0020_x0441_x044a_x0432_x043c_x0435_x0441_x0442_x0438_x043c_x043e_x0441_x0442_x0020_x043d_x0430_x0020_x043c_x0430_x0441_x0438_x0432_x0438_x0020_x043e_x0442_x0020_x043f_x0440_x043e_x0441_x0442_x0440_x0430_x043d_x0441_x0442_x0432_x0435_x043d_x0438_x0020_x0434_x0430_x043d_x043d_x0438_x0020_x0438_x0020_x0443_x0441_x043b_x0443_x0433_x0438_x0020_x0437_x0430_x0020_x043f_x0440_x043e_x0441_x0442_x0440_x0430_x043d_x0441_x0442_x0432_x0435_x043d_x0438_x0020_x0434_x0430_x043d_x043d_x0438 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11627 */
+/* ws-inspire-wfs2.h:11639 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication (879)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication (874)
 /* icommon:citationInspireInteroperabilityRegulation_bul-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11634 */
+/* ws-inspire-wfs2.h:11646 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_URI (881)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_URI (876)
 /* icommon:citationInspireInteroperabilityRegulation_bul-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fbul_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aBG_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11664 */
+/* ws-inspire-wfs2.h:11676 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fcze_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fcze_KeywordValue (883)
+#define SOAP_TYPE__icommon__inspireTheme_x005fcze_KeywordValue (878)
 /* icommon:inspireTheme_cze-KeywordValue */
 enum _icommon__inspireTheme_x005fcze_KeywordValue {
 	_icommon__inspireTheme_x005fcze_KeywordValue__Adresy = 0,
@@ -1625,36 +1625,36 @@ enum _icommon__inspireTheme_x005fcze_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11723 */
+/* ws-inspire-wfs2.h:11735 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_Title (884)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_Title (879)
 /* icommon:citationInspireInteroperabilityRegulation_cze-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fcze_Title__NA_x0158_x00cdZEN_x00cd_x0020KOMISE_x0020_x0028EU_x0029_x0020_x010d_x002e_x00201089_x002f2010_x0020ze_x0020dne_x002023_x002e_x0020listopadu_x00202010_x002c_x0020kter_x00fdm_x0020se_x0020prov_x00e1d_x00ed_x0020sm_x011brnice_x0020Evropsk_x00e9ho_x0020parlamentu_x0020a_x0020Rady_x00202007_x002f2_x002fES_x002c_x0020pokud_x0020jde_x0020o_x0020interoperabilitu_x0020sad_x0020prostorov_x00fdch_x0020dat_x0020a_x0020slu_x017eeb_x0020prostorov_x00fdch_x0020dat = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11732 */
+/* ws-inspire-wfs2.h:11744 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication (886)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication (881)
 /* icommon:citationInspireInteroperabilityRegulation_cze-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11739 */
+/* ws-inspire-wfs2.h:11751 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_URI (888)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_URI (883)
 /* icommon:citationInspireInteroperabilityRegulation_cze-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fcze_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aCS_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11769 */
+/* ws-inspire-wfs2.h:11781 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fdan_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fdan_KeywordValue (890)
+#define SOAP_TYPE__icommon__inspireTheme_x005fdan_KeywordValue (885)
 /* icommon:inspireTheme_dan-KeywordValue */
 enum _icommon__inspireTheme_x005fdan_KeywordValue {
 	_icommon__inspireTheme_x005fdan_KeywordValue__Administrative_x0020enheder = 0,
@@ -1694,36 +1694,36 @@ enum _icommon__inspireTheme_x005fdan_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11828 */
+/* ws-inspire-wfs2.h:11840 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_Title (891)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_Title (886)
 /* icommon:citationInspireInteroperabilityRegulation_dan-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fdan_Title__KOMMISSIONENS_x0020FORORDNING_x0020_x0028EU_x0029_x0020Nr_x002e_x00201089_x002f2010_x0020af_x002023_x002e_x0020november_x00202010_x0020om_x0020gennemf_x00f8relse_x0020af_x0020Europa_Parlamentets_x0020og_x0020R_x00e5dets_x0020direktiv_x00202007_x002f2_x002fEF_x0020for_x0020s_x00e5_x0020vidt_x0020ang_x00e5r_x0020interoperabilitet_x0020for_x0020geodatas_x00e6t_x0020og_x0020_tjenester = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11837 */
+/* ws-inspire-wfs2.h:11849 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication (893)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication (888)
 /* icommon:citationInspireInteroperabilityRegulation_dan-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11844 */
+/* ws-inspire-wfs2.h:11856 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_URI (895)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_URI (890)
 /* icommon:citationInspireInteroperabilityRegulation_dan-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fdan_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aDA_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11874 */
+/* ws-inspire-wfs2.h:11886 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fdut_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fdut_KeywordValue (897)
+#define SOAP_TYPE__icommon__inspireTheme_x005fdut_KeywordValue (892)
 /* icommon:inspireTheme_dut-KeywordValue */
 enum _icommon__inspireTheme_x005fdut_KeywordValue {
 	_icommon__inspireTheme_x005fdut_KeywordValue__Administratieve_x0020eenheden = 0,
@@ -1763,36 +1763,36 @@ enum _icommon__inspireTheme_x005fdut_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11933 */
+/* ws-inspire-wfs2.h:11945 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_Title (898)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_Title (893)
 /* icommon:citationInspireInteroperabilityRegulation_dut-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fdut_Title__VERORDENING_x0020_x0028EU_x0029_x0020Nr_x002e_x00201089_x002f2010_x0020VAN_x0020DE_x0020COMMISSIE_x0020van_x002023_x0020november_x00202010_x0020ter_x0020uitvoering_x0020van_x0020Richtlijn_x00202007_x002f2_x002fEG_x0020van_x0020het_x0020Europees_x0020Parlement_x0020en_x0020de_x0020Raad_x0020betreffende_x0020de_x0020interoperabiliteit_x0020van_x0020verzamelingen_x0020ruimtelijke_x0020gegevens_x0020en_x0020van_x0020diensten_x0020met_x0020betrekking_x0020tot_x0020ruimtelijke_x0020gegevens = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11942 */
+/* ws-inspire-wfs2.h:11954 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication (900)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication (895)
 /* icommon:citationInspireInteroperabilityRegulation_dut-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11949 */
+/* ws-inspire-wfs2.h:11961 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_URI (902)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_URI (897)
 /* icommon:citationInspireInteroperabilityRegulation_dut-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fdut_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aNL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:11979 */
+/* ws-inspire-wfs2.h:11991 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005feng_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005feng_KeywordValue (904)
+#define SOAP_TYPE__icommon__inspireTheme_x005feng_KeywordValue (899)
 /* icommon:inspireTheme_eng-KeywordValue */
 enum _icommon__inspireTheme_x005feng_KeywordValue {
 	_icommon__inspireTheme_x005feng_KeywordValue__Addresses = 0,
@@ -1832,36 +1832,36 @@ enum _icommon__inspireTheme_x005feng_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12038 */
+/* ws-inspire-wfs2.h:12050 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_Title (905)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_Title (900)
 /* icommon:citationInspireInteroperabilityRegulation_eng-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005feng_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005feng_Title__COMMISSION_x0020REGULATION_x0020_x0028EU_x0029_x0020No_x00201089_x002f2010_x0020of_x002023_x0020November_x00202010_x0020implementing_x0020Directive_x00202007_x002f2_x002fEC_x0020of_x0020the_x0020European_x0020Parliament_x0020and_x0020of_x0020the_x0020Council_x0020as_x0020regards_x0020interoperability_x0020of_x0020spatial_x0020data_x0020sets_x0020and_x0020services = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12047 */
+/* ws-inspire-wfs2.h:12059 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication (907)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication (902)
 /* icommon:citationInspireInteroperabilityRegulation_eng-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12054 */
+/* ws-inspire-wfs2.h:12066 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_URI (909)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_URI (904)
 /* icommon:citationInspireInteroperabilityRegulation_eng-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005feng_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005feng_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEN_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12084 */
+/* ws-inspire-wfs2.h:12096 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fest_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fest_KeywordValue (911)
+#define SOAP_TYPE__icommon__inspireTheme_x005fest_KeywordValue (906)
 /* icommon:inspireTheme_est-KeywordValue */
 enum _icommon__inspireTheme_x005fest_KeywordValue {
 	_icommon__inspireTheme_x005fest_KeywordValue__Aadressid = 0,
@@ -1901,36 +1901,36 @@ enum _icommon__inspireTheme_x005fest_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12143 */
+/* ws-inspire-wfs2.h:12155 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_Title (912)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_Title (907)
 /* icommon:citationInspireInteroperabilityRegulation_est-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fest_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fest_Title__KOMISJONI_x0020M_x00c4_x00c4RUS_x0020_x0028EL_x0029_x0020nr_x00201089_x002f2010_x002c_x002023_x002e_x0020november_x00202010_x002c_x0020millega_x0020rakendatakse_x0020Euroopa_x0020Parlamendi_x0020ja_x0020n_x00f5ukogu_x0020direktiivi_x00202007_x002f2_x002fE_x00dc_x0020seoses_x0020ruumiandmekogumite_x0020ja_x0020_teenuste_x0020ristkasutatavusega = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12152 */
+/* ws-inspire-wfs2.h:12164 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication (914)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication (909)
 /* icommon:citationInspireInteroperabilityRegulation_est-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12159 */
+/* ws-inspire-wfs2.h:12171 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_URI (916)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_URI (911)
 /* icommon:citationInspireInteroperabilityRegulation_est-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fest_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fest_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aET_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12189 */
+/* ws-inspire-wfs2.h:12201 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005ffin_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005ffin_KeywordValue (918)
+#define SOAP_TYPE__icommon__inspireTheme_x005ffin_KeywordValue (913)
 /* icommon:inspireTheme_fin-KeywordValue */
 enum _icommon__inspireTheme_x005ffin_KeywordValue {
 	_icommon__inspireTheme_x005ffin_KeywordValue__Aluesuunnittelun_x002c_x0020rajoitusten_x0020ja_x0020s_x00e4_x00e4ntelyn_x0020piiriin_x0020kuuluvat_x0020alueet_x0020ja_x0020raportointiyksik_x00f6t = 0,
@@ -1970,36 +1970,36 @@ enum _icommon__inspireTheme_x005ffin_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12248 */
+/* ws-inspire-wfs2.h:12260 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_Title (919)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_Title (914)
 /* icommon:citationInspireInteroperabilityRegulation_fin-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005ffin_Title__KOMISSION_x0020ASETUS_x0020_x0028EU_x0029_x0020N_x003ao_x00201089_x002f2010_x002c_x0020annettu_x002023_x0020p_x00e4iv_x00e4n_x00e4_x0020marraskuuta_x00202010_x002c_x0020Euroopan_x0020parlamentin_x0020ja_x0020neuvoston_x0020direktiivin_x00202007_x002f2_x002fEY_x0020t_x00e4yt_x00e4nt_x00f6_x00f6npanosta_x0020paikkatietoaineistojen_x0020ja_x0020_palvelujen_x0020yhteentoimivuuden_x0020osalta = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12257 */
+/* ws-inspire-wfs2.h:12269 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication (921)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication (916)
 /* icommon:citationInspireInteroperabilityRegulation_fin-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12264 */
+/* ws-inspire-wfs2.h:12276 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_URI (923)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_URI (918)
 /* icommon:citationInspireInteroperabilityRegulation_fin-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005ffin_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aFI_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12294 */
+/* ws-inspire-wfs2.h:12306 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005ffre_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005ffre_KeywordValue (925)
+#define SOAP_TYPE__icommon__inspireTheme_x005ffre_KeywordValue (920)
 /* icommon:inspireTheme_fre-KeywordValue */
 enum _icommon__inspireTheme_x005ffre_KeywordValue {
 	_icommon__inspireTheme_x005ffre_KeywordValue__Adresses = 0,
@@ -2039,36 +2039,36 @@ enum _icommon__inspireTheme_x005ffre_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12353 */
+/* ws-inspire-wfs2.h:12365 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_Title (926)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_Title (921)
 /* icommon:citationInspireInteroperabilityRegulation_fre-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005ffre_Title__R_x00c8GLEMENT_x0020_x0028UE_x0029_x0020N_x0020o_x00201089_x002f2010_x0020DE_x0020LA_x0020COMMISSION_x0020du_x002023_x0020novembre_x00202010_x0020portant_x0020modalit_x00e9s_x0020d_x0027application_x0020de_x0020la_x0020directive_x00202007_x002f2_x002fCE_x0020du_x0020Parlement_x0020europ_x00e9en_x0020et_x0020du_x0020Conseil_x0020en_x0020ce_x0020qui_x0020concerne_x0020l_x0027interop_x00e9rabilit_x00e9_x0020des_x0020s_x00e9ries_x0020et_x0020des_x0020services_x0020de_x0020donn_x00e9es_x0020g_x00e9ographiques = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12362 */
+/* ws-inspire-wfs2.h:12374 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication (928)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication (923)
 /* icommon:citationInspireInteroperabilityRegulation_fre-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12369 */
+/* ws-inspire-wfs2.h:12381 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_URI (930)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_URI (925)
 /* icommon:citationInspireInteroperabilityRegulation_fre-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005ffre_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aFR_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12399 */
+/* ws-inspire-wfs2.h:12411 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fger_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fger_KeywordValue (932)
+#define SOAP_TYPE__icommon__inspireTheme_x005fger_KeywordValue (927)
 /* icommon:inspireTheme_ger-KeywordValue */
 enum _icommon__inspireTheme_x005fger_KeywordValue {
 	_icommon__inspireTheme_x005fger_KeywordValue__Adressen = 0,
@@ -2108,36 +2108,36 @@ enum _icommon__inspireTheme_x005fger_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12458 */
+/* ws-inspire-wfs2.h:12470 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_Title (933)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_Title (928)
 /* icommon:citationInspireInteroperabilityRegulation_ger-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fger_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fger_Title__VERORDNUNG_x0020_x0028EG_x0029_x0020Nr_x002e_x00201089_x002f2010_x0020DER_x0020KOMMISSION_x0020vom_x002023_x002e_x0020November_x00202010_x0020zur_x0020Durchf_x00fchrung_x0020der_x0020Richtlinie_x00202007_x002f2_x002fEG_x0020des_x0020Europ_x00e4ischen_x0020Parlaments_x0020und_x0020des_x0020Rates_x0020hinsichtlich_x0020der_x0020Interoperabilit_x00e4t_x0020von_x0020Geodatens_x00e4tzen_x0020und_x0020_diensten = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12467 */
+/* ws-inspire-wfs2.h:12479 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication (935)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication (930)
 /* icommon:citationInspireInteroperabilityRegulation_ger-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12474 */
+/* ws-inspire-wfs2.h:12486 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_URI (937)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_URI (932)
 /* icommon:citationInspireInteroperabilityRegulation_ger-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fger_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fger_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aDE_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12504 */
+/* ws-inspire-wfs2.h:12516 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fgle_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fgle_KeywordValue (939)
+#define SOAP_TYPE__icommon__inspireTheme_x005fgle_KeywordValue (934)
 /* icommon:inspireTheme_gle-KeywordValue */
 enum _icommon__inspireTheme_x005fgle_KeywordValue {
 	_icommon__inspireTheme_x005fgle_KeywordValue__Addresses = 0,
@@ -2177,36 +2177,36 @@ enum _icommon__inspireTheme_x005fgle_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12563 */
+/* ws-inspire-wfs2.h:12575 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_Title (940)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_Title (935)
 /* icommon:citationInspireInteroperabilityRegulation_gle-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fgle_Title__COMMISSION_x0020REGULATION_x0020_x0028EU_x0029_x0020No_x00201089_x002f2010_x0020of_x002023_x0020November_x00202010_x0020implementing_x0020Directive_x00202007_x002f2_x002fEC_x0020of_x0020the_x0020European_x0020Parliament_x0020and_x0020of_x0020the_x0020Council_x0020as_x0020regards_x0020interoperability_x0020of_x0020spatial_x0020data_x0020sets_x0020and_x0020services = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12572 */
+/* ws-inspire-wfs2.h:12584 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication (942)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication (937)
 /* icommon:citationInspireInteroperabilityRegulation_gle-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12579 */
+/* ws-inspire-wfs2.h:12591 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_URI (944)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_URI (939)
 /* icommon:citationInspireInteroperabilityRegulation_gle-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fgle_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEN_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12609 */
+/* ws-inspire-wfs2.h:12621 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fgre_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fgre_KeywordValue (946)
+#define SOAP_TYPE__icommon__inspireTheme_x005fgre_KeywordValue (941)
 /* icommon:inspireTheme_gre-KeywordValue */
 enum _icommon__inspireTheme_x005fgre_KeywordValue {
 	_icommon__inspireTheme_x005fgre_KeywordValue___x0391_x03bd_x03b8_x03c1_x03ce_x03c0_x03b9_x03bd_x03b7_x0020_x03c5_x03b3_x03b5_x03af_x03b1_x0020_x03ba_x03b1_x03b9_x0020_x03b1_x03c3_x03c6_x03ac_x03bb_x03b5_x03b9_x03b1 = 0,
@@ -2246,36 +2246,36 @@ enum _icommon__inspireTheme_x005fgre_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12668 */
+/* ws-inspire-wfs2.h:12680 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_Title (947)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_Title (942)
 /* icommon:citationInspireInteroperabilityRegulation_gre-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fgre_Title___x039a_x0391_x039d_x039f_x039d_x0399_x03a3_x039c_x039f_x03a3_x0020_x0028_x0395_x0395_x0029_x0020_x03b1_x03c1_x03b9_x03b8_x002e_x00201089_x002f2010_x0020_x03a4_x0397_x03a3_x0020_x0395_x03a0_x0399_x03a4_x03a1_x039f_x03a0_x0397_x03a3_x0020_x03c4_x03b7_x03c2_x002023_x03b7_x03c2_x0020_x039d_x03bf_x03b5_x03bc_x03b2_x03c1_x03af_x03bf_x03c5_x00202010_x0020_x03c3_x03c7_x03b5_x03c4_x03b9_x03ba_x03ac_x0020_x03bc_x03b5_x0020_x03c4_x03b7_x03bd_x0020_x03b5_x03c6_x03b1_x03c1_x03bc_x03bf_x03b3_x03ae_x0020_x03c4_x03b7_x03c2_x0020_x03bf_x03b4_x03b7_x03b3_x03af_x03b1_x03c2_x00202007_x002f2_x002f_x0395_x039a_x0020_x03c4_x03bf_x03c5_x0020_x0395_x03c5_x03c1_x03c9_x03c0_x03b1_x03ca_x03ba_x03bf_x03cd_x0020_x039a_x03bf_x03b9_x03bd_x03bf_x03b2_x03bf_x03c5_x03bb_x03af_x03bf_x03c5_x0020_x03ba_x03b1_x03b9_x0020_x03c4_x03bf_x03c5_x0020_x03a3_x03c5_x03bc_x03b2_x03bf_x03c5_x03bb_x03af_x03bf_x03c5_x0020_x03cc_x03c3_x03bf_x03bd_x0020_x03b1_x03c6_x03bf_x03c1_x03ac_x0020_x03c4_x03b7_x0020_x03b4_x03b9_x03b1_x03bb_x03b5_x03b9_x03c4_x03bf_x03c5_x03c1_x03b3_x03b9_x03ba_x03cc_x03c4_x03b7_x03c4_x03b1_x0020_x03c4_x03c9_x03bd_x0020_x03c3_x03c5_x03bd_x03cc_x03bb_x03c9_x03bd_x0020_x03ba_x03b1_x03b9_x0020_x03c4_x03c9_x03bd_x0020_x03c5_x03c0_x03b7_x03c1_x03b5_x03c3_x03b9_x03ce_x03bd_x0020_x03c7_x03c9_x03c1_x03b9_x03ba_x03ce_x03bd_x0020_x03b4_x03b5_x03b4_x03bf_x03bc_x03ad_x03bd_x03c9_x03bd = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12677 */
+/* ws-inspire-wfs2.h:12689 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication (949)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication (944)
 /* icommon:citationInspireInteroperabilityRegulation_gre-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12684 */
+/* ws-inspire-wfs2.h:12696 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_URI (951)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_URI (946)
 /* icommon:citationInspireInteroperabilityRegulation_gre-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fgre_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aEL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12714 */
+/* ws-inspire-wfs2.h:12726 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fhun_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fhun_KeywordValue (953)
+#define SOAP_TYPE__icommon__inspireTheme_x005fhun_KeywordValue (948)
 /* icommon:inspireTheme_hun-KeywordValue */
 enum _icommon__inspireTheme_x005fhun_KeywordValue {
 	_icommon__inspireTheme_x005fhun_KeywordValue__A_x0020fajok_x0020megoszl_x00e1sa = 0,
@@ -2315,36 +2315,36 @@ enum _icommon__inspireTheme_x005fhun_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12773 */
+/* ws-inspire-wfs2.h:12785 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_Title (954)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_Title (949)
 /* icommon:citationInspireInteroperabilityRegulation_hun-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fhun_Title__A_x0020BIZOTTS_x00c1G_x00201089_x002f2010_x002fEU_x0020RENDELETE_x0020_x00282010_x002e_x0020november_x002023_x002e_x0029_x0020a_x00202007_x002f2_x002fEK_x0020eur_x00f3pai_x0020parlamenti_x0020_x00e9s_x0020tan_x00e1csi_x0020ir_x00e1nyelv_x0020t_x00e9radatk_x00e9szletek_x0020_x00e9s_x0020_szolg_x00e1ltat_x00e1sok_x0020interoperabilit_x00e1s_x00e1ra_x0020vonatkoz_x00f3_x0020rendelkez_x00e9seinek_x0020v_x00e9grehajt_x00e1s_x00e1r_x00f3l = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12782 */
+/* ws-inspire-wfs2.h:12794 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication (956)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication (951)
 /* icommon:citationInspireInteroperabilityRegulation_hun-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12789 */
+/* ws-inspire-wfs2.h:12801 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_URI (958)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_URI (953)
 /* icommon:citationInspireInteroperabilityRegulation_hun-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fhun_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aHU_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12819 */
+/* ws-inspire-wfs2.h:12831 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fita_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fita_KeywordValue (960)
+#define SOAP_TYPE__icommon__inspireTheme_x005fita_KeywordValue (955)
 /* icommon:inspireTheme_ita-KeywordValue */
 enum _icommon__inspireTheme_x005fita_KeywordValue {
 	_icommon__inspireTheme_x005fita_KeywordValue__Condizioni_x0020atmosferiche = 0,
@@ -2384,36 +2384,36 @@ enum _icommon__inspireTheme_x005fita_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12878 */
+/* ws-inspire-wfs2.h:12890 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_Title (961)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_Title (956)
 /* icommon:citationInspireInteroperabilityRegulation_ita-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fita_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fita_Title__REGOLAMENTO_x0020_x0028UE_x0029_x0020N_x002e_x00201089_x002f2010_x0020DELLA_x0020COMMISSIONE_x0020del_x002023_x0020novembre_x00202010_x0020recante_x0020attuazione_x0020della_x0020direttiva_x00202007_x002f2_x002fCE_x0020del_x0020Parlamento_x0020europeo_x0020e_x0020del_x0020Consiglio_x0020per_x0020quanto_x0020riguarda_x0020l_x0027interoperabilit_x00e0_x0020dei_x0020set_x0020di_x0020dati_x0020territoriali_x0020e_x0020dei_x0020servizi_x0020di_x0020dati_x0020territoriali = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12887 */
+/* ws-inspire-wfs2.h:12899 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication (963)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication (958)
 /* icommon:citationInspireInteroperabilityRegulation_ita-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12894 */
+/* ws-inspire-wfs2.h:12906 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_URI (965)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_URI (960)
 /* icommon:citationInspireInteroperabilityRegulation_ita-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fita_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fita_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aIT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12924 */
+/* ws-inspire-wfs2.h:12936 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005flav_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005flav_KeywordValue (967)
+#define SOAP_TYPE__icommon__inspireTheme_x005flav_KeywordValue (962)
 /* icommon:inspireTheme_lav-KeywordValue */
 enum _icommon__inspireTheme_x005flav_KeywordValue {
 	_icommon__inspireTheme_x005flav_KeywordValue__Administrat_x012bvas_x0020vien_x012bbas = 0,
@@ -2453,36 +2453,36 @@ enum _icommon__inspireTheme_x005flav_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12983 */
+/* ws-inspire-wfs2.h:12995 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_Title (968)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_Title (963)
 /* icommon:citationInspireInteroperabilityRegulation_lav-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005flav_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005flav_Title__KOMISIJAS_x0020REGULA_x0020_x0028ES_x0029_x0020Nr_x002e_x00201089_x002f2010_x0020_x00282010_x002e_x0020gada_x002023_x002e_x0020novembris_x0029_x002c_x0020ar_x0020kuru_x0020_x012bsteno_x0020Eiropas_x0020Parlamenta_x0020un_x0020Padomes_x0020Direkt_x012bvu_x00202007_x002f2_x002fEK_x0020attiec_x012bb_x0101_x0020uz_x0020telpisko_x0020datu_x0020kopu_x0020un_x0020telpisko_x0020datu_x0020pakalpojumu_x0020savstarp_x0113jo_x0020izmantojam_x012bbu = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12992 */
+/* ws-inspire-wfs2.h:13004 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication (970)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication (965)
 /* icommon:citationInspireInteroperabilityRegulation_lav-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:12999 */
+/* ws-inspire-wfs2.h:13011 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_URI (972)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_URI (967)
 /* icommon:citationInspireInteroperabilityRegulation_lav-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005flav_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005flav_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aLV_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13029 */
+/* ws-inspire-wfs2.h:13041 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005flit_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005flit_KeywordValue (974)
+#define SOAP_TYPE__icommon__inspireTheme_x005flit_KeywordValue (969)
 /* icommon:inspireTheme_lit-KeywordValue */
 enum _icommon__inspireTheme_x005flit_KeywordValue {
 	_icommon__inspireTheme_x005flit_KeywordValue__Administraciniai_x0020vienetai = 0,
@@ -2522,36 +2522,36 @@ enum _icommon__inspireTheme_x005flit_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13088 */
+/* ws-inspire-wfs2.h:13100 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_Title (975)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_Title (970)
 /* icommon:citationInspireInteroperabilityRegulation_lit-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005flit_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005flit_Title__KOMISIJOS_x0020REGLAMENTAS_x0020_x0028ES_x0029_x0020Nr_x002e_x00201089_x002f2010_x00202010_x0020m_x002e_x0020lapkri_x010dio_x002023_x0020d_x002e_x0020kuriuo_x0020_x012fgyvendinamos_x0020Europos_x0020Parlamento_x0020ir_x0020Tarybos_x0020direktyvos_x00202007_x002f2_x002fEB_x0020nuostatos_x0020d_x0117l_x0020erdvini_x0173_x0020duomen_x0173_x0020rinkini_x0173_x0020ir_x0020paslaug_x0173_x0020s_x0105veikumo = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13097 */
+/* ws-inspire-wfs2.h:13109 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication (977)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication (972)
 /* icommon:citationInspireInteroperabilityRegulation_lit-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13104 */
+/* ws-inspire-wfs2.h:13116 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_URI (979)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_URI (974)
 /* icommon:citationInspireInteroperabilityRegulation_lit-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005flit_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005flit_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aLT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13134 */
+/* ws-inspire-wfs2.h:13146 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fmlt_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fmlt_KeywordValue (981)
+#define SOAP_TYPE__icommon__inspireTheme_x005fmlt_KeywordValue (976)
 /* icommon:inspireTheme_mlt-KeywordValue */
 enum _icommon__inspireTheme_x005fmlt_KeywordValue {
 	_icommon__inspireTheme_x005fmlt_KeywordValue__Addresses = 0,
@@ -2591,36 +2591,36 @@ enum _icommon__inspireTheme_x005fmlt_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13193 */
+/* ws-inspire-wfs2.h:13205 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title (982)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title (977)
 /* icommon:citationInspireInteroperabilityRegulation_mlt-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title__REGOLAMENT_x0020TAL_KUMMISSJONI_x0020_x0028UE_x0029_x0020Nru_x00201089_x002f2010_x0020tat_23_x0020ta_x0027_x0020Novembru_x00202010_x0020li_x0020jimplimenta_x0020d_Direttiva_x00202007_x002f2_x002fKE_x0020tal_Parlament_x0020Ewropew_x0020u_x0020tal_Kunsill_x0020fir_rigward_x0020tal__x0020interoperabbilt_x00e0_x0020tas_settijiet_x0020ta_x2019_x0020dejta_x0020u_x0020servizzi_x0020_x0121eografi_x010bi = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13202 */
+/* ws-inspire-wfs2.h:13214 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication (984)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication (979)
 /* icommon:citationInspireInteroperabilityRegulation_mlt-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13209 */
+/* ws-inspire-wfs2.h:13221 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI (986)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI (981)
 /* icommon:citationInspireInteroperabilityRegulation_mlt-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aMT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13239 */
+/* ws-inspire-wfs2.h:13251 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fpol_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fpol_KeywordValue (988)
+#define SOAP_TYPE__icommon__inspireTheme_x005fpol_KeywordValue (983)
 /* icommon:inspireTheme_pol-KeywordValue */
 enum _icommon__inspireTheme_x005fpol_KeywordValue {
 	_icommon__inspireTheme_x005fpol_KeywordValue__Adresy = 0,
@@ -2660,36 +2660,36 @@ enum _icommon__inspireTheme_x005fpol_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13298 */
+/* ws-inspire-wfs2.h:13310 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_Title (989)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_Title (984)
 /* icommon:citationInspireInteroperabilityRegulation_pol-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fpol_Title__ROZPORZ_x0104DZENIE_x0020KOMISJI_x0020_x0028UE_x0029_x0020NR_x00201089_x002f2010_x0020z_x0020dnia_x002023_x0020listopada_x00202010_x0020r_x002e_x0020w_x0020sprawie_x0020wykonania_x0020dyrektywy_x00202007_x002f2_x002fWE_x0020Parlamentu_x0020Europejskiego_x0020i_x0020Rady_x0020w_x0020zakresie_x0020interoperacyjno_x015bci_x0020zbior_x00f3w_x0020i_x0020us_x0142ug_x0020danych_x0020przestrzennych = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13307 */
+/* ws-inspire-wfs2.h:13319 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication (991)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication (986)
 /* icommon:citationInspireInteroperabilityRegulation_pol-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13314 */
+/* ws-inspire-wfs2.h:13326 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_URI (993)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_URI (988)
 /* icommon:citationInspireInteroperabilityRegulation_pol-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fpol_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aPL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13344 */
+/* ws-inspire-wfs2.h:13356 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fpor_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fpor_KeywordValue (995)
+#define SOAP_TYPE__icommon__inspireTheme_x005fpor_KeywordValue (990)
 /* icommon:inspireTheme_por-KeywordValue */
 enum _icommon__inspireTheme_x005fpor_KeywordValue {
 	_icommon__inspireTheme_x005fpor_KeywordValue__Altitude = 0,
@@ -2729,36 +2729,36 @@ enum _icommon__inspireTheme_x005fpor_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13403 */
+/* ws-inspire-wfs2.h:13415 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_Title (996)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_Title (991)
 /* icommon:citationInspireInteroperabilityRegulation_por-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fpor_Title__REGULAMENTO_x0020_x0028UE_x0029_x0020N_x002e_x0020o_x00201089_x002f2010_x0020DA_x0020COMISS_x00c3O_x0020de_x002023_x0020de_x0020Novembro_x0020de_x00202010_x0020que_x0020estabelece_x0020as_x0020disposi_x00e7_x00f5es_x0020de_x0020execu_x00e7_x00e3o_x0020da_x0020Directiva_x00202007_x002f2_x002fCE_x0020do_x0020Parlamento_x0020Europeu_x0020e_x0020do_x0020Conselho_x0020relativamente_x0020_x00e0_x0020interoperabilidade_x0020dos_x0020conjuntos_x0020e_x0020servi_x00e7os_x0020de_x0020dados_x0020geogr_x00e1ficos = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13412 */
+/* ws-inspire-wfs2.h:13424 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication (998)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication (993)
 /* icommon:citationInspireInteroperabilityRegulation_por-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13419 */
+/* ws-inspire-wfs2.h:13431 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_URI (1000)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_URI (995)
 /* icommon:citationInspireInteroperabilityRegulation_por-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fpor_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aPT_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13449 */
+/* ws-inspire-wfs2.h:13461 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005frum_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005frum_KeywordValue (1002)
+#define SOAP_TYPE__icommon__inspireTheme_x005frum_KeywordValue (997)
 /* icommon:inspireTheme_rum-KeywordValue */
 enum _icommon__inspireTheme_x005frum_KeywordValue {
 	_icommon__inspireTheme_x005frum_KeywordValue__Acoperire_x0020terestr_x0103 = 0,
@@ -2766,68 +2766,68 @@ enum _icommon__inspireTheme_x005frum_KeywordValue {
 	_icommon__inspireTheme_x005frum_KeywordValue__Caracteristici_x0020geografice_x0020meteorologice = 2,
 	_icommon__inspireTheme_x005frum_KeywordValue__Caracteristici_x0020geografice_x0020oceanografice = 3,
 	_icommon__inspireTheme_x005frum_KeywordValue__Cl_x0103diri = 4,
-	_icommon__inspireTheme_x005frum_KeywordValue__Condi_x0163ii_x0020atmosferice = 5,
+	_icommon__inspireTheme_x005frum_KeywordValue__Condi_x021bii_x0020atmosferice = 5,
 	_icommon__inspireTheme_x005frum_KeywordValue__Denumiri_x0020geografice = 6,
-	_icommon__inspireTheme_x005frum_KeywordValue__Eleva_x0163ie = 7,
+	_icommon__inspireTheme_x005frum_KeywordValue__Eleva_x021bie = 7,
 	_icommon__inspireTheme_x005frum_KeywordValue__Geologie = 8,
-	_icommon__inspireTheme_x005frum_KeywordValue__Habitate_x0020_x015fi_x0020biotopuri = 9,
+	_icommon__inspireTheme_x005frum_KeywordValue__Habitate_x0020_x0219i_x0020biotopuri = 9,
 	_icommon__inspireTheme_x005frum_KeywordValue__Hidrografie = 10,
-	_icommon__inspireTheme_x005frum_KeywordValue__Instala_x0163ii_x0020agricole_x0020_x015fi_x0020pentru_x0020acvacultur_x0103 = 11,
-	_icommon__inspireTheme_x005frum_KeywordValue__Instala_x0163ii_x0020de_x0020produc_x0163ie_x0020_x015fi_x0020industriale = 12,
-	_icommon__inspireTheme_x005frum_KeywordValue__Instala_x0163ii_x0020de_x0020supraveghere_x0020a_x0020mediului = 13,
+	_icommon__inspireTheme_x005frum_KeywordValue__Instala_x021bii_x0020agricole_x0020_x0219i_x0020pentru_x0020acvacultur_x0103 = 11,
+	_icommon__inspireTheme_x005frum_KeywordValue__Instala_x021bii_x0020de_x0020produc_x021bie_x0020_x0219i_x0020industriale = 12,
+	_icommon__inspireTheme_x005frum_KeywordValue__Instala_x021bii_x0020de_x0020supraveghere_x0020a_x0020mediului = 13,
 	_icommon__inspireTheme_x005frum_KeywordValue__Ortoimagini = 14,
 	_icommon__inspireTheme_x005frum_KeywordValue__Parcele_x0020cadastrale = 15,
 	_icommon__inspireTheme_x005frum_KeywordValue__Regiuni_x0020biogeografice = 16,
 	_icommon__inspireTheme_x005frum_KeywordValue__Regiuni_x0020maritime = 17,
-	_icommon__inspireTheme_x005frum_KeywordValue__Repartizarea_x0020popula_x0163iei_x0020_x2013_x0020demografie = 18,
+	_icommon__inspireTheme_x005frum_KeywordValue__Repartizarea_x0020popula_x021biei_x0020_x2013_x0020demografie = 18,
 	_icommon__inspireTheme_x005frum_KeywordValue__Repartizarea_x0020speciilor = 19,
 	_icommon__inspireTheme_x005frum_KeywordValue__Resurse_x0020energetice = 20,
 	_icommon__inspireTheme_x005frum_KeywordValue__Resurse_x0020minerale = 21,
-	_icommon__inspireTheme_x005frum_KeywordValue__Re_x0163ele_x0020de_x0020transport = 22,
-	_icommon__inspireTheme_x005frum_KeywordValue__S_x0103n_x0103tate_x0020_x015fi_x0020siguran_x0163_x0103_x0020uman_x0103 = 23,
-	_icommon__inspireTheme_x005frum_KeywordValue__Servicii_x0020de_x0020utilitate_x0020public_x0103_x0020_x015fi_x0020servicii_x0020publice = 24,
+	_icommon__inspireTheme_x005frum_KeywordValue__Re_x021bele_x0020de_x0020transport = 22,
+	_icommon__inspireTheme_x005frum_KeywordValue__S_x0103n_x0103tate_x0020_x0219i_x0020siguran_x021b_x0103_x0020uman_x0103 = 23,
+	_icommon__inspireTheme_x005frum_KeywordValue__Servicii_x0020de_x0020utilitate_x0020public_x0103_x0020_x0219i_x0020servicii_x0020publice = 24,
 	_icommon__inspireTheme_x005frum_KeywordValue__Sisteme_x0020de_x0020caroiaj_x0020geografic = 25,
-	_icommon__inspireTheme_x005frum_KeywordValue__Sisteme_x0020de_x0020coordonate_x0020de_x0020referin_x0163_x0103 = 26,
+	_icommon__inspireTheme_x005frum_KeywordValue__Sisteme_x0020de_x0020coordonate_x0020de_x0020referin_x021b_x0103 = 26,
 	_icommon__inspireTheme_x005frum_KeywordValue__Soluri = 27,
-	_icommon__inspireTheme_x005frum_KeywordValue__Unit_x0103_x0163i_x0020administrative = 28,
-	_icommon__inspireTheme_x005frum_KeywordValue__Unit_x0103_x0163i_x0020statistice = 29,
+	_icommon__inspireTheme_x005frum_KeywordValue__Unit_x0103_x021bi_x0020administrative = 28,
+	_icommon__inspireTheme_x005frum_KeywordValue__Unit_x0103_x021bi_x0020statistice = 29,
 	_icommon__inspireTheme_x005frum_KeywordValue__Utilizarea_x0020terenului = 30,
-	_icommon__inspireTheme_x005frum_KeywordValue__Zone_x0020de_x0020administrare_x002frestric_x0163ie_x002freglementare_x0020_x015fi_x0020unit_x0103_x0163i_x0020de_x0020raportare = 31,
+	_icommon__inspireTheme_x005frum_KeywordValue__Zone_x0020de_x0020administrare_x002frestric_x021bie_x002freglementare_x0020_x0219i_x0020unit_x0103_x021bi_x0020de_x0020raportare = 31,
 	_icommon__inspireTheme_x005frum_KeywordValue__Zone_x0020de_x0020risc_x0020natural = 32,
 	_icommon__inspireTheme_x005frum_KeywordValue__Zone_x0020protejate = 33
 };
 #endif
 
-/* ws-inspire-wfs2.h:13508 */
+/* ws-inspire-wfs2.h:13520 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_Title (1003)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_Title (998)
 /* icommon:citationInspireInteroperabilityRegulation_rum-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005frum_Title {
-	_icommon__citationInspireInteroperabilityRegulation_x005frum_Title__REGULAMENTUL_x0020_x0028UE_x0029_x0020NR_x002e_x00201089_x002f2010_x0020AL_x0020COMISIEI_x0020din_x002023_x0020noiembrie_x00202010_x0020de_x0020punere_x0020_x00een_x0020aplicare_x0020a_x0020Directivei_x00202007_x002f2_x002fCE_x0020a_x0020Parlamentului_x0020European_x0020_x015fi_x0020a_x0020Consiliului_x0020_x00een_x0020ceea_x0020ce_x0020prive_x015fte_x0020interoperabilitatea_x0020seturilor_x0020_x015fi_x0020serviciilor_x0020de_x0020date_x0020spa_x0163iale = 0
+	_icommon__citationInspireInteroperabilityRegulation_x005frum_Title__REGULAMENTUL_x0020_x0028UE_x0029_x0020NR_x002e_x00201089_x002f2010_x0020AL_x0020COMISIEI_x0020din_x002023_x0020noiembrie_x00202010_x0020de_x0020punere_x0020_x00een_x0020aplicare_x0020a_x0020Directivei_x00202007_x002f2_x002fCE_x0020a_x0020Parlamentului_x0020European_x0020_x0219i_x0020a_x0020Consiliului_x0020_x00een_x0020ceea_x0020ce_x0020prive_x0219te_x0020interoperabilitatea_x0020seturilor_x0020_x0219i_x0020serviciilor_x0020de_x0020date_x0020spa_x021biale = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13517 */
+/* ws-inspire-wfs2.h:13529 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication (1005)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication (1000)
 /* icommon:citationInspireInteroperabilityRegulation_rum-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13524 */
+/* ws-inspire-wfs2.h:13536 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_URI (1007)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_URI (1002)
 /* icommon:citationInspireInteroperabilityRegulation_rum-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005frum_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005frum_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aRO_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13554 */
+/* ws-inspire-wfs2.h:13566 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fslo_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fslo_KeywordValue (1009)
+#define SOAP_TYPE__icommon__inspireTheme_x005fslo_KeywordValue (1004)
 /* icommon:inspireTheme_slo-KeywordValue */
 enum _icommon__inspireTheme_x005fslo_KeywordValue {
 	_icommon__inspireTheme_x005fslo_KeywordValue__Adresy = 0,
@@ -2867,36 +2867,36 @@ enum _icommon__inspireTheme_x005fslo_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13613 */
+/* ws-inspire-wfs2.h:13625 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_Title (1010)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_Title (1005)
 /* icommon:citationInspireInteroperabilityRegulation_slo-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fslo_Title__NARIADENIE_x0020KOMISIE_x0020_x0028E_x00da_x0029_x0020_x010d_x002e_x00201089_x002f2010_x0020z_x002023_x002e_x0020novembra_x00202010_x002c_x0020ktor_x00fdm_x0020sa_x0020vykon_x00e1va_x0020smernica_x0020Eur_x00f3pskeho_x0020parlamentu_x0020a_x0020Rady_x00202007_x002f2_x002fES_x002c_x0020pokia_x013e_x0020ide_x0020o_x0020interoperabilitu_x0020s_x00faborov_x0020a_x0020slu_x017eieb_x0020priestorov_x00fdch_x0020_x00fadajov = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13622 */
+/* ws-inspire-wfs2.h:13634 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication (1012)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication (1007)
 /* icommon:citationInspireInteroperabilityRegulation_slo-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13629 */
+/* ws-inspire-wfs2.h:13641 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_URI (1014)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_URI (1009)
 /* icommon:citationInspireInteroperabilityRegulation_slo-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fslo_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aSK_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13659 */
+/* ws-inspire-wfs2.h:13671 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fslv_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fslv_KeywordValue (1016)
+#define SOAP_TYPE__icommon__inspireTheme_x005fslv_KeywordValue (1011)
 /* icommon:inspireTheme_slv-KeywordValue */
 enum _icommon__inspireTheme_x005fslv_KeywordValue {
 	_icommon__inspireTheme_x005fslv_KeywordValue__Biogeografske_x0020regije = 0,
@@ -2936,36 +2936,36 @@ enum _icommon__inspireTheme_x005fslv_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13718 */
+/* ws-inspire-wfs2.h:13730 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_Title (1017)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_Title (1012)
 /* icommon:citationInspireInteroperabilityRegulation_slv-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fslv_Title__UREDBA_x0020KOMISIJE_x0020_x0028EU_x0029_x0020_x0161t_x002e_x00201089_x002f2010_x0020z_x0020dne_x002023_x002e_x0020novembra_x00202010_x0020o_x0020izvajanju_x0020Direktive_x00202007_x002f2_x002fES_x0020Evropskega_x0020parlamenta_x0020in_x0020Sveta_x0020glede_x0020medopravilnosti_x0020zbirk_x0020prostorskih_x0020podatkov_x0020in_x0020storitev_x0020v_x0020zvezi_x0020s_x0020prostorskimi_x0020podatki = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13727 */
+/* ws-inspire-wfs2.h:13739 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication (1019)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication (1014)
 /* icommon:citationInspireInteroperabilityRegulation_slv-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13734 */
+/* ws-inspire-wfs2.h:13746 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_URI (1021)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_URI (1016)
 /* icommon:citationInspireInteroperabilityRegulation_slv-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fslv_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aSL_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13764 */
+/* ws-inspire-wfs2.h:13776 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fspa_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fspa_KeywordValue (1023)
+#define SOAP_TYPE__icommon__inspireTheme_x005fspa_KeywordValue (1018)
 /* icommon:inspireTheme_spa-KeywordValue */
 enum _icommon__inspireTheme_x005fspa_KeywordValue {
 	_icommon__inspireTheme_x005fspa_KeywordValue__Aspectos_x0020geogr_x00e1ficos_x0020de_x0020car_x00e1cter_x0020meteorol_x00f3gico = 0,
@@ -3005,36 +3005,36 @@ enum _icommon__inspireTheme_x005fspa_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13823 */
+/* ws-inspire-wfs2.h:13835 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_Title (1024)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_Title (1019)
 /* icommon:citationInspireInteroperabilityRegulation_spa-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fspa_Title__REGLAMENTO_x0020_x0028UE_x0029_x0020N_x0020o_x00201089_x002f2010_x0020DE_x0020LA_x0020COMISI_x00d3N_x0020de_x002023_x0020de_x0020noviembre_x0020de_x00202010_x0020por_x0020el_x0020que_x0020se_x0020aplica_x0020la_x0020Directiva_x00202007_x002f2_x002fCE_x0020del_x0020Parlamento_x0020Europeo_x0020y_x0020del_x0020Consejo_x0020en_x0020lo_x0020que_x0020se_x0020refiere_x0020a_x0020la_x0020interoperabilidad_x0020de_x0020los_x0020conjuntos_x0020y_x0020los_x0020servicios_x0020de_x0020datos_x0020espaciales = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13832 */
+/* ws-inspire-wfs2.h:13844 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication (1026)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication (1021)
 /* icommon:citationInspireInteroperabilityRegulation_spa-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13839 */
+/* ws-inspire-wfs2.h:13851 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_URI (1028)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_URI (1023)
 /* icommon:citationInspireInteroperabilityRegulation_spa-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fspa_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aES_x003aPDF = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13869 */
+/* ws-inspire-wfs2.h:13881 */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fswe_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fswe_KeywordValue (1030)
+#define SOAP_TYPE__icommon__inspireTheme_x005fswe_KeywordValue (1025)
 /* icommon:inspireTheme_swe-KeywordValue */
 enum _icommon__inspireTheme_x005fswe_KeywordValue {
 	_icommon__inspireTheme_x005fswe_KeywordValue__Administrativa_x0020enheter = 0,
@@ -3074,27 +3074,27 @@ enum _icommon__inspireTheme_x005fswe_KeywordValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13928 */
+/* ws-inspire-wfs2.h:13940 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_Title (1031)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_Title (1026)
 /* icommon:citationInspireInteroperabilityRegulation_swe-Title */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_Title {
 	_icommon__citationInspireInteroperabilityRegulation_x005fswe_Title__KOMMISSIONENS_x0020F_x00d6RORDNING_x0020_x0028EU_x0029_x0020nr_x00201089_x002f2010_x0020av_x0020den_x002023_x0020november_x00202010_x0020om_x0020genomf_x00f6rande_x0020av_x0020Europaparlamentets_x0020och_x0020r_x00e5dets_x0020direktiv_x00202007_x002f2_x002fEG_x0020vad_x0020g_x00e4ller_x0020interoperabilitet_x0020f_x00f6r_x0020rumsliga_x0020datam_x00e4ngder_x0020och_x0020datatj_x00e4nster = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13937 */
+/* ws-inspire-wfs2.h:13949 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication (1033)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication (1028)
 /* icommon:citationInspireInteroperabilityRegulation_swe-DateOfPublication */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication {
 	_icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication__2010_12_08 = 0
 };
 #endif
 
-/* ws-inspire-wfs2.h:13944 */
+/* ws-inspire-wfs2.h:13956 */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_URI (1035)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_URI (1030)
 /* icommon:citationInspireInteroperabilityRegulation_swe-URI */
 enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_URI {
 	_icommon__citationInspireInteroperabilityRegulation_x005fswe_URI__OJ_x003aL_x003a2010_x003a323_x003a0011_x003a0102_x003aSV_x003aPDF = 0
@@ -3195,29 +3195,29 @@ union _wfs__union_QueryExpressionTextType;	/* ws-inspire-wfs2.h:3155 */
 class wfs__QueryExpressionTextType;	/* ws-inspire-wfs2.h:351 */
 class wfs__ExecutionStatusType;	/* ws-inspire-wfs2.h:353 */
 class wfs__LockFeatureResponseType;	/* ws-inspire-wfs2.h:359 */
-struct __wfs__FeaturesLockedType_sequence;	/* ws-inspire-wfs2.h:3253 */
+struct __wfs__FeaturesLockedType_sequence;	/* ws-inspire-wfs2.h:3250 */
 class wfs__FeaturesLockedType;	/* ws-inspire-wfs2.h:361 */
-struct __wfs__FeaturesNotLockedType_sequence;	/* ws-inspire-wfs2.h:3278 */
+struct __wfs__FeaturesNotLockedType_sequence;	/* ws-inspire-wfs2.h:3275 */
 class wfs__FeaturesNotLockedType;	/* ws-inspire-wfs2.h:363 */
 class wfs__AbstractTransactionActionType;	/* ws-inspire-wfs2.h:367 */
-class _wfs__PropertyType_ValueReference;	/* ws-inspire-wfs2.h:3337 */
+class _wfs__PropertyType_ValueReference;	/* ws-inspire-wfs2.h:3334 */
 class wfs__PropertyType;	/* ws-inspire-wfs2.h:373 */
 class wfs__TransactionResponseType;	/* ws-inspire-wfs2.h:381 */
 class wfs__TransactionSummaryType;	/* ws-inspire-wfs2.h:383 */
 class wfs__ActionResultsType;	/* ws-inspire-wfs2.h:385 */
-struct __wfs__CreatedOrModifiedFeatureType_sequence;	/* ws-inspire-wfs2.h:3437 */
+struct __wfs__CreatedOrModifiedFeatureType_sequence;	/* ws-inspire-wfs2.h:3434 */
 class wfs__CreatedOrModifiedFeatureType;	/* ws-inspire-wfs2.h:387 */
 class wfs__EmptyType;	/* ws-inspire-wfs2.h:389 */
-union _wfs__union_additionalValues;	/* ws-inspire-wfs2.h:3483 */
+union _wfs__union_additionalValues;	/* ws-inspire-wfs2.h:3480 */
 class _wfs__additionalValues;	/* ws-inspire-wfs2.h:395 */
 class _wfs__truncatedResponse;	/* ws-inspire-wfs2.h:397 */
-union _wfs__union_additionalObjects;	/* ws-inspire-wfs2.h:3545 */
+union _wfs__union_additionalObjects;	/* ws-inspire-wfs2.h:3542 */
 class _wfs__additionalObjects;	/* ws-inspire-wfs2.h:401 */
 class util__DescribeFeatureTypeResponseType;	/* ws-inspire-wfs2.h:405 */
 class ows__ExceptionType;	/* ws-inspire-wfs2.h:407 */
 class ows__GetResourceByIdType;	/* ws-inspire-wfs2.h:409 */
 class ows__DescriptionType;	/* ws-inspire-wfs2.h:411 */
-union _ows__union_MetadataType;	/* ws-inspire-wfs2.h:3746 */
+union _ows__union_MetadataType;	/* ws-inspire-wfs2.h:3743 */
 class ows__MetadataType;	/* ws-inspire-wfs2.h:417 */
 class ows__BoundingBoxType;	/* ws-inspire-wfs2.h:419 */
 class ows__KeywordsType;	/* ws-inspire-wfs2.h:425 */
@@ -3232,8 +3232,8 @@ class ows__GetCapabilitiesType;	/* ws-inspire-wfs2.h:443 */
 class ows__AcceptVersionsType;	/* ws-inspire-wfs2.h:445 */
 class ows__SectionsType;	/* ws-inspire-wfs2.h:447 */
 class ows__AcceptFormatsType;	/* ws-inspire-wfs2.h:449 */
-union _ows__union_UnNamedDomainType;	/* ws-inspire-wfs2.h:4344 */
-union _ows__union_UnNamedDomainType_;	/* ws-inspire-wfs2.h:4410 */
+union _ows__union_UnNamedDomainType;	/* ws-inspire-wfs2.h:4341 */
+union _ows__union_UnNamedDomainType_;	/* ws-inspire-wfs2.h:4407 */
 class ows__UnNamedDomainType;	/* ws-inspire-wfs2.h:455 */
 class ows__RangeType;	/* ws-inspire-wfs2.h:459 */
 class ows__ContentsBaseType;	/* ws-inspire-wfs2.h:463 */
@@ -3242,27 +3242,27 @@ class _ows__ExceptionReport;	/* ws-inspire-wfs2.h:477 */
 class _ows__ServiceProvider;	/* ws-inspire-wfs2.h:484 */
 class _ows__OperationsMetadata;	/* ws-inspire-wfs2.h:486 */
 class _ows__Operation;	/* ws-inspire-wfs2.h:488 */
-union _ows__union_DCP;	/* ws-inspire-wfs2.h:4818 */
+union _ows__union_DCP;	/* ws-inspire-wfs2.h:4814 */
 class _ows__DCP;	/* ws-inspire-wfs2.h:490 */
-union _ows__union_HTTP;	/* ws-inspire-wfs2.h:4858 */
-class __ows__union_HTTP;	/* ws-inspire-wfs2.h:4853 */
+union _ows__union_HTTP;	/* ws-inspire-wfs2.h:4854 */
+class __ows__union_HTTP;	/* ws-inspire-wfs2.h:4849 */
 class _ows__HTTP;	/* ws-inspire-wfs2.h:492 */
 class _ows__AnyValue;	/* ws-inspire-wfs2.h:494 */
 class _ows__NoValues;	/* ws-inspire-wfs2.h:496 */
-union _ows__union_AllowedValues;	/* ws-inspire-wfs2.h:4953 */
-class __ows__union_AllowedValues;	/* ws-inspire-wfs2.h:4948 */
+union _ows__union_AllowedValues;	/* ws-inspire-wfs2.h:4949 */
+class __ows__union_AllowedValues;	/* ws-inspire-wfs2.h:4944 */
 class _ows__AllowedValues;	/* ws-inspire-wfs2.h:500 */
 class xlink__simple;	/* ws-inspire-wfs2.h:504 */
-union _xlink__union_extended;	/* ws-inspire-wfs2.h:5064 */
-class __xlink__union_extended;	/* ws-inspire-wfs2.h:5060 */
+union _xlink__union_extended;	/* ws-inspire-wfs2.h:5060 */
+class __xlink__union_extended;	/* ws-inspire-wfs2.h:5056 */
 class xlink__extended;	/* ws-inspire-wfs2.h:506 */
 class xlink__titleEltType;	/* ws-inspire-wfs2.h:508 */
 class xlink__resourceType;	/* ws-inspire-wfs2.h:510 */
-union _xlink__union_locatorType;	/* ws-inspire-wfs2.h:5206 */
-class __xlink__union_locatorType;	/* ws-inspire-wfs2.h:5201 */
+union _xlink__union_locatorType;	/* ws-inspire-wfs2.h:5202 */
+class __xlink__union_locatorType;	/* ws-inspire-wfs2.h:5197 */
 class xlink__locatorType;	/* ws-inspire-wfs2.h:512 */
-union _xlink__union_arcType;	/* ws-inspire-wfs2.h:5255 */
-class __xlink__union_arcType;	/* ws-inspire-wfs2.h:5250 */
+union _xlink__union_arcType;	/* ws-inspire-wfs2.h:5251 */
+class __xlink__union_arcType;	/* ws-inspire-wfs2.h:5246 */
 class xlink__arcType;	/* ws-inspire-wfs2.h:514 */
 class fes__AbstractQueryExpressionType;	/* ws-inspire-wfs2.h:516 */
 class fes__AbstractProjectionClauseType;	/* ws-inspire-wfs2.h:520 */
@@ -3274,19 +3274,19 @@ class fes__TemporalOpsType;	/* ws-inspire-wfs2.h:532 */
 class fes__LogicOpsType;	/* ws-inspire-wfs2.h:534 */
 class fes__ExtensionOpsType;	/* ws-inspire-wfs2.h:536 */
 class fes__AbstractIdType;	/* ws-inspire-wfs2.h:538 */
-union _fes__union_LowerBoundaryType;	/* ws-inspire-wfs2.h:5510 */
+union _fes__union_LowerBoundaryType;	/* ws-inspire-wfs2.h:5506 */
 class fes__LowerBoundaryType;	/* ws-inspire-wfs2.h:552 */
-union _fes__union_UpperBoundaryType;	/* ws-inspire-wfs2.h:5546 */
+union _fes__union_UpperBoundaryType;	/* ws-inspire-wfs2.h:5542 */
 class fes__UpperBoundaryType;	/* ws-inspire-wfs2.h:554 */
-union _fes__union_FunctionType;	/* ws-inspire-wfs2.h:5581 */
-class __fes__union_FunctionType;	/* ws-inspire-wfs2.h:5576 */
+union _fes__union_FunctionType;	/* ws-inspire-wfs2.h:5577 */
+class __fes__union_FunctionType;	/* ws-inspire-wfs2.h:5572 */
 class fes__FunctionType;	/* ws-inspire-wfs2.h:570 */
 class fes__LiteralType;	/* ws-inspire-wfs2.h:572 */
 class fes__ConformanceType;	/* ws-inspire-wfs2.h:574 */
 class fes__Id_x005fCapabilitiesType;	/* ws-inspire-wfs2.h:576 */
 class fes__ResourceIdentifierType;	/* ws-inspire-wfs2.h:578 */
 class fes__Scalar_x005fCapabilitiesType;	/* ws-inspire-wfs2.h:580 */
-struct __fes__ComparisonOperatorsType_sequence;	/* ws-inspire-wfs2.h:5724 */
+struct __fes__ComparisonOperatorsType_sequence;	/* ws-inspire-wfs2.h:5720 */
 class fes__ComparisonOperatorsType;	/* ws-inspire-wfs2.h:582 */
 class fes__ComparisonOperatorType;	/* ws-inspire-wfs2.h:584 */
 class fes__AvailableFunctionsType;	/* ws-inspire-wfs2.h:586 */
@@ -3294,12 +3294,12 @@ class fes__AvailableFunctionType;	/* ws-inspire-wfs2.h:588 */
 class fes__ArgumentsType;	/* ws-inspire-wfs2.h:590 */
 class fes__ArgumentType;	/* ws-inspire-wfs2.h:592 */
 class fes__Spatial_x005fCapabilitiesType;	/* ws-inspire-wfs2.h:594 */
-class _fes__GeometryOperandsType_GeometryOperand;	/* ws-inspire-wfs2.h:5885 */
+class _fes__GeometryOperandsType_GeometryOperand;	/* ws-inspire-wfs2.h:5881 */
 class fes__GeometryOperandsType;	/* ws-inspire-wfs2.h:596 */
 class fes__SpatialOperatorsType;	/* ws-inspire-wfs2.h:598 */
 class fes__SpatialOperatorType;	/* ws-inspire-wfs2.h:600 */
 class fes__Temporal_x005fCapabilitiesType;	/* ws-inspire-wfs2.h:602 */
-class _fes__TemporalOperandsType_TemporalOperand;	/* ws-inspire-wfs2.h:5981 */
+class _fes__TemporalOperandsType_TemporalOperand;	/* ws-inspire-wfs2.h:5977 */
 class fes__TemporalOperandsType;	/* ws-inspire-wfs2.h:604 */
 class fes__TemporalOperatorsType;	/* ws-inspire-wfs2.h:606 */
 class fes__TemporalOperatorType;	/* ws-inspire-wfs2.h:608 */
@@ -3312,14 +3312,14 @@ class _fes__Filter_x005fCapabilities;	/* ws-inspire-wfs2.h:620 */
 class _fes__LogicalOperators;	/* ws-inspire-wfs2.h:622 */
 class icommon__resource;	/* ws-inspire-wfs2.h:624 */
 class icommon__metadataPointOfContact;	/* ws-inspire-wfs2.h:636 */
-class _icommon__responsibleOrganisation_ResponsibleParty;	/* ws-inspire-wfs2.h:6302 */
+class _icommon__responsibleOrganisation_ResponsibleParty;	/* ws-inspire-wfs2.h:6298 */
 class icommon__responsibleOrganisation;	/* ws-inspire-wfs2.h:638 */
-union _icommon__union_citation;	/* ws-inspire-wfs2.h:6338 */
+union _icommon__union_citation;	/* ws-inspire-wfs2.h:6334 */
 class icommon__citation;	/* ws-inspire-wfs2.h:640 */
 class icommon__conformity;	/* ws-inspire-wfs2.h:644 */
 class icommon__temporalReference;	/* ws-inspire-wfs2.h:652 */
-union _icommon__union_temporalExtent;	/* ws-inspire-wfs2.h:6431 */
-class __icommon__union_temporalExtent;	/* ws-inspire-wfs2.h:6426 */
+union _icommon__union_temporalExtent;	/* ws-inspire-wfs2.h:6427 */
+class __icommon__union_temporalExtent;	/* ws-inspire-wfs2.h:6422 */
 class icommon__temporalExtent;	/* ws-inspire-wfs2.h:654 */
 class icommon__keyword;	/* ws-inspire-wfs2.h:656 */
 class icommon__resourceLocatorType;	/* ws-inspire-wfs2.h:660 */
@@ -3329,26 +3329,26 @@ class icommon__spatialResolution;	/* ws-inspire-wfs2.h:670 */
 class icommon__uniqueResourceIdentifier;	/* ws-inspire-wfs2.h:672 */
 class icommon__ExtendedCapabilitiesType;	/* ws-inspire-wfs2.h:676 */
 class icommon__supportedLanguagesType;	/* ws-inspire-wfs2.h:678 */
-class _icommon__layers_Layer_CoordinateReferenceSystems_CRS;	/* ws-inspire-wfs2.h:6824 */
-class _icommon__layers_Layer_CoordinateReferenceSystems;	/* ws-inspire-wfs2.h:6809 */
-class _icommon__layers_Layer_Styles_Style_StyleAbstract;	/* ws-inspire-wfs2.h:6873 */
-class _icommon__layers_Layer_Styles_Style_StyleFormat;	/* ws-inspire-wfs2.h:6887 */
-class _icommon__layers_Layer_Styles_Style_StyleURL;	/* ws-inspire-wfs2.h:6901 */
-class _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat;	/* ws-inspire-wfs2.h:6941 */
-class _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL;	/* ws-inspire-wfs2.h:6959 */
-class _icommon__layers_Layer_Styles_Style_LegendList_Legend;	/* ws-inspire-wfs2.h:6928 */
-class _icommon__layers_Layer_Styles_Style_LegendList;	/* ws-inspire-wfs2.h:6915 */
-class _icommon__layers_Layer_Styles_Style;	/* ws-inspire-wfs2.h:6856 */
-class _icommon__layers_Layer_Styles;	/* ws-inspire-wfs2.h:6843 */
-class _icommon__layers_Layer;	/* ws-inspire-wfs2.h:6772 */
+class _icommon__layers_Layer_CoordinateReferenceSystems_CRS;	/* ws-inspire-wfs2.h:6820 */
+class _icommon__layers_Layer_CoordinateReferenceSystems;	/* ws-inspire-wfs2.h:6805 */
+class _icommon__layers_Layer_Styles_Style_StyleAbstract;	/* ws-inspire-wfs2.h:6869 */
+class _icommon__layers_Layer_Styles_Style_StyleFormat;	/* ws-inspire-wfs2.h:6883 */
+class _icommon__layers_Layer_Styles_Style_StyleURL;	/* ws-inspire-wfs2.h:6897 */
+class _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat;	/* ws-inspire-wfs2.h:6937 */
+class _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL;	/* ws-inspire-wfs2.h:6955 */
+class _icommon__layers_Layer_Styles_Style_LegendList_Legend;	/* ws-inspire-wfs2.h:6924 */
+class _icommon__layers_Layer_Styles_Style_LegendList;	/* ws-inspire-wfs2.h:6911 */
+class _icommon__layers_Layer_Styles_Style;	/* ws-inspire-wfs2.h:6852 */
+class _icommon__layers_Layer_Styles;	/* ws-inspire-wfs2.h:6839 */
+class _icommon__layers_Layer;	/* ws-inspire-wfs2.h:6768 */
 class icommon__layers;	/* ws-inspire-wfs2.h:684 */
 class _icommon__IntervalOfDates;	/* ws-inspire-wfs2.h:848 */
 class wfs__StoredQueryType;	/* ws-inspire-wfs2.h:293 */
 class wfs__GetCapabilitiesType;	/* ws-inspire-wfs2.h:297 */
-class _wfs__WFS_x005fCapabilitiesType_WSDL;	/* ws-inspire-wfs2.h:7123 */
+class _wfs__WFS_x005fCapabilitiesType_WSDL;	/* ws-inspire-wfs2.h:7119 */
 class wfs__WFS_x005fCapabilitiesType;	/* ws-inspire-wfs2.h:299 */
 class wfs__DescribeFeatureTypeType;	/* ws-inspire-wfs2.h:315 */
-union _wfs__union_GetPropertyValueType;	/* ws-inspire-wfs2.h:7190 */
+union _wfs__union_GetPropertyValueType;	/* ws-inspire-wfs2.h:7186 */
 class wfs__GetPropertyValueType;	/* ws-inspire-wfs2.h:317 */
 union _wfs__union_GetFeatureType;	/* ws-inspire-wfs2.h:7253 */
 class __wfs__union_GetFeatureType;	/* ws-inspire-wfs2.h:7248 */
@@ -3358,11 +3358,11 @@ class wfs__ListStoredQueriesType;	/* ws-inspire-wfs2.h:335 */
 class wfs__DescribeStoredQueriesType;	/* ws-inspire-wfs2.h:341 */
 class wfs__CreateStoredQueryType;	/* ws-inspire-wfs2.h:347 */
 class wfs__CreateStoredQueryResponseType;	/* ws-inspire-wfs2.h:355 */
-union _wfs__union_LockFeatureType;	/* ws-inspire-wfs2.h:7454 */
-class __wfs__union_LockFeatureType;	/* ws-inspire-wfs2.h:7449 */
+union _wfs__union_LockFeatureType;	/* ws-inspire-wfs2.h:7458 */
+class __wfs__union_LockFeatureType;	/* ws-inspire-wfs2.h:7453 */
 class wfs__LockFeatureType;	/* ws-inspire-wfs2.h:357 */
-union _wfs__union_TransactionType;	/* ws-inspire-wfs2.h:7503 */
-struct __wfs__TransactionType_sequence;	/* ws-inspire-wfs2.h:7496 */
+union _wfs__union_TransactionType;	/* ws-inspire-wfs2.h:7511 */
+struct __wfs__TransactionType_sequence;	/* ws-inspire-wfs2.h:7504 */
 class wfs__TransactionType;	/* ws-inspire-wfs2.h:365 */
 class wfs__InsertType;	/* ws-inspire-wfs2.h:369 */
 class wfs__UpdateType;	/* ws-inspire-wfs2.h:371 */
@@ -3381,65 +3381,65 @@ class ows__RequestMethodType;	/* ws-inspire-wfs2.h:451 */
 class ows__DomainType;	/* ws-inspire-wfs2.h:453 */
 class ows__ValueType;	/* ws-inspire-wfs2.h:457 */
 class ows__DomainMetadataType;	/* ws-inspire-wfs2.h:461 */
-union _ows__union_DatasetDescriptionSummaryBaseType;	/* ws-inspire-wfs2.h:8261 */
-class __ows__union_DatasetDescriptionSummaryBaseType;	/* ws-inspire-wfs2.h:8256 */
+union _ows__union_DatasetDescriptionSummaryBaseType;	/* ws-inspire-wfs2.h:8269 */
+class __ows__union_DatasetDescriptionSummaryBaseType;	/* ws-inspire-wfs2.h:8264 */
 class ows__DatasetDescriptionSummaryBaseType;	/* ws-inspire-wfs2.h:465 */
 class ows__ReferenceType;	/* ws-inspire-wfs2.h:471 */
 class _ows__ServiceIdentification;	/* ws-inspire-wfs2.h:482 */
 class _ows__ValuesReference;	/* ws-inspire-wfs2.h:498 */
 class idls__ExtendedCapabilitiesType;	/* ws-inspire-wfs2.h:502 */
-union _fes__union_AbstractAdhocQueryExpressionType;	/* ws-inspire-wfs2.h:8594 */
-class __fes__union_AbstractAdhocQueryExpressionType;	/* ws-inspire-wfs2.h:8589 */
-union _fes__union_AbstractAdhocQueryExpressionType_;	/* ws-inspire-wfs2.h:8608 */
-union _fes__union_AbstractAdhocQueryExpressionType__;	/* ws-inspire-wfs2.h:8619 */
+union _fes__union_AbstractAdhocQueryExpressionType;	/* ws-inspire-wfs2.h:8602 */
+class __fes__union_AbstractAdhocQueryExpressionType;	/* ws-inspire-wfs2.h:8597 */
+union _fes__union_AbstractAdhocQueryExpressionType_;	/* ws-inspire-wfs2.h:8616 */
+union _fes__union_AbstractAdhocQueryExpressionType__;	/* ws-inspire-wfs2.h:8627 */
 class fes__AbstractAdhocQueryExpressionType;	/* ws-inspire-wfs2.h:518 */
-union _fes__union_FilterType______;	/* ws-inspire-wfs2.h:8763 */
-class __fes__union_FilterType______;	/* ws-inspire-wfs2.h:8758 */
-struct ___fes__union_FilterType______;	/* ws-inspire-wfs2.h:8756 */
-union _fes__union_FilterType;	/* ws-inspire-wfs2.h:8651 */
+union _fes__union_FilterType______;	/* ws-inspire-wfs2.h:8771 */
+class __fes__union_FilterType______;	/* ws-inspire-wfs2.h:8766 */
+struct ___fes__union_FilterType______;	/* ws-inspire-wfs2.h:8764 */
+union _fes__union_FilterType;	/* ws-inspire-wfs2.h:8659 */
 class fes__FilterType;	/* ws-inspire-wfs2.h:526 */
 class fes__ResourceIdType;	/* ws-inspire-wfs2.h:540 */
-union _fes__union_BinaryComparisonOpType;	/* ws-inspire-wfs2.h:8830 */
-class __fes__union_BinaryComparisonOpType;	/* ws-inspire-wfs2.h:8825 */
+union _fes__union_BinaryComparisonOpType;	/* ws-inspire-wfs2.h:8838 */
+class __fes__union_BinaryComparisonOpType;	/* ws-inspire-wfs2.h:8833 */
 class fes__BinaryComparisonOpType;	/* ws-inspire-wfs2.h:542 */
-union _fes__union_PropertyIsLikeType;	/* ws-inspire-wfs2.h:8872 */
-class __fes__union_PropertyIsLikeType;	/* ws-inspire-wfs2.h:8867 */
+union _fes__union_PropertyIsLikeType;	/* ws-inspire-wfs2.h:8880 */
+class __fes__union_PropertyIsLikeType;	/* ws-inspire-wfs2.h:8875 */
 class fes__PropertyIsLikeType;	/* ws-inspire-wfs2.h:544 */
-union _fes__union_PropertyIsNullType;	/* ws-inspire-wfs2.h:8915 */
+union _fes__union_PropertyIsNullType;	/* ws-inspire-wfs2.h:8923 */
 class fes__PropertyIsNullType;	/* ws-inspire-wfs2.h:546 */
-union _fes__union_PropertyIsNilType;	/* ws-inspire-wfs2.h:8949 */
+union _fes__union_PropertyIsNilType;	/* ws-inspire-wfs2.h:8957 */
 class fes__PropertyIsNilType;	/* ws-inspire-wfs2.h:548 */
-union _fes__union_PropertyIsBetweenType;	/* ws-inspire-wfs2.h:8985 */
+union _fes__union_PropertyIsBetweenType;	/* ws-inspire-wfs2.h:8993 */
 class fes__PropertyIsBetweenType;	/* ws-inspire-wfs2.h:550 */
-union _fes__union_BinarySpatialOpType;	/* ws-inspire-wfs2.h:9024 */
-class __fes__union_BinarySpatialOpType;	/* ws-inspire-wfs2.h:9019 */
+union _fes__union_BinarySpatialOpType;	/* ws-inspire-wfs2.h:9032 */
+class __fes__union_BinarySpatialOpType;	/* ws-inspire-wfs2.h:9027 */
 class fes__BinarySpatialOpType;	/* ws-inspire-wfs2.h:556 */
-union _fes__union_BinaryTemporalOpType;	/* ws-inspire-wfs2.h:9071 */
-class __fes__union_BinaryTemporalOpType;	/* ws-inspire-wfs2.h:9066 */
+union _fes__union_BinaryTemporalOpType;	/* ws-inspire-wfs2.h:9079 */
+class __fes__union_BinaryTemporalOpType;	/* ws-inspire-wfs2.h:9074 */
 class fes__BinaryTemporalOpType;	/* ws-inspire-wfs2.h:558 */
-union _fes__union_BBOXType;	/* ws-inspire-wfs2.h:9118 */
-class __fes__union_BBOXType;	/* ws-inspire-wfs2.h:9113 */
+union _fes__union_BBOXType;	/* ws-inspire-wfs2.h:9126 */
+class __fes__union_BBOXType;	/* ws-inspire-wfs2.h:9121 */
 class fes__BBOXType;	/* ws-inspire-wfs2.h:560 */
-union _fes__union_DistanceBufferType;	/* ws-inspire-wfs2.h:9164 */
-class __fes__union_DistanceBufferType;	/* ws-inspire-wfs2.h:9160 */
+union _fes__union_DistanceBufferType;	/* ws-inspire-wfs2.h:9172 */
+class __fes__union_DistanceBufferType;	/* ws-inspire-wfs2.h:9168 */
 class fes__DistanceBufferType;	/* ws-inspire-wfs2.h:562 */
-union _fes__union_BinaryLogicOpType_______;	/* ws-inspire-wfs2.h:9327 */
-class __fes__union_BinaryLogicOpType_______;	/* ws-inspire-wfs2.h:9322 */
-struct ___fes__union_BinaryLogicOpType_______;	/* ws-inspire-wfs2.h:9320 */
-union _fes__union_BinaryLogicOpType_;	/* ws-inspire-wfs2.h:9215 */
-class __fes__union_BinaryLogicOpType;	/* ws-inspire-wfs2.h:9209 */
+union _fes__union_BinaryLogicOpType_______;	/* ws-inspire-wfs2.h:9335 */
+class __fes__union_BinaryLogicOpType_______;	/* ws-inspire-wfs2.h:9330 */
+struct ___fes__union_BinaryLogicOpType_______;	/* ws-inspire-wfs2.h:9328 */
+union _fes__union_BinaryLogicOpType_;	/* ws-inspire-wfs2.h:9223 */
+class __fes__union_BinaryLogicOpType;	/* ws-inspire-wfs2.h:9217 */
 class fes__BinaryLogicOpType;	/* ws-inspire-wfs2.h:564 */
-union _fes__union_UnaryLogicOpType_______;	/* ws-inspire-wfs2.h:9476 */
-class __fes__union_UnaryLogicOpType_______;	/* ws-inspire-wfs2.h:9471 */
-struct ___fes__union_UnaryLogicOpType_______;	/* ws-inspire-wfs2.h:9469 */
-union _fes__union_UnaryLogicOpType_;	/* ws-inspire-wfs2.h:9364 */
+union _fes__union_UnaryLogicOpType_______;	/* ws-inspire-wfs2.h:9484 */
+class __fes__union_UnaryLogicOpType_______;	/* ws-inspire-wfs2.h:9479 */
+struct ___fes__union_UnaryLogicOpType_______;	/* ws-inspire-wfs2.h:9477 */
+union _fes__union_UnaryLogicOpType_;	/* ws-inspire-wfs2.h:9372 */
 class fes__UnaryLogicOpType;	/* ws-inspire-wfs2.h:566 */
 class fes__MeasureType;	/* ws-inspire-wfs2.h:568 */
 class icommon__data;	/* ws-inspire-wfs2.h:626 */
 class icommon__service_x005fext;	/* ws-inspire-wfs2.h:632 */
-union _icommon__union_citationConformity;	/* ws-inspire-wfs2.h:9707 */
+union _icommon__union_citationConformity;	/* ws-inspire-wfs2.h:9715 */
 class icommon__citationConformity;	/* ws-inspire-wfs2.h:642 */
-union _icommon__union_originatingControlledVocabulary;	/* ws-inspire-wfs2.h:9756 */
+union _icommon__union_originatingControlledVocabulary;	/* ws-inspire-wfs2.h:9764 */
 class icommon__originatingControlledVocabulary;	/* ws-inspire-wfs2.h:646 */
 class icommon__classificationOfSpatialDataService;	/* ws-inspire-wfs2.h:658 */
 class icommon__languageElementISO6392B;	/* ws-inspire-wfs2.h:664 */
@@ -3450,7 +3450,7 @@ class icommon__resLocInspireInteroperabilityRegulation_x005fcze;	/* ws-inspire-w
 class icommon__resLocInspireInteroperabilityRegulation_x005fdan;	/* ws-inspire-wfs2.h:720 */
 class icommon__resLocInspireInteroperabilityRegulation_x005fdut;	/* ws-inspire-wfs2.h:726 */
 class icommon__resLocGEMETInspireThemes_x005feng;	/* ws-inspire-wfs2.h:732 */
-union _icommon__union_citationGEMETInspireThemes_x005feng;	/* ws-inspire-wfs2.h:10146 */
+union _icommon__union_citationGEMETInspireThemes_x005feng;	/* ws-inspire-wfs2.h:10154 */
 class icommon__citationGEMETInspireThemes_x005feng;	/* ws-inspire-wfs2.h:734 */
 class icommon__resLocInspireInteroperabilityRegulation_x005feng;	/* ws-inspire-wfs2.h:736 */
 class icommon__resLocInspireInteroperabilityRegulation_x005fest;	/* ws-inspire-wfs2.h:742 */
@@ -3473,92 +3473,92 @@ class icommon__resLocInspireInteroperabilityRegulation_x005fspa;	/* ws-inspire-w
 class icommon__resLocInspireInteroperabilityRegulation_x005fswe;	/* ws-inspire-wfs2.h:844 */
 class wfs__QueryType;	/* ws-inspire-wfs2.h:289 */
 class wfs__GetFeatureWithLockType;	/* ws-inspire-wfs2.h:327 */
-union _ows__union_IdentificationType;	/* ws-inspire-wfs2.h:10915 */
-class __ows__union_IdentificationType;	/* ws-inspire-wfs2.h:10910 */
-union _ows__union_IdentificationType_;	/* ws-inspire-wfs2.h:10949 */
-class __ows__union_IdentificationType_;	/* ws-inspire-wfs2.h:10944 */
+union _ows__union_IdentificationType;	/* ws-inspire-wfs2.h:10927 */
+class __ows__union_IdentificationType;	/* ws-inspire-wfs2.h:10922 */
+union _ows__union_IdentificationType_;	/* ws-inspire-wfs2.h:10961 */
+class __ows__union_IdentificationType_;	/* ws-inspire-wfs2.h:10956 */
 class ows__IdentificationType;	/* ws-inspire-wfs2.h:415 */
-union _ows__union_ServiceReferenceType;	/* ws-inspire-wfs2.h:11060 */
+union _ows__union_ServiceReferenceType;	/* ws-inspire-wfs2.h:11072 */
 class ows__ServiceReferenceType;	/* ws-inspire-wfs2.h:467 */
-union _ows__union_ReferenceGroupType;	/* ws-inspire-wfs2.h:11139 */
-class __ows__union_ReferenceGroupType;	/* ws-inspire-wfs2.h:11134 */
+union _ows__union_ReferenceGroupType;	/* ws-inspire-wfs2.h:11151 */
+class __ows__union_ReferenceGroupType;	/* ws-inspire-wfs2.h:11146 */
 class ows__ReferenceGroupType;	/* ws-inspire-wfs2.h:473 */
 class ows__ManifestType;	/* ws-inspire-wfs2.h:475 */
 class icommon__dataset;	/* ws-inspire-wfs2.h:628 */
 class icommon__series;	/* ws-inspire-wfs2.h:630 */
 class icommon__service;	/* ws-inspire-wfs2.h:634 */
-union _icommon__union_originatingControlledVocabularyGemetInspireThemes;	/* ws-inspire-wfs2.h:11490 */
+union _icommon__union_originatingControlledVocabularyGemetInspireThemes;	/* ws-inspire-wfs2.h:11502 */
 class icommon__originatingControlledVocabularyGemetInspireThemes;	/* ws-inspire-wfs2.h:648 */
-union _icommon__union_originatingControlledVocabularyMD;	/* ws-inspire-wfs2.h:11527 */
+union _icommon__union_originatingControlledVocabularyMD;	/* ws-inspire-wfs2.h:11539 */
 class icommon__originatingControlledVocabularyMD;	/* ws-inspire-wfs2.h:650 */
 class icommon__inspireTheme_x005fbul;	/* ws-inspire-wfs2.h:706 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fbul;	/* ws-inspire-wfs2.h:11625 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fbul;	/* ws-inspire-wfs2.h:11637 */
 class icommon__citationInspireInteroperabilityRegulation_x005fbul;	/* ws-inspire-wfs2.h:710 */
 class icommon__inspireTheme_x005fcze;	/* ws-inspire-wfs2.h:712 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fcze;	/* ws-inspire-wfs2.h:11730 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fcze;	/* ws-inspire-wfs2.h:11742 */
 class icommon__citationInspireInteroperabilityRegulation_x005fcze;	/* ws-inspire-wfs2.h:716 */
 class icommon__inspireTheme_x005fdan;	/* ws-inspire-wfs2.h:718 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fdan;	/* ws-inspire-wfs2.h:11835 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fdan;	/* ws-inspire-wfs2.h:11847 */
 class icommon__citationInspireInteroperabilityRegulation_x005fdan;	/* ws-inspire-wfs2.h:722 */
 class icommon__inspireTheme_x005fdut;	/* ws-inspire-wfs2.h:724 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fdut;	/* ws-inspire-wfs2.h:11940 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fdut;	/* ws-inspire-wfs2.h:11952 */
 class icommon__citationInspireInteroperabilityRegulation_x005fdut;	/* ws-inspire-wfs2.h:728 */
 class icommon__inspireTheme_x005feng;	/* ws-inspire-wfs2.h:730 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005feng;	/* ws-inspire-wfs2.h:12045 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005feng;	/* ws-inspire-wfs2.h:12057 */
 class icommon__citationInspireInteroperabilityRegulation_x005feng;	/* ws-inspire-wfs2.h:738 */
 class icommon__inspireTheme_x005fest;	/* ws-inspire-wfs2.h:740 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fest;	/* ws-inspire-wfs2.h:12150 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fest;	/* ws-inspire-wfs2.h:12162 */
 class icommon__citationInspireInteroperabilityRegulation_x005fest;	/* ws-inspire-wfs2.h:744 */
 class icommon__inspireTheme_x005ffin;	/* ws-inspire-wfs2.h:746 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005ffin;	/* ws-inspire-wfs2.h:12255 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005ffin;	/* ws-inspire-wfs2.h:12267 */
 class icommon__citationInspireInteroperabilityRegulation_x005ffin;	/* ws-inspire-wfs2.h:750 */
 class icommon__inspireTheme_x005ffre;	/* ws-inspire-wfs2.h:752 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005ffre;	/* ws-inspire-wfs2.h:12360 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005ffre;	/* ws-inspire-wfs2.h:12372 */
 class icommon__citationInspireInteroperabilityRegulation_x005ffre;	/* ws-inspire-wfs2.h:756 */
 class icommon__inspireTheme_x005fger;	/* ws-inspire-wfs2.h:758 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fger;	/* ws-inspire-wfs2.h:12465 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fger;	/* ws-inspire-wfs2.h:12477 */
 class icommon__citationInspireInteroperabilityRegulation_x005fger;	/* ws-inspire-wfs2.h:762 */
 class icommon__inspireTheme_x005fgle;	/* ws-inspire-wfs2.h:764 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fgle;	/* ws-inspire-wfs2.h:12570 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fgle;	/* ws-inspire-wfs2.h:12582 */
 class icommon__citationInspireInteroperabilityRegulation_x005fgle;	/* ws-inspire-wfs2.h:768 */
 class icommon__inspireTheme_x005fgre;	/* ws-inspire-wfs2.h:770 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fgre;	/* ws-inspire-wfs2.h:12675 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fgre;	/* ws-inspire-wfs2.h:12687 */
 class icommon__citationInspireInteroperabilityRegulation_x005fgre;	/* ws-inspire-wfs2.h:774 */
 class icommon__inspireTheme_x005fhun;	/* ws-inspire-wfs2.h:776 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fhun;	/* ws-inspire-wfs2.h:12780 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fhun;	/* ws-inspire-wfs2.h:12792 */
 class icommon__citationInspireInteroperabilityRegulation_x005fhun;	/* ws-inspire-wfs2.h:780 */
 class icommon__inspireTheme_x005fita;	/* ws-inspire-wfs2.h:782 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fita;	/* ws-inspire-wfs2.h:12885 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fita;	/* ws-inspire-wfs2.h:12897 */
 class icommon__citationInspireInteroperabilityRegulation_x005fita;	/* ws-inspire-wfs2.h:786 */
 class icommon__inspireTheme_x005flav;	/* ws-inspire-wfs2.h:788 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005flav;	/* ws-inspire-wfs2.h:12990 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005flav;	/* ws-inspire-wfs2.h:13002 */
 class icommon__citationInspireInteroperabilityRegulation_x005flav;	/* ws-inspire-wfs2.h:792 */
 class icommon__inspireTheme_x005flit;	/* ws-inspire-wfs2.h:794 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005flit;	/* ws-inspire-wfs2.h:13095 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005flit;	/* ws-inspire-wfs2.h:13107 */
 class icommon__citationInspireInteroperabilityRegulation_x005flit;	/* ws-inspire-wfs2.h:798 */
 class icommon__inspireTheme_x005fmlt;	/* ws-inspire-wfs2.h:800 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fmlt;	/* ws-inspire-wfs2.h:13200 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fmlt;	/* ws-inspire-wfs2.h:13212 */
 class icommon__citationInspireInteroperabilityRegulation_x005fmlt;	/* ws-inspire-wfs2.h:804 */
 class icommon__inspireTheme_x005fpol;	/* ws-inspire-wfs2.h:806 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fpol;	/* ws-inspire-wfs2.h:13305 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fpol;	/* ws-inspire-wfs2.h:13317 */
 class icommon__citationInspireInteroperabilityRegulation_x005fpol;	/* ws-inspire-wfs2.h:810 */
 class icommon__inspireTheme_x005fpor;	/* ws-inspire-wfs2.h:812 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fpor;	/* ws-inspire-wfs2.h:13410 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fpor;	/* ws-inspire-wfs2.h:13422 */
 class icommon__citationInspireInteroperabilityRegulation_x005fpor;	/* ws-inspire-wfs2.h:816 */
 class icommon__inspireTheme_x005frum;	/* ws-inspire-wfs2.h:818 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005frum;	/* ws-inspire-wfs2.h:13515 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005frum;	/* ws-inspire-wfs2.h:13527 */
 class icommon__citationInspireInteroperabilityRegulation_x005frum;	/* ws-inspire-wfs2.h:822 */
 class icommon__inspireTheme_x005fslo;	/* ws-inspire-wfs2.h:824 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fslo;	/* ws-inspire-wfs2.h:13620 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fslo;	/* ws-inspire-wfs2.h:13632 */
 class icommon__citationInspireInteroperabilityRegulation_x005fslo;	/* ws-inspire-wfs2.h:828 */
 class icommon__inspireTheme_x005fslv;	/* ws-inspire-wfs2.h:830 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fslv;	/* ws-inspire-wfs2.h:13725 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fslv;	/* ws-inspire-wfs2.h:13737 */
 class icommon__citationInspireInteroperabilityRegulation_x005fslv;	/* ws-inspire-wfs2.h:834 */
 class icommon__inspireTheme_x005fspa;	/* ws-inspire-wfs2.h:836 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fspa;	/* ws-inspire-wfs2.h:13830 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fspa;	/* ws-inspire-wfs2.h:13842 */
 class icommon__citationInspireInteroperabilityRegulation_x005fspa;	/* ws-inspire-wfs2.h:838 */
 class icommon__inspireTheme_x005fswe;	/* ws-inspire-wfs2.h:842 */
-union _icommon__union_citationInspireInteroperabilityRegulation_x005fswe;	/* ws-inspire-wfs2.h:13935 */
+union _icommon__union_citationInspireInteroperabilityRegulation_x005fswe;	/* ws-inspire-wfs2.h:13947 */
 class icommon__citationInspireInteroperabilityRegulation_x005fswe;	/* ws-inspire-wfs2.h:846 */
 class icommon__discoveryService_x005fext;	/* ws-inspire-wfs2.h:680 */
 class icommon__viewService_x005fext;	/* ws-inspire-wfs2.h:686 */
@@ -3572,19 +3572,19 @@ class icommon__downloadService;	/* ws-inspire-wfs2.h:692 */
 class icommon__transformationService;	/* ws-inspire-wfs2.h:696 */
 class icommon__invokeService;	/* ws-inspire-wfs2.h:700 */
 class icommon__otherService;	/* ws-inspire-wfs2.h:704 */
-struct __f2i_plu__wfs_x002ecreateStoredQueryResponse;	/* ws-inspire-wfs2.h:15451 */
-struct __f2i_plu__wfs_x002ecreateStoredQuery;	/* ws-inspire-wfs2.h:15451 */
-struct __f2i_plu__wfs_x002edescribeFeatureType;	/* ws-inspire-wfs2.h:15521 */
-struct __f2i_plu__wfs_x002egetFeature;	/* ws-inspire-wfs2.h:15591 */
-struct __f2i_plu__wfs_x002edescribeStoredQueries;	/* ws-inspire-wfs2.h:15661 */
-struct __f2i_plu__wfs_x002elistStoredQueries;	/* ws-inspire-wfs2.h:15731 */
-struct __f2i_plu__wfs_x002edropStoredQueryResponse;	/* ws-inspire-wfs2.h:15801 */
-struct __f2i_plu__wfs_x002edropStoredQuery;	/* ws-inspire-wfs2.h:15801 */
-struct __f2i_plu__wfs_x002egetCapabilities;	/* ws-inspire-wfs2.h:15871 */
-struct __f2i_plu__wfs_x002egetFeatureWithLock;	/* ws-inspire-wfs2.h:15941 */
-struct __f2i_plu__wfs_x002egetPropertyValue;	/* ws-inspire-wfs2.h:16011 */
-struct __f2i_plu__wfs_x002elockFeature;	/* ws-inspire-wfs2.h:16081 */
-struct __f2i_plu__wfs_x002etransaction;	/* ws-inspire-wfs2.h:16151 */
+struct __f2i_plu__wfs_x002ecreateStoredQueryResponse;	/* ws-inspire-wfs2.h:15463 */
+struct __f2i_plu__wfs_x002ecreateStoredQuery;	/* ws-inspire-wfs2.h:15463 */
+struct __f2i_plu__wfs_x002edescribeFeatureType;	/* ws-inspire-wfs2.h:15533 */
+struct __f2i_plu__wfs_x002egetFeature;	/* ws-inspire-wfs2.h:15603 */
+struct __f2i_plu__wfs_x002edescribeStoredQueries;	/* ws-inspire-wfs2.h:15673 */
+struct __f2i_plu__wfs_x002elistStoredQueries;	/* ws-inspire-wfs2.h:15743 */
+struct __f2i_plu__wfs_x002edropStoredQueryResponse;	/* ws-inspire-wfs2.h:15813 */
+struct __f2i_plu__wfs_x002edropStoredQuery;	/* ws-inspire-wfs2.h:15813 */
+struct __f2i_plu__wfs_x002egetCapabilities;	/* ws-inspire-wfs2.h:15883 */
+struct __f2i_plu__wfs_x002egetFeatureWithLock;	/* ws-inspire-wfs2.h:15953 */
+struct __f2i_plu__wfs_x002egetPropertyValue;	/* ws-inspire-wfs2.h:16023 */
+struct __f2i_plu__wfs_x002elockFeature;	/* ws-inspire-wfs2.h:16093 */
+struct __f2i_plu__wfs_x002etransaction;	/* ws-inspire-wfs2.h:16163 */
 
 /* xsd.h:57 */
 #ifndef SOAP_TYPE_xsd__anyType
@@ -6306,10 +6306,8 @@ union _wfs__union_QueryExpressionTextType
 {
         #define SOAP_UNION__wfs__union_QueryExpressionTextType___any	(1)	/**< union variant selector value for member __any */
         std::vector<char *> *__any;
-        #define SOAP_UNION__wfs__union_QueryExpressionTextType_StoredQuery	(2)	/**< union variant selector value for member StoredQuery */
-        std::vector<wfs__StoredQueryType *> *StoredQuery;
-        #define SOAP_UNION__wfs__union_QueryExpressionTextType_Query	(3)	/**< union variant selector value for member Query */
-        std::vector<wfs__QueryType *> *Query;
+        #define SOAP_UNION__wfs__union_QueryExpressionTextType___any_	(2)	/**< union variant selector value for member __any_ */
+        std::vector<char *> *__any_;
 };
 #endif
 
@@ -6320,7 +6318,7 @@ union _wfs__union_QueryExpressionTextType
 /* complex XML schema type 'wfs:QueryExpressionTextType': */
 class SOAP_CMAC wfs__QueryExpressionTextType : public xsd__anyType {
       public:
-        /// Union with union _wfs__union_QueryExpressionTextType variant selector __union_QueryExpressionTextType set to one of: SOAP_UNION__wfs__union_QueryExpressionTextType___any SOAP_UNION__wfs__union_QueryExpressionTextType_StoredQuery SOAP_UNION__wfs__union_QueryExpressionTextType_Query
+        /// Union with union _wfs__union_QueryExpressionTextType variant selector __union_QueryExpressionTextType set to one of: SOAP_UNION__wfs__union_QueryExpressionTextType___any SOAP_UNION__wfs__union_QueryExpressionTextType___any_
         int __union_QueryExpressionTextType;
         union _wfs__union_QueryExpressionTextType union_QueryExpressionTextType;
         /// Required attribute 'returnFeatureTypes' of XML schema type 'xsd:QName'
@@ -6430,9 +6428,9 @@ class SOAP_CMAC wfs__LockFeatureResponseType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3253 */
+/* ws-inspire-wfs2.h:3250 */
 #ifndef SOAP_TYPE___wfs__FeaturesLockedType_sequence
-#define SOAP_TYPE___wfs__FeaturesLockedType_sequence (515)
+#define SOAP_TYPE___wfs__FeaturesLockedType_sequence (511)
 /* Wrapper: */
 struct SOAP_CMAC __wfs__FeaturesLockedType_sequence {
       public:
@@ -6482,9 +6480,9 @@ class SOAP_CMAC wfs__FeaturesLockedType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3278 */
+/* ws-inspire-wfs2.h:3275 */
 #ifndef SOAP_TYPE___wfs__FeaturesNotLockedType_sequence
-#define SOAP_TYPE___wfs__FeaturesNotLockedType_sequence (518)
+#define SOAP_TYPE___wfs__FeaturesNotLockedType_sequence (514)
 /* Wrapper: */
 struct SOAP_CMAC __wfs__FeaturesNotLockedType_sequence {
       public:
@@ -6569,9 +6567,9 @@ class SOAP_CMAC wfs__AbstractTransactionActionType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3337 */
+/* ws-inspire-wfs2.h:3334 */
 #ifndef SOAP_TYPE__wfs__PropertyType_ValueReference
-#define SOAP_TYPE__wfs__PropertyType_ValueReference (520)
+#define SOAP_TYPE__wfs__PropertyType_ValueReference (516)
 /* simple XML schema type 'wfs:PropertyType-ValueReference': */
 class SOAP_CMAC _wfs__PropertyType_ValueReference {
       public:
@@ -6761,9 +6759,9 @@ class SOAP_CMAC wfs__ActionResultsType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3437 */
+/* ws-inspire-wfs2.h:3434 */
 #ifndef SOAP_TYPE___wfs__CreatedOrModifiedFeatureType_sequence
-#define SOAP_TYPE___wfs__CreatedOrModifiedFeatureType_sequence (526)
+#define SOAP_TYPE___wfs__CreatedOrModifiedFeatureType_sequence (522)
 /* Wrapper: */
 struct SOAP_CMAC __wfs__CreatedOrModifiedFeatureType_sequence {
       public:
@@ -6847,9 +6845,9 @@ class SOAP_CMAC wfs__EmptyType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3483 */
+/* ws-inspire-wfs2.h:3480 */
 #ifndef SOAP_TYPE__wfs__union_additionalValues
-#define SOAP_TYPE__wfs__union_additionalValues (528)
+#define SOAP_TYPE__wfs__union_additionalValues (524)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _wfs__union_additionalValues
 {
@@ -6935,9 +6933,9 @@ class SOAP_CMAC _wfs__truncatedResponse {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3545 */
+/* ws-inspire-wfs2.h:3542 */
 #ifndef SOAP_TYPE__wfs__union_additionalObjects
-#define SOAP_TYPE__wfs__union_additionalObjects (531)
+#define SOAP_TYPE__wfs__union_additionalObjects (527)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _wfs__union_additionalObjects
 {
@@ -7140,9 +7138,9 @@ class SOAP_CMAC ows__DescriptionType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:3746 */
+/* ws-inspire-wfs2.h:3743 */
 #ifndef SOAP_TYPE__ows__union_MetadataType
-#define SOAP_TYPE__ows__union_MetadataType (536)
+#define SOAP_TYPE__ows__union_MetadataType (532)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_MetadataType
 {
@@ -7722,9 +7720,9 @@ class SOAP_CMAC ows__AcceptFormatsType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:4344 */
+/* ws-inspire-wfs2.h:4341 */
 #ifndef SOAP_TYPE__ows__union_UnNamedDomainType
-#define SOAP_TYPE__ows__union_UnNamedDomainType (552)
+#define SOAP_TYPE__ows__union_UnNamedDomainType (548)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_UnNamedDomainType
 {
@@ -7739,9 +7737,9 @@ union _ows__union_UnNamedDomainType
 };
 #endif
 
-/* ws-inspire-wfs2.h:4410 */
+/* ws-inspire-wfs2.h:4407 */
 #ifndef SOAP_TYPE__ows__union_UnNamedDomainType_
-#define SOAP_TYPE__ows__union_UnNamedDomainType_ (559)
+#define SOAP_TYPE__ows__union_UnNamedDomainType_ (555)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_UnNamedDomainType_
 {
@@ -8015,8 +8013,8 @@ class SOAP_CMAC _ows__OperationsMetadata {
         std::vector<ows__DomainType *> Parameter;
         /// Optional element 'ows:Constraint' of XML schema type 'ows:DomainType'
         std::vector<ows__DomainType *> Constraint;
-        /// Optional element 'ows:ExtendedCapabilities' of XML schema type 'idls:ExtendedCapabilitiesType'
-        idls__ExtendedCapabilitiesType *ExtendedCapabilities;
+        /// Optional element 'ows:ExtendedCapabilities' of XML schema type 'xsd:anyType'
+        xsd__anyType *ExtendedCapabilities;
         /// Context that manages this object
         struct soap *soap;
       public:
@@ -8089,9 +8087,9 @@ class SOAP_CMAC _ows__Operation {
 };
 #endif
 
-/* ws-inspire-wfs2.h:4818 */
+/* ws-inspire-wfs2.h:4814 */
 #ifndef SOAP_TYPE__ows__union_DCP
-#define SOAP_TYPE__ows__union_DCP (573)
+#define SOAP_TYPE__ows__union_DCP (568)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_DCP
 {
@@ -8137,9 +8135,9 @@ class SOAP_CMAC _ows__DCP {
 };
 #endif
 
-/* ws-inspire-wfs2.h:4858 */
+/* ws-inspire-wfs2.h:4854 */
 #ifndef SOAP_TYPE__ows__union_HTTP
-#define SOAP_TYPE__ows__union_HTTP (576)
+#define SOAP_TYPE__ows__union_HTTP (571)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_HTTP
 {
@@ -8150,9 +8148,9 @@ union _ows__union_HTTP
 };
 #endif
 
-/* ws-inspire-wfs2.h:4853 */
+/* ws-inspire-wfs2.h:4849 */
 #ifndef SOAP_TYPE___ows__union_HTTP
-#define SOAP_TYPE___ows__union_HTTP (575)
+#define SOAP_TYPE___ows__union_HTTP (570)
 /* Wrapper: */
 class SOAP_CMAC __ows__union_HTTP {
       public:
@@ -8288,9 +8286,9 @@ class SOAP_CMAC _ows__NoValues {
 };
 #endif
 
-/* ws-inspire-wfs2.h:4953 */
+/* ws-inspire-wfs2.h:4949 */
 #ifndef SOAP_TYPE__ows__union_AllowedValues
-#define SOAP_TYPE__ows__union_AllowedValues (580)
+#define SOAP_TYPE__ows__union_AllowedValues (575)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_AllowedValues
 {
@@ -8301,9 +8299,9 @@ union _ows__union_AllowedValues
 };
 #endif
 
-/* ws-inspire-wfs2.h:4948 */
+/* ws-inspire-wfs2.h:4944 */
 #ifndef SOAP_TYPE___ows__union_AllowedValues
-#define SOAP_TYPE___ows__union_AllowedValues (579)
+#define SOAP_TYPE___ows__union_AllowedValues (574)
 /* Wrapper: */
 class SOAP_CMAC __ows__union_AllowedValues {
       public:
@@ -8420,18 +8418,18 @@ class SOAP_CMAC xlink__simple : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5064 */
+/* ws-inspire-wfs2.h:5060 */
 #ifndef SOAP_TYPE__xlink__union_extended
-#define SOAP_TYPE__xlink__union_extended (584)
+#define SOAP_TYPE__xlink__union_extended (579)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _xlink__union_extended
 {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5060 */
+/* ws-inspire-wfs2.h:5056 */
 #ifndef SOAP_TYPE___xlink__union_extended
-#define SOAP_TYPE___xlink__union_extended (583)
+#define SOAP_TYPE___xlink__union_extended (578)
 /* Wrapper: */
 class SOAP_CMAC __xlink__union_extended {
       public:
@@ -8586,18 +8584,18 @@ class SOAP_CMAC xlink__resourceType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5206 */
+/* ws-inspire-wfs2.h:5202 */
 #ifndef SOAP_TYPE__xlink__union_locatorType
-#define SOAP_TYPE__xlink__union_locatorType (588)
+#define SOAP_TYPE__xlink__union_locatorType (583)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _xlink__union_locatorType
 {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5201 */
+/* ws-inspire-wfs2.h:5197 */
 #ifndef SOAP_TYPE___xlink__union_locatorType
-#define SOAP_TYPE___xlink__union_locatorType (587)
+#define SOAP_TYPE___xlink__union_locatorType (582)
 /* Wrapper: */
 class SOAP_CMAC __xlink__union_locatorType {
       public:
@@ -8676,18 +8674,18 @@ class SOAP_CMAC xlink__locatorType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5255 */
+/* ws-inspire-wfs2.h:5251 */
 #ifndef SOAP_TYPE__xlink__union_arcType
-#define SOAP_TYPE__xlink__union_arcType (591)
+#define SOAP_TYPE__xlink__union_arcType (586)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _xlink__union_arcType
 {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5250 */
+/* ws-inspire-wfs2.h:5246 */
 #ifndef SOAP_TYPE___xlink__union_arcType
-#define SOAP_TYPE___xlink__union_arcType (590)
+#define SOAP_TYPE___xlink__union_arcType (585)
 /* Wrapper: */
 class SOAP_CMAC __xlink__union_arcType {
       public:
@@ -9088,9 +9086,9 @@ class SOAP_CMAC fes__AbstractIdType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5510 */
+/* ws-inspire-wfs2.h:5506 */
 #ifndef SOAP_TYPE__fes__union_LowerBoundaryType
-#define SOAP_TYPE__fes__union_LowerBoundaryType (595)
+#define SOAP_TYPE__fes__union_LowerBoundaryType (590)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_LowerBoundaryType
 {
@@ -9138,9 +9136,9 @@ class SOAP_CMAC fes__LowerBoundaryType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5546 */
+/* ws-inspire-wfs2.h:5542 */
 #ifndef SOAP_TYPE__fes__union_UpperBoundaryType
-#define SOAP_TYPE__fes__union_UpperBoundaryType (598)
+#define SOAP_TYPE__fes__union_UpperBoundaryType (593)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_UpperBoundaryType
 {
@@ -9188,9 +9186,9 @@ class SOAP_CMAC fes__UpperBoundaryType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5581 */
+/* ws-inspire-wfs2.h:5577 */
 #ifndef SOAP_TYPE__fes__union_FunctionType
-#define SOAP_TYPE__fes__union_FunctionType (600)
+#define SOAP_TYPE__fes__union_FunctionType (595)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_FunctionType
 {
@@ -9203,9 +9201,9 @@ union _fes__union_FunctionType
 };
 #endif
 
-/* ws-inspire-wfs2.h:5576 */
+/* ws-inspire-wfs2.h:5572 */
 #ifndef SOAP_TYPE___fes__union_FunctionType
-#define SOAP_TYPE___fes__union_FunctionType (599)
+#define SOAP_TYPE___fes__union_FunctionType (594)
 /* Type __fes__union_FunctionType is a recursive data type, (in)directly referencing itself through its (base or derived class) members */
 /* Wrapper: */
 class SOAP_CMAC __fes__union_FunctionType {
@@ -9456,9 +9454,9 @@ class SOAP_CMAC fes__Scalar_x005fCapabilitiesType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5724 */
+/* ws-inspire-wfs2.h:5720 */
 #ifndef SOAP_TYPE___fes__ComparisonOperatorsType_sequence
-#define SOAP_TYPE___fes__ComparisonOperatorsType_sequence (607)
+#define SOAP_TYPE___fes__ComparisonOperatorsType_sequence (602)
 /* Wrapper: */
 struct SOAP_CMAC __fes__ComparisonOperatorsType_sequence {
       public:
@@ -9730,9 +9728,9 @@ class SOAP_CMAC fes__Spatial_x005fCapabilitiesType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5885 */
+/* ws-inspire-wfs2.h:5881 */
 #ifndef SOAP_TYPE__fes__GeometryOperandsType_GeometryOperand
-#define SOAP_TYPE__fes__GeometryOperandsType_GeometryOperand (617)
+#define SOAP_TYPE__fes__GeometryOperandsType_GeometryOperand (612)
 /* complex XML schema type 'fes:GeometryOperandsType-GeometryOperand': */
 class SOAP_CMAC _fes__GeometryOperandsType_GeometryOperand {
       public:
@@ -9908,9 +9906,9 @@ class SOAP_CMAC fes__Temporal_x005fCapabilitiesType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:5981 */
+/* ws-inspire-wfs2.h:5977 */
 #ifndef SOAP_TYPE__fes__TemporalOperandsType_TemporalOperand
-#define SOAP_TYPE__fes__TemporalOperandsType_TemporalOperand (624)
+#define SOAP_TYPE__fes__TemporalOperandsType_TemporalOperand (619)
 /* complex XML schema type 'fes:TemporalOperandsType-TemporalOperand': */
 class SOAP_CMAC _fes__TemporalOperandsType_TemporalOperand {
       public:
@@ -10410,9 +10408,9 @@ class SOAP_CMAC icommon__metadataPointOfContact : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6302 */
+/* ws-inspire-wfs2.h:6298 */
 #ifndef SOAP_TYPE__icommon__responsibleOrganisation_ResponsibleParty
-#define SOAP_TYPE__icommon__responsibleOrganisation_ResponsibleParty (658)
+#define SOAP_TYPE__icommon__responsibleOrganisation_ResponsibleParty (653)
 /* complex XML schema type 'icommon:responsibleOrganisation-ResponsibleParty': */
 class SOAP_CMAC _icommon__responsibleOrganisation_ResponsibleParty {
       public:
@@ -10482,9 +10480,9 @@ class SOAP_CMAC icommon__responsibleOrganisation : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6338 */
+/* ws-inspire-wfs2.h:6334 */
 #ifndef SOAP_TYPE__icommon__union_citation
-#define SOAP_TYPE__icommon__union_citation (659)
+#define SOAP_TYPE__icommon__union_citation (654)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citation
 {
@@ -10615,9 +10613,9 @@ class SOAP_CMAC icommon__temporalReference : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6431 */
+/* ws-inspire-wfs2.h:6427 */
 #ifndef SOAP_TYPE__icommon__union_temporalExtent
-#define SOAP_TYPE__icommon__union_temporalExtent (666)
+#define SOAP_TYPE__icommon__union_temporalExtent (661)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_temporalExtent
 {
@@ -10628,9 +10626,9 @@ union _icommon__union_temporalExtent
 };
 #endif
 
-/* ws-inspire-wfs2.h:6426 */
+/* ws-inspire-wfs2.h:6422 */
 #ifndef SOAP_TYPE___icommon__union_temporalExtent
-#define SOAP_TYPE___icommon__union_temporalExtent (665)
+#define SOAP_TYPE___icommon__union_temporalExtent (660)
 /* Wrapper: */
 class SOAP_CMAC __icommon__union_temporalExtent {
       public:
@@ -11022,9 +11020,9 @@ class SOAP_CMAC icommon__supportedLanguagesType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6824 */
+/* ws-inspire-wfs2.h:6820 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems_CRS
-#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems_CRS (684)
+#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems_CRS (679)
 /* complex XML schema type 'icommon:layers-Layer-CoordinateReferenceSystems-CRS': */
 class SOAP_CMAC _icommon__layers_Layer_CoordinateReferenceSystems_CRS {
       public:
@@ -11058,9 +11056,9 @@ class SOAP_CMAC _icommon__layers_Layer_CoordinateReferenceSystems_CRS {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6809 */
+/* ws-inspire-wfs2.h:6805 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems
-#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems (683)
+#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems (678)
 /* complex XML schema type 'icommon:layers-Layer-CoordinateReferenceSystems': */
 class SOAP_CMAC _icommon__layers_Layer_CoordinateReferenceSystems {
       public:
@@ -11092,9 +11090,9 @@ class SOAP_CMAC _icommon__layers_Layer_CoordinateReferenceSystems {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6873 */
+/* ws-inspire-wfs2.h:6869 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleAbstract
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleAbstract (688)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleAbstract (683)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-StyleAbstract': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_StyleAbstract {
       public:
@@ -11123,9 +11121,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_StyleAbstract {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6887 */
+/* ws-inspire-wfs2.h:6883 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleFormat
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleFormat (689)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleFormat (684)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-StyleFormat': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_StyleFormat {
       public:
@@ -11154,9 +11152,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_StyleFormat {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6901 */
+/* ws-inspire-wfs2.h:6897 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleURL
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleURL (690)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleURL (685)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-StyleURL': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_StyleURL {
       public:
@@ -11185,9 +11183,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_StyleURL {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6941 */
+/* ws-inspire-wfs2.h:6937 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat (693)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat (688)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-LegendList-Legend-LegendFormat': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat {
       public:
@@ -11216,9 +11214,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendForm
 };
 #endif
 
-/* ws-inspire-wfs2.h:6959 */
+/* ws-inspire-wfs2.h:6955 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL (694)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL (689)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-LegendList-Legend-LegendURL': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL {
       public:
@@ -11247,9 +11245,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL 
 };
 #endif
 
-/* ws-inspire-wfs2.h:6928 */
+/* ws-inspire-wfs2.h:6924 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend (692)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend (687)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-LegendList-Legend': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList_Legend {
       public:
@@ -11287,9 +11285,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList_Legend {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6915 */
+/* ws-inspire-wfs2.h:6911 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList (691)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList (686)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style-LegendList': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList {
       public:
@@ -11321,9 +11319,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style_LegendList {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6856 */
+/* ws-inspire-wfs2.h:6852 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style (687)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style (682)
 /* complex XML schema type 'icommon:layers-Layer-Styles-Style': */
 class SOAP_CMAC _icommon__layers_Layer_Styles_Style {
       public:
@@ -11367,9 +11365,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles_Style {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6843 */
+/* ws-inspire-wfs2.h:6839 */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles
-#define SOAP_TYPE__icommon__layers_Layer_Styles (686)
+#define SOAP_TYPE__icommon__layers_Layer_Styles (681)
 /* complex XML schema type 'icommon:layers-Layer-Styles': */
 class SOAP_CMAC _icommon__layers_Layer_Styles {
       public:
@@ -11401,9 +11399,9 @@ class SOAP_CMAC _icommon__layers_Layer_Styles {
 };
 #endif
 
-/* ws-inspire-wfs2.h:6772 */
+/* ws-inspire-wfs2.h:6768 */
 #ifndef SOAP_TYPE__icommon__layers_Layer
-#define SOAP_TYPE__icommon__layers_Layer (680)
+#define SOAP_TYPE__icommon__layers_Layer (675)
 /* complex XML schema type 'icommon:layers-Layer': */
 class SOAP_CMAC _icommon__layers_Layer {
       public:
@@ -11597,9 +11595,9 @@ class SOAP_CMAC wfs__GetCapabilitiesType : public ows__GetCapabilitiesType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:7123 */
+/* ws-inspire-wfs2.h:7119 */
 #ifndef SOAP_TYPE__wfs__WFS_x005fCapabilitiesType_WSDL
-#define SOAP_TYPE__wfs__WFS_x005fCapabilitiesType_WSDL (698)
+#define SOAP_TYPE__wfs__WFS_x005fCapabilitiesType_WSDL (693)
 /* complex XML schema type 'wfs:WFS_CapabilitiesType-WSDL': */
 class SOAP_CMAC _wfs__WFS_x005fCapabilitiesType_WSDL {
       public:
@@ -11704,15 +11702,19 @@ class SOAP_CMAC wfs__DescribeFeatureTypeType : public wfs__BaseRequestType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:7190 */
+/* ws-inspire-wfs2.h:7186 */
 #ifndef SOAP_TYPE__wfs__union_GetPropertyValueType
-#define SOAP_TYPE__wfs__union_GetPropertyValueType (702)
+#define SOAP_TYPE__wfs__union_GetPropertyValueType (697)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _wfs__union_GetPropertyValueType
 {
-        #define SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery	(1)	/**< union variant selector value for member StoredQuery */
+        #define SOAP_UNION__wfs__union_GetPropertyValueType_Query	(1)	/**< union variant selector value for member Query */
+        wfs__QueryType *Query;
+        #define SOAP_UNION__wfs__union_GetPropertyValueType_Query_	(2)	/**< union variant selector value for member Query_ */
+        wfs__QueryType *Query_;
+        #define SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery	(3)	/**< union variant selector value for member StoredQuery */
         wfs__StoredQueryType *StoredQuery;
-        #define SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery_	(2)	/**< union variant selector value for member StoredQuery_ */
+        #define SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery_	(4)	/**< union variant selector value for member StoredQuery_ */
         wfs__StoredQueryType *StoredQuery_;
 };
 #endif
@@ -11724,7 +11726,7 @@ union _wfs__union_GetPropertyValueType
 /* complex XML schema type 'wfs:GetPropertyValueType': */
 class SOAP_CMAC wfs__GetPropertyValueType : public wfs__BaseRequestType {
       public:
-        /// Union with union _wfs__union_GetPropertyValueType variant selector __unionAbstractQueryExpression set to one of: SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery_
+        /// Union with union _wfs__union_GetPropertyValueType variant selector __unionAbstractQueryExpression set to one of: SOAP_UNION__wfs__union_GetPropertyValueType_Query SOAP_UNION__wfs__union_GetPropertyValueType_Query_ SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery SOAP_UNION__wfs__union_GetPropertyValueType_StoredQuery_
         int __unionAbstractQueryExpression;
         union _wfs__union_GetPropertyValueType union_GetPropertyValueType;
         /// Required attribute 'valueReference' of XML schema type 'xsd:string'
@@ -11773,24 +11775,28 @@ class SOAP_CMAC wfs__GetPropertyValueType : public wfs__BaseRequestType {
 
 /* ws-inspire-wfs2.h:7253 */
 #ifndef SOAP_TYPE__wfs__union_GetFeatureType
-#define SOAP_TYPE__wfs__union_GetFeatureType (704)
+#define SOAP_TYPE__wfs__union_GetFeatureType (699)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _wfs__union_GetFeatureType
 {
-        #define SOAP_UNION__wfs__union_GetFeatureType_StoredQuery	(1)	/**< union variant selector value for member StoredQuery */
+        #define SOAP_UNION__wfs__union_GetFeatureType_Query	(1)	/**< union variant selector value for member Query */
+        wfs__QueryType *Query;
+        #define SOAP_UNION__wfs__union_GetFeatureType_Query_	(2)	/**< union variant selector value for member Query_ */
+        wfs__QueryType *Query_;
+        #define SOAP_UNION__wfs__union_GetFeatureType_StoredQuery	(3)	/**< union variant selector value for member StoredQuery */
         wfs__StoredQueryType *StoredQuery;
-        #define SOAP_UNION__wfs__union_GetFeatureType_StoredQuery_	(2)	/**< union variant selector value for member StoredQuery_ */
+        #define SOAP_UNION__wfs__union_GetFeatureType_StoredQuery_	(4)	/**< union variant selector value for member StoredQuery_ */
         wfs__StoredQueryType *StoredQuery_;
 };
 #endif
 
 /* ws-inspire-wfs2.h:7248 */
 #ifndef SOAP_TYPE___wfs__union_GetFeatureType
-#define SOAP_TYPE___wfs__union_GetFeatureType (703)
+#define SOAP_TYPE___wfs__union_GetFeatureType (698)
 /* Wrapper: */
 class SOAP_CMAC __wfs__union_GetFeatureType {
       public:
-        /// Union with union _wfs__union_GetFeatureType variant selector __unionAbstractQueryExpression set to one of: SOAP_UNION__wfs__union_GetFeatureType_StoredQuery SOAP_UNION__wfs__union_GetFeatureType_StoredQuery_
+        /// Union with union _wfs__union_GetFeatureType variant selector __unionAbstractQueryExpression set to one of: SOAP_UNION__wfs__union_GetFeatureType_Query SOAP_UNION__wfs__union_GetFeatureType_Query_ SOAP_UNION__wfs__union_GetFeatureType_StoredQuery SOAP_UNION__wfs__union_GetFeatureType_StoredQuery_
         int __unionAbstractQueryExpression;
         union _wfs__union_GetFeatureType union_GetFeatureType;
       public:
@@ -12052,26 +12058,30 @@ class SOAP_CMAC wfs__CreateStoredQueryResponseType : public wfs__ExecutionStatus
 };
 #endif
 
-/* ws-inspire-wfs2.h:7454 */
+/* ws-inspire-wfs2.h:7458 */
 #ifndef SOAP_TYPE__wfs__union_LockFeatureType
-#define SOAP_TYPE__wfs__union_LockFeatureType (708)
+#define SOAP_TYPE__wfs__union_LockFeatureType (703)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _wfs__union_LockFeatureType
 {
-        #define SOAP_UNION__wfs__union_LockFeatureType_StoredQuery	(1)	/**< union variant selector value for member StoredQuery */
+        #define SOAP_UNION__wfs__union_LockFeatureType_Query	(1)	/**< union variant selector value for member Query */
+        wfs__QueryType *Query;
+        #define SOAP_UNION__wfs__union_LockFeatureType_Query_	(2)	/**< union variant selector value for member Query_ */
+        wfs__QueryType *Query_;
+        #define SOAP_UNION__wfs__union_LockFeatureType_StoredQuery	(3)	/**< union variant selector value for member StoredQuery */
         wfs__StoredQueryType *StoredQuery;
-        #define SOAP_UNION__wfs__union_LockFeatureType_StoredQuery_	(2)	/**< union variant selector value for member StoredQuery_ */
+        #define SOAP_UNION__wfs__union_LockFeatureType_StoredQuery_	(4)	/**< union variant selector value for member StoredQuery_ */
         wfs__StoredQueryType *StoredQuery_;
 };
 #endif
 
-/* ws-inspire-wfs2.h:7449 */
+/* ws-inspire-wfs2.h:7453 */
 #ifndef SOAP_TYPE___wfs__union_LockFeatureType
-#define SOAP_TYPE___wfs__union_LockFeatureType (707)
+#define SOAP_TYPE___wfs__union_LockFeatureType (702)
 /* Wrapper: */
 class SOAP_CMAC __wfs__union_LockFeatureType {
       public:
-        /// Union with union _wfs__union_LockFeatureType variant selector __unionAbstractQueryExpression set to one of: SOAP_UNION__wfs__union_LockFeatureType_StoredQuery SOAP_UNION__wfs__union_LockFeatureType_StoredQuery_
+        /// Union with union _wfs__union_LockFeatureType variant selector __unionAbstractQueryExpression set to one of: SOAP_UNION__wfs__union_LockFeatureType_Query SOAP_UNION__wfs__union_LockFeatureType_Query_ SOAP_UNION__wfs__union_LockFeatureType_StoredQuery SOAP_UNION__wfs__union_LockFeatureType_StoredQuery_
         int __unionAbstractQueryExpression;
         union _wfs__union_LockFeatureType union_LockFeatureType;
       public:
@@ -12142,9 +12152,9 @@ class SOAP_CMAC wfs__LockFeatureType : public wfs__BaseRequestType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:7503 */
+/* ws-inspire-wfs2.h:7511 */
 #ifndef SOAP_TYPE__wfs__union_TransactionType
-#define SOAP_TYPE__wfs__union_TransactionType (711)
+#define SOAP_TYPE__wfs__union_TransactionType (706)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _wfs__union_TransactionType
 {
@@ -12161,9 +12171,9 @@ union _wfs__union_TransactionType
 };
 #endif
 
-/* ws-inspire-wfs2.h:7496 */
+/* ws-inspire-wfs2.h:7504 */
 #ifndef SOAP_TYPE___wfs__TransactionType_sequence
-#define SOAP_TYPE___wfs__TransactionType_sequence (710)
+#define SOAP_TYPE___wfs__TransactionType_sequence (705)
 /* Wrapper: */
 struct SOAP_CMAC __wfs__TransactionType_sequence {
       public:
@@ -12863,9 +12873,9 @@ class SOAP_CMAC ows__DomainMetadataType : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8261 */
+/* ws-inspire-wfs2.h:8269 */
 #ifndef SOAP_TYPE__ows__union_DatasetDescriptionSummaryBaseType
-#define SOAP_TYPE__ows__union_DatasetDescriptionSummaryBaseType (722)
+#define SOAP_TYPE__ows__union_DatasetDescriptionSummaryBaseType (717)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_DatasetDescriptionSummaryBaseType
 {
@@ -12876,9 +12886,9 @@ union _ows__union_DatasetDescriptionSummaryBaseType
 };
 #endif
 
-/* ws-inspire-wfs2.h:8256 */
+/* ws-inspire-wfs2.h:8264 */
 #ifndef SOAP_TYPE___ows__union_DatasetDescriptionSummaryBaseType
-#define SOAP_TYPE___ows__union_DatasetDescriptionSummaryBaseType (721)
+#define SOAP_TYPE___ows__union_DatasetDescriptionSummaryBaseType (716)
 /* Wrapper: */
 class SOAP_CMAC __ows__union_DatasetDescriptionSummaryBaseType {
       public:
@@ -13111,9 +13121,9 @@ class SOAP_CMAC idls__ExtendedCapabilitiesType : public icommon__ExtendedCapabil
 };
 #endif
 
-/* ws-inspire-wfs2.h:8594 */
+/* ws-inspire-wfs2.h:8602 */
 #ifndef SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType
-#define SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType (728)
+#define SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType (723)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_AbstractAdhocQueryExpressionType
 {
@@ -13124,9 +13134,9 @@ union _fes__union_AbstractAdhocQueryExpressionType
 };
 #endif
 
-/* ws-inspire-wfs2.h:8589 */
+/* ws-inspire-wfs2.h:8597 */
 #ifndef SOAP_TYPE___fes__union_AbstractAdhocQueryExpressionType
-#define SOAP_TYPE___fes__union_AbstractAdhocQueryExpressionType (727)
+#define SOAP_TYPE___fes__union_AbstractAdhocQueryExpressionType (722)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_AbstractAdhocQueryExpressionType {
       public:
@@ -13159,9 +13169,9 @@ class SOAP_CMAC __fes__union_AbstractAdhocQueryExpressionType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8608 */
+/* ws-inspire-wfs2.h:8616 */
 #ifndef SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType_
-#define SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType_ (731)
+#define SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType_ (726)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_AbstractAdhocQueryExpressionType_
 {
@@ -13170,9 +13180,9 @@ union _fes__union_AbstractAdhocQueryExpressionType_
 };
 #endif
 
-/* ws-inspire-wfs2.h:8619 */
+/* ws-inspire-wfs2.h:8627 */
 #ifndef SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType__
-#define SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType__ (732)
+#define SOAP_TYPE__fes__union_AbstractAdhocQueryExpressionType__ (727)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_AbstractAdhocQueryExpressionType__
 {
@@ -13227,9 +13237,9 @@ class SOAP_CMAC fes__AbstractAdhocQueryExpressionType : public fes__AbstractQuer
 };
 #endif
 
-/* ws-inspire-wfs2.h:8763 */
+/* ws-inspire-wfs2.h:8771 */
 #ifndef SOAP_TYPE__fes__union_FilterType______
-#define SOAP_TYPE__fes__union_FilterType______ (749)
+#define SOAP_TYPE__fes__union_FilterType______ (744)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_FilterType______
 {
@@ -13238,9 +13248,9 @@ union _fes__union_FilterType______
 };
 #endif
 
-/* ws-inspire-wfs2.h:8758 */
+/* ws-inspire-wfs2.h:8766 */
 #ifndef SOAP_TYPE___fes__union_FilterType______
-#define SOAP_TYPE___fes__union_FilterType______ (748)
+#define SOAP_TYPE___fes__union_FilterType______ (743)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_FilterType______ {
       public:
@@ -13273,9 +13283,9 @@ class SOAP_CMAC __fes__union_FilterType______ {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8756 */
+/* ws-inspire-wfs2.h:8764 */
 #ifndef SOAP_TYPE____fes__union_FilterType______
-#define SOAP_TYPE____fes__union_FilterType______ (747)
+#define SOAP_TYPE____fes__union_FilterType______ (742)
 /* Wrapper: */
 struct SOAP_CMAC ___fes__union_FilterType______ {
       public:
@@ -13290,9 +13300,9 @@ struct SOAP_CMAC ___fes__union_FilterType______ {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8651 */
+/* ws-inspire-wfs2.h:8659 */
 #ifndef SOAP_TYPE__fes__union_FilterType
-#define SOAP_TYPE__fes__union_FilterType (735)
+#define SOAP_TYPE__fes__union_FilterType (730)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_FilterType
 {
@@ -13457,9 +13467,9 @@ class SOAP_CMAC fes__ResourceIdType : public fes__AbstractIdType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8830 */
+/* ws-inspire-wfs2.h:8838 */
 #ifndef SOAP_TYPE__fes__union_BinaryComparisonOpType
-#define SOAP_TYPE__fes__union_BinaryComparisonOpType (754)
+#define SOAP_TYPE__fes__union_BinaryComparisonOpType (749)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_BinaryComparisonOpType
 {
@@ -13472,9 +13482,9 @@ union _fes__union_BinaryComparisonOpType
 };
 #endif
 
-/* ws-inspire-wfs2.h:8825 */
+/* ws-inspire-wfs2.h:8833 */
 #ifndef SOAP_TYPE___fes__union_BinaryComparisonOpType
-#define SOAP_TYPE___fes__union_BinaryComparisonOpType (753)
+#define SOAP_TYPE___fes__union_BinaryComparisonOpType (748)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_BinaryComparisonOpType {
       public:
@@ -13546,9 +13556,9 @@ class SOAP_CMAC fes__BinaryComparisonOpType : public fes__ComparisonOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8872 */
+/* ws-inspire-wfs2.h:8880 */
 #ifndef SOAP_TYPE__fes__union_PropertyIsLikeType
-#define SOAP_TYPE__fes__union_PropertyIsLikeType (757)
+#define SOAP_TYPE__fes__union_PropertyIsLikeType (752)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_PropertyIsLikeType
 {
@@ -13561,9 +13571,9 @@ union _fes__union_PropertyIsLikeType
 };
 #endif
 
-/* ws-inspire-wfs2.h:8867 */
+/* ws-inspire-wfs2.h:8875 */
 #ifndef SOAP_TYPE___fes__union_PropertyIsLikeType
-#define SOAP_TYPE___fes__union_PropertyIsLikeType (756)
+#define SOAP_TYPE___fes__union_PropertyIsLikeType (751)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_PropertyIsLikeType {
       public:
@@ -13639,9 +13649,9 @@ class SOAP_CMAC fes__PropertyIsLikeType : public fes__ComparisonOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8915 */
+/* ws-inspire-wfs2.h:8923 */
 #ifndef SOAP_TYPE__fes__union_PropertyIsNullType
-#define SOAP_TYPE__fes__union_PropertyIsNullType (759)
+#define SOAP_TYPE__fes__union_PropertyIsNullType (754)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_PropertyIsNullType
 {
@@ -13689,9 +13699,9 @@ class SOAP_CMAC fes__PropertyIsNullType : public fes__ComparisonOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8949 */
+/* ws-inspire-wfs2.h:8957 */
 #ifndef SOAP_TYPE__fes__union_PropertyIsNilType
-#define SOAP_TYPE__fes__union_PropertyIsNilType (760)
+#define SOAP_TYPE__fes__union_PropertyIsNilType (755)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_PropertyIsNilType
 {
@@ -13741,9 +13751,9 @@ class SOAP_CMAC fes__PropertyIsNilType : public fes__ComparisonOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:8985 */
+/* ws-inspire-wfs2.h:8993 */
 #ifndef SOAP_TYPE__fes__union_PropertyIsBetweenType
-#define SOAP_TYPE__fes__union_PropertyIsBetweenType (761)
+#define SOAP_TYPE__fes__union_PropertyIsBetweenType (756)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_PropertyIsBetweenType
 {
@@ -13795,9 +13805,9 @@ class SOAP_CMAC fes__PropertyIsBetweenType : public fes__ComparisonOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9024 */
+/* ws-inspire-wfs2.h:9032 */
 #ifndef SOAP_TYPE__fes__union_BinarySpatialOpType
-#define SOAP_TYPE__fes__union_BinarySpatialOpType (765)
+#define SOAP_TYPE__fes__union_BinarySpatialOpType (760)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_BinarySpatialOpType
 {
@@ -13812,9 +13822,9 @@ union _fes__union_BinarySpatialOpType
 };
 #endif
 
-/* ws-inspire-wfs2.h:9019 */
+/* ws-inspire-wfs2.h:9027 */
 #ifndef SOAP_TYPE___fes__union_BinarySpatialOpType
-#define SOAP_TYPE___fes__union_BinarySpatialOpType (764)
+#define SOAP_TYPE___fes__union_BinarySpatialOpType (759)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_BinarySpatialOpType {
       public:
@@ -13880,9 +13890,9 @@ class SOAP_CMAC fes__BinarySpatialOpType : public fes__SpatialOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9071 */
+/* ws-inspire-wfs2.h:9079 */
 #ifndef SOAP_TYPE__fes__union_BinaryTemporalOpType
-#define SOAP_TYPE__fes__union_BinaryTemporalOpType (768)
+#define SOAP_TYPE__fes__union_BinaryTemporalOpType (763)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_BinaryTemporalOpType
 {
@@ -13897,9 +13907,9 @@ union _fes__union_BinaryTemporalOpType
 };
 #endif
 
-/* ws-inspire-wfs2.h:9066 */
+/* ws-inspire-wfs2.h:9074 */
 #ifndef SOAP_TYPE___fes__union_BinaryTemporalOpType
-#define SOAP_TYPE___fes__union_BinaryTemporalOpType (767)
+#define SOAP_TYPE___fes__union_BinaryTemporalOpType (762)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_BinaryTemporalOpType {
       public:
@@ -13965,9 +13975,9 @@ class SOAP_CMAC fes__BinaryTemporalOpType : public fes__TemporalOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9118 */
+/* ws-inspire-wfs2.h:9126 */
 #ifndef SOAP_TYPE__fes__union_BBOXType
-#define SOAP_TYPE__fes__union_BBOXType (771)
+#define SOAP_TYPE__fes__union_BBOXType (766)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_BBOXType
 {
@@ -13982,9 +13992,9 @@ union _fes__union_BBOXType
 };
 #endif
 
-/* ws-inspire-wfs2.h:9113 */
+/* ws-inspire-wfs2.h:9121 */
 #ifndef SOAP_TYPE___fes__union_BBOXType
-#define SOAP_TYPE___fes__union_BBOXType (770)
+#define SOAP_TYPE___fes__union_BBOXType (765)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_BBOXType {
       public:
@@ -14050,9 +14060,9 @@ class SOAP_CMAC fes__BBOXType : public fes__SpatialOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9164 */
+/* ws-inspire-wfs2.h:9172 */
 #ifndef SOAP_TYPE__fes__union_DistanceBufferType
-#define SOAP_TYPE__fes__union_DistanceBufferType (774)
+#define SOAP_TYPE__fes__union_DistanceBufferType (769)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_DistanceBufferType
 {
@@ -14067,9 +14077,9 @@ union _fes__union_DistanceBufferType
 };
 #endif
 
-/* ws-inspire-wfs2.h:9160 */
+/* ws-inspire-wfs2.h:9168 */
 #ifndef SOAP_TYPE___fes__union_DistanceBufferType
-#define SOAP_TYPE___fes__union_DistanceBufferType (773)
+#define SOAP_TYPE___fes__union_DistanceBufferType (768)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_DistanceBufferType {
       public:
@@ -14137,9 +14147,9 @@ class SOAP_CMAC fes__DistanceBufferType : public fes__SpatialOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9327 */
+/* ws-inspire-wfs2.h:9335 */
 #ifndef SOAP_TYPE__fes__union_BinaryLogicOpType_______
-#define SOAP_TYPE__fes__union_BinaryLogicOpType_______ (781)
+#define SOAP_TYPE__fes__union_BinaryLogicOpType_______ (776)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_BinaryLogicOpType_______
 {
@@ -14148,9 +14158,9 @@ union _fes__union_BinaryLogicOpType_______
 };
 #endif
 
-/* ws-inspire-wfs2.h:9322 */
+/* ws-inspire-wfs2.h:9330 */
 #ifndef SOAP_TYPE___fes__union_BinaryLogicOpType_______
-#define SOAP_TYPE___fes__union_BinaryLogicOpType_______ (780)
+#define SOAP_TYPE___fes__union_BinaryLogicOpType_______ (775)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_BinaryLogicOpType_______ {
       public:
@@ -14183,9 +14193,9 @@ class SOAP_CMAC __fes__union_BinaryLogicOpType_______ {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9320 */
+/* ws-inspire-wfs2.h:9328 */
 #ifndef SOAP_TYPE____fes__union_BinaryLogicOpType_______
-#define SOAP_TYPE____fes__union_BinaryLogicOpType_______ (779)
+#define SOAP_TYPE____fes__union_BinaryLogicOpType_______ (774)
 /* Wrapper: */
 struct SOAP_CMAC ___fes__union_BinaryLogicOpType_______ {
       public:
@@ -14200,9 +14210,9 @@ struct SOAP_CMAC ___fes__union_BinaryLogicOpType_______ {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9215 */
+/* ws-inspire-wfs2.h:9223 */
 #ifndef SOAP_TYPE__fes__union_BinaryLogicOpType_
-#define SOAP_TYPE__fes__union_BinaryLogicOpType_ (778)
+#define SOAP_TYPE__fes__union_BinaryLogicOpType_ (773)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_BinaryLogicOpType_
 {
@@ -14289,9 +14299,9 @@ union _fes__union_BinaryLogicOpType_
 };
 #endif
 
-/* ws-inspire-wfs2.h:9209 */
+/* ws-inspire-wfs2.h:9217 */
 #ifndef SOAP_TYPE___fes__union_BinaryLogicOpType
-#define SOAP_TYPE___fes__union_BinaryLogicOpType (777)
+#define SOAP_TYPE___fes__union_BinaryLogicOpType (772)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_BinaryLogicOpType {
       public:
@@ -14358,9 +14368,9 @@ class SOAP_CMAC fes__BinaryLogicOpType : public fes__LogicOpsType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9476 */
+/* ws-inspire-wfs2.h:9484 */
 #ifndef SOAP_TYPE__fes__union_UnaryLogicOpType_______
-#define SOAP_TYPE__fes__union_UnaryLogicOpType_______ (787)
+#define SOAP_TYPE__fes__union_UnaryLogicOpType_______ (782)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_UnaryLogicOpType_______
 {
@@ -14369,9 +14379,9 @@ union _fes__union_UnaryLogicOpType_______
 };
 #endif
 
-/* ws-inspire-wfs2.h:9471 */
+/* ws-inspire-wfs2.h:9479 */
 #ifndef SOAP_TYPE___fes__union_UnaryLogicOpType_______
-#define SOAP_TYPE___fes__union_UnaryLogicOpType_______ (786)
+#define SOAP_TYPE___fes__union_UnaryLogicOpType_______ (781)
 /* Wrapper: */
 class SOAP_CMAC __fes__union_UnaryLogicOpType_______ {
       public:
@@ -14404,9 +14414,9 @@ class SOAP_CMAC __fes__union_UnaryLogicOpType_______ {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9469 */
+/* ws-inspire-wfs2.h:9477 */
 #ifndef SOAP_TYPE____fes__union_UnaryLogicOpType_______
-#define SOAP_TYPE____fes__union_UnaryLogicOpType_______ (785)
+#define SOAP_TYPE____fes__union_UnaryLogicOpType_______ (780)
 /* Wrapper: */
 struct SOAP_CMAC ___fes__union_UnaryLogicOpType_______ {
       public:
@@ -14421,9 +14431,9 @@ struct SOAP_CMAC ___fes__union_UnaryLogicOpType_______ {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9364 */
+/* ws-inspire-wfs2.h:9372 */
 #ifndef SOAP_TYPE__fes__union_UnaryLogicOpType_
-#define SOAP_TYPE__fes__union_UnaryLogicOpType_ (784)
+#define SOAP_TYPE__fes__union_UnaryLogicOpType_ (779)
 /* Type _fes__union_UnaryLogicOpType_ is a recursive data type, (in)directly referencing itself through its (base or derived class) members */
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _fes__union_UnaryLogicOpType_
@@ -14660,9 +14670,9 @@ class SOAP_CMAC icommon__service_x005fext : public icommon__resource {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9707 */
+/* ws-inspire-wfs2.h:9715 */
 #ifndef SOAP_TYPE__icommon__union_citationConformity
-#define SOAP_TYPE__icommon__union_citationConformity (791)
+#define SOAP_TYPE__icommon__union_citationConformity (786)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationConformity
 {
@@ -14716,9 +14726,9 @@ class SOAP_CMAC icommon__citationConformity : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:9756 */
+/* ws-inspire-wfs2.h:9764 */
 #ifndef SOAP_TYPE__icommon__union_originatingControlledVocabulary
-#define SOAP_TYPE__icommon__union_originatingControlledVocabulary (792)
+#define SOAP_TYPE__icommon__union_originatingControlledVocabulary (787)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_originatingControlledVocabulary
 {
@@ -15098,9 +15108,9 @@ class SOAP_CMAC icommon__resLocGEMETInspireThemes_x005feng : public xsd__anyType
 };
 #endif
 
-/* ws-inspire-wfs2.h:10146 */
+/* ws-inspire-wfs2.h:10154 */
 #ifndef SOAP_TYPE__icommon__union_citationGEMETInspireThemes_x005feng
-#define SOAP_TYPE__icommon__union_citationGEMETInspireThemes_x005feng (807)
+#define SOAP_TYPE__icommon__union_citationGEMETInspireThemes_x005feng (802)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationGEMETInspireThemes_x005feng
 {
@@ -15928,9 +15938,9 @@ class SOAP_CMAC wfs__GetFeatureWithLockType : public wfs__GetFeatureType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:10915 */
+/* ws-inspire-wfs2.h:10927 */
 #ifndef SOAP_TYPE__ows__union_IdentificationType
-#define SOAP_TYPE__ows__union_IdentificationType (850)
+#define SOAP_TYPE__ows__union_IdentificationType (845)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_IdentificationType
 {
@@ -15941,9 +15951,9 @@ union _ows__union_IdentificationType
 };
 #endif
 
-/* ws-inspire-wfs2.h:10910 */
+/* ws-inspire-wfs2.h:10922 */
 #ifndef SOAP_TYPE___ows__union_IdentificationType
-#define SOAP_TYPE___ows__union_IdentificationType (849)
+#define SOAP_TYPE___ows__union_IdentificationType (844)
 /* Wrapper: */
 class SOAP_CMAC __ows__union_IdentificationType {
       public:
@@ -15976,9 +15986,9 @@ class SOAP_CMAC __ows__union_IdentificationType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:10949 */
+/* ws-inspire-wfs2.h:10961 */
 #ifndef SOAP_TYPE__ows__union_IdentificationType_
-#define SOAP_TYPE__ows__union_IdentificationType_ (853)
+#define SOAP_TYPE__ows__union_IdentificationType_ (848)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_IdentificationType_
 {
@@ -15989,9 +15999,9 @@ union _ows__union_IdentificationType_
 };
 #endif
 
-/* ws-inspire-wfs2.h:10944 */
+/* ws-inspire-wfs2.h:10956 */
 #ifndef SOAP_TYPE___ows__union_IdentificationType_
-#define SOAP_TYPE___ows__union_IdentificationType_ (852)
+#define SOAP_TYPE___ows__union_IdentificationType_ (847)
 /* Wrapper: */
 class SOAP_CMAC __ows__union_IdentificationType_ {
       public:
@@ -16065,9 +16075,9 @@ class SOAP_CMAC ows__IdentificationType : public ows__BasicIdentificationType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11060 */
+/* ws-inspire-wfs2.h:11072 */
 #ifndef SOAP_TYPE__ows__union_ServiceReferenceType
-#define SOAP_TYPE__ows__union_ServiceReferenceType (856)
+#define SOAP_TYPE__ows__union_ServiceReferenceType (851)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_ServiceReferenceType
 {
@@ -16114,9 +16124,9 @@ class SOAP_CMAC ows__ServiceReferenceType : public ows__ReferenceType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11139 */
+/* ws-inspire-wfs2.h:11151 */
 #ifndef SOAP_TYPE__ows__union_ReferenceGroupType
-#define SOAP_TYPE__ows__union_ReferenceGroupType (858)
+#define SOAP_TYPE__ows__union_ReferenceGroupType (853)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _ows__union_ReferenceGroupType
 {
@@ -16127,9 +16137,9 @@ union _ows__union_ReferenceGroupType
 };
 #endif
 
-/* ws-inspire-wfs2.h:11134 */
+/* ws-inspire-wfs2.h:11146 */
 #ifndef SOAP_TYPE___ows__union_ReferenceGroupType
-#define SOAP_TYPE___ows__union_ReferenceGroupType (857)
+#define SOAP_TYPE___ows__union_ReferenceGroupType (852)
 /* Wrapper: */
 class SOAP_CMAC __ows__union_ReferenceGroupType {
       public:
@@ -16448,9 +16458,9 @@ class SOAP_CMAC icommon__service : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11490 */
+/* ws-inspire-wfs2.h:11502 */
 #ifndef SOAP_TYPE__icommon__union_originatingControlledVocabularyGemetInspireThemes
-#define SOAP_TYPE__icommon__union_originatingControlledVocabularyGemetInspireThemes (869)
+#define SOAP_TYPE__icommon__union_originatingControlledVocabularyGemetInspireThemes (864)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_originatingControlledVocabularyGemetInspireThemes
 {
@@ -16496,9 +16506,9 @@ class SOAP_CMAC icommon__originatingControlledVocabularyGemetInspireThemes : pub
 };
 #endif
 
-/* ws-inspire-wfs2.h:11527 */
+/* ws-inspire-wfs2.h:11539 */
 #ifndef SOAP_TYPE__icommon__union_originatingControlledVocabularyMD
-#define SOAP_TYPE__icommon__union_originatingControlledVocabularyMD (873)
+#define SOAP_TYPE__icommon__union_originatingControlledVocabularyMD (868)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_originatingControlledVocabularyMD
 {
@@ -16582,9 +16592,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fbul : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11625 */
+/* ws-inspire-wfs2.h:11637 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fbul
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fbul (878)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fbul (873)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fbul
 {
@@ -16672,9 +16682,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fcze : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11730 */
+/* ws-inspire-wfs2.h:11742 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fcze
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fcze (885)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fcze (880)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fcze
 {
@@ -16762,9 +16772,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fdan : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11835 */
+/* ws-inspire-wfs2.h:11847 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fdan
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fdan (892)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fdan (887)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fdan
 {
@@ -16852,9 +16862,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fdut : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:11940 */
+/* ws-inspire-wfs2.h:11952 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fdut
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fdut (899)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fdut (894)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fdut
 {
@@ -16942,9 +16952,9 @@ class SOAP_CMAC icommon__inspireTheme_x005feng : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12045 */
+/* ws-inspire-wfs2.h:12057 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005feng
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005feng (906)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005feng (901)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005feng
 {
@@ -17032,9 +17042,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fest : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12150 */
+/* ws-inspire-wfs2.h:12162 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fest
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fest (913)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fest (908)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fest
 {
@@ -17122,9 +17132,9 @@ class SOAP_CMAC icommon__inspireTheme_x005ffin : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12255 */
+/* ws-inspire-wfs2.h:12267 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005ffin
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005ffin (920)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005ffin (915)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005ffin
 {
@@ -17212,9 +17222,9 @@ class SOAP_CMAC icommon__inspireTheme_x005ffre : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12360 */
+/* ws-inspire-wfs2.h:12372 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005ffre
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005ffre (927)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005ffre (922)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005ffre
 {
@@ -17302,9 +17312,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fger : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12465 */
+/* ws-inspire-wfs2.h:12477 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fger
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fger (934)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fger (929)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fger
 {
@@ -17392,9 +17402,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fgle : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12570 */
+/* ws-inspire-wfs2.h:12582 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fgle
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fgle (941)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fgle (936)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fgle
 {
@@ -17482,9 +17492,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fgre : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12675 */
+/* ws-inspire-wfs2.h:12687 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fgre
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fgre (948)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fgre (943)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fgre
 {
@@ -17572,9 +17582,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fhun : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12780 */
+/* ws-inspire-wfs2.h:12792 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fhun
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fhun (955)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fhun (950)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fhun
 {
@@ -17662,9 +17672,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fita : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12885 */
+/* ws-inspire-wfs2.h:12897 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fita
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fita (962)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fita (957)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fita
 {
@@ -17752,9 +17762,9 @@ class SOAP_CMAC icommon__inspireTheme_x005flav : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:12990 */
+/* ws-inspire-wfs2.h:13002 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005flav
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005flav (969)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005flav (964)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005flav
 {
@@ -17842,9 +17852,9 @@ class SOAP_CMAC icommon__inspireTheme_x005flit : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13095 */
+/* ws-inspire-wfs2.h:13107 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005flit
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005flit (976)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005flit (971)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005flit
 {
@@ -17932,9 +17942,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fmlt : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13200 */
+/* ws-inspire-wfs2.h:13212 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fmlt
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fmlt (983)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fmlt (978)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fmlt
 {
@@ -18022,9 +18032,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fpol : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13305 */
+/* ws-inspire-wfs2.h:13317 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fpol
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fpol (990)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fpol (985)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fpol
 {
@@ -18112,9 +18122,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fpor : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13410 */
+/* ws-inspire-wfs2.h:13422 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fpor
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fpor (997)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fpor (992)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fpor
 {
@@ -18202,9 +18212,9 @@ class SOAP_CMAC icommon__inspireTheme_x005frum : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13515 */
+/* ws-inspire-wfs2.h:13527 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005frum
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005frum (1004)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005frum (999)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005frum
 {
@@ -18292,9 +18302,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fslo : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13620 */
+/* ws-inspire-wfs2.h:13632 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fslo
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fslo (1011)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fslo (1006)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fslo
 {
@@ -18382,9 +18392,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fslv : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13725 */
+/* ws-inspire-wfs2.h:13737 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fslv
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fslv (1018)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fslv (1013)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fslv
 {
@@ -18472,9 +18482,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fspa : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13830 */
+/* ws-inspire-wfs2.h:13842 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fspa
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fspa (1025)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fspa (1020)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fspa
 {
@@ -18562,9 +18572,9 @@ class SOAP_CMAC icommon__inspireTheme_x005fswe : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:13935 */
+/* ws-inspire-wfs2.h:13947 */
 #ifndef SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fswe
-#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fswe (1032)
+#define SOAP_TYPE__icommon__union_citationInspireInteroperabilityRegulation_x005fswe (1027)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
 union _icommon__union_citationInspireInteroperabilityRegulation_x005fswe
 {
@@ -19226,10 +19236,10 @@ class SOAP_CMAC icommon__otherService : public xsd__anyType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15365 */
+/* ws-inspire-wfs2.h:15377 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Detail
-#define SOAP_TYPE_SOAP_ENV__Detail (1175)
+#define SOAP_TYPE_SOAP_ENV__Detail (1170)
 /* SOAP_ENV__Detail: */
 struct SOAP_CMAC SOAP_ENV__Detail {
       public:
@@ -19251,9 +19261,9 @@ struct SOAP_CMAC SOAP_ENV__Detail {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:15451 */
+/* ws-inspire-wfs2.h:15463 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQueryResponse
-#define SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQueryResponse (1181)
+#define SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQueryResponse (1176)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002ecreateStoredQueryResponse {
       public:
@@ -19269,9 +19279,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002ecreateStoredQueryResponse {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15451 */
+/* ws-inspire-wfs2.h:15463 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQuery
-#define SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQuery (1182)
+#define SOAP_TYPE___f2i_plu__wfs_x002ecreateStoredQuery (1177)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002ecreateStoredQuery {
       public:
@@ -19287,9 +19297,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002ecreateStoredQuery {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15521 */
+/* ws-inspire-wfs2.h:15533 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edescribeFeatureType
-#define SOAP_TYPE___f2i_plu__wfs_x002edescribeFeatureType (1186)
+#define SOAP_TYPE___f2i_plu__wfs_x002edescribeFeatureType (1181)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002edescribeFeatureType {
       public:
@@ -19305,9 +19315,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edescribeFeatureType {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15591 */
+/* ws-inspire-wfs2.h:15603 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetFeature
-#define SOAP_TYPE___f2i_plu__wfs_x002egetFeature (1190)
+#define SOAP_TYPE___f2i_plu__wfs_x002egetFeature (1185)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002egetFeature {
       public:
@@ -19323,9 +19333,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetFeature {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15661 */
+/* ws-inspire-wfs2.h:15673 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edescribeStoredQueries
-#define SOAP_TYPE___f2i_plu__wfs_x002edescribeStoredQueries (1194)
+#define SOAP_TYPE___f2i_plu__wfs_x002edescribeStoredQueries (1189)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002edescribeStoredQueries {
       public:
@@ -19341,9 +19351,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edescribeStoredQueries {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15731 */
+/* ws-inspire-wfs2.h:15743 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002elistStoredQueries
-#define SOAP_TYPE___f2i_plu__wfs_x002elistStoredQueries (1198)
+#define SOAP_TYPE___f2i_plu__wfs_x002elistStoredQueries (1193)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002elistStoredQueries {
       public:
@@ -19359,9 +19369,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002elistStoredQueries {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15801 */
+/* ws-inspire-wfs2.h:15813 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edropStoredQueryResponse
-#define SOAP_TYPE___f2i_plu__wfs_x002edropStoredQueryResponse (1202)
+#define SOAP_TYPE___f2i_plu__wfs_x002edropStoredQueryResponse (1197)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002edropStoredQueryResponse {
       public:
@@ -19377,9 +19387,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edropStoredQueryResponse {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15801 */
+/* ws-inspire-wfs2.h:15813 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002edropStoredQuery
-#define SOAP_TYPE___f2i_plu__wfs_x002edropStoredQuery (1203)
+#define SOAP_TYPE___f2i_plu__wfs_x002edropStoredQuery (1198)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002edropStoredQuery {
       public:
@@ -19395,9 +19405,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002edropStoredQuery {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15871 */
+/* ws-inspire-wfs2.h:15883 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetCapabilities
-#define SOAP_TYPE___f2i_plu__wfs_x002egetCapabilities (1207)
+#define SOAP_TYPE___f2i_plu__wfs_x002egetCapabilities (1202)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002egetCapabilities {
       public:
@@ -19413,9 +19423,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetCapabilities {
 };
 #endif
 
-/* ws-inspire-wfs2.h:15941 */
+/* ws-inspire-wfs2.h:15953 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetFeatureWithLock
-#define SOAP_TYPE___f2i_plu__wfs_x002egetFeatureWithLock (1210)
+#define SOAP_TYPE___f2i_plu__wfs_x002egetFeatureWithLock (1205)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002egetFeatureWithLock {
       public:
@@ -19431,9 +19441,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetFeatureWithLock {
 };
 #endif
 
-/* ws-inspire-wfs2.h:16011 */
+/* ws-inspire-wfs2.h:16023 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002egetPropertyValue
-#define SOAP_TYPE___f2i_plu__wfs_x002egetPropertyValue (1214)
+#define SOAP_TYPE___f2i_plu__wfs_x002egetPropertyValue (1209)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002egetPropertyValue {
       public:
@@ -19449,9 +19459,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002egetPropertyValue {
 };
 #endif
 
-/* ws-inspire-wfs2.h:16081 */
+/* ws-inspire-wfs2.h:16093 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002elockFeature
-#define SOAP_TYPE___f2i_plu__wfs_x002elockFeature (1218)
+#define SOAP_TYPE___f2i_plu__wfs_x002elockFeature (1213)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002elockFeature {
       public:
@@ -19467,9 +19477,9 @@ struct SOAP_CMAC __f2i_plu__wfs_x002elockFeature {
 };
 #endif
 
-/* ws-inspire-wfs2.h:16151 */
+/* ws-inspire-wfs2.h:16163 */
 #ifndef SOAP_TYPE___f2i_plu__wfs_x002etransaction
-#define SOAP_TYPE___f2i_plu__wfs_x002etransaction (1222)
+#define SOAP_TYPE___f2i_plu__wfs_x002etransaction (1217)
 /* Wrapper: */
 struct SOAP_CMAC __f2i_plu__wfs_x002etransaction {
       public:
@@ -19485,10 +19495,10 @@ struct SOAP_CMAC __f2i_plu__wfs_x002etransaction {
 };
 #endif
 
-/* ws-inspire-wfs2.h:18656 */
+/* ws-inspire-wfs2.h:18668 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Header
-#define SOAP_TYPE_SOAP_ENV__Header (1223)
+#define SOAP_TYPE_SOAP_ENV__Header (1218)
 /* SOAP_ENV__Header: */
 struct SOAP_CMAC SOAP_ENV__Header {
       public:
@@ -19502,10 +19512,10 @@ struct SOAP_CMAC SOAP_ENV__Header {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:18656 */
+/* ws-inspire-wfs2.h:18668 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Code
-#define SOAP_TYPE_SOAP_ENV__Code (1224)
+#define SOAP_TYPE_SOAP_ENV__Code (1219)
 /* Type SOAP_ENV__Code is a recursive data type, (in)directly referencing itself through its (base or derived class) members */
 /* SOAP_ENV__Code: */
 struct SOAP_CMAC SOAP_ENV__Code {
@@ -19525,10 +19535,10 @@ struct SOAP_CMAC SOAP_ENV__Code {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:18656 */
+/* ws-inspire-wfs2.h:18668 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Reason
-#define SOAP_TYPE_SOAP_ENV__Reason (1226)
+#define SOAP_TYPE_SOAP_ENV__Reason (1221)
 /* SOAP_ENV__Reason: */
 struct SOAP_CMAC SOAP_ENV__Reason {
       public:
@@ -19545,10 +19555,10 @@ struct SOAP_CMAC SOAP_ENV__Reason {
 #endif
 #endif
 
-/* ws-inspire-wfs2.h:18656 */
+/* ws-inspire-wfs2.h:18668 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Fault
-#define SOAP_TYPE_SOAP_ENV__Fault (1227)
+#define SOAP_TYPE_SOAP_ENV__Fault (1222)
 /* SOAP_ENV__Fault: */
 struct SOAP_CMAC SOAP_ENV__Fault {
       public:
@@ -20002,825 +20012,825 @@ typedef std::string icommon__geoBoxDigits;
 typedef icommon__notEmptyString icommon__keywordValue;
 #endif
 
-/* ws-inspire-wfs2.h:14610 */
+/* ws-inspire-wfs2.h:14622 */
 #ifndef SOAP_TYPE__wfs__Query
-#define SOAP_TYPE__wfs__Query (1038)
+#define SOAP_TYPE__wfs__Query (1033)
 typedef wfs__QueryType _wfs__Query;
 #endif
 
-/* ws-inspire-wfs2.h:14613 */
+/* ws-inspire-wfs2.h:14625 */
 #ifndef SOAP_TYPE__wfs__StoredQuery
-#define SOAP_TYPE__wfs__StoredQuery (1039)
+#define SOAP_TYPE__wfs__StoredQuery (1034)
 typedef wfs__StoredQueryType _wfs__StoredQuery;
 #endif
 
-/* ws-inspire-wfs2.h:14616 */
+/* ws-inspire-wfs2.h:14628 */
 #ifndef SOAP_TYPE__wfs__GetCapabilities
-#define SOAP_TYPE__wfs__GetCapabilities (1040)
+#define SOAP_TYPE__wfs__GetCapabilities (1035)
 typedef wfs__GetCapabilitiesType _wfs__GetCapabilities;
 #endif
 
-/* ws-inspire-wfs2.h:14619 */
+/* ws-inspire-wfs2.h:14631 */
 #ifndef SOAP_TYPE__wfs__WFS_x005fCapabilities
-#define SOAP_TYPE__wfs__WFS_x005fCapabilities (1041)
+#define SOAP_TYPE__wfs__WFS_x005fCapabilities (1036)
 typedef wfs__WFS_x005fCapabilitiesType _wfs__WFS_x005fCapabilities;
 #endif
 
-/* ws-inspire-wfs2.h:14622 */
+/* ws-inspire-wfs2.h:14634 */
 #ifndef SOAP_TYPE__wfs__FeatureTypeList
-#define SOAP_TYPE__wfs__FeatureTypeList (1042)
+#define SOAP_TYPE__wfs__FeatureTypeList (1037)
 typedef wfs__FeatureTypeListType _wfs__FeatureTypeList;
 #endif
 
-/* ws-inspire-wfs2.h:14625 */
+/* ws-inspire-wfs2.h:14637 */
 #ifndef SOAP_TYPE__wfs__Element
-#define SOAP_TYPE__wfs__Element (1043)
+#define SOAP_TYPE__wfs__Element (1038)
 typedef wfs__ElementType _wfs__Element;
 #endif
 
-/* ws-inspire-wfs2.h:14628 */
+/* ws-inspire-wfs2.h:14640 */
 #ifndef SOAP_TYPE__wfs__ValueList
-#define SOAP_TYPE__wfs__ValueList (1044)
+#define SOAP_TYPE__wfs__ValueList (1039)
 typedef wfs__ValueListType _wfs__ValueList;
 #endif
 
-/* ws-inspire-wfs2.h:14631 */
+/* ws-inspire-wfs2.h:14643 */
 #ifndef SOAP_TYPE__wfs__Value
-#define SOAP_TYPE__wfs__Value (1045)
+#define SOAP_TYPE__wfs__Value (1040)
 typedef xsd__anyType _wfs__Value;
 #endif
 
-/* ws-inspire-wfs2.h:14634 */
+/* ws-inspire-wfs2.h:14646 */
 #ifndef SOAP_TYPE__wfs__DescribeFeatureType
-#define SOAP_TYPE__wfs__DescribeFeatureType (1046)
+#define SOAP_TYPE__wfs__DescribeFeatureType (1041)
 typedef wfs__DescribeFeatureTypeType _wfs__DescribeFeatureType;
 #endif
 
-/* ws-inspire-wfs2.h:14637 */
+/* ws-inspire-wfs2.h:14649 */
 #ifndef SOAP_TYPE__wfs__GetPropertyValue
-#define SOAP_TYPE__wfs__GetPropertyValue (1047)
+#define SOAP_TYPE__wfs__GetPropertyValue (1042)
 typedef wfs__GetPropertyValueType _wfs__GetPropertyValue;
 #endif
 
-/* ws-inspire-wfs2.h:14640 */
+/* ws-inspire-wfs2.h:14652 */
 #ifndef SOAP_TYPE__wfs__ValueCollection
-#define SOAP_TYPE__wfs__ValueCollection (1048)
+#define SOAP_TYPE__wfs__ValueCollection (1043)
 typedef wfs__ValueCollectionType _wfs__ValueCollection;
 #endif
 
-/* ws-inspire-wfs2.h:14643 */
+/* ws-inspire-wfs2.h:14655 */
 #ifndef SOAP_TYPE__wfs__member
-#define SOAP_TYPE__wfs__member (1049)
+#define SOAP_TYPE__wfs__member (1044)
 typedef wfs__MemberPropertyType _wfs__member;
 #endif
 
-/* ws-inspire-wfs2.h:14646 */
+/* ws-inspire-wfs2.h:14658 */
 #ifndef SOAP_TYPE__wfs__Tuple
-#define SOAP_TYPE__wfs__Tuple (1050)
+#define SOAP_TYPE__wfs__Tuple (1045)
 typedef wfs__TupleType _wfs__Tuple;
 #endif
 
-/* ws-inspire-wfs2.h:14649 */
+/* ws-inspire-wfs2.h:14661 */
 #ifndef SOAP_TYPE__wfs__GetFeature
-#define SOAP_TYPE__wfs__GetFeature (1051)
+#define SOAP_TYPE__wfs__GetFeature (1046)
 typedef wfs__GetFeatureType _wfs__GetFeature;
 #endif
 
-/* ws-inspire-wfs2.h:14652 */
+/* ws-inspire-wfs2.h:14664 */
 #ifndef SOAP_TYPE__wfs__GetFeatureWithLock
-#define SOAP_TYPE__wfs__GetFeatureWithLock (1052)
+#define SOAP_TYPE__wfs__GetFeatureWithLock (1047)
 typedef wfs__GetFeatureWithLockType _wfs__GetFeatureWithLock;
 #endif
 
-/* ws-inspire-wfs2.h:14655 */
+/* ws-inspire-wfs2.h:14667 */
 #ifndef SOAP_TYPE__wfs__FeatureCollection
-#define SOAP_TYPE__wfs__FeatureCollection (1053)
+#define SOAP_TYPE__wfs__FeatureCollection (1048)
 typedef wfs__FeatureCollectionType _wfs__FeatureCollection;
 #endif
 
-/* ws-inspire-wfs2.h:14658 */
+/* ws-inspire-wfs2.h:14670 */
 #ifndef SOAP_TYPE__wfs__SimpleFeatureCollection
-#define SOAP_TYPE__wfs__SimpleFeatureCollection (1054)
+#define SOAP_TYPE__wfs__SimpleFeatureCollection (1049)
 typedef wfs__SimpleFeatureCollectionType _wfs__SimpleFeatureCollection;
 #endif
 
-/* ws-inspire-wfs2.h:14661 */
+/* ws-inspire-wfs2.h:14673 */
 #ifndef SOAP_TYPE__wfs__boundedBy
-#define SOAP_TYPE__wfs__boundedBy (1055)
+#define SOAP_TYPE__wfs__boundedBy (1050)
 typedef wfs__EnvelopePropertyType _wfs__boundedBy;
 #endif
 
-/* ws-inspire-wfs2.h:14664 */
+/* ws-inspire-wfs2.h:14676 */
 #ifndef SOAP_TYPE__wfs__ListStoredQueries
-#define SOAP_TYPE__wfs__ListStoredQueries (1056)
+#define SOAP_TYPE__wfs__ListStoredQueries (1051)
 typedef wfs__ListStoredQueriesType _wfs__ListStoredQueries;
 #endif
 
-/* ws-inspire-wfs2.h:14667 */
+/* ws-inspire-wfs2.h:14679 */
 #ifndef SOAP_TYPE__wfs__ListStoredQueriesResponse
-#define SOAP_TYPE__wfs__ListStoredQueriesResponse (1057)
+#define SOAP_TYPE__wfs__ListStoredQueriesResponse (1052)
 typedef wfs__ListStoredQueriesResponseType _wfs__ListStoredQueriesResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14670 */
+/* ws-inspire-wfs2.h:14682 */
 #ifndef SOAP_TYPE__wfs__DescribeStoredQueries
-#define SOAP_TYPE__wfs__DescribeStoredQueries (1058)
+#define SOAP_TYPE__wfs__DescribeStoredQueries (1053)
 typedef wfs__DescribeStoredQueriesType _wfs__DescribeStoredQueries;
 #endif
 
-/* ws-inspire-wfs2.h:14673 */
+/* ws-inspire-wfs2.h:14685 */
 #ifndef SOAP_TYPE__wfs__DescribeStoredQueriesResponse
-#define SOAP_TYPE__wfs__DescribeStoredQueriesResponse (1059)
+#define SOAP_TYPE__wfs__DescribeStoredQueriesResponse (1054)
 typedef wfs__DescribeStoredQueriesResponseType _wfs__DescribeStoredQueriesResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14676 */
+/* ws-inspire-wfs2.h:14688 */
 #ifndef SOAP_TYPE__wfs__CreateStoredQuery
-#define SOAP_TYPE__wfs__CreateStoredQuery (1060)
+#define SOAP_TYPE__wfs__CreateStoredQuery (1055)
 typedef wfs__CreateStoredQueryType _wfs__CreateStoredQuery;
 #endif
 
-/* ws-inspire-wfs2.h:14679 */
+/* ws-inspire-wfs2.h:14691 */
 #ifndef SOAP_TYPE__wfs__CreateStoredQueryResponse
-#define SOAP_TYPE__wfs__CreateStoredQueryResponse (1061)
+#define SOAP_TYPE__wfs__CreateStoredQueryResponse (1056)
 typedef wfs__CreateStoredQueryResponseType _wfs__CreateStoredQueryResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14682 */
+/* ws-inspire-wfs2.h:14694 */
 #ifndef SOAP_TYPE__wfs__DropStoredQueryResponse
-#define SOAP_TYPE__wfs__DropStoredQueryResponse (1062)
+#define SOAP_TYPE__wfs__DropStoredQueryResponse (1057)
 typedef wfs__ExecutionStatusType _wfs__DropStoredQueryResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14685 */
+/* ws-inspire-wfs2.h:14697 */
 #ifndef SOAP_TYPE__wfs__LockFeature
-#define SOAP_TYPE__wfs__LockFeature (1063)
+#define SOAP_TYPE__wfs__LockFeature (1058)
 typedef wfs__LockFeatureType _wfs__LockFeature;
 #endif
 
-/* ws-inspire-wfs2.h:14688 */
+/* ws-inspire-wfs2.h:14700 */
 #ifndef SOAP_TYPE__wfs__LockFeatureResponse
-#define SOAP_TYPE__wfs__LockFeatureResponse (1064)
+#define SOAP_TYPE__wfs__LockFeatureResponse (1059)
 typedef wfs__LockFeatureResponseType _wfs__LockFeatureResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14691 */
+/* ws-inspire-wfs2.h:14703 */
 #ifndef SOAP_TYPE__wfs__Transaction
-#define SOAP_TYPE__wfs__Transaction (1065)
+#define SOAP_TYPE__wfs__Transaction (1060)
 typedef wfs__TransactionType _wfs__Transaction;
 #endif
 
-/* ws-inspire-wfs2.h:14694 */
+/* ws-inspire-wfs2.h:14706 */
 #ifndef SOAP_TYPE__wfs__Insert
-#define SOAP_TYPE__wfs__Insert (1066)
+#define SOAP_TYPE__wfs__Insert (1061)
 typedef wfs__InsertType _wfs__Insert;
 #endif
 
-/* ws-inspire-wfs2.h:14697 */
+/* ws-inspire-wfs2.h:14709 */
 #ifndef SOAP_TYPE__wfs__Update
-#define SOAP_TYPE__wfs__Update (1067)
+#define SOAP_TYPE__wfs__Update (1062)
 typedef wfs__UpdateType _wfs__Update;
 #endif
 
-/* ws-inspire-wfs2.h:14700 */
+/* ws-inspire-wfs2.h:14712 */
 #ifndef SOAP_TYPE__wfs__Property
-#define SOAP_TYPE__wfs__Property (1068)
+#define SOAP_TYPE__wfs__Property (1063)
 typedef wfs__PropertyType _wfs__Property;
 #endif
 
-/* ws-inspire-wfs2.h:14703 */
+/* ws-inspire-wfs2.h:14715 */
 #ifndef SOAP_TYPE__wfs__Replace
-#define SOAP_TYPE__wfs__Replace (1069)
+#define SOAP_TYPE__wfs__Replace (1064)
 typedef wfs__ReplaceType _wfs__Replace;
 #endif
 
-/* ws-inspire-wfs2.h:14706 */
+/* ws-inspire-wfs2.h:14718 */
 #ifndef SOAP_TYPE__wfs__Delete
-#define SOAP_TYPE__wfs__Delete (1070)
+#define SOAP_TYPE__wfs__Delete (1065)
 typedef wfs__DeleteType _wfs__Delete;
 #endif
 
-/* ws-inspire-wfs2.h:14709 */
+/* ws-inspire-wfs2.h:14721 */
 #ifndef SOAP_TYPE__wfs__Native
-#define SOAP_TYPE__wfs__Native (1071)
+#define SOAP_TYPE__wfs__Native (1066)
 typedef wfs__NativeType _wfs__Native;
 #endif
 
-/* ws-inspire-wfs2.h:14712 */
+/* ws-inspire-wfs2.h:14724 */
 #ifndef SOAP_TYPE__wfs__TransactionResponse
-#define SOAP_TYPE__wfs__TransactionResponse (1072)
+#define SOAP_TYPE__wfs__TransactionResponse (1067)
 typedef wfs__TransactionResponseType _wfs__TransactionResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14731 */
+/* ws-inspire-wfs2.h:14743 */
 #ifndef SOAP_TYPE__util__DescribeFeatureTypeResponse
-#define SOAP_TYPE__util__DescribeFeatureTypeResponse (1073)
+#define SOAP_TYPE__util__DescribeFeatureTypeResponse (1068)
 typedef util__DescribeFeatureTypeResponseType _util__DescribeFeatureTypeResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14750 */
+/* ws-inspire-wfs2.h:14762 */
 #ifndef SOAP_TYPE__ows__Exception
-#define SOAP_TYPE__ows__Exception (1074)
+#define SOAP_TYPE__ows__Exception (1069)
 typedef ows__ExceptionType _ows__Exception;
 #endif
 
-/* ws-inspire-wfs2.h:14753 */
+/* ws-inspire-wfs2.h:14765 */
 #ifndef SOAP_TYPE__ows__GetResourceByID
-#define SOAP_TYPE__ows__GetResourceByID (1075)
+#define SOAP_TYPE__ows__GetResourceByID (1070)
 typedef ows__GetResourceByIdType _ows__GetResourceByID;
 #endif
 
-/* ws-inspire-wfs2.h:14760 */
+/* ws-inspire-wfs2.h:14772 */
 #ifndef SOAP_TYPE__ows__Identifier
-#define SOAP_TYPE__ows__Identifier (1076)
+#define SOAP_TYPE__ows__Identifier (1071)
 typedef ows__CodeType _ows__Identifier;
 #endif
 
-/* ws-inspire-wfs2.h:14767 */
+/* ws-inspire-wfs2.h:14779 */
 #ifndef SOAP_TYPE__ows__OutputFormat
-#define SOAP_TYPE__ows__OutputFormat (1077)
+#define SOAP_TYPE__ows__OutputFormat (1072)
 typedef ows__MimeType _ows__OutputFormat;
 #endif
 
-/* ws-inspire-wfs2.h:14770 */
+/* ws-inspire-wfs2.h:14782 */
 #ifndef SOAP_TYPE__ows__AvailableCRS
-#define SOAP_TYPE__ows__AvailableCRS (1078)
+#define SOAP_TYPE__ows__AvailableCRS (1073)
 typedef xsd__anyURI _ows__AvailableCRS;
 #endif
 
-/* ws-inspire-wfs2.h:14777 */
+/* ws-inspire-wfs2.h:14789 */
 #ifndef SOAP_TYPE__ows__SupportedCRS
-#define SOAP_TYPE__ows__SupportedCRS (1079)
+#define SOAP_TYPE__ows__SupportedCRS (1074)
 typedef xsd__anyURI _ows__SupportedCRS;
 #endif
 
-/* ws-inspire-wfs2.h:14784 */
+/* ws-inspire-wfs2.h:14796 */
 #ifndef SOAP_TYPE__ows__AccessConstraints
-#define SOAP_TYPE__ows__AccessConstraints (1080)
+#define SOAP_TYPE__ows__AccessConstraints (1075)
 typedef std::string _ows__AccessConstraints;
 #endif
 
-/* ws-inspire-wfs2.h:14791 */
+/* ws-inspire-wfs2.h:14803 */
 #ifndef SOAP_TYPE__ows__Fees
-#define SOAP_TYPE__ows__Fees (1081)
+#define SOAP_TYPE__ows__Fees (1076)
 typedef std::string _ows__Fees;
 #endif
 
-/* ws-inspire-wfs2.h:14798 */
+/* ws-inspire-wfs2.h:14810 */
 #ifndef SOAP_TYPE__ows__Language
-#define SOAP_TYPE__ows__Language (1082)
+#define SOAP_TYPE__ows__Language (1077)
 typedef xsd__language _ows__Language;
 #endif
 
-/* ws-inspire-wfs2.h:14801 */
+/* ws-inspire-wfs2.h:14813 */
 #ifndef SOAP_TYPE__ows__Metadata
-#define SOAP_TYPE__ows__Metadata (1083)
+#define SOAP_TYPE__ows__Metadata (1078)
 typedef ows__MetadataType _ows__Metadata;
 #endif
 
-/* ws-inspire-wfs2.h:14804 */
+/* ws-inspire-wfs2.h:14816 */
 #ifndef SOAP_TYPE__ows__BoundingBox
-#define SOAP_TYPE__ows__BoundingBox (1084)
+#define SOAP_TYPE__ows__BoundingBox (1079)
 typedef ows__BoundingBoxType _ows__BoundingBox;
 #endif
 
-/* ws-inspire-wfs2.h:14807 */
+/* ws-inspire-wfs2.h:14819 */
 #ifndef SOAP_TYPE__ows__WGS84BoundingBox
-#define SOAP_TYPE__ows__WGS84BoundingBox (1085)
+#define SOAP_TYPE__ows__WGS84BoundingBox (1080)
 typedef ows__WGS84BoundingBoxType _ows__WGS84BoundingBox;
 #endif
 
-/* ws-inspire-wfs2.h:14814 */
+/* ws-inspire-wfs2.h:14826 */
 #ifndef SOAP_TYPE__ows__Title
-#define SOAP_TYPE__ows__Title (1086)
+#define SOAP_TYPE__ows__Title (1081)
 typedef ows__LanguageStringType _ows__Title;
 #endif
 
-/* ws-inspire-wfs2.h:14821 */
+/* ws-inspire-wfs2.h:14833 */
 #ifndef SOAP_TYPE__ows__Abstract
-#define SOAP_TYPE__ows__Abstract (1087)
+#define SOAP_TYPE__ows__Abstract (1082)
 typedef ows__LanguageStringType _ows__Abstract;
 #endif
 
-/* ws-inspire-wfs2.h:14824 */
+/* ws-inspire-wfs2.h:14836 */
 #ifndef SOAP_TYPE__ows__Keywords
-#define SOAP_TYPE__ows__Keywords (1088)
+#define SOAP_TYPE__ows__Keywords (1083)
 typedef ows__KeywordsType _ows__Keywords;
 #endif
 
-/* ws-inspire-wfs2.h:14835 */
+/* ws-inspire-wfs2.h:14847 */
 #ifndef SOAP_TYPE__ows__PointOfContact
-#define SOAP_TYPE__ows__PointOfContact (1089)
+#define SOAP_TYPE__ows__PointOfContact (1084)
 typedef ows__ResponsiblePartyType _ows__PointOfContact;
 #endif
 
-/* ws-inspire-wfs2.h:14842 */
+/* ws-inspire-wfs2.h:14854 */
 #ifndef SOAP_TYPE__ows__IndividualName
-#define SOAP_TYPE__ows__IndividualName (1090)
+#define SOAP_TYPE__ows__IndividualName (1085)
 typedef std::string _ows__IndividualName;
 #endif
 
-/* ws-inspire-wfs2.h:14849 */
+/* ws-inspire-wfs2.h:14861 */
 #ifndef SOAP_TYPE__ows__OrganisationName
-#define SOAP_TYPE__ows__OrganisationName (1091)
+#define SOAP_TYPE__ows__OrganisationName (1086)
 typedef std::string _ows__OrganisationName;
 #endif
 
-/* ws-inspire-wfs2.h:14856 */
+/* ws-inspire-wfs2.h:14868 */
 #ifndef SOAP_TYPE__ows__PositionName
-#define SOAP_TYPE__ows__PositionName (1092)
+#define SOAP_TYPE__ows__PositionName (1087)
 typedef std::string _ows__PositionName;
 #endif
 
-/* ws-inspire-wfs2.h:14863 */
+/* ws-inspire-wfs2.h:14875 */
 #ifndef SOAP_TYPE__ows__Role
-#define SOAP_TYPE__ows__Role (1093)
+#define SOAP_TYPE__ows__Role (1088)
 typedef ows__CodeType _ows__Role;
 #endif
 
-/* ws-inspire-wfs2.h:14870 */
+/* ws-inspire-wfs2.h:14882 */
 #ifndef SOAP_TYPE__ows__ContactInfo
-#define SOAP_TYPE__ows__ContactInfo (1094)
+#define SOAP_TYPE__ows__ContactInfo (1089)
 typedef ows__ContactType _ows__ContactInfo;
 #endif
 
-/* ws-inspire-wfs2.h:14873 */
+/* ws-inspire-wfs2.h:14885 */
 #ifndef SOAP_TYPE__ows__GetCapabilities
-#define SOAP_TYPE__ows__GetCapabilities (1095)
+#define SOAP_TYPE__ows__GetCapabilities (1090)
 typedef ows__GetCapabilitiesType _ows__GetCapabilities;
 #endif
 
-/* ws-inspire-wfs2.h:14880 */
+/* ws-inspire-wfs2.h:14892 */
 #ifndef SOAP_TYPE__ows__ExtendedCapabilities
-#define SOAP_TYPE__ows__ExtendedCapabilities (1096)
+#define SOAP_TYPE__ows__ExtendedCapabilities (1091)
 typedef xsd__anyType _ows__ExtendedCapabilities;
 #endif
 
-/* ws-inspire-wfs2.h:14883 */
+/* ws-inspire-wfs2.h:14895 */
 #ifndef SOAP_TYPE__ows__Value
-#define SOAP_TYPE__ows__Value (1097)
+#define SOAP_TYPE__ows__Value (1092)
 typedef ows__ValueType _ows__Value;
 #endif
 
-/* ws-inspire-wfs2.h:14890 */
+/* ws-inspire-wfs2.h:14902 */
 #ifndef SOAP_TYPE__ows__DefaultValue
-#define SOAP_TYPE__ows__DefaultValue (1098)
+#define SOAP_TYPE__ows__DefaultValue (1093)
 typedef ows__ValueType _ows__DefaultValue;
 #endif
 
-/* ws-inspire-wfs2.h:14893 */
+/* ws-inspire-wfs2.h:14905 */
 #ifndef SOAP_TYPE__ows__Range
-#define SOAP_TYPE__ows__Range (1099)
+#define SOAP_TYPE__ows__Range (1094)
 typedef ows__RangeType _ows__Range;
 #endif
 
-/* ws-inspire-wfs2.h:14900 */
+/* ws-inspire-wfs2.h:14912 */
 #ifndef SOAP_TYPE__ows__MinimumValue
-#define SOAP_TYPE__ows__MinimumValue (1100)
+#define SOAP_TYPE__ows__MinimumValue (1095)
 typedef ows__ValueType _ows__MinimumValue;
 #endif
 
-/* ws-inspire-wfs2.h:14907 */
+/* ws-inspire-wfs2.h:14919 */
 #ifndef SOAP_TYPE__ows__MaximumValue
-#define SOAP_TYPE__ows__MaximumValue (1101)
+#define SOAP_TYPE__ows__MaximumValue (1096)
 typedef ows__ValueType _ows__MaximumValue;
 #endif
 
-/* ws-inspire-wfs2.h:14914 */
+/* ws-inspire-wfs2.h:14926 */
 #ifndef SOAP_TYPE__ows__Spacing
-#define SOAP_TYPE__ows__Spacing (1102)
+#define SOAP_TYPE__ows__Spacing (1097)
 typedef ows__ValueType _ows__Spacing;
 #endif
 
-/* ws-inspire-wfs2.h:14921 */
+/* ws-inspire-wfs2.h:14933 */
 #ifndef SOAP_TYPE__ows__Meaning
-#define SOAP_TYPE__ows__Meaning (1103)
+#define SOAP_TYPE__ows__Meaning (1098)
 typedef ows__DomainMetadataType _ows__Meaning;
 #endif
 
-/* ws-inspire-wfs2.h:14928 */
+/* ws-inspire-wfs2.h:14940 */
 #ifndef SOAP_TYPE__ows__DataType
-#define SOAP_TYPE__ows__DataType (1104)
+#define SOAP_TYPE__ows__DataType (1099)
 typedef ows__DomainMetadataType _ows__DataType;
 #endif
 
-/* ws-inspire-wfs2.h:14935 */
+/* ws-inspire-wfs2.h:14947 */
 #ifndef SOAP_TYPE__ows__ReferenceSystem
-#define SOAP_TYPE__ows__ReferenceSystem (1105)
+#define SOAP_TYPE__ows__ReferenceSystem (1100)
 typedef ows__DomainMetadataType _ows__ReferenceSystem;
 #endif
 
-/* ws-inspire-wfs2.h:14942 */
+/* ws-inspire-wfs2.h:14954 */
 #ifndef SOAP_TYPE__ows__UOM
-#define SOAP_TYPE__ows__UOM (1106)
+#define SOAP_TYPE__ows__UOM (1101)
 typedef ows__DomainMetadataType _ows__UOM;
 #endif
 
-/* ws-inspire-wfs2.h:14949 */
+/* ws-inspire-wfs2.h:14961 */
 #ifndef SOAP_TYPE__ows__OtherSource
-#define SOAP_TYPE__ows__OtherSource (1107)
+#define SOAP_TYPE__ows__OtherSource (1102)
 typedef ows__MetadataType _ows__OtherSource;
 #endif
 
-/* ws-inspire-wfs2.h:14952 */
+/* ws-inspire-wfs2.h:14964 */
 #ifndef SOAP_TYPE__ows__DatasetDescriptionSummary
-#define SOAP_TYPE__ows__DatasetDescriptionSummary (1108)
+#define SOAP_TYPE__ows__DatasetDescriptionSummary (1103)
 typedef ows__DatasetDescriptionSummaryBaseType _ows__DatasetDescriptionSummary;
 #endif
 
-/* ws-inspire-wfs2.h:14963 */
+/* ws-inspire-wfs2.h:14975 */
 #ifndef SOAP_TYPE__ows__OperationResponse
-#define SOAP_TYPE__ows__OperationResponse (1109)
+#define SOAP_TYPE__ows__OperationResponse (1104)
 typedef ows__ManifestType _ows__OperationResponse;
 #endif
 
-/* ws-inspire-wfs2.h:14970 */
+/* ws-inspire-wfs2.h:14982 */
 #ifndef SOAP_TYPE__ows__InputData
-#define SOAP_TYPE__ows__InputData (1110)
+#define SOAP_TYPE__ows__InputData (1105)
 typedef ows__ManifestType _ows__InputData;
 #endif
 
-/* ws-inspire-wfs2.h:14973 */
+/* ws-inspire-wfs2.h:14985 */
 #ifndef SOAP_TYPE__ows__ServiceReference
-#define SOAP_TYPE__ows__ServiceReference (1111)
+#define SOAP_TYPE__ows__ServiceReference (1106)
 typedef ows__ServiceReferenceType _ows__ServiceReference;
 #endif
 
-/* ws-inspire-wfs2.h:14976 */
+/* ws-inspire-wfs2.h:14988 */
 #ifndef SOAP_TYPE__ows__Reference
-#define SOAP_TYPE__ows__Reference (1112)
+#define SOAP_TYPE__ows__Reference (1107)
 typedef ows__ReferenceType _ows__Reference;
 #endif
 
-/* ws-inspire-wfs2.h:14979 */
+/* ws-inspire-wfs2.h:14991 */
 #ifndef SOAP_TYPE__ows__ReferenceGroup
-#define SOAP_TYPE__ows__ReferenceGroup (1113)
+#define SOAP_TYPE__ows__ReferenceGroup (1108)
 typedef ows__ReferenceGroupType _ows__ReferenceGroup;
 #endif
 
-/* ws-inspire-wfs2.h:14982 */
+/* ws-inspire-wfs2.h:14994 */
 #ifndef SOAP_TYPE__ows__Manifest
-#define SOAP_TYPE__ows__Manifest (1114)
+#define SOAP_TYPE__ows__Manifest (1109)
 typedef ows__ManifestType _ows__Manifest;
 #endif
 
-/* ws-inspire-wfs2.h:14997 */
+/* ws-inspire-wfs2.h:15009 */
 #ifndef SOAP_TYPE__ows__reference
-#define SOAP_TYPE__ows__reference (1115)
+#define SOAP_TYPE__ows__reference (1110)
 typedef xsd__anyURI _ows__reference;
 #endif
 
-/* ws-inspire-wfs2.h:15008 */
+/* ws-inspire-wfs2.h:15020 */
 #ifndef SOAP_TYPE__idls__ExtendedCapabilities
-#define SOAP_TYPE__idls__ExtendedCapabilities (1116)
+#define SOAP_TYPE__idls__ExtendedCapabilities (1111)
 typedef idls__ExtendedCapabilitiesType _idls__ExtendedCapabilities;
 #endif
 
-/* ws-inspire-wfs2.h:15011 */
+/* ws-inspire-wfs2.h:15023 */
 #ifndef SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fcode
-#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fcode (1117)
+#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fcode (1112)
 typedef icommon__notEmptyString _idls__spatial_x005fdataset_x005fidentifier_x005fcode;
 #endif
 
-/* ws-inspire-wfs2.h:15014 */
+/* ws-inspire-wfs2.h:15026 */
 #ifndef SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fnamespace
-#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fnamespace (1118)
+#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fnamespace (1113)
 typedef xsd__anyURI _idls__spatial_x005fdataset_x005fidentifier_x005fnamespace;
 #endif
 
-/* ws-inspire-wfs2.h:15029 */
+/* ws-inspire-wfs2.h:15041 */
 #ifndef SOAP_TYPE__idls__crs
-#define SOAP_TYPE__idls__crs (1119)
+#define SOAP_TYPE__idls__crs (1114)
 typedef xsd__anyURI _idls__crs;
 #endif
 
-/* ws-inspire-wfs2.h:15076 */
+/* ws-inspire-wfs2.h:15088 */
 #ifndef SOAP_TYPE__fes__Filter
-#define SOAP_TYPE__fes__Filter (1120)
+#define SOAP_TYPE__fes__Filter (1115)
 typedef fes__FilterType _fes__Filter;
 #endif
 
-/* ws-inspire-wfs2.h:15079 */
+/* ws-inspire-wfs2.h:15091 */
 #ifndef SOAP_TYPE__fes__PropertyIsEqualTo
-#define SOAP_TYPE__fes__PropertyIsEqualTo (1121)
+#define SOAP_TYPE__fes__PropertyIsEqualTo (1116)
 typedef fes__BinaryComparisonOpType _fes__PropertyIsEqualTo;
 #endif
 
-/* ws-inspire-wfs2.h:15082 */
+/* ws-inspire-wfs2.h:15094 */
 #ifndef SOAP_TYPE__fes__PropertyIsNotEqualTo
-#define SOAP_TYPE__fes__PropertyIsNotEqualTo (1122)
+#define SOAP_TYPE__fes__PropertyIsNotEqualTo (1117)
 typedef fes__BinaryComparisonOpType _fes__PropertyIsNotEqualTo;
 #endif
 
-/* ws-inspire-wfs2.h:15085 */
+/* ws-inspire-wfs2.h:15097 */
 #ifndef SOAP_TYPE__fes__PropertyIsLessThan
-#define SOAP_TYPE__fes__PropertyIsLessThan (1123)
+#define SOAP_TYPE__fes__PropertyIsLessThan (1118)
 typedef fes__BinaryComparisonOpType _fes__PropertyIsLessThan;
 #endif
 
-/* ws-inspire-wfs2.h:15088 */
+/* ws-inspire-wfs2.h:15100 */
 #ifndef SOAP_TYPE__fes__PropertyIsGreaterThan
-#define SOAP_TYPE__fes__PropertyIsGreaterThan (1124)
+#define SOAP_TYPE__fes__PropertyIsGreaterThan (1119)
 typedef fes__BinaryComparisonOpType _fes__PropertyIsGreaterThan;
 #endif
 
-/* ws-inspire-wfs2.h:15091 */
+/* ws-inspire-wfs2.h:15103 */
 #ifndef SOAP_TYPE__fes__PropertyIsLessThanOrEqualTo
-#define SOAP_TYPE__fes__PropertyIsLessThanOrEqualTo (1125)
+#define SOAP_TYPE__fes__PropertyIsLessThanOrEqualTo (1120)
 typedef fes__BinaryComparisonOpType _fes__PropertyIsLessThanOrEqualTo;
 #endif
 
-/* ws-inspire-wfs2.h:15094 */
+/* ws-inspire-wfs2.h:15106 */
 #ifndef SOAP_TYPE__fes__PropertyIsGreaterThanOrEqualTo
-#define SOAP_TYPE__fes__PropertyIsGreaterThanOrEqualTo (1126)
+#define SOAP_TYPE__fes__PropertyIsGreaterThanOrEqualTo (1121)
 typedef fes__BinaryComparisonOpType _fes__PropertyIsGreaterThanOrEqualTo;
 #endif
 
-/* ws-inspire-wfs2.h:15097 */
+/* ws-inspire-wfs2.h:15109 */
 #ifndef SOAP_TYPE__fes__PropertyIsLike
-#define SOAP_TYPE__fes__PropertyIsLike (1127)
+#define SOAP_TYPE__fes__PropertyIsLike (1122)
 typedef fes__PropertyIsLikeType _fes__PropertyIsLike;
 #endif
 
-/* ws-inspire-wfs2.h:15100 */
+/* ws-inspire-wfs2.h:15112 */
 #ifndef SOAP_TYPE__fes__PropertyIsNull
-#define SOAP_TYPE__fes__PropertyIsNull (1128)
+#define SOAP_TYPE__fes__PropertyIsNull (1123)
 typedef fes__PropertyIsNullType _fes__PropertyIsNull;
 #endif
 
-/* ws-inspire-wfs2.h:15103 */
+/* ws-inspire-wfs2.h:15115 */
 #ifndef SOAP_TYPE__fes__PropertyIsNil
-#define SOAP_TYPE__fes__PropertyIsNil (1129)
+#define SOAP_TYPE__fes__PropertyIsNil (1124)
 typedef fes__PropertyIsNilType _fes__PropertyIsNil;
 #endif
 
-/* ws-inspire-wfs2.h:15106 */
+/* ws-inspire-wfs2.h:15118 */
 #ifndef SOAP_TYPE__fes__PropertyIsBetween
-#define SOAP_TYPE__fes__PropertyIsBetween (1130)
+#define SOAP_TYPE__fes__PropertyIsBetween (1125)
 typedef fes__PropertyIsBetweenType _fes__PropertyIsBetween;
 #endif
 
-/* ws-inspire-wfs2.h:15109 */
+/* ws-inspire-wfs2.h:15121 */
 #ifndef SOAP_TYPE__fes__Equals
-#define SOAP_TYPE__fes__Equals (1131)
+#define SOAP_TYPE__fes__Equals (1126)
 typedef fes__BinarySpatialOpType _fes__Equals;
 #endif
 
-/* ws-inspire-wfs2.h:15112 */
+/* ws-inspire-wfs2.h:15124 */
 #ifndef SOAP_TYPE__fes__Disjoint
-#define SOAP_TYPE__fes__Disjoint (1132)
+#define SOAP_TYPE__fes__Disjoint (1127)
 typedef fes__BinarySpatialOpType _fes__Disjoint;
 #endif
 
-/* ws-inspire-wfs2.h:15115 */
+/* ws-inspire-wfs2.h:15127 */
 #ifndef SOAP_TYPE__fes__Touches
-#define SOAP_TYPE__fes__Touches (1133)
+#define SOAP_TYPE__fes__Touches (1128)
 typedef fes__BinarySpatialOpType _fes__Touches;
 #endif
 
-/* ws-inspire-wfs2.h:15118 */
+/* ws-inspire-wfs2.h:15130 */
 #ifndef SOAP_TYPE__fes__Within
-#define SOAP_TYPE__fes__Within (1134)
+#define SOAP_TYPE__fes__Within (1129)
 typedef fes__BinarySpatialOpType _fes__Within;
 #endif
 
-/* ws-inspire-wfs2.h:15121 */
+/* ws-inspire-wfs2.h:15133 */
 #ifndef SOAP_TYPE__fes__Overlaps
-#define SOAP_TYPE__fes__Overlaps (1135)
+#define SOAP_TYPE__fes__Overlaps (1130)
 typedef fes__BinarySpatialOpType _fes__Overlaps;
 #endif
 
-/* ws-inspire-wfs2.h:15124 */
+/* ws-inspire-wfs2.h:15136 */
 #ifndef SOAP_TYPE__fes__Crosses
-#define SOAP_TYPE__fes__Crosses (1136)
+#define SOAP_TYPE__fes__Crosses (1131)
 typedef fes__BinarySpatialOpType _fes__Crosses;
 #endif
 
-/* ws-inspire-wfs2.h:15127 */
+/* ws-inspire-wfs2.h:15139 */
 #ifndef SOAP_TYPE__fes__Intersects
-#define SOAP_TYPE__fes__Intersects (1137)
+#define SOAP_TYPE__fes__Intersects (1132)
 typedef fes__BinarySpatialOpType _fes__Intersects;
 #endif
 
-/* ws-inspire-wfs2.h:15130 */
+/* ws-inspire-wfs2.h:15142 */
 #ifndef SOAP_TYPE__fes__Contains
-#define SOAP_TYPE__fes__Contains (1138)
+#define SOAP_TYPE__fes__Contains (1133)
 typedef fes__BinarySpatialOpType _fes__Contains;
 #endif
 
-/* ws-inspire-wfs2.h:15133 */
+/* ws-inspire-wfs2.h:15145 */
 #ifndef SOAP_TYPE__fes__DWithin
-#define SOAP_TYPE__fes__DWithin (1139)
+#define SOAP_TYPE__fes__DWithin (1134)
 typedef fes__DistanceBufferType _fes__DWithin;
 #endif
 
-/* ws-inspire-wfs2.h:15136 */
+/* ws-inspire-wfs2.h:15148 */
 #ifndef SOAP_TYPE__fes__Beyond
-#define SOAP_TYPE__fes__Beyond (1140)
+#define SOAP_TYPE__fes__Beyond (1135)
 typedef fes__DistanceBufferType _fes__Beyond;
 #endif
 
-/* ws-inspire-wfs2.h:15139 */
+/* ws-inspire-wfs2.h:15151 */
 #ifndef SOAP_TYPE__fes__BBOX
-#define SOAP_TYPE__fes__BBOX (1141)
+#define SOAP_TYPE__fes__BBOX (1136)
 typedef fes__BBOXType _fes__BBOX;
 #endif
 
-/* ws-inspire-wfs2.h:15142 */
+/* ws-inspire-wfs2.h:15154 */
 #ifndef SOAP_TYPE__fes__After
-#define SOAP_TYPE__fes__After (1142)
+#define SOAP_TYPE__fes__After (1137)
 typedef fes__BinaryTemporalOpType _fes__After;
 #endif
 
-/* ws-inspire-wfs2.h:15145 */
+/* ws-inspire-wfs2.h:15157 */
 #ifndef SOAP_TYPE__fes__Before
-#define SOAP_TYPE__fes__Before (1143)
+#define SOAP_TYPE__fes__Before (1138)
 typedef fes__BinaryTemporalOpType _fes__Before;
 #endif
 
-/* ws-inspire-wfs2.h:15148 */
+/* ws-inspire-wfs2.h:15160 */
 #ifndef SOAP_TYPE__fes__Begins
-#define SOAP_TYPE__fes__Begins (1144)
+#define SOAP_TYPE__fes__Begins (1139)
 typedef fes__BinaryTemporalOpType _fes__Begins;
 #endif
 
-/* ws-inspire-wfs2.h:15151 */
+/* ws-inspire-wfs2.h:15163 */
 #ifndef SOAP_TYPE__fes__BegunBy
-#define SOAP_TYPE__fes__BegunBy (1145)
+#define SOAP_TYPE__fes__BegunBy (1140)
 typedef fes__BinaryTemporalOpType _fes__BegunBy;
 #endif
 
-/* ws-inspire-wfs2.h:15154 */
+/* ws-inspire-wfs2.h:15166 */
 #ifndef SOAP_TYPE__fes__TContains
-#define SOAP_TYPE__fes__TContains (1146)
+#define SOAP_TYPE__fes__TContains (1141)
 typedef fes__BinaryTemporalOpType _fes__TContains;
 #endif
 
-/* ws-inspire-wfs2.h:15157 */
+/* ws-inspire-wfs2.h:15169 */
 #ifndef SOAP_TYPE__fes__During
-#define SOAP_TYPE__fes__During (1147)
+#define SOAP_TYPE__fes__During (1142)
 typedef fes__BinaryTemporalOpType _fes__During;
 #endif
 
-/* ws-inspire-wfs2.h:15160 */
+/* ws-inspire-wfs2.h:15172 */
 #ifndef SOAP_TYPE__fes__EndedBy
-#define SOAP_TYPE__fes__EndedBy (1148)
+#define SOAP_TYPE__fes__EndedBy (1143)
 typedef fes__BinaryTemporalOpType _fes__EndedBy;
 #endif
 
-/* ws-inspire-wfs2.h:15163 */
+/* ws-inspire-wfs2.h:15175 */
 #ifndef SOAP_TYPE__fes__Ends
-#define SOAP_TYPE__fes__Ends (1149)
+#define SOAP_TYPE__fes__Ends (1144)
 typedef fes__BinaryTemporalOpType _fes__Ends;
 #endif
 
-/* ws-inspire-wfs2.h:15166 */
+/* ws-inspire-wfs2.h:15178 */
 #ifndef SOAP_TYPE__fes__TEquals
-#define SOAP_TYPE__fes__TEquals (1150)
+#define SOAP_TYPE__fes__TEquals (1145)
 typedef fes__BinaryTemporalOpType _fes__TEquals;
 #endif
 
-/* ws-inspire-wfs2.h:15169 */
+/* ws-inspire-wfs2.h:15181 */
 #ifndef SOAP_TYPE__fes__Meets
-#define SOAP_TYPE__fes__Meets (1151)
+#define SOAP_TYPE__fes__Meets (1146)
 typedef fes__BinaryTemporalOpType _fes__Meets;
 #endif
 
-/* ws-inspire-wfs2.h:15172 */
+/* ws-inspire-wfs2.h:15184 */
 #ifndef SOAP_TYPE__fes__MetBy
-#define SOAP_TYPE__fes__MetBy (1152)
+#define SOAP_TYPE__fes__MetBy (1147)
 typedef fes__BinaryTemporalOpType _fes__MetBy;
 #endif
 
-/* ws-inspire-wfs2.h:15175 */
+/* ws-inspire-wfs2.h:15187 */
 #ifndef SOAP_TYPE__fes__TOverlaps
-#define SOAP_TYPE__fes__TOverlaps (1153)
+#define SOAP_TYPE__fes__TOverlaps (1148)
 typedef fes__BinaryTemporalOpType _fes__TOverlaps;
 #endif
 
-/* ws-inspire-wfs2.h:15178 */
+/* ws-inspire-wfs2.h:15190 */
 #ifndef SOAP_TYPE__fes__OverlappedBy
-#define SOAP_TYPE__fes__OverlappedBy (1154)
+#define SOAP_TYPE__fes__OverlappedBy (1149)
 typedef fes__BinaryTemporalOpType _fes__OverlappedBy;
 #endif
 
-/* ws-inspire-wfs2.h:15181 */
+/* ws-inspire-wfs2.h:15193 */
 #ifndef SOAP_TYPE__fes__AnyInteracts
-#define SOAP_TYPE__fes__AnyInteracts (1155)
+#define SOAP_TYPE__fes__AnyInteracts (1150)
 typedef fes__BinaryTemporalOpType _fes__AnyInteracts;
 #endif
 
-/* ws-inspire-wfs2.h:15184 */
+/* ws-inspire-wfs2.h:15196 */
 #ifndef SOAP_TYPE__fes__And
-#define SOAP_TYPE__fes__And (1156)
+#define SOAP_TYPE__fes__And (1151)
 typedef fes__BinaryLogicOpType _fes__And;
 #endif
 
-/* ws-inspire-wfs2.h:15187 */
+/* ws-inspire-wfs2.h:15199 */
 #ifndef SOAP_TYPE__fes__Or
-#define SOAP_TYPE__fes__Or (1157)
+#define SOAP_TYPE__fes__Or (1152)
 typedef fes__BinaryLogicOpType _fes__Or;
 #endif
 
-/* ws-inspire-wfs2.h:15190 */
+/* ws-inspire-wfs2.h:15202 */
 #ifndef SOAP_TYPE__fes__Not
-#define SOAP_TYPE__fes__Not (1158)
+#define SOAP_TYPE__fes__Not (1153)
 typedef fes__UnaryLogicOpType _fes__Not;
 #endif
 
-/* ws-inspire-wfs2.h:15193 */
+/* ws-inspire-wfs2.h:15205 */
 #ifndef SOAP_TYPE__fes__ResourceId
-#define SOAP_TYPE__fes__ResourceId (1159)
+#define SOAP_TYPE__fes__ResourceId (1154)
 typedef fes__ResourceIdType _fes__ResourceId;
 #endif
 
-/* ws-inspire-wfs2.h:15196 */
+/* ws-inspire-wfs2.h:15208 */
 #ifndef SOAP_TYPE__fes__ValueReference
-#define SOAP_TYPE__fes__ValueReference (1160)
+#define SOAP_TYPE__fes__ValueReference (1155)
 typedef std::string _fes__ValueReference;
 #endif
 
-/* ws-inspire-wfs2.h:15199 */
+/* ws-inspire-wfs2.h:15211 */
 #ifndef SOAP_TYPE__fes__Function
-#define SOAP_TYPE__fes__Function (1161)
+#define SOAP_TYPE__fes__Function (1156)
 typedef fes__FunctionType _fes__Function;
 #endif
 
-/* ws-inspire-wfs2.h:15202 */
+/* ws-inspire-wfs2.h:15214 */
 #ifndef SOAP_TYPE__fes__Literal
-#define SOAP_TYPE__fes__Literal (1162)
+#define SOAP_TYPE__fes__Literal (1157)
 typedef fes__LiteralType _fes__Literal;
 #endif
 
-/* ws-inspire-wfs2.h:15205 */
+/* ws-inspire-wfs2.h:15217 */
 #ifndef SOAP_TYPE__fes__SortBy
-#define SOAP_TYPE__fes__SortBy (1163)
+#define SOAP_TYPE__fes__SortBy (1158)
 typedef fes__SortByType _fes__SortBy;
 #endif
 
-/* ws-inspire-wfs2.h:15224 */
+/* ws-inspire-wfs2.h:15236 */
 #ifndef SOAP_TYPE__icommon__SpatialDataService
-#define SOAP_TYPE__icommon__SpatialDataService (1164)
+#define SOAP_TYPE__icommon__SpatialDataService (1159)
 typedef icommon__service _icommon__SpatialDataService;
 #endif
 
-/* ws-inspire-wfs2.h:15227 */
+/* ws-inspire-wfs2.h:15239 */
 #ifndef SOAP_TYPE__icommon__SpatialDataSet
-#define SOAP_TYPE__icommon__SpatialDataSet (1165)
+#define SOAP_TYPE__icommon__SpatialDataSet (1160)
 typedef icommon__dataset _icommon__SpatialDataSet;
 #endif
 
-/* ws-inspire-wfs2.h:15230 */
+/* ws-inspire-wfs2.h:15242 */
 #ifndef SOAP_TYPE__icommon__SpatialDataSetSeries
-#define SOAP_TYPE__icommon__SpatialDataSetSeries (1166)
+#define SOAP_TYPE__icommon__SpatialDataSetSeries (1161)
 typedef icommon__series _icommon__SpatialDataSetSeries;
 #endif
 
-/* ws-inspire-wfs2.h:15233 */
+/* ws-inspire-wfs2.h:15245 */
 #ifndef SOAP_TYPE__icommon__SpatialDataServiceType
-#define SOAP_TYPE__icommon__SpatialDataServiceType (1167)
+#define SOAP_TYPE__icommon__SpatialDataServiceType (1162)
 typedef enum icommon__spatialDataServiceType _icommon__SpatialDataServiceType;
 #endif
 
-/* ws-inspire-wfs2.h:15236 */
+/* ws-inspire-wfs2.h:15248 */
 #ifndef SOAP_TYPE__icommon__IndividualDate
-#define SOAP_TYPE__icommon__IndividualDate (1168)
+#define SOAP_TYPE__icommon__IndividualDate (1163)
 typedef icommon__iso8601Date _icommon__IndividualDate;
 #endif
 
-/* ws-inspire-wfs2.h:15239 */
+/* ws-inspire-wfs2.h:15251 */
 #ifndef SOAP_TYPE__icommon__DiscoveryService
-#define SOAP_TYPE__icommon__DiscoveryService (1169)
+#define SOAP_TYPE__icommon__DiscoveryService (1164)
 typedef icommon__discoveryService _icommon__DiscoveryService;
 #endif
 
-/* ws-inspire-wfs2.h:15242 */
+/* ws-inspire-wfs2.h:15254 */
 #ifndef SOAP_TYPE__icommon__ViewService
-#define SOAP_TYPE__icommon__ViewService (1170)
+#define SOAP_TYPE__icommon__ViewService (1165)
 typedef icommon__viewService _icommon__ViewService;
 #endif
 
-/* ws-inspire-wfs2.h:15245 */
+/* ws-inspire-wfs2.h:15257 */
 #ifndef SOAP_TYPE__icommon__DownloadService
-#define SOAP_TYPE__icommon__DownloadService (1171)
+#define SOAP_TYPE__icommon__DownloadService (1166)
 typedef icommon__downloadService _icommon__DownloadService;
 #endif
 
-/* ws-inspire-wfs2.h:15248 */
+/* ws-inspire-wfs2.h:15260 */
 #ifndef SOAP_TYPE__icommon__TransformationService
-#define SOAP_TYPE__icommon__TransformationService (1172)
+#define SOAP_TYPE__icommon__TransformationService (1167)
 typedef icommon__transformationService _icommon__TransformationService;
 #endif
 
-/* ws-inspire-wfs2.h:15251 */
+/* ws-inspire-wfs2.h:15263 */
 #ifndef SOAP_TYPE__icommon__InvokeService
-#define SOAP_TYPE__icommon__InvokeService (1173)
+#define SOAP_TYPE__icommon__InvokeService (1168)
 typedef icommon__invokeService _icommon__InvokeService;
 #endif
 
-/* ws-inspire-wfs2.h:15254 */
+/* ws-inspire-wfs2.h:15266 */
 #ifndef SOAP_TYPE__icommon__OtherService
-#define SOAP_TYPE__icommon__OtherService (1174)
+#define SOAP_TYPE__icommon__OtherService (1169)
 typedef icommon__otherService _icommon__OtherService;
 #endif
 
@@ -20863,7 +20873,7 @@ typedef icommon__otherService _icommon__OtherService;
 
 /* long has binding name 'long' for type 'xsd:long' */
 #ifndef SOAP_TYPE_long
-#define SOAP_TYPE_long (671)
+#define SOAP_TYPE_long (666)
 #endif
 
 /* xsd__nonPositiveInteger has binding name 'xsd__nonPositiveInteger' for type 'xsd:nonPositiveInteger' */
@@ -20973,757 +20983,757 @@ typedef icommon__otherService _icommon__OtherService;
 
 /* _icommon__SpatialDataServiceType has binding name '_icommon__SpatialDataServiceType' for type '' */
 #ifndef SOAP_TYPE__icommon__SpatialDataServiceType
-#define SOAP_TYPE__icommon__SpatialDataServiceType (1167)
+#define SOAP_TYPE__icommon__SpatialDataServiceType (1162)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fswe_URI' for type 'icommon:citationInspireInteroperabilityRegulation_swe-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_URI (1035)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_URI (1030)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_swe-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication (1033)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication (1028)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fswe_Title' for type 'icommon:citationInspireInteroperabilityRegulation_swe-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_Title (1031)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fswe_Title (1026)
 #endif
 
 /* enum _icommon__inspireTheme_x005fswe_KeywordValue has binding name '_icommon__inspireTheme_x005fswe_KeywordValue' for type 'icommon:inspireTheme_swe-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fswe_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fswe_KeywordValue (1030)
+#define SOAP_TYPE__icommon__inspireTheme_x005fswe_KeywordValue (1025)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fspa_URI' for type 'icommon:citationInspireInteroperabilityRegulation_spa-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_URI (1028)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_URI (1023)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_spa-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication (1026)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication (1021)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fspa_Title' for type 'icommon:citationInspireInteroperabilityRegulation_spa-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_Title (1024)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fspa_Title (1019)
 #endif
 
 /* enum _icommon__inspireTheme_x005fspa_KeywordValue has binding name '_icommon__inspireTheme_x005fspa_KeywordValue' for type 'icommon:inspireTheme_spa-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fspa_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fspa_KeywordValue (1023)
+#define SOAP_TYPE__icommon__inspireTheme_x005fspa_KeywordValue (1018)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fslv_URI' for type 'icommon:citationInspireInteroperabilityRegulation_slv-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_URI (1021)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_URI (1016)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_slv-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication (1019)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication (1014)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fslv_Title' for type 'icommon:citationInspireInteroperabilityRegulation_slv-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_Title (1017)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslv_Title (1012)
 #endif
 
 /* enum _icommon__inspireTheme_x005fslv_KeywordValue has binding name '_icommon__inspireTheme_x005fslv_KeywordValue' for type 'icommon:inspireTheme_slv-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fslv_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fslv_KeywordValue (1016)
+#define SOAP_TYPE__icommon__inspireTheme_x005fslv_KeywordValue (1011)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fslo_URI' for type 'icommon:citationInspireInteroperabilityRegulation_slo-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_URI (1014)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_URI (1009)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_slo-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication (1012)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication (1007)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fslo_Title' for type 'icommon:citationInspireInteroperabilityRegulation_slo-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_Title (1010)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fslo_Title (1005)
 #endif
 
 /* enum _icommon__inspireTheme_x005fslo_KeywordValue has binding name '_icommon__inspireTheme_x005fslo_KeywordValue' for type 'icommon:inspireTheme_slo-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fslo_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fslo_KeywordValue (1009)
+#define SOAP_TYPE__icommon__inspireTheme_x005fslo_KeywordValue (1004)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005frum_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005frum_URI' for type 'icommon:citationInspireInteroperabilityRegulation_rum-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_URI (1007)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_URI (1002)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_rum-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication (1005)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication (1000)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005frum_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005frum_Title' for type 'icommon:citationInspireInteroperabilityRegulation_rum-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_Title (1003)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005frum_Title (998)
 #endif
 
 /* enum _icommon__inspireTheme_x005frum_KeywordValue has binding name '_icommon__inspireTheme_x005frum_KeywordValue' for type 'icommon:inspireTheme_rum-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005frum_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005frum_KeywordValue (1002)
+#define SOAP_TYPE__icommon__inspireTheme_x005frum_KeywordValue (997)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fpor_URI' for type 'icommon:citationInspireInteroperabilityRegulation_por-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_URI (1000)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_URI (995)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_por-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication (998)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication (993)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fpor_Title' for type 'icommon:citationInspireInteroperabilityRegulation_por-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_Title (996)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpor_Title (991)
 #endif
 
 /* enum _icommon__inspireTheme_x005fpor_KeywordValue has binding name '_icommon__inspireTheme_x005fpor_KeywordValue' for type 'icommon:inspireTheme_por-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fpor_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fpor_KeywordValue (995)
+#define SOAP_TYPE__icommon__inspireTheme_x005fpor_KeywordValue (990)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fpol_URI' for type 'icommon:citationInspireInteroperabilityRegulation_pol-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_URI (993)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_URI (988)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_pol-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication (991)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication (986)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fpol_Title' for type 'icommon:citationInspireInteroperabilityRegulation_pol-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_Title (989)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fpol_Title (984)
 #endif
 
 /* enum _icommon__inspireTheme_x005fpol_KeywordValue has binding name '_icommon__inspireTheme_x005fpol_KeywordValue' for type 'icommon:inspireTheme_pol-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fpol_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fpol_KeywordValue (988)
+#define SOAP_TYPE__icommon__inspireTheme_x005fpol_KeywordValue (983)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI' for type 'icommon:citationInspireInteroperabilityRegulation_mlt-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI (986)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_URI (981)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_mlt-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication (984)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication (979)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title' for type 'icommon:citationInspireInteroperabilityRegulation_mlt-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title (982)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fmlt_Title (977)
 #endif
 
 /* enum _icommon__inspireTheme_x005fmlt_KeywordValue has binding name '_icommon__inspireTheme_x005fmlt_KeywordValue' for type 'icommon:inspireTheme_mlt-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fmlt_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fmlt_KeywordValue (981)
+#define SOAP_TYPE__icommon__inspireTheme_x005fmlt_KeywordValue (976)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flit_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005flit_URI' for type 'icommon:citationInspireInteroperabilityRegulation_lit-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_URI (979)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_URI (974)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_lit-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication (977)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication (972)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flit_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005flit_Title' for type 'icommon:citationInspireInteroperabilityRegulation_lit-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_Title (975)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flit_Title (970)
 #endif
 
 /* enum _icommon__inspireTheme_x005flit_KeywordValue has binding name '_icommon__inspireTheme_x005flit_KeywordValue' for type 'icommon:inspireTheme_lit-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005flit_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005flit_KeywordValue (974)
+#define SOAP_TYPE__icommon__inspireTheme_x005flit_KeywordValue (969)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flav_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005flav_URI' for type 'icommon:citationInspireInteroperabilityRegulation_lav-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_URI (972)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_URI (967)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_lav-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication (970)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication (965)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flav_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005flav_Title' for type 'icommon:citationInspireInteroperabilityRegulation_lav-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_Title (968)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005flav_Title (963)
 #endif
 
 /* enum _icommon__inspireTheme_x005flav_KeywordValue has binding name '_icommon__inspireTheme_x005flav_KeywordValue' for type 'icommon:inspireTheme_lav-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005flav_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005flav_KeywordValue (967)
+#define SOAP_TYPE__icommon__inspireTheme_x005flav_KeywordValue (962)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fita_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fita_URI' for type 'icommon:citationInspireInteroperabilityRegulation_ita-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_URI (965)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_URI (960)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_ita-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication (963)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication (958)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fita_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fita_Title' for type 'icommon:citationInspireInteroperabilityRegulation_ita-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_Title (961)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fita_Title (956)
 #endif
 
 /* enum _icommon__inspireTheme_x005fita_KeywordValue has binding name '_icommon__inspireTheme_x005fita_KeywordValue' for type 'icommon:inspireTheme_ita-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fita_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fita_KeywordValue (960)
+#define SOAP_TYPE__icommon__inspireTheme_x005fita_KeywordValue (955)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fhun_URI' for type 'icommon:citationInspireInteroperabilityRegulation_hun-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_URI (958)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_URI (953)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_hun-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication (956)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication (951)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fhun_Title' for type 'icommon:citationInspireInteroperabilityRegulation_hun-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_Title (954)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fhun_Title (949)
 #endif
 
 /* enum _icommon__inspireTheme_x005fhun_KeywordValue has binding name '_icommon__inspireTheme_x005fhun_KeywordValue' for type 'icommon:inspireTheme_hun-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fhun_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fhun_KeywordValue (953)
+#define SOAP_TYPE__icommon__inspireTheme_x005fhun_KeywordValue (948)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fgre_URI' for type 'icommon:citationInspireInteroperabilityRegulation_gre-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_URI (951)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_URI (946)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_gre-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication (949)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication (944)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fgre_Title' for type 'icommon:citationInspireInteroperabilityRegulation_gre-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_Title (947)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgre_Title (942)
 #endif
 
 /* enum _icommon__inspireTheme_x005fgre_KeywordValue has binding name '_icommon__inspireTheme_x005fgre_KeywordValue' for type 'icommon:inspireTheme_gre-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fgre_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fgre_KeywordValue (946)
+#define SOAP_TYPE__icommon__inspireTheme_x005fgre_KeywordValue (941)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fgle_URI' for type 'icommon:citationInspireInteroperabilityRegulation_gle-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_URI (944)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_URI (939)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_gle-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication (942)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication (937)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fgle_Title' for type 'icommon:citationInspireInteroperabilityRegulation_gle-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_Title (940)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fgle_Title (935)
 #endif
 
 /* enum _icommon__inspireTheme_x005fgle_KeywordValue has binding name '_icommon__inspireTheme_x005fgle_KeywordValue' for type 'icommon:inspireTheme_gle-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fgle_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fgle_KeywordValue (939)
+#define SOAP_TYPE__icommon__inspireTheme_x005fgle_KeywordValue (934)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fger_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fger_URI' for type 'icommon:citationInspireInteroperabilityRegulation_ger-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_URI (937)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_URI (932)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_ger-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication (935)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication (930)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fger_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fger_Title' for type 'icommon:citationInspireInteroperabilityRegulation_ger-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_Title (933)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fger_Title (928)
 #endif
 
 /* enum _icommon__inspireTheme_x005fger_KeywordValue has binding name '_icommon__inspireTheme_x005fger_KeywordValue' for type 'icommon:inspireTheme_ger-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fger_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fger_KeywordValue (932)
+#define SOAP_TYPE__icommon__inspireTheme_x005fger_KeywordValue (927)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005ffre_URI' for type 'icommon:citationInspireInteroperabilityRegulation_fre-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_URI (930)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_URI (925)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_fre-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication (928)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication (923)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005ffre_Title' for type 'icommon:citationInspireInteroperabilityRegulation_fre-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_Title (926)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffre_Title (921)
 #endif
 
 /* enum _icommon__inspireTheme_x005ffre_KeywordValue has binding name '_icommon__inspireTheme_x005ffre_KeywordValue' for type 'icommon:inspireTheme_fre-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005ffre_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005ffre_KeywordValue (925)
+#define SOAP_TYPE__icommon__inspireTheme_x005ffre_KeywordValue (920)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005ffin_URI' for type 'icommon:citationInspireInteroperabilityRegulation_fin-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_URI (923)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_URI (918)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_fin-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication (921)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication (916)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005ffin_Title' for type 'icommon:citationInspireInteroperabilityRegulation_fin-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_Title (919)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005ffin_Title (914)
 #endif
 
 /* enum _icommon__inspireTheme_x005ffin_KeywordValue has binding name '_icommon__inspireTheme_x005ffin_KeywordValue' for type 'icommon:inspireTheme_fin-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005ffin_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005ffin_KeywordValue (918)
+#define SOAP_TYPE__icommon__inspireTheme_x005ffin_KeywordValue (913)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fest_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fest_URI' for type 'icommon:citationInspireInteroperabilityRegulation_est-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_URI (916)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_URI (911)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_est-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication (914)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication (909)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fest_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fest_Title' for type 'icommon:citationInspireInteroperabilityRegulation_est-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_Title (912)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fest_Title (907)
 #endif
 
 /* enum _icommon__inspireTheme_x005fest_KeywordValue has binding name '_icommon__inspireTheme_x005fest_KeywordValue' for type 'icommon:inspireTheme_est-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fest_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fest_KeywordValue (911)
+#define SOAP_TYPE__icommon__inspireTheme_x005fest_KeywordValue (906)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005feng_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005feng_URI' for type 'icommon:citationInspireInteroperabilityRegulation_eng-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_URI (909)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_URI (904)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_eng-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication (907)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication (902)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005feng_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005feng_Title' for type 'icommon:citationInspireInteroperabilityRegulation_eng-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_Title (905)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005feng_Title (900)
 #endif
 
 /* enum _icommon__inspireTheme_x005feng_KeywordValue has binding name '_icommon__inspireTheme_x005feng_KeywordValue' for type 'icommon:inspireTheme_eng-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005feng_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005feng_KeywordValue (904)
+#define SOAP_TYPE__icommon__inspireTheme_x005feng_KeywordValue (899)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fdut_URI' for type 'icommon:citationInspireInteroperabilityRegulation_dut-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_URI (902)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_URI (897)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_dut-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication (900)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication (895)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fdut_Title' for type 'icommon:citationInspireInteroperabilityRegulation_dut-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_Title (898)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdut_Title (893)
 #endif
 
 /* enum _icommon__inspireTheme_x005fdut_KeywordValue has binding name '_icommon__inspireTheme_x005fdut_KeywordValue' for type 'icommon:inspireTheme_dut-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fdut_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fdut_KeywordValue (897)
+#define SOAP_TYPE__icommon__inspireTheme_x005fdut_KeywordValue (892)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fdan_URI' for type 'icommon:citationInspireInteroperabilityRegulation_dan-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_URI (895)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_URI (890)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_dan-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication (893)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication (888)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fdan_Title' for type 'icommon:citationInspireInteroperabilityRegulation_dan-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_Title (891)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fdan_Title (886)
 #endif
 
 /* enum _icommon__inspireTheme_x005fdan_KeywordValue has binding name '_icommon__inspireTheme_x005fdan_KeywordValue' for type 'icommon:inspireTheme_dan-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fdan_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fdan_KeywordValue (890)
+#define SOAP_TYPE__icommon__inspireTheme_x005fdan_KeywordValue (885)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fcze_URI' for type 'icommon:citationInspireInteroperabilityRegulation_cze-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_URI (888)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_URI (883)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_cze-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication (886)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication (881)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fcze_Title' for type 'icommon:citationInspireInteroperabilityRegulation_cze-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_Title (884)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fcze_Title (879)
 #endif
 
 /* enum _icommon__inspireTheme_x005fcze_KeywordValue has binding name '_icommon__inspireTheme_x005fcze_KeywordValue' for type 'icommon:inspireTheme_cze-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fcze_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fcze_KeywordValue (883)
+#define SOAP_TYPE__icommon__inspireTheme_x005fcze_KeywordValue (878)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_URI has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fbul_URI' for type 'icommon:citationInspireInteroperabilityRegulation_bul-URI' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_URI
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_URI (881)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_URI (876)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_bul-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication (879)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication (874)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_Title has binding name '_icommon__citationInspireInteroperabilityRegulation_x005fbul_Title' for type 'icommon:citationInspireInteroperabilityRegulation_bul-Title' */
 #ifndef SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_Title
-#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_Title (877)
+#define SOAP_TYPE__icommon__citationInspireInteroperabilityRegulation_x005fbul_Title (872)
 #endif
 
 /* enum _icommon__inspireTheme_x005fbul_KeywordValue has binding name '_icommon__inspireTheme_x005fbul_KeywordValue' for type 'icommon:inspireTheme_bul-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__inspireTheme_x005fbul_KeywordValue
-#define SOAP_TYPE__icommon__inspireTheme_x005fbul_KeywordValue (876)
+#define SOAP_TYPE__icommon__inspireTheme_x005fbul_KeywordValue (871)
 #endif
 
 /* enum _icommon__originatingControlledVocabularyMD_DateOfPublication has binding name '_icommon__originatingControlledVocabularyMD_DateOfPublication' for type 'icommon:originatingControlledVocabularyMD-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyMD_DateOfPublication
-#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_DateOfPublication (874)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_DateOfPublication (869)
 #endif
 
 /* enum _icommon__originatingControlledVocabularyMD_Title has binding name '_icommon__originatingControlledVocabularyMD_Title' for type 'icommon:originatingControlledVocabularyMD-Title' */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyMD_Title
-#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_Title (872)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyMD_Title (867)
 #endif
 
 /* enum _icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication has binding name '_icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication' for type 'icommon:originatingControlledVocabularyGemetInspireThemes-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication
-#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication (870)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication (865)
 #endif
 
 /* enum _icommon__originatingControlledVocabularyGemetInspireThemes_Title has binding name '_icommon__originatingControlledVocabularyGemetInspireThemes_Title' for type 'icommon:originatingControlledVocabularyGemetInspireThemes-Title' */
 #ifndef SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_Title
-#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_Title (868)
+#define SOAP_TYPE__icommon__originatingControlledVocabularyGemetInspireThemes_Title (863)
 #endif
 
 /* enum _icommon__series_ResourceType has binding name '_icommon__series_ResourceType' for type 'icommon:series-ResourceType' */
 #ifndef SOAP_TYPE__icommon__series_ResourceType
-#define SOAP_TYPE__icommon__series_ResourceType (867)
+#define SOAP_TYPE__icommon__series_ResourceType (862)
 #endif
 
 /* enum _icommon__dataset_ResourceType has binding name '_icommon__dataset_ResourceType' for type 'icommon:dataset-ResourceType' */
 #ifndef SOAP_TYPE__icommon__dataset_ResourceType
-#define SOAP_TYPE__icommon__dataset_ResourceType (864)
+#define SOAP_TYPE__icommon__dataset_ResourceType (859)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_swe-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType (848)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_MediaType (843)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_swe-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL (847)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fswe_URL (842)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_spa-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType (846)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_MediaType (841)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_spa-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL (845)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fspa_URL (840)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_slv-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType (844)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_MediaType (839)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_slv-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL (843)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslv_URL (838)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_slo-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType (842)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_MediaType (837)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_slo-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL (841)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fslo_URL (836)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_rum-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType (840)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_MediaType (835)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005frum_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005frum_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_rum-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_URL (839)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005frum_URL (834)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_por-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType (838)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_MediaType (833)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_por-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL (837)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpor_URL (832)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_pol-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType (836)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_MediaType (831)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_pol-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL (835)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fpol_URL (830)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_mlt-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType (834)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_MediaType (829)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_mlt-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL (833)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fmlt_URL (828)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_lit-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType (832)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_MediaType (827)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005flit_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005flit_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_lit-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_URL (831)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flit_URL (826)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_lav-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType (830)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_MediaType (825)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005flav_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005flav_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_lav-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_URL (829)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005flav_URL (824)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_ita-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType (828)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_MediaType (823)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fita_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fita_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_ita-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_URL (827)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fita_URL (822)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_hun-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType (826)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_MediaType (821)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_hun-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL (825)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fhun_URL (820)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_gre-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType (824)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_MediaType (819)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_gre-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL (823)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgre_URL (818)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_gle-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType (822)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_MediaType (817)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_gle-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL (821)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fgle_URL (816)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_ger-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType (820)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_MediaType (815)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fger_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fger_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_ger-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_URL (819)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fger_URL (814)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_fre-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType (818)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_MediaType (813)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_fre-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL (817)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffre_URL (812)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_fin-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType (816)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_MediaType (811)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_fin-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL (815)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005ffin_URL (810)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_est-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType (814)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_MediaType (809)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fest_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fest_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_est-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_URL (813)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fest_URL (808)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_eng-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType (812)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_MediaType (807)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005feng_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005feng_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_eng-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_URL (811)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005feng_URL (806)
 #endif
 
 /* enum _icommon__citationGEMETInspireThemes_x005feng_DateOfPublication has binding name '_icommon__citationGEMETInspireThemes_x005feng_DateOfPublication' for type 'icommon:citationGEMETInspireThemes_eng-DateOfPublication' */
 #ifndef SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_DateOfPublication
-#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_DateOfPublication (808)
+#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_DateOfPublication (803)
 #endif
 
 /* enum _icommon__citationGEMETInspireThemes_x005feng_Title has binding name '_icommon__citationGEMETInspireThemes_x005feng_Title' for type 'icommon:citationGEMETInspireThemes_eng-Title' */
 #ifndef SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_Title
-#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_Title (806)
+#define SOAP_TYPE__icommon__citationGEMETInspireThemes_x005feng_Title (801)
 #endif
 
 /* enum _icommon__resLocGEMETInspireThemes_x005feng_MediaType has binding name '_icommon__resLocGEMETInspireThemes_x005feng_MediaType' for type 'icommon:resLocGEMETInspireThemes_eng-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_MediaType
-#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_MediaType (805)
+#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_MediaType (800)
 #endif
 
 /* enum _icommon__resLocGEMETInspireThemes_x005feng_URL has binding name '_icommon__resLocGEMETInspireThemes_x005feng_URL' for type 'icommon:resLocGEMETInspireThemes_eng-URL' */
 #ifndef SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_URL
-#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_URL (804)
+#define SOAP_TYPE__icommon__resLocGEMETInspireThemes_x005feng_URL (799)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_dut-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType (803)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_MediaType (798)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_dut-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL (802)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdut_URL (797)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_dan-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType (801)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_MediaType (796)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_dan-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL (800)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fdan_URL (795)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_cze-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType (799)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_MediaType (794)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_cze-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL (798)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fcze_URL (793)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType' for type 'icommon:resLocInspireInteroperabilityRegulation_bul-MediaType' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType (797)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_MediaType (792)
 #endif
 
 /* enum _icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL has binding name '_icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL' for type 'icommon:resLocInspireInteroperabilityRegulation_bul-URL' */
 #ifndef SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL
-#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL (796)
+#define SOAP_TYPE__icommon__resLocInspireInteroperabilityRegulation_x005fbul_URL (791)
 #endif
 
 /* enum _icommon__classificationOfSpatialDataService_KeywordValue has binding name '_icommon__classificationOfSpatialDataService_KeywordValue' for type 'icommon:classificationOfSpatialDataService-KeywordValue' */
 #ifndef SOAP_TYPE__icommon__classificationOfSpatialDataService_KeywordValue
-#define SOAP_TYPE__icommon__classificationOfSpatialDataService_KeywordValue (794)
+#define SOAP_TYPE__icommon__classificationOfSpatialDataService_KeywordValue (789)
 #endif
 
 /* bool has binding name 'bool' for type 'xsd:boolean' */
 #ifndef SOAP_TYPE_bool
-#define SOAP_TYPE_bool (512)
+#define SOAP_TYPE_bool (508)
 #endif
 
 /* enum icommon__euLanguageIETF has binding name 'icommon__euLanguageIETF' for type 'icommon:euLanguageIETF' */
@@ -21863,737 +21873,737 @@ typedef icommon__otherService _icommon__OtherService;
 
 /* _icommon__OtherService has binding name '_icommon__OtherService' for type '' */
 #ifndef SOAP_TYPE__icommon__OtherService
-#define SOAP_TYPE__icommon__OtherService (1174)
+#define SOAP_TYPE__icommon__OtherService (1169)
 #endif
 
 /* _icommon__InvokeService has binding name '_icommon__InvokeService' for type '' */
 #ifndef SOAP_TYPE__icommon__InvokeService
-#define SOAP_TYPE__icommon__InvokeService (1173)
+#define SOAP_TYPE__icommon__InvokeService (1168)
 #endif
 
 /* _icommon__TransformationService has binding name '_icommon__TransformationService' for type '' */
 #ifndef SOAP_TYPE__icommon__TransformationService
-#define SOAP_TYPE__icommon__TransformationService (1172)
+#define SOAP_TYPE__icommon__TransformationService (1167)
 #endif
 
 /* _icommon__DownloadService has binding name '_icommon__DownloadService' for type '' */
 #ifndef SOAP_TYPE__icommon__DownloadService
-#define SOAP_TYPE__icommon__DownloadService (1171)
+#define SOAP_TYPE__icommon__DownloadService (1166)
 #endif
 
 /* _icommon__ViewService has binding name '_icommon__ViewService' for type '' */
 #ifndef SOAP_TYPE__icommon__ViewService
-#define SOAP_TYPE__icommon__ViewService (1170)
+#define SOAP_TYPE__icommon__ViewService (1165)
 #endif
 
 /* _icommon__DiscoveryService has binding name '_icommon__DiscoveryService' for type '' */
 #ifndef SOAP_TYPE__icommon__DiscoveryService
-#define SOAP_TYPE__icommon__DiscoveryService (1169)
+#define SOAP_TYPE__icommon__DiscoveryService (1164)
 #endif
 
 /* _icommon__IndividualDate has binding name '_icommon__IndividualDate' for type '' */
 #ifndef SOAP_TYPE__icommon__IndividualDate
-#define SOAP_TYPE__icommon__IndividualDate (1168)
+#define SOAP_TYPE__icommon__IndividualDate (1163)
 #endif
 
 /* _icommon__SpatialDataSetSeries has binding name '_icommon__SpatialDataSetSeries' for type '' */
 #ifndef SOAP_TYPE__icommon__SpatialDataSetSeries
-#define SOAP_TYPE__icommon__SpatialDataSetSeries (1166)
+#define SOAP_TYPE__icommon__SpatialDataSetSeries (1161)
 #endif
 
 /* _icommon__SpatialDataSet has binding name '_icommon__SpatialDataSet' for type '' */
 #ifndef SOAP_TYPE__icommon__SpatialDataSet
-#define SOAP_TYPE__icommon__SpatialDataSet (1165)
+#define SOAP_TYPE__icommon__SpatialDataSet (1160)
 #endif
 
 /* _icommon__SpatialDataService has binding name '_icommon__SpatialDataService' for type '' */
 #ifndef SOAP_TYPE__icommon__SpatialDataService
-#define SOAP_TYPE__icommon__SpatialDataService (1164)
+#define SOAP_TYPE__icommon__SpatialDataService (1159)
 #endif
 
 /* _fes__SortBy has binding name '_fes__SortBy' for type '' */
 #ifndef SOAP_TYPE__fes__SortBy
-#define SOAP_TYPE__fes__SortBy (1163)
+#define SOAP_TYPE__fes__SortBy (1158)
 #endif
 
 /* _fes__Literal has binding name '_fes__Literal' for type '' */
 #ifndef SOAP_TYPE__fes__Literal
-#define SOAP_TYPE__fes__Literal (1162)
+#define SOAP_TYPE__fes__Literal (1157)
 #endif
 
 /* _fes__Function has binding name '_fes__Function' for type '' */
 #ifndef SOAP_TYPE__fes__Function
-#define SOAP_TYPE__fes__Function (1161)
+#define SOAP_TYPE__fes__Function (1156)
 #endif
 
 /* _fes__ValueReference has binding name '_fes__ValueReference' for type '' */
 #ifndef SOAP_TYPE__fes__ValueReference
-#define SOAP_TYPE__fes__ValueReference (1160)
+#define SOAP_TYPE__fes__ValueReference (1155)
 #endif
 
 /* _fes__ResourceId has binding name '_fes__ResourceId' for type '' */
 #ifndef SOAP_TYPE__fes__ResourceId
-#define SOAP_TYPE__fes__ResourceId (1159)
+#define SOAP_TYPE__fes__ResourceId (1154)
 #endif
 
 /* _fes__Not has binding name '_fes__Not' for type '' */
 #ifndef SOAP_TYPE__fes__Not
-#define SOAP_TYPE__fes__Not (1158)
+#define SOAP_TYPE__fes__Not (1153)
 #endif
 
 /* _fes__Or has binding name '_fes__Or' for type '' */
 #ifndef SOAP_TYPE__fes__Or
-#define SOAP_TYPE__fes__Or (1157)
+#define SOAP_TYPE__fes__Or (1152)
 #endif
 
 /* _fes__And has binding name '_fes__And' for type '' */
 #ifndef SOAP_TYPE__fes__And
-#define SOAP_TYPE__fes__And (1156)
+#define SOAP_TYPE__fes__And (1151)
 #endif
 
 /* _fes__AnyInteracts has binding name '_fes__AnyInteracts' for type '' */
 #ifndef SOAP_TYPE__fes__AnyInteracts
-#define SOAP_TYPE__fes__AnyInteracts (1155)
+#define SOAP_TYPE__fes__AnyInteracts (1150)
 #endif
 
 /* _fes__OverlappedBy has binding name '_fes__OverlappedBy' for type '' */
 #ifndef SOAP_TYPE__fes__OverlappedBy
-#define SOAP_TYPE__fes__OverlappedBy (1154)
+#define SOAP_TYPE__fes__OverlappedBy (1149)
 #endif
 
 /* _fes__TOverlaps has binding name '_fes__TOverlaps' for type '' */
 #ifndef SOAP_TYPE__fes__TOverlaps
-#define SOAP_TYPE__fes__TOverlaps (1153)
+#define SOAP_TYPE__fes__TOverlaps (1148)
 #endif
 
 /* _fes__MetBy has binding name '_fes__MetBy' for type '' */
 #ifndef SOAP_TYPE__fes__MetBy
-#define SOAP_TYPE__fes__MetBy (1152)
+#define SOAP_TYPE__fes__MetBy (1147)
 #endif
 
 /* _fes__Meets has binding name '_fes__Meets' for type '' */
 #ifndef SOAP_TYPE__fes__Meets
-#define SOAP_TYPE__fes__Meets (1151)
+#define SOAP_TYPE__fes__Meets (1146)
 #endif
 
 /* _fes__TEquals has binding name '_fes__TEquals' for type '' */
 #ifndef SOAP_TYPE__fes__TEquals
-#define SOAP_TYPE__fes__TEquals (1150)
+#define SOAP_TYPE__fes__TEquals (1145)
 #endif
 
 /* _fes__Ends has binding name '_fes__Ends' for type '' */
 #ifndef SOAP_TYPE__fes__Ends
-#define SOAP_TYPE__fes__Ends (1149)
+#define SOAP_TYPE__fes__Ends (1144)
 #endif
 
 /* _fes__EndedBy has binding name '_fes__EndedBy' for type '' */
 #ifndef SOAP_TYPE__fes__EndedBy
-#define SOAP_TYPE__fes__EndedBy (1148)
+#define SOAP_TYPE__fes__EndedBy (1143)
 #endif
 
 /* _fes__During has binding name '_fes__During' for type '' */
 #ifndef SOAP_TYPE__fes__During
-#define SOAP_TYPE__fes__During (1147)
+#define SOAP_TYPE__fes__During (1142)
 #endif
 
 /* _fes__TContains has binding name '_fes__TContains' for type '' */
 #ifndef SOAP_TYPE__fes__TContains
-#define SOAP_TYPE__fes__TContains (1146)
+#define SOAP_TYPE__fes__TContains (1141)
 #endif
 
 /* _fes__BegunBy has binding name '_fes__BegunBy' for type '' */
 #ifndef SOAP_TYPE__fes__BegunBy
-#define SOAP_TYPE__fes__BegunBy (1145)
+#define SOAP_TYPE__fes__BegunBy (1140)
 #endif
 
 /* _fes__Begins has binding name '_fes__Begins' for type '' */
 #ifndef SOAP_TYPE__fes__Begins
-#define SOAP_TYPE__fes__Begins (1144)
+#define SOAP_TYPE__fes__Begins (1139)
 #endif
 
 /* _fes__Before has binding name '_fes__Before' for type '' */
 #ifndef SOAP_TYPE__fes__Before
-#define SOAP_TYPE__fes__Before (1143)
+#define SOAP_TYPE__fes__Before (1138)
 #endif
 
 /* _fes__After has binding name '_fes__After' for type '' */
 #ifndef SOAP_TYPE__fes__After
-#define SOAP_TYPE__fes__After (1142)
+#define SOAP_TYPE__fes__After (1137)
 #endif
 
 /* _fes__BBOX has binding name '_fes__BBOX' for type '' */
 #ifndef SOAP_TYPE__fes__BBOX
-#define SOAP_TYPE__fes__BBOX (1141)
+#define SOAP_TYPE__fes__BBOX (1136)
 #endif
 
 /* _fes__Beyond has binding name '_fes__Beyond' for type '' */
 #ifndef SOAP_TYPE__fes__Beyond
-#define SOAP_TYPE__fes__Beyond (1140)
+#define SOAP_TYPE__fes__Beyond (1135)
 #endif
 
 /* _fes__DWithin has binding name '_fes__DWithin' for type '' */
 #ifndef SOAP_TYPE__fes__DWithin
-#define SOAP_TYPE__fes__DWithin (1139)
+#define SOAP_TYPE__fes__DWithin (1134)
 #endif
 
 /* _fes__Contains has binding name '_fes__Contains' for type '' */
 #ifndef SOAP_TYPE__fes__Contains
-#define SOAP_TYPE__fes__Contains (1138)
+#define SOAP_TYPE__fes__Contains (1133)
 #endif
 
 /* _fes__Intersects has binding name '_fes__Intersects' for type '' */
 #ifndef SOAP_TYPE__fes__Intersects
-#define SOAP_TYPE__fes__Intersects (1137)
+#define SOAP_TYPE__fes__Intersects (1132)
 #endif
 
 /* _fes__Crosses has binding name '_fes__Crosses' for type '' */
 #ifndef SOAP_TYPE__fes__Crosses
-#define SOAP_TYPE__fes__Crosses (1136)
+#define SOAP_TYPE__fes__Crosses (1131)
 #endif
 
 /* _fes__Overlaps has binding name '_fes__Overlaps' for type '' */
 #ifndef SOAP_TYPE__fes__Overlaps
-#define SOAP_TYPE__fes__Overlaps (1135)
+#define SOAP_TYPE__fes__Overlaps (1130)
 #endif
 
 /* _fes__Within has binding name '_fes__Within' for type '' */
 #ifndef SOAP_TYPE__fes__Within
-#define SOAP_TYPE__fes__Within (1134)
+#define SOAP_TYPE__fes__Within (1129)
 #endif
 
 /* _fes__Touches has binding name '_fes__Touches' for type '' */
 #ifndef SOAP_TYPE__fes__Touches
-#define SOAP_TYPE__fes__Touches (1133)
+#define SOAP_TYPE__fes__Touches (1128)
 #endif
 
 /* _fes__Disjoint has binding name '_fes__Disjoint' for type '' */
 #ifndef SOAP_TYPE__fes__Disjoint
-#define SOAP_TYPE__fes__Disjoint (1132)
+#define SOAP_TYPE__fes__Disjoint (1127)
 #endif
 
 /* _fes__Equals has binding name '_fes__Equals' for type '' */
 #ifndef SOAP_TYPE__fes__Equals
-#define SOAP_TYPE__fes__Equals (1131)
+#define SOAP_TYPE__fes__Equals (1126)
 #endif
 
 /* _fes__PropertyIsBetween has binding name '_fes__PropertyIsBetween' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsBetween
-#define SOAP_TYPE__fes__PropertyIsBetween (1130)
+#define SOAP_TYPE__fes__PropertyIsBetween (1125)
 #endif
 
 /* _fes__PropertyIsNil has binding name '_fes__PropertyIsNil' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsNil
-#define SOAP_TYPE__fes__PropertyIsNil (1129)
+#define SOAP_TYPE__fes__PropertyIsNil (1124)
 #endif
 
 /* _fes__PropertyIsNull has binding name '_fes__PropertyIsNull' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsNull
-#define SOAP_TYPE__fes__PropertyIsNull (1128)
+#define SOAP_TYPE__fes__PropertyIsNull (1123)
 #endif
 
 /* _fes__PropertyIsLike has binding name '_fes__PropertyIsLike' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsLike
-#define SOAP_TYPE__fes__PropertyIsLike (1127)
+#define SOAP_TYPE__fes__PropertyIsLike (1122)
 #endif
 
 /* _fes__PropertyIsGreaterThanOrEqualTo has binding name '_fes__PropertyIsGreaterThanOrEqualTo' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsGreaterThanOrEqualTo
-#define SOAP_TYPE__fes__PropertyIsGreaterThanOrEqualTo (1126)
+#define SOAP_TYPE__fes__PropertyIsGreaterThanOrEqualTo (1121)
 #endif
 
 /* _fes__PropertyIsLessThanOrEqualTo has binding name '_fes__PropertyIsLessThanOrEqualTo' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsLessThanOrEqualTo
-#define SOAP_TYPE__fes__PropertyIsLessThanOrEqualTo (1125)
+#define SOAP_TYPE__fes__PropertyIsLessThanOrEqualTo (1120)
 #endif
 
 /* _fes__PropertyIsGreaterThan has binding name '_fes__PropertyIsGreaterThan' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsGreaterThan
-#define SOAP_TYPE__fes__PropertyIsGreaterThan (1124)
+#define SOAP_TYPE__fes__PropertyIsGreaterThan (1119)
 #endif
 
 /* _fes__PropertyIsLessThan has binding name '_fes__PropertyIsLessThan' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsLessThan
-#define SOAP_TYPE__fes__PropertyIsLessThan (1123)
+#define SOAP_TYPE__fes__PropertyIsLessThan (1118)
 #endif
 
 /* _fes__PropertyIsNotEqualTo has binding name '_fes__PropertyIsNotEqualTo' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsNotEqualTo
-#define SOAP_TYPE__fes__PropertyIsNotEqualTo (1122)
+#define SOAP_TYPE__fes__PropertyIsNotEqualTo (1117)
 #endif
 
 /* _fes__PropertyIsEqualTo has binding name '_fes__PropertyIsEqualTo' for type '' */
 #ifndef SOAP_TYPE__fes__PropertyIsEqualTo
-#define SOAP_TYPE__fes__PropertyIsEqualTo (1121)
+#define SOAP_TYPE__fes__PropertyIsEqualTo (1116)
 #endif
 
 /* _fes__Filter has binding name '_fes__Filter' for type '' */
 #ifndef SOAP_TYPE__fes__Filter
-#define SOAP_TYPE__fes__Filter (1120)
+#define SOAP_TYPE__fes__Filter (1115)
 #endif
 
 /* _idls__spatial_x005fdataset_x005fidentifier_x005fcode has binding name '_idls__spatial_x005fdataset_x005fidentifier_x005fcode' for type '' */
 #ifndef SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fcode
-#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fcode (1117)
+#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fcode (1112)
 #endif
 
 /* _idls__ExtendedCapabilities has binding name '_idls__ExtendedCapabilities' for type '' */
 #ifndef SOAP_TYPE__idls__ExtendedCapabilities
-#define SOAP_TYPE__idls__ExtendedCapabilities (1116)
+#define SOAP_TYPE__idls__ExtendedCapabilities (1111)
 #endif
 
 /* _ows__Manifest has binding name '_ows__Manifest' for type '' */
 #ifndef SOAP_TYPE__ows__Manifest
-#define SOAP_TYPE__ows__Manifest (1114)
+#define SOAP_TYPE__ows__Manifest (1109)
 #endif
 
 /* _ows__ReferenceGroup has binding name '_ows__ReferenceGroup' for type '' */
 #ifndef SOAP_TYPE__ows__ReferenceGroup
-#define SOAP_TYPE__ows__ReferenceGroup (1113)
+#define SOAP_TYPE__ows__ReferenceGroup (1108)
 #endif
 
 /* _ows__Reference has binding name '_ows__Reference' for type '' */
 #ifndef SOAP_TYPE__ows__Reference
-#define SOAP_TYPE__ows__Reference (1112)
+#define SOAP_TYPE__ows__Reference (1107)
 #endif
 
 /* _ows__ServiceReference has binding name '_ows__ServiceReference' for type '' */
 #ifndef SOAP_TYPE__ows__ServiceReference
-#define SOAP_TYPE__ows__ServiceReference (1111)
+#define SOAP_TYPE__ows__ServiceReference (1106)
 #endif
 
 /* _ows__InputData has binding name '_ows__InputData' for type '' */
 #ifndef SOAP_TYPE__ows__InputData
-#define SOAP_TYPE__ows__InputData (1110)
+#define SOAP_TYPE__ows__InputData (1105)
 #endif
 
 /* _ows__OperationResponse has binding name '_ows__OperationResponse' for type '' */
 #ifndef SOAP_TYPE__ows__OperationResponse
-#define SOAP_TYPE__ows__OperationResponse (1109)
+#define SOAP_TYPE__ows__OperationResponse (1104)
 #endif
 
 /* _ows__DatasetDescriptionSummary has binding name '_ows__DatasetDescriptionSummary' for type '' */
 #ifndef SOAP_TYPE__ows__DatasetDescriptionSummary
-#define SOAP_TYPE__ows__DatasetDescriptionSummary (1108)
+#define SOAP_TYPE__ows__DatasetDescriptionSummary (1103)
 #endif
 
 /* _ows__OtherSource has binding name '_ows__OtherSource' for type '' */
 #ifndef SOAP_TYPE__ows__OtherSource
-#define SOAP_TYPE__ows__OtherSource (1107)
+#define SOAP_TYPE__ows__OtherSource (1102)
 #endif
 
 /* _ows__UOM has binding name '_ows__UOM' for type '' */
 #ifndef SOAP_TYPE__ows__UOM
-#define SOAP_TYPE__ows__UOM (1106)
+#define SOAP_TYPE__ows__UOM (1101)
 #endif
 
 /* _ows__ReferenceSystem has binding name '_ows__ReferenceSystem' for type '' */
 #ifndef SOAP_TYPE__ows__ReferenceSystem
-#define SOAP_TYPE__ows__ReferenceSystem (1105)
+#define SOAP_TYPE__ows__ReferenceSystem (1100)
 #endif
 
 /* _ows__DataType has binding name '_ows__DataType' for type '' */
 #ifndef SOAP_TYPE__ows__DataType
-#define SOAP_TYPE__ows__DataType (1104)
+#define SOAP_TYPE__ows__DataType (1099)
 #endif
 
 /* _ows__Meaning has binding name '_ows__Meaning' for type '' */
 #ifndef SOAP_TYPE__ows__Meaning
-#define SOAP_TYPE__ows__Meaning (1103)
+#define SOAP_TYPE__ows__Meaning (1098)
 #endif
 
 /* _ows__Spacing has binding name '_ows__Spacing' for type '' */
 #ifndef SOAP_TYPE__ows__Spacing
-#define SOAP_TYPE__ows__Spacing (1102)
+#define SOAP_TYPE__ows__Spacing (1097)
 #endif
 
 /* _ows__MaximumValue has binding name '_ows__MaximumValue' for type '' */
 #ifndef SOAP_TYPE__ows__MaximumValue
-#define SOAP_TYPE__ows__MaximumValue (1101)
+#define SOAP_TYPE__ows__MaximumValue (1096)
 #endif
 
 /* _ows__MinimumValue has binding name '_ows__MinimumValue' for type '' */
 #ifndef SOAP_TYPE__ows__MinimumValue
-#define SOAP_TYPE__ows__MinimumValue (1100)
+#define SOAP_TYPE__ows__MinimumValue (1095)
 #endif
 
 /* _ows__Range has binding name '_ows__Range' for type '' */
 #ifndef SOAP_TYPE__ows__Range
-#define SOAP_TYPE__ows__Range (1099)
+#define SOAP_TYPE__ows__Range (1094)
 #endif
 
 /* _ows__DefaultValue has binding name '_ows__DefaultValue' for type '' */
 #ifndef SOAP_TYPE__ows__DefaultValue
-#define SOAP_TYPE__ows__DefaultValue (1098)
+#define SOAP_TYPE__ows__DefaultValue (1093)
 #endif
 
 /* _ows__Value has binding name '_ows__Value' for type '' */
 #ifndef SOAP_TYPE__ows__Value
-#define SOAP_TYPE__ows__Value (1097)
+#define SOAP_TYPE__ows__Value (1092)
 #endif
 
 /* _ows__ExtendedCapabilities has binding name '_ows__ExtendedCapabilities' for type '' */
 #ifndef SOAP_TYPE__ows__ExtendedCapabilities
-#define SOAP_TYPE__ows__ExtendedCapabilities (1096)
+#define SOAP_TYPE__ows__ExtendedCapabilities (1091)
 #endif
 
 /* _ows__GetCapabilities has binding name '_ows__GetCapabilities' for type '' */
 #ifndef SOAP_TYPE__ows__GetCapabilities
-#define SOAP_TYPE__ows__GetCapabilities (1095)
+#define SOAP_TYPE__ows__GetCapabilities (1090)
 #endif
 
 /* _ows__ContactInfo has binding name '_ows__ContactInfo' for type '' */
 #ifndef SOAP_TYPE__ows__ContactInfo
-#define SOAP_TYPE__ows__ContactInfo (1094)
+#define SOAP_TYPE__ows__ContactInfo (1089)
 #endif
 
 /* _ows__Role has binding name '_ows__Role' for type '' */
 #ifndef SOAP_TYPE__ows__Role
-#define SOAP_TYPE__ows__Role (1093)
+#define SOAP_TYPE__ows__Role (1088)
 #endif
 
 /* _ows__PositionName has binding name '_ows__PositionName' for type '' */
 #ifndef SOAP_TYPE__ows__PositionName
-#define SOAP_TYPE__ows__PositionName (1092)
+#define SOAP_TYPE__ows__PositionName (1087)
 #endif
 
 /* _ows__OrganisationName has binding name '_ows__OrganisationName' for type '' */
 #ifndef SOAP_TYPE__ows__OrganisationName
-#define SOAP_TYPE__ows__OrganisationName (1091)
+#define SOAP_TYPE__ows__OrganisationName (1086)
 #endif
 
 /* _ows__IndividualName has binding name '_ows__IndividualName' for type '' */
 #ifndef SOAP_TYPE__ows__IndividualName
-#define SOAP_TYPE__ows__IndividualName (1090)
+#define SOAP_TYPE__ows__IndividualName (1085)
 #endif
 
 /* _ows__PointOfContact has binding name '_ows__PointOfContact' for type '' */
 #ifndef SOAP_TYPE__ows__PointOfContact
-#define SOAP_TYPE__ows__PointOfContact (1089)
+#define SOAP_TYPE__ows__PointOfContact (1084)
 #endif
 
 /* _ows__Keywords has binding name '_ows__Keywords' for type '' */
 #ifndef SOAP_TYPE__ows__Keywords
-#define SOAP_TYPE__ows__Keywords (1088)
+#define SOAP_TYPE__ows__Keywords (1083)
 #endif
 
 /* _ows__Abstract has binding name '_ows__Abstract' for type '' */
 #ifndef SOAP_TYPE__ows__Abstract
-#define SOAP_TYPE__ows__Abstract (1087)
+#define SOAP_TYPE__ows__Abstract (1082)
 #endif
 
 /* _ows__Title has binding name '_ows__Title' for type '' */
 #ifndef SOAP_TYPE__ows__Title
-#define SOAP_TYPE__ows__Title (1086)
+#define SOAP_TYPE__ows__Title (1081)
 #endif
 
 /* _ows__WGS84BoundingBox has binding name '_ows__WGS84BoundingBox' for type '' */
 #ifndef SOAP_TYPE__ows__WGS84BoundingBox
-#define SOAP_TYPE__ows__WGS84BoundingBox (1085)
+#define SOAP_TYPE__ows__WGS84BoundingBox (1080)
 #endif
 
 /* _ows__BoundingBox has binding name '_ows__BoundingBox' for type '' */
 #ifndef SOAP_TYPE__ows__BoundingBox
-#define SOAP_TYPE__ows__BoundingBox (1084)
+#define SOAP_TYPE__ows__BoundingBox (1079)
 #endif
 
 /* _ows__Metadata has binding name '_ows__Metadata' for type '' */
 #ifndef SOAP_TYPE__ows__Metadata
-#define SOAP_TYPE__ows__Metadata (1083)
+#define SOAP_TYPE__ows__Metadata (1078)
 #endif
 
 /* _ows__Fees has binding name '_ows__Fees' for type '' */
 #ifndef SOAP_TYPE__ows__Fees
-#define SOAP_TYPE__ows__Fees (1081)
+#define SOAP_TYPE__ows__Fees (1076)
 #endif
 
 /* _ows__AccessConstraints has binding name '_ows__AccessConstraints' for type '' */
 #ifndef SOAP_TYPE__ows__AccessConstraints
-#define SOAP_TYPE__ows__AccessConstraints (1080)
+#define SOAP_TYPE__ows__AccessConstraints (1075)
 #endif
 
 /* _ows__OutputFormat has binding name '_ows__OutputFormat' for type '' */
 #ifndef SOAP_TYPE__ows__OutputFormat
-#define SOAP_TYPE__ows__OutputFormat (1077)
+#define SOAP_TYPE__ows__OutputFormat (1072)
 #endif
 
 /* _ows__Identifier has binding name '_ows__Identifier' for type '' */
 #ifndef SOAP_TYPE__ows__Identifier
-#define SOAP_TYPE__ows__Identifier (1076)
+#define SOAP_TYPE__ows__Identifier (1071)
 #endif
 
 /* _ows__GetResourceByID has binding name '_ows__GetResourceByID' for type '' */
 #ifndef SOAP_TYPE__ows__GetResourceByID
-#define SOAP_TYPE__ows__GetResourceByID (1075)
+#define SOAP_TYPE__ows__GetResourceByID (1070)
 #endif
 
 /* _ows__Exception has binding name '_ows__Exception' for type '' */
 #ifndef SOAP_TYPE__ows__Exception
-#define SOAP_TYPE__ows__Exception (1074)
+#define SOAP_TYPE__ows__Exception (1069)
 #endif
 
 /* _util__DescribeFeatureTypeResponse has binding name '_util__DescribeFeatureTypeResponse' for type '' */
 #ifndef SOAP_TYPE__util__DescribeFeatureTypeResponse
-#define SOAP_TYPE__util__DescribeFeatureTypeResponse (1073)
+#define SOAP_TYPE__util__DescribeFeatureTypeResponse (1068)
 #endif
 
 /* _wfs__TransactionResponse has binding name '_wfs__TransactionResponse' for type '' */
 #ifndef SOAP_TYPE__wfs__TransactionResponse
-#define SOAP_TYPE__wfs__TransactionResponse (1072)
+#define SOAP_TYPE__wfs__TransactionResponse (1067)
 #endif
 
 /* _wfs__Native has binding name '_wfs__Native' for type '' */
 #ifndef SOAP_TYPE__wfs__Native
-#define SOAP_TYPE__wfs__Native (1071)
+#define SOAP_TYPE__wfs__Native (1066)
 #endif
 
 /* _wfs__Delete has binding name '_wfs__Delete' for type '' */
 #ifndef SOAP_TYPE__wfs__Delete
-#define SOAP_TYPE__wfs__Delete (1070)
+#define SOAP_TYPE__wfs__Delete (1065)
 #endif
 
 /* _wfs__Replace has binding name '_wfs__Replace' for type '' */
 #ifndef SOAP_TYPE__wfs__Replace
-#define SOAP_TYPE__wfs__Replace (1069)
+#define SOAP_TYPE__wfs__Replace (1064)
 #endif
 
 /* _wfs__Property has binding name '_wfs__Property' for type '' */
 #ifndef SOAP_TYPE__wfs__Property
-#define SOAP_TYPE__wfs__Property (1068)
+#define SOAP_TYPE__wfs__Property (1063)
 #endif
 
 /* _wfs__Update has binding name '_wfs__Update' for type '' */
 #ifndef SOAP_TYPE__wfs__Update
-#define SOAP_TYPE__wfs__Update (1067)
+#define SOAP_TYPE__wfs__Update (1062)
 #endif
 
 /* _wfs__Insert has binding name '_wfs__Insert' for type '' */
 #ifndef SOAP_TYPE__wfs__Insert
-#define SOAP_TYPE__wfs__Insert (1066)
+#define SOAP_TYPE__wfs__Insert (1061)
 #endif
 
 /* _wfs__Transaction has binding name '_wfs__Transaction' for type '' */
 #ifndef SOAP_TYPE__wfs__Transaction
-#define SOAP_TYPE__wfs__Transaction (1065)
+#define SOAP_TYPE__wfs__Transaction (1060)
 #endif
 
 /* _wfs__LockFeatureResponse has binding name '_wfs__LockFeatureResponse' for type '' */
 #ifndef SOAP_TYPE__wfs__LockFeatureResponse
-#define SOAP_TYPE__wfs__LockFeatureResponse (1064)
+#define SOAP_TYPE__wfs__LockFeatureResponse (1059)
 #endif
 
 /* _wfs__LockFeature has binding name '_wfs__LockFeature' for type '' */
 #ifndef SOAP_TYPE__wfs__LockFeature
-#define SOAP_TYPE__wfs__LockFeature (1063)
+#define SOAP_TYPE__wfs__LockFeature (1058)
 #endif
 
 /* _wfs__DropStoredQueryResponse has binding name '_wfs__DropStoredQueryResponse' for type '' */
 #ifndef SOAP_TYPE__wfs__DropStoredQueryResponse
-#define SOAP_TYPE__wfs__DropStoredQueryResponse (1062)
+#define SOAP_TYPE__wfs__DropStoredQueryResponse (1057)
 #endif
 
 /* _wfs__CreateStoredQueryResponse has binding name '_wfs__CreateStoredQueryResponse' for type '' */
 #ifndef SOAP_TYPE__wfs__CreateStoredQueryResponse
-#define SOAP_TYPE__wfs__CreateStoredQueryResponse (1061)
+#define SOAP_TYPE__wfs__CreateStoredQueryResponse (1056)
 #endif
 
 /* _wfs__CreateStoredQuery has binding name '_wfs__CreateStoredQuery' for type '' */
 #ifndef SOAP_TYPE__wfs__CreateStoredQuery
-#define SOAP_TYPE__wfs__CreateStoredQuery (1060)
+#define SOAP_TYPE__wfs__CreateStoredQuery (1055)
 #endif
 
 /* _wfs__DescribeStoredQueriesResponse has binding name '_wfs__DescribeStoredQueriesResponse' for type '' */
 #ifndef SOAP_TYPE__wfs__DescribeStoredQueriesResponse
-#define SOAP_TYPE__wfs__DescribeStoredQueriesResponse (1059)
+#define SOAP_TYPE__wfs__DescribeStoredQueriesResponse (1054)
 #endif
 
 /* _wfs__DescribeStoredQueries has binding name '_wfs__DescribeStoredQueries' for type '' */
 #ifndef SOAP_TYPE__wfs__DescribeStoredQueries
-#define SOAP_TYPE__wfs__DescribeStoredQueries (1058)
+#define SOAP_TYPE__wfs__DescribeStoredQueries (1053)
 #endif
 
 /* _wfs__ListStoredQueriesResponse has binding name '_wfs__ListStoredQueriesResponse' for type '' */
 #ifndef SOAP_TYPE__wfs__ListStoredQueriesResponse
-#define SOAP_TYPE__wfs__ListStoredQueriesResponse (1057)
+#define SOAP_TYPE__wfs__ListStoredQueriesResponse (1052)
 #endif
 
 /* _wfs__ListStoredQueries has binding name '_wfs__ListStoredQueries' for type '' */
 #ifndef SOAP_TYPE__wfs__ListStoredQueries
-#define SOAP_TYPE__wfs__ListStoredQueries (1056)
+#define SOAP_TYPE__wfs__ListStoredQueries (1051)
 #endif
 
 /* _wfs__boundedBy has binding name '_wfs__boundedBy' for type '' */
 #ifndef SOAP_TYPE__wfs__boundedBy
-#define SOAP_TYPE__wfs__boundedBy (1055)
+#define SOAP_TYPE__wfs__boundedBy (1050)
 #endif
 
 /* _wfs__SimpleFeatureCollection has binding name '_wfs__SimpleFeatureCollection' for type '' */
 #ifndef SOAP_TYPE__wfs__SimpleFeatureCollection
-#define SOAP_TYPE__wfs__SimpleFeatureCollection (1054)
+#define SOAP_TYPE__wfs__SimpleFeatureCollection (1049)
 #endif
 
 /* _wfs__FeatureCollection has binding name '_wfs__FeatureCollection' for type '' */
 #ifndef SOAP_TYPE__wfs__FeatureCollection
-#define SOAP_TYPE__wfs__FeatureCollection (1053)
+#define SOAP_TYPE__wfs__FeatureCollection (1048)
 #endif
 
 /* _wfs__GetFeatureWithLock has binding name '_wfs__GetFeatureWithLock' for type '' */
 #ifndef SOAP_TYPE__wfs__GetFeatureWithLock
-#define SOAP_TYPE__wfs__GetFeatureWithLock (1052)
+#define SOAP_TYPE__wfs__GetFeatureWithLock (1047)
 #endif
 
 /* _wfs__GetFeature has binding name '_wfs__GetFeature' for type '' */
 #ifndef SOAP_TYPE__wfs__GetFeature
-#define SOAP_TYPE__wfs__GetFeature (1051)
+#define SOAP_TYPE__wfs__GetFeature (1046)
 #endif
 
 /* _wfs__Tuple has binding name '_wfs__Tuple' for type '' */
 #ifndef SOAP_TYPE__wfs__Tuple
-#define SOAP_TYPE__wfs__Tuple (1050)
+#define SOAP_TYPE__wfs__Tuple (1045)
 #endif
 
 /* _wfs__member has binding name '_wfs__member' for type '' */
 #ifndef SOAP_TYPE__wfs__member
-#define SOAP_TYPE__wfs__member (1049)
+#define SOAP_TYPE__wfs__member (1044)
 #endif
 
 /* _wfs__ValueCollection has binding name '_wfs__ValueCollection' for type '' */
 #ifndef SOAP_TYPE__wfs__ValueCollection
-#define SOAP_TYPE__wfs__ValueCollection (1048)
+#define SOAP_TYPE__wfs__ValueCollection (1043)
 #endif
 
 /* _wfs__GetPropertyValue has binding name '_wfs__GetPropertyValue' for type '' */
 #ifndef SOAP_TYPE__wfs__GetPropertyValue
-#define SOAP_TYPE__wfs__GetPropertyValue (1047)
+#define SOAP_TYPE__wfs__GetPropertyValue (1042)
 #endif
 
 /* _wfs__DescribeFeatureType has binding name '_wfs__DescribeFeatureType' for type '' */
 #ifndef SOAP_TYPE__wfs__DescribeFeatureType
-#define SOAP_TYPE__wfs__DescribeFeatureType (1046)
+#define SOAP_TYPE__wfs__DescribeFeatureType (1041)
 #endif
 
 /* _wfs__Value has binding name '_wfs__Value' for type '' */
 #ifndef SOAP_TYPE__wfs__Value
-#define SOAP_TYPE__wfs__Value (1045)
+#define SOAP_TYPE__wfs__Value (1040)
 #endif
 
 /* _wfs__ValueList has binding name '_wfs__ValueList' for type '' */
 #ifndef SOAP_TYPE__wfs__ValueList
-#define SOAP_TYPE__wfs__ValueList (1044)
+#define SOAP_TYPE__wfs__ValueList (1039)
 #endif
 
 /* _wfs__Element has binding name '_wfs__Element' for type '' */
 #ifndef SOAP_TYPE__wfs__Element
-#define SOAP_TYPE__wfs__Element (1043)
+#define SOAP_TYPE__wfs__Element (1038)
 #endif
 
 /* _wfs__FeatureTypeList has binding name '_wfs__FeatureTypeList' for type '' */
 #ifndef SOAP_TYPE__wfs__FeatureTypeList
-#define SOAP_TYPE__wfs__FeatureTypeList (1042)
+#define SOAP_TYPE__wfs__FeatureTypeList (1037)
 #endif
 
 /* _wfs__WFS_x005fCapabilities has binding name '_wfs__WFS_x005fCapabilities' for type '' */
 #ifndef SOAP_TYPE__wfs__WFS_x005fCapabilities
-#define SOAP_TYPE__wfs__WFS_x005fCapabilities (1041)
+#define SOAP_TYPE__wfs__WFS_x005fCapabilities (1036)
 #endif
 
 /* _wfs__GetCapabilities has binding name '_wfs__GetCapabilities' for type '' */
 #ifndef SOAP_TYPE__wfs__GetCapabilities
-#define SOAP_TYPE__wfs__GetCapabilities (1040)
+#define SOAP_TYPE__wfs__GetCapabilities (1035)
 #endif
 
 /* _wfs__StoredQuery has binding name '_wfs__StoredQuery' for type '' */
 #ifndef SOAP_TYPE__wfs__StoredQuery
-#define SOAP_TYPE__wfs__StoredQuery (1039)
+#define SOAP_TYPE__wfs__StoredQuery (1034)
 #endif
 
 /* _wfs__Query has binding name '_wfs__Query' for type '' */
 #ifndef SOAP_TYPE__wfs__Query
-#define SOAP_TYPE__wfs__Query (1038)
+#define SOAP_TYPE__wfs__Query (1033)
 #endif
 
 /* _wfs__WFS_x005fCapabilitiesType_WSDL has binding name '_wfs__WFS_x005fCapabilitiesType_WSDL' for type '' */
 #ifndef SOAP_TYPE__wfs__WFS_x005fCapabilitiesType_WSDL
-#define SOAP_TYPE__wfs__WFS_x005fCapabilitiesType_WSDL (698)
+#define SOAP_TYPE__wfs__WFS_x005fCapabilitiesType_WSDL (693)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL has binding name '_icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL (694)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendURL (689)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat has binding name '_icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat (693)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend_LegendFormat (688)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_LegendList_Legend has binding name '_icommon__layers_Layer_Styles_Style_LegendList_Legend' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend (692)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList_Legend (687)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_LegendList has binding name '_icommon__layers_Layer_Styles_Style_LegendList' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList (691)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_LegendList (686)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_StyleURL has binding name '_icommon__layers_Layer_Styles_Style_StyleURL' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleURL
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleURL (690)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleURL (685)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_StyleFormat has binding name '_icommon__layers_Layer_Styles_Style_StyleFormat' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleFormat
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleFormat (689)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleFormat (684)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style_StyleAbstract has binding name '_icommon__layers_Layer_Styles_Style_StyleAbstract' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleAbstract
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleAbstract (688)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style_StyleAbstract (683)
 #endif
 
 /* _icommon__layers_Layer_Styles_Style has binding name '_icommon__layers_Layer_Styles_Style' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles_Style
-#define SOAP_TYPE__icommon__layers_Layer_Styles_Style (687)
+#define SOAP_TYPE__icommon__layers_Layer_Styles_Style (682)
 #endif
 
 /* _icommon__layers_Layer_Styles has binding name '_icommon__layers_Layer_Styles' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_Styles
-#define SOAP_TYPE__icommon__layers_Layer_Styles (686)
+#define SOAP_TYPE__icommon__layers_Layer_Styles (681)
 #endif
 
 /* _icommon__layers_Layer_CoordinateReferenceSystems_CRS has binding name '_icommon__layers_Layer_CoordinateReferenceSystems_CRS' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems_CRS
-#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems_CRS (684)
+#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems_CRS (679)
 #endif
 
 /* _icommon__layers_Layer_CoordinateReferenceSystems has binding name '_icommon__layers_Layer_CoordinateReferenceSystems' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems
-#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems (683)
+#define SOAP_TYPE__icommon__layers_Layer_CoordinateReferenceSystems (678)
 #endif
 
 /* _icommon__layers_Layer has binding name '_icommon__layers_Layer' for type '' */
 #ifndef SOAP_TYPE__icommon__layers_Layer
-#define SOAP_TYPE__icommon__layers_Layer (680)
+#define SOAP_TYPE__icommon__layers_Layer (675)
 #endif
 
 /* _icommon__responsibleOrganisation_ResponsibleParty has binding name '_icommon__responsibleOrganisation_ResponsibleParty' for type '' */
 #ifndef SOAP_TYPE__icommon__responsibleOrganisation_ResponsibleParty
-#define SOAP_TYPE__icommon__responsibleOrganisation_ResponsibleParty (658)
+#define SOAP_TYPE__icommon__responsibleOrganisation_ResponsibleParty (653)
 #endif
 
 /* _fes__TemporalOperandsType_TemporalOperand has binding name '_fes__TemporalOperandsType_TemporalOperand' for type '' */
 #ifndef SOAP_TYPE__fes__TemporalOperandsType_TemporalOperand
-#define SOAP_TYPE__fes__TemporalOperandsType_TemporalOperand (624)
+#define SOAP_TYPE__fes__TemporalOperandsType_TemporalOperand (619)
 #endif
 
 /* _fes__GeometryOperandsType_GeometryOperand has binding name '_fes__GeometryOperandsType_GeometryOperand' for type '' */
 #ifndef SOAP_TYPE__fes__GeometryOperandsType_GeometryOperand
-#define SOAP_TYPE__fes__GeometryOperandsType_GeometryOperand (617)
+#define SOAP_TYPE__fes__GeometryOperandsType_GeometryOperand (612)
 #endif
 
 /* _wfs__PropertyType_ValueReference has binding name '_wfs__PropertyType_ValueReference' for type '' */
 #ifndef SOAP_TYPE__wfs__PropertyType_ValueReference
-#define SOAP_TYPE__wfs__PropertyType_ValueReference (520)
+#define SOAP_TYPE__wfs__PropertyType_ValueReference (516)
 #endif
 
 /* _wfs__FeatureTypeType_NoCRS has binding name '_wfs__FeatureTypeType_NoCRS' for type '' */
@@ -24393,1132 +24403,1117 @@ typedef icommon__otherService _icommon__OtherService;
 
 /* struct SOAP_ENV__Fault has binding name 'SOAP_ENV__Fault' for type '' */
 #ifndef SOAP_TYPE_SOAP_ENV__Fault
-#define SOAP_TYPE_SOAP_ENV__Fault (1227)
+#define SOAP_TYPE_SOAP_ENV__Fault (1222)
 #endif
 
 /* struct SOAP_ENV__Reason has binding name 'SOAP_ENV__Reason' for type '' */
 #ifndef SOAP_TYPE_SOAP_ENV__Reason
-#define SOAP_TYPE_SOAP_ENV__Reason (1226)
+#define SOAP_TYPE_SOAP_ENV__Reason (1221)
 #endif
 
 /* struct SOAP_ENV__Code has binding name 'SOAP_ENV__Code' for type '' */
 #ifndef SOAP_TYPE_SOAP_ENV__Code
-#define SOAP_TYPE_SOAP_ENV__Code (1224)
+#define SOAP_TYPE_SOAP_ENV__Code (1219)
 #endif
 
 /* struct SOAP_ENV__Header has binding name 'SOAP_ENV__Header' for type '' */
 #ifndef SOAP_TYPE_SOAP_ENV__Header
-#define SOAP_TYPE_SOAP_ENV__Header (1223)
+#define SOAP_TYPE_SOAP_ENV__Header (1218)
 #endif
 
 /* struct SOAP_ENV__Detail has binding name 'SOAP_ENV__Detail' for type '' */
 #ifndef SOAP_TYPE_SOAP_ENV__Detail
-#define SOAP_TYPE_SOAP_ENV__Detail (1175)
+#define SOAP_TYPE_SOAP_ENV__Detail (1170)
 #endif
 
 /* struct SOAP_ENV__Reason * has binding name 'PointerToSOAP_ENV__Reason' for type '' */
 #ifndef SOAP_TYPE_PointerToSOAP_ENV__Reason
-#define SOAP_TYPE_PointerToSOAP_ENV__Reason (1229)
+#define SOAP_TYPE_PointerToSOAP_ENV__Reason (1224)
 #endif
 
 /* struct SOAP_ENV__Detail * has binding name 'PointerToSOAP_ENV__Detail' for type '' */
 #ifndef SOAP_TYPE_PointerToSOAP_ENV__Detail
-#define SOAP_TYPE_PointerToSOAP_ENV__Detail (1228)
+#define SOAP_TYPE_PointerToSOAP_ENV__Detail (1223)
 #endif
 
 /* struct SOAP_ENV__Code * has binding name 'PointerToSOAP_ENV__Code' for type '' */
 #ifndef SOAP_TYPE_PointerToSOAP_ENV__Code
-#define SOAP_TYPE_PointerToSOAP_ENV__Code (1225)
+#define SOAP_TYPE_PointerToSOAP_ENV__Code (1220)
 #endif
 
 /* wfs__TransactionType * has binding name 'PointerTowfs__TransactionType' for type 'wfs:TransactionType' */
 #ifndef SOAP_TYPE_PointerTowfs__TransactionType
-#define SOAP_TYPE_PointerTowfs__TransactionType (1219)
+#define SOAP_TYPE_PointerTowfs__TransactionType (1214)
 #endif
 
 /* wfs__LockFeatureType * has binding name 'PointerTowfs__LockFeatureType' for type 'wfs:LockFeatureType' */
 #ifndef SOAP_TYPE_PointerTowfs__LockFeatureType
-#define SOAP_TYPE_PointerTowfs__LockFeatureType (1215)
+#define SOAP_TYPE_PointerTowfs__LockFeatureType (1210)
 #endif
 
 /* wfs__GetPropertyValueType * has binding name 'PointerTowfs__GetPropertyValueType' for type 'wfs:GetPropertyValueType' */
 #ifndef SOAP_TYPE_PointerTowfs__GetPropertyValueType
-#define SOAP_TYPE_PointerTowfs__GetPropertyValueType (1211)
+#define SOAP_TYPE_PointerTowfs__GetPropertyValueType (1206)
 #endif
 
 /* wfs__GetFeatureWithLockType * has binding name 'PointerTowfs__GetFeatureWithLockType' for type 'wfs:GetFeatureWithLockType' */
 #ifndef SOAP_TYPE_PointerTowfs__GetFeatureWithLockType
-#define SOAP_TYPE_PointerTowfs__GetFeatureWithLockType (1208)
+#define SOAP_TYPE_PointerTowfs__GetFeatureWithLockType (1203)
 #endif
 
 /* ows__GetCapabilitiesType * has binding name 'PointerToows__GetCapabilitiesType' for type 'ows:GetCapabilitiesType' */
 #ifndef SOAP_TYPE_PointerToows__GetCapabilitiesType
-#define SOAP_TYPE_PointerToows__GetCapabilitiesType (1204)
+#define SOAP_TYPE_PointerToows__GetCapabilitiesType (1199)
 #endif
 
 /* _wfs__DropStoredQuery * has binding name 'PointerTo_wfs__DropStoredQuery' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wfs__DropStoredQuery
-#define SOAP_TYPE_PointerTo_wfs__DropStoredQuery (1199)
+#define SOAP_TYPE_PointerTo_wfs__DropStoredQuery (1194)
 #endif
 
 /* wfs__ListStoredQueriesType * has binding name 'PointerTowfs__ListStoredQueriesType' for type 'wfs:ListStoredQueriesType' */
 #ifndef SOAP_TYPE_PointerTowfs__ListStoredQueriesType
-#define SOAP_TYPE_PointerTowfs__ListStoredQueriesType (1195)
+#define SOAP_TYPE_PointerTowfs__ListStoredQueriesType (1190)
 #endif
 
 /* wfs__DescribeStoredQueriesType * has binding name 'PointerTowfs__DescribeStoredQueriesType' for type 'wfs:DescribeStoredQueriesType' */
 #ifndef SOAP_TYPE_PointerTowfs__DescribeStoredQueriesType
-#define SOAP_TYPE_PointerTowfs__DescribeStoredQueriesType (1191)
+#define SOAP_TYPE_PointerTowfs__DescribeStoredQueriesType (1186)
 #endif
 
 /* wfs__GetFeatureType * has binding name 'PointerTowfs__GetFeatureType' for type 'wfs:GetFeatureType' */
 #ifndef SOAP_TYPE_PointerTowfs__GetFeatureType
-#define SOAP_TYPE_PointerTowfs__GetFeatureType (1187)
+#define SOAP_TYPE_PointerTowfs__GetFeatureType (1182)
 #endif
 
 /* wfs__DescribeFeatureTypeType * has binding name 'PointerTowfs__DescribeFeatureTypeType' for type 'wfs:DescribeFeatureTypeType' */
 #ifndef SOAP_TYPE_PointerTowfs__DescribeFeatureTypeType
-#define SOAP_TYPE_PointerTowfs__DescribeFeatureTypeType (1183)
+#define SOAP_TYPE_PointerTowfs__DescribeFeatureTypeType (1178)
 #endif
 
 /* wfs__CreateStoredQueryType * has binding name 'PointerTowfs__CreateStoredQueryType' for type 'wfs:CreateStoredQueryType' */
 #ifndef SOAP_TYPE_PointerTowfs__CreateStoredQueryType
-#define SOAP_TYPE_PointerTowfs__CreateStoredQueryType (1178)
+#define SOAP_TYPE_PointerTowfs__CreateStoredQueryType (1173)
 #endif
 
 /* _idls__crs has binding name '_idls__crs' for type '' */
 #ifndef SOAP_TYPE__idls__crs
-#define SOAP_TYPE__idls__crs (1119)
+#define SOAP_TYPE__idls__crs (1114)
 #endif
 
 /* _idls__spatial_x005fdataset_x005fidentifier_x005fnamespace has binding name '_idls__spatial_x005fdataset_x005fidentifier_x005fnamespace' for type '' */
 #ifndef SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fnamespace
-#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fnamespace (1118)
+#define SOAP_TYPE__idls__spatial_x005fdataset_x005fidentifier_x005fnamespace (1113)
 #endif
 
 /* _ows__reference has binding name '_ows__reference' for type '' */
 #ifndef SOAP_TYPE__ows__reference
-#define SOAP_TYPE__ows__reference (1115)
+#define SOAP_TYPE__ows__reference (1110)
 #endif
 
 /* _ows__Language has binding name '_ows__Language' for type '' */
 #ifndef SOAP_TYPE__ows__Language
-#define SOAP_TYPE__ows__Language (1082)
+#define SOAP_TYPE__ows__Language (1077)
 #endif
 
 /* _ows__SupportedCRS has binding name '_ows__SupportedCRS' for type '' */
 #ifndef SOAP_TYPE__ows__SupportedCRS
-#define SOAP_TYPE__ows__SupportedCRS (1079)
+#define SOAP_TYPE__ows__SupportedCRS (1074)
 #endif
 
 /* _ows__AvailableCRS has binding name '_ows__AvailableCRS' for type '' */
 #ifndef SOAP_TYPE__ows__AvailableCRS
-#define SOAP_TYPE__ows__AvailableCRS (1078)
+#define SOAP_TYPE__ows__AvailableCRS (1073)
 #endif
 
 /* icommon__layers * has binding name 'PointerToicommon__layers' for type 'icommon:layers' */
 #ifndef SOAP_TYPE_PointerToicommon__layers
-#define SOAP_TYPE_PointerToicommon__layers (1037)
+#define SOAP_TYPE_PointerToicommon__layers (1032)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fswe * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fswe' for type 'icommon:resLocInspireInteroperabilityRegulation_swe' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fswe
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fswe (1036)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fswe (1031)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_swe-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication (1034)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fswe_DateOfPublication (1029)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fspa * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fspa' for type 'icommon:resLocInspireInteroperabilityRegulation_spa' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fspa
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fspa (1029)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fspa (1024)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_spa-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication (1027)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fspa_DateOfPublication (1022)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fslv * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslv' for type 'icommon:resLocInspireInteroperabilityRegulation_slv' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslv
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslv (1022)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslv (1017)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_slv-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication (1020)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslv_DateOfPublication (1015)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fslo * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslo' for type 'icommon:resLocInspireInteroperabilityRegulation_slo' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslo
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslo (1015)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fslo (1010)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_slo-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication (1013)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fslo_DateOfPublication (1008)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005frum * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005frum' for type 'icommon:resLocInspireInteroperabilityRegulation_rum' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005frum
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005frum (1008)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005frum (1003)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_rum-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication (1006)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005frum_DateOfPublication (1001)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fpor * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpor' for type 'icommon:resLocInspireInteroperabilityRegulation_por' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpor
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpor (1001)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpor (996)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_por-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication (999)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpor_DateOfPublication (994)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fpol * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpol' for type 'icommon:resLocInspireInteroperabilityRegulation_pol' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpol
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpol (994)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fpol (989)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_pol-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication (992)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fpol_DateOfPublication (987)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fmlt * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fmlt' for type 'icommon:resLocInspireInteroperabilityRegulation_mlt' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fmlt
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fmlt (987)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fmlt (982)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_mlt-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication (985)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fmlt_DateOfPublication (980)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005flit * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005flit' for type 'icommon:resLocInspireInteroperabilityRegulation_lit' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005flit
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005flit (980)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005flit (975)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_lit-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication (978)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flit_DateOfPublication (973)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005flav * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005flav' for type 'icommon:resLocInspireInteroperabilityRegulation_lav' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005flav
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005flav (973)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005flav (968)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_lav-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication (971)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005flav_DateOfPublication (966)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fita * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fita' for type 'icommon:resLocInspireInteroperabilityRegulation_ita' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fita
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fita (966)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fita (961)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_ita-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication (964)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fita_DateOfPublication (959)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fhun * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fhun' for type 'icommon:resLocInspireInteroperabilityRegulation_hun' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fhun
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fhun (959)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fhun (954)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_hun-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication (957)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fhun_DateOfPublication (952)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fgre * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgre' for type 'icommon:resLocInspireInteroperabilityRegulation_gre' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgre
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgre (952)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgre (947)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_gre-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication (950)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgre_DateOfPublication (945)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fgle * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgle' for type 'icommon:resLocInspireInteroperabilityRegulation_gle' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgle
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgle (945)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fgle (940)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_gle-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication (943)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fgle_DateOfPublication (938)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fger * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fger' for type 'icommon:resLocInspireInteroperabilityRegulation_ger' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fger
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fger (938)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fger (933)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_ger-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication (936)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fger_DateOfPublication (931)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005ffre * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffre' for type 'icommon:resLocInspireInteroperabilityRegulation_fre' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffre
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffre (931)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffre (926)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_fre-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication (929)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffre_DateOfPublication (924)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005ffin * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffin' for type 'icommon:resLocInspireInteroperabilityRegulation_fin' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffin
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffin (924)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005ffin (919)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_fin-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication (922)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005ffin_DateOfPublication (917)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fest * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fest' for type 'icommon:resLocInspireInteroperabilityRegulation_est' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fest
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fest (917)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fest (912)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_est-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication (915)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fest_DateOfPublication (910)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005feng * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005feng' for type 'icommon:resLocInspireInteroperabilityRegulation_eng' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005feng
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005feng (910)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005feng (905)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_eng-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication (908)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005feng_DateOfPublication (903)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fdut * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdut' for type 'icommon:resLocInspireInteroperabilityRegulation_dut' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdut
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdut (903)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdut (898)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_dut-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication (901)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdut_DateOfPublication (896)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fdan * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdan' for type 'icommon:resLocInspireInteroperabilityRegulation_dan' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdan
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdan (896)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fdan (891)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_dan-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication (894)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fdan_DateOfPublication (889)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fcze * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fcze' for type 'icommon:resLocInspireInteroperabilityRegulation_cze' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fcze
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fcze (889)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fcze (884)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_cze-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication (887)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fcze_DateOfPublication (882)
 #endif
 
 /* icommon__resLocInspireInteroperabilityRegulation_x005fbul * has binding name 'PointerToicommon__resLocInspireInteroperabilityRegulation_x005fbul' for type 'icommon:resLocInspireInteroperabilityRegulation_bul' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fbul
-#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fbul (882)
+#define SOAP_TYPE_PointerToicommon__resLocInspireInteroperabilityRegulation_x005fbul (877)
 #endif
 
 /* enum _icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication * has binding name 'PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication' for type 'icommon:citationInspireInteroperabilityRegulation_bul-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication (880)
+#define SOAP_TYPE_PointerTo_icommon__citationInspireInteroperabilityRegulation_x005fbul_DateOfPublication (875)
 #endif
 
 /* enum _icommon__originatingControlledVocabularyMD_DateOfPublication * has binding name 'PointerTo_icommon__originatingControlledVocabularyMD_DateOfPublication' for type 'icommon:originatingControlledVocabularyMD-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__originatingControlledVocabularyMD_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__originatingControlledVocabularyMD_DateOfPublication (875)
+#define SOAP_TYPE_PointerTo_icommon__originatingControlledVocabularyMD_DateOfPublication (870)
 #endif
 
 /* enum _icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication * has binding name 'PointerTo_icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication' for type 'icommon:originatingControlledVocabularyGemetInspireThemes-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication (871)
+#define SOAP_TYPE_PointerTo_icommon__originatingControlledVocabularyGemetInspireThemes_DateOfPublication (866)
 #endif
 
 /* icommon__inspireTheme * has binding name 'PointerToicommon__inspireTheme' for type 'icommon:inspireTheme' */
 #ifndef SOAP_TYPE_PointerToicommon__inspireTheme
-#define SOAP_TYPE_PointerToicommon__inspireTheme (865)
+#define SOAP_TYPE_PointerToicommon__inspireTheme (860)
 #endif
 
 /* ows__ReferenceGroupType * has binding name 'PointerToows__ReferenceGroupType' for type 'ows:ReferenceGroupType' */
 #ifndef SOAP_TYPE_PointerToows__ReferenceGroupType
-#define SOAP_TYPE_PointerToows__ReferenceGroupType (862)
+#define SOAP_TYPE_PointerToows__ReferenceGroupType (857)
 #endif
 
 /* __ows__union_ReferenceGroupType * has binding name 'PointerTo__ows__union_ReferenceGroupType' for type '-ows:union-ReferenceGroupType' */
 #ifndef SOAP_TYPE_PointerTo__ows__union_ReferenceGroupType
-#define SOAP_TYPE_PointerTo__ows__union_ReferenceGroupType (861)
+#define SOAP_TYPE_PointerTo__ows__union_ReferenceGroupType (856)
 #endif
 
 /* ows__ServiceReferenceType * has binding name 'PointerToows__ServiceReferenceType' for type 'ows:ServiceReferenceType' */
 #ifndef SOAP_TYPE_PointerToows__ServiceReferenceType
-#define SOAP_TYPE_PointerToows__ServiceReferenceType (860)
+#define SOAP_TYPE_PointerToows__ServiceReferenceType (855)
 #endif
 
 /* ows__ReferenceType * has binding name 'PointerToows__ReferenceType' for type 'ows:ReferenceType' */
 #ifndef SOAP_TYPE_PointerToows__ReferenceType
-#define SOAP_TYPE_PointerToows__ReferenceType (859)
+#define SOAP_TYPE_PointerToows__ReferenceType (854)
 #endif
 
 /* __ows__union_IdentificationType_ * has binding name 'PointerTo__ows__union_IdentificationType_' for type '-ows:union-IdentificationType' */
 #ifndef SOAP_TYPE_PointerTo__ows__union_IdentificationType_
-#define SOAP_TYPE_PointerTo__ows__union_IdentificationType_ (855)
+#define SOAP_TYPE_PointerTo__ows__union_IdentificationType_ (850)
 #endif
 
 /* std::vector<char *> * has binding name 'PointerTostd__vectorTemplateOfxsd__anyURI' for type 'xsd:anyURI' */
 #ifndef SOAP_TYPE_PointerTostd__vectorTemplateOfxsd__anyURI
-#define SOAP_TYPE_PointerTostd__vectorTemplateOfxsd__anyURI (854)
+#define SOAP_TYPE_PointerTostd__vectorTemplateOfxsd__anyURI (849)
 #endif
 
 /* __ows__union_IdentificationType * has binding name 'PointerTo__ows__union_IdentificationType' for type '-ows:union-IdentificationType' */
 #ifndef SOAP_TYPE_PointerTo__ows__union_IdentificationType
-#define SOAP_TYPE_PointerTo__ows__union_IdentificationType (851)
+#define SOAP_TYPE_PointerTo__ows__union_IdentificationType (846)
 #endif
 
 /* icommon__resLocGEMETInspireThemes_x005feng * has binding name 'PointerToicommon__resLocGEMETInspireThemes_x005feng' for type 'icommon:resLocGEMETInspireThemes_eng' */
 #ifndef SOAP_TYPE_PointerToicommon__resLocGEMETInspireThemes_x005feng
-#define SOAP_TYPE_PointerToicommon__resLocGEMETInspireThemes_x005feng (810)
+#define SOAP_TYPE_PointerToicommon__resLocGEMETInspireThemes_x005feng (805)
 #endif
 
 /* enum _icommon__citationGEMETInspireThemes_x005feng_DateOfPublication * has binding name 'PointerTo_icommon__citationGEMETInspireThemes_x005feng_DateOfPublication' for type 'icommon:citationGEMETInspireThemes_eng-DateOfPublication' */
 #ifndef SOAP_TYPE_PointerTo_icommon__citationGEMETInspireThemes_x005feng_DateOfPublication
-#define SOAP_TYPE_PointerTo_icommon__citationGEMETInspireThemes_x005feng_DateOfPublication (809)
+#define SOAP_TYPE_PointerTo_icommon__citationGEMETInspireThemes_x005feng_DateOfPublication (804)
 #endif
 
 /* icommon__originatingControlledVocabularyGemetInspireThemes * has binding name 'PointerToicommon__originatingControlledVocabularyGemetInspireThemes' for type 'icommon:originatingControlledVocabularyGemetInspireThemes' */
 #ifndef SOAP_TYPE_PointerToicommon__originatingControlledVocabularyGemetInspireThemes
-#define SOAP_TYPE_PointerToicommon__originatingControlledVocabularyGemetInspireThemes (795)
+#define SOAP_TYPE_PointerToicommon__originatingControlledVocabularyGemetInspireThemes (790)
 #endif
 
 /* __fes__union_UnaryLogicOpType_______ * has binding name 'PointerTo__fes__union_UnaryLogicOpType_______' for type '-fes:union-UnaryLogicOpType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_UnaryLogicOpType_______
-#define SOAP_TYPE_PointerTo__fes__union_UnaryLogicOpType_______ (788)
+#define SOAP_TYPE_PointerTo__fes__union_UnaryLogicOpType_______ (783)
 #endif
 
 /* __fes__union_BinaryLogicOpType_______ * has binding name 'PointerTo__fes__union_BinaryLogicOpType_______' for type '-fes:union-BinaryLogicOpType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_BinaryLogicOpType_______
-#define SOAP_TYPE_PointerTo__fes__union_BinaryLogicOpType_______ (782)
+#define SOAP_TYPE_PointerTo__fes__union_BinaryLogicOpType_______ (777)
 #endif
 
 /* fes__MeasureType * has binding name 'PointerTofes__MeasureType' for type 'fes:MeasureType' */
 #ifndef SOAP_TYPE_PointerTofes__MeasureType
-#define SOAP_TYPE_PointerTofes__MeasureType (776)
+#define SOAP_TYPE_PointerTofes__MeasureType (771)
 #endif
 
 /* fes__UpperBoundaryType * has binding name 'PointerTofes__UpperBoundaryType' for type 'fes:UpperBoundaryType' */
 #ifndef SOAP_TYPE_PointerTofes__UpperBoundaryType
-#define SOAP_TYPE_PointerTofes__UpperBoundaryType (763)
+#define SOAP_TYPE_PointerTofes__UpperBoundaryType (758)
 #endif
 
 /* fes__LowerBoundaryType * has binding name 'PointerTofes__LowerBoundaryType' for type 'fes:LowerBoundaryType' */
 #ifndef SOAP_TYPE_PointerTofes__LowerBoundaryType
-#define SOAP_TYPE_PointerTofes__LowerBoundaryType (762)
+#define SOAP_TYPE_PointerTofes__LowerBoundaryType (757)
 #endif
 
 /* __fes__union_PropertyIsLikeType * has binding name 'PointerTo__fes__union_PropertyIsLikeType' for type '-fes:union-PropertyIsLikeType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_PropertyIsLikeType
-#define SOAP_TYPE_PointerTo__fes__union_PropertyIsLikeType (758)
+#define SOAP_TYPE_PointerTo__fes__union_PropertyIsLikeType (753)
 #endif
 
 /* __fes__union_BinaryComparisonOpType * has binding name 'PointerTo__fes__union_BinaryComparisonOpType' for type '-fes:union-BinaryComparisonOpType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_BinaryComparisonOpType
-#define SOAP_TYPE_PointerTo__fes__union_BinaryComparisonOpType (755)
+#define SOAP_TYPE_PointerTo__fes__union_BinaryComparisonOpType (750)
 #endif
 
 /* time_t * has binding name 'PointerTodateTime' for type 'xsd:dateTime' */
 #ifndef SOAP_TYPE_PointerTodateTime
-#define SOAP_TYPE_PointerTodateTime (752)
+#define SOAP_TYPE_PointerTodateTime (747)
 #endif
 
 /* std::string * has binding name 'PointerTofes__VersionType' for type 'fes:VersionType' */
 #ifndef SOAP_TYPE_PointerTofes__VersionType
-#define SOAP_TYPE_PointerTofes__VersionType (751)
+#define SOAP_TYPE_PointerTofes__VersionType (746)
 #endif
 
 /* __fes__union_FilterType______ * has binding name 'PointerTo__fes__union_FilterType______' for type '-fes:union-FilterType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_FilterType______
-#define SOAP_TYPE_PointerTo__fes__union_FilterType______ (750)
+#define SOAP_TYPE_PointerTo__fes__union_FilterType______ (745)
 #endif
 
 /* fes__UnaryLogicOpType * has binding name 'PointerTofes__UnaryLogicOpType' for type 'fes:UnaryLogicOpType' */
 #ifndef SOAP_TYPE_PointerTofes__UnaryLogicOpType
-#define SOAP_TYPE_PointerTofes__UnaryLogicOpType (746)
+#define SOAP_TYPE_PointerTofes__UnaryLogicOpType (741)
 #endif
 
 /* fes__BinaryLogicOpType * has binding name 'PointerTofes__BinaryLogicOpType' for type 'fes:BinaryLogicOpType' */
 #ifndef SOAP_TYPE_PointerTofes__BinaryLogicOpType
-#define SOAP_TYPE_PointerTofes__BinaryLogicOpType (745)
+#define SOAP_TYPE_PointerTofes__BinaryLogicOpType (740)
 #endif
 
 /* fes__BinaryTemporalOpType * has binding name 'PointerTofes__BinaryTemporalOpType' for type 'fes:BinaryTemporalOpType' */
 #ifndef SOAP_TYPE_PointerTofes__BinaryTemporalOpType
-#define SOAP_TYPE_PointerTofes__BinaryTemporalOpType (744)
+#define SOAP_TYPE_PointerTofes__BinaryTemporalOpType (739)
 #endif
 
 /* fes__BBOXType * has binding name 'PointerTofes__BBOXType' for type 'fes:BBOXType' */
 #ifndef SOAP_TYPE_PointerTofes__BBOXType
-#define SOAP_TYPE_PointerTofes__BBOXType (743)
+#define SOAP_TYPE_PointerTofes__BBOXType (738)
 #endif
 
 /* fes__DistanceBufferType * has binding name 'PointerTofes__DistanceBufferType' for type 'fes:DistanceBufferType' */
 #ifndef SOAP_TYPE_PointerTofes__DistanceBufferType
-#define SOAP_TYPE_PointerTofes__DistanceBufferType (742)
+#define SOAP_TYPE_PointerTofes__DistanceBufferType (737)
 #endif
 
 /* fes__BinarySpatialOpType * has binding name 'PointerTofes__BinarySpatialOpType' for type 'fes:BinarySpatialOpType' */
 #ifndef SOAP_TYPE_PointerTofes__BinarySpatialOpType
-#define SOAP_TYPE_PointerTofes__BinarySpatialOpType (741)
+#define SOAP_TYPE_PointerTofes__BinarySpatialOpType (736)
 #endif
 
 /* fes__PropertyIsBetweenType * has binding name 'PointerTofes__PropertyIsBetweenType' for type 'fes:PropertyIsBetweenType' */
 #ifndef SOAP_TYPE_PointerTofes__PropertyIsBetweenType
-#define SOAP_TYPE_PointerTofes__PropertyIsBetweenType (740)
+#define SOAP_TYPE_PointerTofes__PropertyIsBetweenType (735)
 #endif
 
 /* fes__PropertyIsNilType * has binding name 'PointerTofes__PropertyIsNilType' for type 'fes:PropertyIsNilType' */
 #ifndef SOAP_TYPE_PointerTofes__PropertyIsNilType
-#define SOAP_TYPE_PointerTofes__PropertyIsNilType (739)
+#define SOAP_TYPE_PointerTofes__PropertyIsNilType (734)
 #endif
 
 /* fes__PropertyIsNullType * has binding name 'PointerTofes__PropertyIsNullType' for type 'fes:PropertyIsNullType' */
 #ifndef SOAP_TYPE_PointerTofes__PropertyIsNullType
-#define SOAP_TYPE_PointerTofes__PropertyIsNullType (738)
+#define SOAP_TYPE_PointerTofes__PropertyIsNullType (733)
 #endif
 
 /* fes__PropertyIsLikeType * has binding name 'PointerTofes__PropertyIsLikeType' for type 'fes:PropertyIsLikeType' */
 #ifndef SOAP_TYPE_PointerTofes__PropertyIsLikeType
-#define SOAP_TYPE_PointerTofes__PropertyIsLikeType (737)
+#define SOAP_TYPE_PointerTofes__PropertyIsLikeType (732)
 #endif
 
 /* fes__BinaryComparisonOpType * has binding name 'PointerTofes__BinaryComparisonOpType' for type 'fes:BinaryComparisonOpType' */
 #ifndef SOAP_TYPE_PointerTofes__BinaryComparisonOpType
-#define SOAP_TYPE_PointerTofes__BinaryComparisonOpType (736)
+#define SOAP_TYPE_PointerTofes__BinaryComparisonOpType (731)
 #endif
 
 /* std::string * has binding name 'PointerTofes__AliasesType' for type 'fes:AliasesType' */
 #ifndef SOAP_TYPE_PointerTofes__AliasesType
-#define SOAP_TYPE_PointerTofes__AliasesType (734)
+#define SOAP_TYPE_PointerTofes__AliasesType (729)
 #endif
 
 /* fes__SortByType * has binding name 'PointerTofes__SortByType' for type 'fes:SortByType' */
 #ifndef SOAP_TYPE_PointerTofes__SortByType
-#define SOAP_TYPE_PointerTofes__SortByType (733)
+#define SOAP_TYPE_PointerTofes__SortByType (728)
 #endif
 
 /* __fes__union_AbstractAdhocQueryExpressionType * has binding name 'PointerTo__fes__union_AbstractAdhocQueryExpressionType' for type '-fes:union-AbstractAdhocQueryExpressionType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_AbstractAdhocQueryExpressionType
-#define SOAP_TYPE_PointerTo__fes__union_AbstractAdhocQueryExpressionType (730)
+#define SOAP_TYPE_PointerTo__fes__union_AbstractAdhocQueryExpressionType (725)
 #endif
 
 /* _wfs__PropertyName * has binding name 'PointerTo_wfs__PropertyName' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wfs__PropertyName
-#define SOAP_TYPE_PointerTo_wfs__PropertyName (729)
+#define SOAP_TYPE_PointerTo_wfs__PropertyName (724)
 #endif
 
 /* __ows__union_DatasetDescriptionSummaryBaseType * has binding name 'PointerTo__ows__union_DatasetDescriptionSummaryBaseType' for type '-ows:union-DatasetDescriptionSummaryBaseType' */
 #ifndef SOAP_TYPE_PointerTo__ows__union_DatasetDescriptionSummaryBaseType
-#define SOAP_TYPE_PointerTo__ows__union_DatasetDescriptionSummaryBaseType (726)
+#define SOAP_TYPE_PointerTo__ows__union_DatasetDescriptionSummaryBaseType (721)
 #endif
 
 /* std::vector<ows__BoundingBoxType *> * has binding name 'PointerTostd__vectorTemplateOfPointerToows__BoundingBoxType' for type 'ows:BoundingBoxType' */
 #ifndef SOAP_TYPE_PointerTostd__vectorTemplateOfPointerToows__BoundingBoxType
-#define SOAP_TYPE_PointerTostd__vectorTemplateOfPointerToows__BoundingBoxType (725)
+#define SOAP_TYPE_PointerTostd__vectorTemplateOfPointerToows__BoundingBoxType (720)
 #endif
 
 /* ows__BoundingBoxType * has binding name 'PointerToows__BoundingBoxType' for type 'ows:BoundingBoxType' */
 #ifndef SOAP_TYPE_PointerToows__BoundingBoxType
-#define SOAP_TYPE_PointerToows__BoundingBoxType (723)
+#define SOAP_TYPE_PointerToows__BoundingBoxType (718)
 #endif
 
 /* fes__FilterType * has binding name 'PointerTofes__FilterType' for type 'fes:FilterType' */
 #ifndef SOAP_TYPE_PointerTofes__FilterType
-#define SOAP_TYPE_PointerTofes__FilterType (720)
+#define SOAP_TYPE_PointerTofes__FilterType (715)
 #endif
 
 /* wfs__PropertyType * has binding name 'PointerTowfs__PropertyType' for type 'wfs:PropertyType' */
 #ifndef SOAP_TYPE_PointerTowfs__PropertyType
-#define SOAP_TYPE_PointerTowfs__PropertyType (718)
+#define SOAP_TYPE_PointerTowfs__PropertyType (713)
 #endif
 
 /* wfs__NativeType * has binding name 'PointerTowfs__NativeType' for type 'wfs:NativeType' */
 #ifndef SOAP_TYPE_PointerTowfs__NativeType
-#define SOAP_TYPE_PointerTowfs__NativeType (716)
+#define SOAP_TYPE_PointerTowfs__NativeType (711)
 #endif
 
 /* wfs__DeleteType * has binding name 'PointerTowfs__DeleteType' for type 'wfs:DeleteType' */
 #ifndef SOAP_TYPE_PointerTowfs__DeleteType
-#define SOAP_TYPE_PointerTowfs__DeleteType (715)
+#define SOAP_TYPE_PointerTowfs__DeleteType (710)
 #endif
 
 /* wfs__ReplaceType * has binding name 'PointerTowfs__ReplaceType' for type 'wfs:ReplaceType' */
 #ifndef SOAP_TYPE_PointerTowfs__ReplaceType
-#define SOAP_TYPE_PointerTowfs__ReplaceType (714)
+#define SOAP_TYPE_PointerTowfs__ReplaceType (709)
 #endif
 
 /* wfs__UpdateType * has binding name 'PointerTowfs__UpdateType' for type 'wfs:UpdateType' */
 #ifndef SOAP_TYPE_PointerTowfs__UpdateType
-#define SOAP_TYPE_PointerTowfs__UpdateType (713)
+#define SOAP_TYPE_PointerTowfs__UpdateType (708)
 #endif
 
 /* wfs__InsertType * has binding name 'PointerTowfs__InsertType' for type 'wfs:InsertType' */
 #ifndef SOAP_TYPE_PointerTowfs__InsertType
-#define SOAP_TYPE_PointerTowfs__InsertType (712)
+#define SOAP_TYPE_PointerTowfs__InsertType (707)
 #endif
 
 /* __wfs__union_LockFeatureType * has binding name 'PointerTo__wfs__union_LockFeatureType' for type '-wfs:union-LockFeatureType' */
 #ifndef SOAP_TYPE_PointerTo__wfs__union_LockFeatureType
-#define SOAP_TYPE_PointerTo__wfs__union_LockFeatureType (709)
+#define SOAP_TYPE_PointerTo__wfs__union_LockFeatureType (704)
 #endif
 
 /* _wfs__additionalObjects * has binding name 'PointerTo_wfs__additionalObjects' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wfs__additionalObjects
-#define SOAP_TYPE_PointerTo_wfs__additionalObjects (706)
+#define SOAP_TYPE_PointerTo_wfs__additionalObjects (701)
 #endif
 
 /* __wfs__union_GetFeatureType * has binding name 'PointerTo__wfs__union_GetFeatureType' for type '-wfs:union-GetFeatureType' */
 #ifndef SOAP_TYPE_PointerTo__wfs__union_GetFeatureType
-#define SOAP_TYPE_PointerTo__wfs__union_GetFeatureType (705)
+#define SOAP_TYPE_PointerTo__wfs__union_GetFeatureType (700)
 #endif
 
 /* _fes__Filter_x005fCapabilities * has binding name 'PointerTo_fes__Filter_x005fCapabilities' for type '' */
 #ifndef SOAP_TYPE_PointerTo_fes__Filter_x005fCapabilities
-#define SOAP_TYPE_PointerTo_fes__Filter_x005fCapabilities (701)
+#define SOAP_TYPE_PointerTo_fes__Filter_x005fCapabilities (696)
 #endif
 
 /* wfs__FeatureTypeListType * has binding name 'PointerTowfs__FeatureTypeListType' for type 'wfs:FeatureTypeListType' */
 #ifndef SOAP_TYPE_PointerTowfs__FeatureTypeListType
-#define SOAP_TYPE_PointerTowfs__FeatureTypeListType (700)
+#define SOAP_TYPE_PointerTowfs__FeatureTypeListType (695)
 #endif
 
 /* _wfs__WFS_x005fCapabilitiesType_WSDL * has binding name 'PointerTo_wfs__WFS_x005fCapabilitiesType_WSDL' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wfs__WFS_x005fCapabilitiesType_WSDL
-#define SOAP_TYPE_PointerTo_wfs__WFS_x005fCapabilitiesType_WSDL (699)
+#define SOAP_TYPE_PointerTo_wfs__WFS_x005fCapabilitiesType_WSDL (694)
 #endif
 
 /* wfs__ParameterType * has binding name 'PointerTowfs__ParameterType' for type 'wfs:ParameterType' */
 #ifndef SOAP_TYPE_PointerTowfs__ParameterType
-#define SOAP_TYPE_PointerTowfs__ParameterType (696)
+#define SOAP_TYPE_PointerTowfs__ParameterType (691)
 #endif
 
 /* bool * has binding name 'PointerTobool' for type 'xsd:boolean' */
 #ifndef SOAP_TYPE_PointerTobool
-#define SOAP_TYPE_PointerTobool (695)
+#define SOAP_TYPE_PointerTobool (690)
 #endif
 
 /* icommon__uniqueResourceIdentifier * has binding name 'PointerToicommon__uniqueResourceIdentifier' for type 'icommon:uniqueResourceIdentifier' */
 #ifndef SOAP_TYPE_PointerToicommon__uniqueResourceIdentifier
-#define SOAP_TYPE_PointerToicommon__uniqueResourceIdentifier (681)
+#define SOAP_TYPE_PointerToicommon__uniqueResourceIdentifier (676)
 #endif
 
 /* icommon__classificationOfSpatialDataService * has binding name 'PointerToicommon__classificationOfSpatialDataService' for type 'icommon:classificationOfSpatialDataService' */
 #ifndef SOAP_TYPE_PointerToicommon__classificationOfSpatialDataService
-#define SOAP_TYPE_PointerToicommon__classificationOfSpatialDataService (677)
+#define SOAP_TYPE_PointerToicommon__classificationOfSpatialDataService (672)
 #endif
 
 /* enum icommon__spatialDataServiceType * has binding name 'PointerToicommon__spatialDataServiceType' for type 'icommon:spatialDataServiceType' */
 #ifndef SOAP_TYPE_PointerToicommon__spatialDataServiceType
-#define SOAP_TYPE_PointerToicommon__spatialDataServiceType (676)
+#define SOAP_TYPE_PointerToicommon__spatialDataServiceType (671)
 #endif
 
 /* enum icommon__serviceSpatialDataResourceType * has binding name 'PointerToicommon__serviceSpatialDataResourceType' for type 'icommon:serviceSpatialDataResourceType' */
 #ifndef SOAP_TYPE_PointerToicommon__serviceSpatialDataResourceType
-#define SOAP_TYPE_PointerToicommon__serviceSpatialDataResourceType (675)
+#define SOAP_TYPE_PointerToicommon__serviceSpatialDataResourceType (670)
 #endif
 
 /* icommon__languageElementISO6392B * has binding name 'PointerToicommon__languageElementISO6392B' for type 'icommon:languageElementISO6392B' */
 #ifndef SOAP_TYPE_PointerToicommon__languageElementISO6392B
-#define SOAP_TYPE_PointerToicommon__languageElementISO6392B (674)
+#define SOAP_TYPE_PointerToicommon__languageElementISO6392B (669)
 #endif
 
 /* icommon__supportedLanguagesType * has binding name 'PointerToicommon__supportedLanguagesType' for type 'icommon:supportedLanguagesType' */
 #ifndef SOAP_TYPE_PointerToicommon__supportedLanguagesType
-#define SOAP_TYPE_PointerToicommon__supportedLanguagesType (673)
+#define SOAP_TYPE_PointerToicommon__supportedLanguagesType (668)
 #endif
 
 /* long * has binding name 'PointerTolong' for type 'xsd:long' */
 #ifndef SOAP_TYPE_PointerTolong
-#define SOAP_TYPE_PointerTolong (672)
+#define SOAP_TYPE_PointerTolong (667)
 #endif
 
 /* icommon__originatingControlledVocabulary * has binding name 'PointerToicommon__originatingControlledVocabulary' for type 'icommon:originatingControlledVocabulary' */
 #ifndef SOAP_TYPE_PointerToicommon__originatingControlledVocabulary
-#define SOAP_TYPE_PointerToicommon__originatingControlledVocabulary (669)
+#define SOAP_TYPE_PointerToicommon__originatingControlledVocabulary (664)
 #endif
 
 /* __icommon__union_temporalExtent * has binding name 'PointerTo__icommon__union_temporalExtent' for type '-icommon:union-temporalExtent' */
 #ifndef SOAP_TYPE_PointerTo__icommon__union_temporalExtent
-#define SOAP_TYPE_PointerTo__icommon__union_temporalExtent (668)
+#define SOAP_TYPE_PointerTo__icommon__union_temporalExtent (663)
 #endif
 
 /* _icommon__IntervalOfDates * has binding name 'PointerTo_icommon__IntervalOfDates' for type '' */
 #ifndef SOAP_TYPE_PointerTo_icommon__IntervalOfDates
-#define SOAP_TYPE_PointerTo_icommon__IntervalOfDates (667)
+#define SOAP_TYPE_PointerTo_icommon__IntervalOfDates (662)
 #endif
 
 /* icommon__temporalExtent * has binding name 'PointerToicommon__temporalExtent' for type 'icommon:temporalExtent' */
 #ifndef SOAP_TYPE_PointerToicommon__temporalExtent
-#define SOAP_TYPE_PointerToicommon__temporalExtent (663)
+#define SOAP_TYPE_PointerToicommon__temporalExtent (658)
 #endif
 
 /* icommon__citationConformity * has binding name 'PointerToicommon__citationConformity' for type 'icommon:citationConformity' */
 #ifndef SOAP_TYPE_PointerToicommon__citationConformity
-#define SOAP_TYPE_PointerToicommon__citationConformity (661)
+#define SOAP_TYPE_PointerToicommon__citationConformity (656)
 #endif
 
 /* std::string * has binding name 'PointerToicommon__iso8601Date' for type 'icommon:iso8601Date' */
 #ifndef SOAP_TYPE_PointerToicommon__iso8601Date
-#define SOAP_TYPE_PointerToicommon__iso8601Date (660)
+#define SOAP_TYPE_PointerToicommon__iso8601Date (655)
 #endif
 
 /* icommon__metadataPointOfContact * has binding name 'PointerToicommon__metadataPointOfContact' for type 'icommon:metadataPointOfContact' */
 #ifndef SOAP_TYPE_PointerToicommon__metadataPointOfContact
-#define SOAP_TYPE_PointerToicommon__metadataPointOfContact (656)
+#define SOAP_TYPE_PointerToicommon__metadataPointOfContact (651)
 #endif
 
 /* icommon__responsibleOrganisation * has binding name 'PointerToicommon__responsibleOrganisation' for type 'icommon:responsibleOrganisation' */
 #ifndef SOAP_TYPE_PointerToicommon__responsibleOrganisation
-#define SOAP_TYPE_PointerToicommon__responsibleOrganisation (654)
+#define SOAP_TYPE_PointerToicommon__responsibleOrganisation (649)
 #endif
 
 /* icommon__conformity * has binding name 'PointerToicommon__conformity' for type 'icommon:conformity' */
 #ifndef SOAP_TYPE_PointerToicommon__conformity
-#define SOAP_TYPE_PointerToicommon__conformity (651)
+#define SOAP_TYPE_PointerToicommon__conformity (646)
 #endif
 
 /* icommon__spatialResolution * has binding name 'PointerToicommon__spatialResolution' for type 'icommon:spatialResolution' */
 #ifndef SOAP_TYPE_PointerToicommon__spatialResolution
-#define SOAP_TYPE_PointerToicommon__spatialResolution (649)
+#define SOAP_TYPE_PointerToicommon__spatialResolution (644)
 #endif
 
 /* icommon__temporalReference * has binding name 'PointerToicommon__temporalReference' for type 'icommon:temporalReference' */
 #ifndef SOAP_TYPE_PointerToicommon__temporalReference
-#define SOAP_TYPE_PointerToicommon__temporalReference (647)
+#define SOAP_TYPE_PointerToicommon__temporalReference (642)
 #endif
 
 /* icommon__geographicBoundingBox * has binding name 'PointerToicommon__geographicBoundingBox' for type 'icommon:geographicBoundingBox' */
 #ifndef SOAP_TYPE_PointerToicommon__geographicBoundingBox
-#define SOAP_TYPE_PointerToicommon__geographicBoundingBox (645)
+#define SOAP_TYPE_PointerToicommon__geographicBoundingBox (640)
 #endif
 
 /* icommon__keyword * has binding name 'PointerToicommon__keyword' for type 'icommon:keyword' */
 #ifndef SOAP_TYPE_PointerToicommon__keyword
-#define SOAP_TYPE_PointerToicommon__keyword (643)
+#define SOAP_TYPE_PointerToicommon__keyword (638)
 #endif
 
 /* icommon__resourceLocatorType * has binding name 'PointerToicommon__resourceLocatorType' for type 'icommon:resourceLocatorType' */
 #ifndef SOAP_TYPE_PointerToicommon__resourceLocatorType
-#define SOAP_TYPE_PointerToicommon__resourceLocatorType (641)
+#define SOAP_TYPE_PointerToicommon__resourceLocatorType (636)
 #endif
 
 /* fes__Extended_x005fCapabilitiesType * has binding name 'PointerTofes__Extended_x005fCapabilitiesType' for type 'fes:Extended_CapabilitiesType' */
 #ifndef SOAP_TYPE_PointerTofes__Extended_x005fCapabilitiesType
-#define SOAP_TYPE_PointerTofes__Extended_x005fCapabilitiesType (640)
+#define SOAP_TYPE_PointerTofes__Extended_x005fCapabilitiesType (635)
 #endif
 
 /* fes__AvailableFunctionsType * has binding name 'PointerTofes__AvailableFunctionsType' for type 'fes:AvailableFunctionsType' */
 #ifndef SOAP_TYPE_PointerTofes__AvailableFunctionsType
-#define SOAP_TYPE_PointerTofes__AvailableFunctionsType (639)
+#define SOAP_TYPE_PointerTofes__AvailableFunctionsType (634)
 #endif
 
 /* fes__Temporal_x005fCapabilitiesType * has binding name 'PointerTofes__Temporal_x005fCapabilitiesType' for type 'fes:Temporal_CapabilitiesType' */
 #ifndef SOAP_TYPE_PointerTofes__Temporal_x005fCapabilitiesType
-#define SOAP_TYPE_PointerTofes__Temporal_x005fCapabilitiesType (638)
+#define SOAP_TYPE_PointerTofes__Temporal_x005fCapabilitiesType (633)
 #endif
 
 /* fes__Spatial_x005fCapabilitiesType * has binding name 'PointerTofes__Spatial_x005fCapabilitiesType' for type 'fes:Spatial_CapabilitiesType' */
 #ifndef SOAP_TYPE_PointerTofes__Spatial_x005fCapabilitiesType
-#define SOAP_TYPE_PointerTofes__Spatial_x005fCapabilitiesType (637)
+#define SOAP_TYPE_PointerTofes__Spatial_x005fCapabilitiesType (632)
 #endif
 
 /* fes__Scalar_x005fCapabilitiesType * has binding name 'PointerTofes__Scalar_x005fCapabilitiesType' for type 'fes:Scalar_CapabilitiesType' */
 #ifndef SOAP_TYPE_PointerTofes__Scalar_x005fCapabilitiesType
-#define SOAP_TYPE_PointerTofes__Scalar_x005fCapabilitiesType (636)
+#define SOAP_TYPE_PointerTofes__Scalar_x005fCapabilitiesType (631)
 #endif
 
 /* fes__Id_x005fCapabilitiesType * has binding name 'PointerTofes__Id_x005fCapabilitiesType' for type 'fes:Id_CapabilitiesType' */
 #ifndef SOAP_TYPE_PointerTofes__Id_x005fCapabilitiesType
-#define SOAP_TYPE_PointerTofes__Id_x005fCapabilitiesType (635)
+#define SOAP_TYPE_PointerTofes__Id_x005fCapabilitiesType (630)
 #endif
 
 /* fes__ConformanceType * has binding name 'PointerTofes__ConformanceType' for type 'fes:ConformanceType' */
 #ifndef SOAP_TYPE_PointerTofes__ConformanceType
-#define SOAP_TYPE_PointerTofes__ConformanceType (634)
+#define SOAP_TYPE_PointerTofes__ConformanceType (629)
 #endif
 
 /* enum fes__SortOrderType * has binding name 'PointerTofes__SortOrderType' for type 'fes:SortOrderType' */
 #ifndef SOAP_TYPE_PointerTofes__SortOrderType
-#define SOAP_TYPE_PointerTofes__SortOrderType (633)
+#define SOAP_TYPE_PointerTofes__SortOrderType (628)
 #endif
 
 /* fes__SortPropertyType * has binding name 'PointerTofes__SortPropertyType' for type 'fes:SortPropertyType' */
 #ifndef SOAP_TYPE_PointerTofes__SortPropertyType
-#define SOAP_TYPE_PointerTofes__SortPropertyType (631)
+#define SOAP_TYPE_PointerTofes__SortPropertyType (626)
 #endif
 
 /* fes__ExtensionOperatorType * has binding name 'PointerTofes__ExtensionOperatorType' for type 'fes:ExtensionOperatorType' */
 #ifndef SOAP_TYPE_PointerTofes__ExtensionOperatorType
-#define SOAP_TYPE_PointerTofes__ExtensionOperatorType (629)
+#define SOAP_TYPE_PointerTofes__ExtensionOperatorType (624)
 #endif
 
 /* fes__AdditionalOperatorsType * has binding name 'PointerTofes__AdditionalOperatorsType' for type 'fes:AdditionalOperatorsType' */
 #ifndef SOAP_TYPE_PointerTofes__AdditionalOperatorsType
-#define SOAP_TYPE_PointerTofes__AdditionalOperatorsType (628)
+#define SOAP_TYPE_PointerTofes__AdditionalOperatorsType (623)
 #endif
 
 /* fes__TemporalOperatorType * has binding name 'PointerTofes__TemporalOperatorType' for type 'fes:TemporalOperatorType' */
 #ifndef SOAP_TYPE_PointerTofes__TemporalOperatorType
-#define SOAP_TYPE_PointerTofes__TemporalOperatorType (626)
+#define SOAP_TYPE_PointerTofes__TemporalOperatorType (621)
 #endif
 
 /* fes__TemporalOperatorsType * has binding name 'PointerTofes__TemporalOperatorsType' for type 'fes:TemporalOperatorsType' */
 #ifndef SOAP_TYPE_PointerTofes__TemporalOperatorsType
-#define SOAP_TYPE_PointerTofes__TemporalOperatorsType (623)
+#define SOAP_TYPE_PointerTofes__TemporalOperatorsType (618)
 #endif
 
 /* fes__TemporalOperandsType * has binding name 'PointerTofes__TemporalOperandsType' for type 'fes:TemporalOperandsType' */
 #ifndef SOAP_TYPE_PointerTofes__TemporalOperandsType
-#define SOAP_TYPE_PointerTofes__TemporalOperandsType (622)
+#define SOAP_TYPE_PointerTofes__TemporalOperandsType (617)
 #endif
 
 /* std::string * has binding name 'PointerTofes__SpatialOperatorNameType' for type 'fes:SpatialOperatorNameType' */
 #ifndef SOAP_TYPE_PointerTofes__SpatialOperatorNameType
-#define SOAP_TYPE_PointerTofes__SpatialOperatorNameType (621)
+#define SOAP_TYPE_PointerTofes__SpatialOperatorNameType (616)
 #endif
 
 /* fes__SpatialOperatorType * has binding name 'PointerTofes__SpatialOperatorType' for type 'fes:SpatialOperatorType' */
 #ifndef SOAP_TYPE_PointerTofes__SpatialOperatorType
-#define SOAP_TYPE_PointerTofes__SpatialOperatorType (619)
+#define SOAP_TYPE_PointerTofes__SpatialOperatorType (614)
 #endif
 
 /* fes__SpatialOperatorsType * has binding name 'PointerTofes__SpatialOperatorsType' for type 'fes:SpatialOperatorsType' */
 #ifndef SOAP_TYPE_PointerTofes__SpatialOperatorsType
-#define SOAP_TYPE_PointerTofes__SpatialOperatorsType (616)
+#define SOAP_TYPE_PointerTofes__SpatialOperatorsType (611)
 #endif
 
 /* fes__GeometryOperandsType * has binding name 'PointerTofes__GeometryOperandsType' for type 'fes:GeometryOperandsType' */
 #ifndef SOAP_TYPE_PointerTofes__GeometryOperandsType
-#define SOAP_TYPE_PointerTofes__GeometryOperandsType (615)
+#define SOAP_TYPE_PointerTofes__GeometryOperandsType (610)
 #endif
 
 /* fes__ArgumentType * has binding name 'PointerTofes__ArgumentType' for type 'fes:ArgumentType' */
 #ifndef SOAP_TYPE_PointerTofes__ArgumentType
-#define SOAP_TYPE_PointerTofes__ArgumentType (613)
+#define SOAP_TYPE_PointerTofes__ArgumentType (608)
 #endif
 
 /* fes__ArgumentsType * has binding name 'PointerTofes__ArgumentsType' for type 'fes:ArgumentsType' */
 #ifndef SOAP_TYPE_PointerTofes__ArgumentsType
-#define SOAP_TYPE_PointerTofes__ArgumentsType (612)
+#define SOAP_TYPE_PointerTofes__ArgumentsType (607)
 #endif
 
 /* fes__AvailableFunctionType * has binding name 'PointerTofes__AvailableFunctionType' for type 'fes:AvailableFunctionType' */
 #ifndef SOAP_TYPE_PointerTofes__AvailableFunctionType
-#define SOAP_TYPE_PointerTofes__AvailableFunctionType (610)
+#define SOAP_TYPE_PointerTofes__AvailableFunctionType (605)
 #endif
 
 /* fes__ComparisonOperatorType * has binding name 'PointerTofes__ComparisonOperatorType' for type 'fes:ComparisonOperatorType' */
 #ifndef SOAP_TYPE_PointerTofes__ComparisonOperatorType
-#define SOAP_TYPE_PointerTofes__ComparisonOperatorType (608)
+#define SOAP_TYPE_PointerTofes__ComparisonOperatorType (603)
 #endif
 
 /* fes__ComparisonOperatorsType * has binding name 'PointerTofes__ComparisonOperatorsType' for type 'fes:ComparisonOperatorsType' */
 #ifndef SOAP_TYPE_PointerTofes__ComparisonOperatorsType
-#define SOAP_TYPE_PointerTofes__ComparisonOperatorsType (606)
+#define SOAP_TYPE_PointerTofes__ComparisonOperatorsType (601)
 #endif
 
 /* _fes__LogicalOperators * has binding name 'PointerTo_fes__LogicalOperators' for type '' */
 #ifndef SOAP_TYPE_PointerTo_fes__LogicalOperators
-#define SOAP_TYPE_PointerTo_fes__LogicalOperators (605)
+#define SOAP_TYPE_PointerTo_fes__LogicalOperators (600)
 #endif
 
 /* fes__ResourceIdentifierType * has binding name 'PointerTofes__ResourceIdentifierType' for type 'fes:ResourceIdentifierType' */
 #ifndef SOAP_TYPE_PointerTofes__ResourceIdentifierType
-#define SOAP_TYPE_PointerTofes__ResourceIdentifierType (603)
+#define SOAP_TYPE_PointerTofes__ResourceIdentifierType (598)
 #endif
 
 /* char ** has binding name 'PointerToxsd__QName' for type 'xsd:QName' */
 #ifndef SOAP_TYPE_PointerToxsd__QName
-#define SOAP_TYPE_PointerToxsd__QName (602)
+#define SOAP_TYPE_PointerToxsd__QName (597)
 #endif
 
 /* __fes__union_FunctionType * has binding name 'PointerTo__fes__union_FunctionType' for type '-fes:union-FunctionType' */
 #ifndef SOAP_TYPE_PointerTo__fes__union_FunctionType
-#define SOAP_TYPE_PointerTo__fes__union_FunctionType (601)
+#define SOAP_TYPE_PointerTo__fes__union_FunctionType (596)
 #endif
 
 /* fes__LiteralType * has binding name 'PointerTofes__LiteralType' for type 'fes:LiteralType' */
 #ifndef SOAP_TYPE_PointerTofes__LiteralType
-#define SOAP_TYPE_PointerTofes__LiteralType (597)
+#define SOAP_TYPE_PointerTofes__LiteralType (592)
 #endif
 
 /* fes__FunctionType * has binding name 'PointerTofes__FunctionType' for type 'fes:FunctionType' */
 #ifndef SOAP_TYPE_PointerTofes__FunctionType
-#define SOAP_TYPE_PointerTofes__FunctionType (596)
+#define SOAP_TYPE_PointerTofes__FunctionType (591)
 #endif
 
 /* char ** has binding name 'PointerToxlink__toType' for type 'xlink:toType' */
 #ifndef SOAP_TYPE_PointerToxlink__toType
-#define SOAP_TYPE_PointerToxlink__toType (594)
+#define SOAP_TYPE_PointerToxlink__toType (589)
 #endif
 
 /* char ** has binding name 'PointerToxlink__fromType' for type 'xlink:fromType' */
 #ifndef SOAP_TYPE_PointerToxlink__fromType
-#define SOAP_TYPE_PointerToxlink__fromType (593)
+#define SOAP_TYPE_PointerToxlink__fromType (588)
 #endif
 
 /* __xlink__union_arcType * has binding name 'PointerTo__xlink__union_arcType' for type '-xlink:union-arcType' */
 #ifndef SOAP_TYPE_PointerTo__xlink__union_arcType
-#define SOAP_TYPE_PointerTo__xlink__union_arcType (592)
+#define SOAP_TYPE_PointerTo__xlink__union_arcType (587)
 #endif
 
 /* __xlink__union_locatorType * has binding name 'PointerTo__xlink__union_locatorType' for type '-xlink:union-locatorType' */
 #ifndef SOAP_TYPE_PointerTo__xlink__union_locatorType
-#define SOAP_TYPE_PointerTo__xlink__union_locatorType (589)
+#define SOAP_TYPE_PointerTo__xlink__union_locatorType (584)
 #endif
 
 /* char ** has binding name 'PointerToxlink__labelType' for type 'xlink:labelType' */
 #ifndef SOAP_TYPE_PointerToxlink__labelType
-#define SOAP_TYPE_PointerToxlink__labelType (586)
+#define SOAP_TYPE_PointerToxlink__labelType (581)
 #endif
 
 /* ows__RangeType * has binding name 'PointerToows__RangeType' for type 'ows:RangeType' */
 #ifndef SOAP_TYPE_PointerToows__RangeType
-#define SOAP_TYPE_PointerToows__RangeType (581)
+#define SOAP_TYPE_PointerToows__RangeType (576)
 #endif
 
 /* ows__RequestMethodType * has binding name 'PointerToows__RequestMethodType' for type 'ows:RequestMethodType' */
 #ifndef SOAP_TYPE_PointerToows__RequestMethodType
-#define SOAP_TYPE_PointerToows__RequestMethodType (577)
+#define SOAP_TYPE_PointerToows__RequestMethodType (572)
 #endif
 
 /* _ows__HTTP * has binding name 'PointerTo_ows__HTTP' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__HTTP
-#define SOAP_TYPE_PointerTo_ows__HTTP (574)
+#define SOAP_TYPE_PointerTo_ows__HTTP (569)
 #endif
 
 /* _ows__DCP * has binding name 'PointerTo_ows__DCP' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__DCP
-#define SOAP_TYPE_PointerTo_ows__DCP (571)
-#endif
-
-/* idls__ExtendedCapabilitiesType * has binding name 'PointerToidls__ExtendedCapabilitiesType' for type 'idls:ExtendedCapabilitiesType' */
-#ifndef SOAP_TYPE_PointerToidls__ExtendedCapabilitiesType
-#define SOAP_TYPE_PointerToidls__ExtendedCapabilitiesType (570)
+#define SOAP_TYPE_PointerTo_ows__DCP (566)
 #endif
 
 /* ows__DomainType * has binding name 'PointerToows__DomainType' for type 'ows:DomainType' */
 #ifndef SOAP_TYPE_PointerToows__DomainType
-#define SOAP_TYPE_PointerToows__DomainType (568)
+#define SOAP_TYPE_PointerToows__DomainType (564)
 #endif
 
 /* _ows__Operation * has binding name 'PointerTo_ows__Operation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__Operation
-#define SOAP_TYPE_PointerTo_ows__Operation (566)
+#define SOAP_TYPE_PointerTo_ows__Operation (562)
 #endif
 
 /* ows__ResponsiblePartySubsetType * has binding name 'PointerToows__ResponsiblePartySubsetType' for type 'ows:ResponsiblePartySubsetType' */
 #ifndef SOAP_TYPE_PointerToows__ResponsiblePartySubsetType
-#define SOAP_TYPE_PointerToows__ResponsiblePartySubsetType (565)
+#define SOAP_TYPE_PointerToows__ResponsiblePartySubsetType (561)
 #endif
 
 /* char ** has binding name 'PointerTo_xml__lang' for type '' */
 #ifndef SOAP_TYPE_PointerTo_xml__lang
-#define SOAP_TYPE_PointerTo_xml__lang (564)
+#define SOAP_TYPE_PointerTo_xml__lang (560)
 #endif
 
 /* ows__ExceptionType * has binding name 'PointerToows__ExceptionType' for type 'ows:ExceptionType' */
 #ifndef SOAP_TYPE_PointerToows__ExceptionType
-#define SOAP_TYPE_PointerToows__ExceptionType (562)
+#define SOAP_TYPE_PointerToows__ExceptionType (558)
 #endif
 
 /* ows__DatasetDescriptionSummaryBaseType * has binding name 'PointerToows__DatasetDescriptionSummaryBaseType' for type 'ows:DatasetDescriptionSummaryBaseType' */
 #ifndef SOAP_TYPE_PointerToows__DatasetDescriptionSummaryBaseType
-#define SOAP_TYPE_PointerToows__DatasetDescriptionSummaryBaseType (560)
+#define SOAP_TYPE_PointerToows__DatasetDescriptionSummaryBaseType (556)
 #endif
 
 /* ows__DomainMetadataType * has binding name 'PointerToows__DomainMetadataType' for type 'ows:DomainMetadataType' */
 #ifndef SOAP_TYPE_PointerToows__DomainMetadataType
-#define SOAP_TYPE_PointerToows__DomainMetadataType (558)
+#define SOAP_TYPE_PointerToows__DomainMetadataType (554)
 #endif
 
 /* ows__ValueType * has binding name 'PointerToows__ValueType' for type 'ows:ValueType' */
 #ifndef SOAP_TYPE_PointerToows__ValueType
-#define SOAP_TYPE_PointerToows__ValueType (557)
+#define SOAP_TYPE_PointerToows__ValueType (553)
 #endif
 
 /* _ows__ValuesReference * has binding name 'PointerTo_ows__ValuesReference' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__ValuesReference
-#define SOAP_TYPE_PointerTo_ows__ValuesReference (556)
+#define SOAP_TYPE_PointerTo_ows__ValuesReference (552)
 #endif
 
 /* _ows__NoValues * has binding name 'PointerTo_ows__NoValues' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__NoValues
-#define SOAP_TYPE_PointerTo_ows__NoValues (555)
+#define SOAP_TYPE_PointerTo_ows__NoValues (551)
 #endif
 
 /* _ows__AnyValue * has binding name 'PointerTo_ows__AnyValue' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__AnyValue
-#define SOAP_TYPE_PointerTo_ows__AnyValue (554)
+#define SOAP_TYPE_PointerTo_ows__AnyValue (550)
 #endif
 
 /* _ows__AllowedValues * has binding name 'PointerTo_ows__AllowedValues' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__AllowedValues
-#define SOAP_TYPE_PointerTo_ows__AllowedValues (553)
+#define SOAP_TYPE_PointerTo_ows__AllowedValues (549)
 #endif
 
 /* ows__AcceptFormatsType * has binding name 'PointerToows__AcceptFormatsType' for type 'ows:AcceptFormatsType' */
 #ifndef SOAP_TYPE_PointerToows__AcceptFormatsType
-#define SOAP_TYPE_PointerToows__AcceptFormatsType (549)
+#define SOAP_TYPE_PointerToows__AcceptFormatsType (545)
 #endif
 
 /* ows__SectionsType * has binding name 'PointerToows__SectionsType' for type 'ows:SectionsType' */
 #ifndef SOAP_TYPE_PointerToows__SectionsType
-#define SOAP_TYPE_PointerToows__SectionsType (548)
+#define SOAP_TYPE_PointerToows__SectionsType (544)
 #endif
 
 /* ows__AcceptVersionsType * has binding name 'PointerToows__AcceptVersionsType' for type 'ows:AcceptVersionsType' */
 #ifndef SOAP_TYPE_PointerToows__AcceptVersionsType
-#define SOAP_TYPE_PointerToows__AcceptVersionsType (547)
+#define SOAP_TYPE_PointerToows__AcceptVersionsType (543)
 #endif
 
 /* std::string * has binding name 'PointerToows__UpdateSequenceType' for type 'ows:UpdateSequenceType' */
 #ifndef SOAP_TYPE_PointerToows__UpdateSequenceType
-#define SOAP_TYPE_PointerToows__UpdateSequenceType (546)
+#define SOAP_TYPE_PointerToows__UpdateSequenceType (542)
 #endif
 
 /* _ows__OperationsMetadata * has binding name 'PointerTo_ows__OperationsMetadata' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__OperationsMetadata
-#define SOAP_TYPE_PointerTo_ows__OperationsMetadata (545)
+#define SOAP_TYPE_PointerTo_ows__OperationsMetadata (541)
 #endif
 
 /* _ows__ServiceProvider * has binding name 'PointerTo_ows__ServiceProvider' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__ServiceProvider
-#define SOAP_TYPE_PointerTo_ows__ServiceProvider (544)
+#define SOAP_TYPE_PointerTo_ows__ServiceProvider (540)
 #endif
 
 /* _ows__ServiceIdentification * has binding name 'PointerTo_ows__ServiceIdentification' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__ServiceIdentification
-#define SOAP_TYPE_PointerTo_ows__ServiceIdentification (543)
+#define SOAP_TYPE_PointerTo_ows__ServiceIdentification (539)
 #endif
 
 /* ows__OnlineResourceType * has binding name 'PointerToows__OnlineResourceType' for type 'ows:OnlineResourceType' */
 #ifndef SOAP_TYPE_PointerToows__OnlineResourceType
-#define SOAP_TYPE_PointerToows__OnlineResourceType (542)
+#define SOAP_TYPE_PointerToows__OnlineResourceType (538)
 #endif
 
 /* ows__AddressType * has binding name 'PointerToows__AddressType' for type 'ows:AddressType' */
 #ifndef SOAP_TYPE_PointerToows__AddressType
-#define SOAP_TYPE_PointerToows__AddressType (541)
+#define SOAP_TYPE_PointerToows__AddressType (537)
 #endif
 
 /* ows__TelephoneType * has binding name 'PointerToows__TelephoneType' for type 'ows:TelephoneType' */
 #ifndef SOAP_TYPE_PointerToows__TelephoneType
-#define SOAP_TYPE_PointerToows__TelephoneType (540)
+#define SOAP_TYPE_PointerToows__TelephoneType (536)
 #endif
 
 /* ows__ContactType * has binding name 'PointerToows__ContactType' for type 'ows:ContactType' */
 #ifndef SOAP_TYPE_PointerToows__ContactType
-#define SOAP_TYPE_PointerToows__ContactType (539)
+#define SOAP_TYPE_PointerToows__ContactType (535)
 #endif
 
 /* ows__CodeType * has binding name 'PointerToows__CodeType' for type 'ows:CodeType' */
 #ifndef SOAP_TYPE_PointerToows__CodeType
-#define SOAP_TYPE_PointerToows__CodeType (538)
+#define SOAP_TYPE_PointerToows__CodeType (534)
 #endif
 
 /* ULONG64 * has binding name 'PointerToxsd__positiveInteger' for type 'xsd:positiveInteger' */
 #ifndef SOAP_TYPE_PointerToxsd__positiveInteger
-#define SOAP_TYPE_PointerToxsd__positiveInteger (537)
+#define SOAP_TYPE_PointerToxsd__positiveInteger (533)
 #endif
 
 /* ows__LanguageStringType * has binding name 'PointerToows__LanguageStringType' for type 'ows:LanguageStringType' */
 #ifndef SOAP_TYPE_PointerToows__LanguageStringType
-#define SOAP_TYPE_PointerToows__LanguageStringType (534)
+#define SOAP_TYPE_PointerToows__LanguageStringType (530)
 #endif
 
 /* std::string * has binding name 'PointerToows__MimeType' for type 'ows:MimeType' */
 #ifndef SOAP_TYPE_PointerToows__MimeType
-#define SOAP_TYPE_PointerToows__MimeType (533)
+#define SOAP_TYPE_PointerToows__MimeType (529)
 #endif
 
 /* _ows__ExceptionReport * has binding name 'PointerTo_ows__ExceptionReport' for type '' */
 #ifndef SOAP_TYPE_PointerTo_ows__ExceptionReport
-#define SOAP_TYPE_PointerTo_ows__ExceptionReport (530)
+#define SOAP_TYPE_PointerTo_ows__ExceptionReport (526)
 #endif
 
 /* wfs__ValueCollectionType * has binding name 'PointerTowfs__ValueCollectionType' for type 'wfs:ValueCollectionType' */
 #ifndef SOAP_TYPE_PointerTowfs__ValueCollectionType
-#define SOAP_TYPE_PointerTowfs__ValueCollectionType (529)
+#define SOAP_TYPE_PointerTowfs__ValueCollectionType (525)
 #endif
 
 /* wfs__CreatedOrModifiedFeatureType * has binding name 'PointerTowfs__CreatedOrModifiedFeatureType' for type 'wfs:CreatedOrModifiedFeatureType' */
 #ifndef SOAP_TYPE_PointerTowfs__CreatedOrModifiedFeatureType
-#define SOAP_TYPE_PointerTowfs__CreatedOrModifiedFeatureType (524)
+#define SOAP_TYPE_PointerTowfs__CreatedOrModifiedFeatureType (520)
 #endif
 
 /* ULONG64 * has binding name 'PointerToxsd__nonNegativeInteger' for type 'xsd:nonNegativeInteger' */
 #ifndef SOAP_TYPE_PointerToxsd__nonNegativeInteger
-#define SOAP_TYPE_PointerToxsd__nonNegativeInteger (523)
+#define SOAP_TYPE_PointerToxsd__nonNegativeInteger (519)
 #endif
 
 /* wfs__ActionResultsType * has binding name 'PointerTowfs__ActionResultsType' for type 'wfs:ActionResultsType' */
 #ifndef SOAP_TYPE_PointerTowfs__ActionResultsType
-#define SOAP_TYPE_PointerTowfs__ActionResultsType (522)
+#define SOAP_TYPE_PointerTowfs__ActionResultsType (518)
 #endif
 
 /* wfs__TransactionSummaryType * has binding name 'PointerTowfs__TransactionSummaryType' for type 'wfs:TransactionSummaryType' */
 #ifndef SOAP_TYPE_PointerTowfs__TransactionSummaryType
-#define SOAP_TYPE_PointerTowfs__TransactionSummaryType (521)
+#define SOAP_TYPE_PointerTowfs__TransactionSummaryType (517)
 #endif
 
 /* fes__ResourceIdType * has binding name 'PointerTofes__ResourceIdType' for type 'fes:ResourceIdType' */
 #ifndef SOAP_TYPE_PointerTofes__ResourceIdType
-#define SOAP_TYPE_PointerTofes__ResourceIdType (516)
+#define SOAP_TYPE_PointerTofes__ResourceIdType (512)
 #endif
 
 /* wfs__FeaturesNotLockedType * has binding name 'PointerTowfs__FeaturesNotLockedType' for type 'wfs:FeaturesNotLockedType' */
 #ifndef SOAP_TYPE_PointerTowfs__FeaturesNotLockedType
-#define SOAP_TYPE_PointerTowfs__FeaturesNotLockedType (514)
+#define SOAP_TYPE_PointerTowfs__FeaturesNotLockedType (510)
 #endif
 
 /* wfs__FeaturesLockedType * has binding name 'PointerTowfs__FeaturesLockedType' for type 'wfs:FeaturesLockedType' */
 #ifndef SOAP_TYPE_PointerTowfs__FeaturesLockedType
-#define SOAP_TYPE_PointerTowfs__FeaturesLockedType (513)
-#endif
-
-/* std::vector<wfs__QueryType *> * has binding name 'PointerTostd__vectorTemplateOfPointerTowfs__QueryType' for type 'wfs:QueryType' */
-#ifndef SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__QueryType
-#define SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__QueryType (511)
-#endif
-
-/* std::vector<wfs__StoredQueryType *> * has binding name 'PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType' for type 'wfs:StoredQueryType' */
-#ifndef SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType
-#define SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType (509)
+#define SOAP_TYPE_PointerTowfs__FeaturesLockedType (509)
 #endif
 
 /* std::vector<char *> * has binding name 'PointerTostd__vectorTemplateOf_XML' for type '' */
@@ -25858,292 +25853,282 @@ typedef icommon__otherService _icommon__OtherService;
 
 /* std::vector<icommon__inspireTheme *>  has binding name 'std__vectorTemplateOfPointerToicommon__inspireTheme' for type 'icommon:inspireTheme' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__inspireTheme
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__inspireTheme (866)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__inspireTheme (861)
 #endif
 
 /* std::vector<ows__ReferenceGroupType *>  has binding name 'std__vectorTemplateOfPointerToows__ReferenceGroupType' for type 'ows:ReferenceGroupType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToows__ReferenceGroupType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToows__ReferenceGroupType (863)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToows__ReferenceGroupType (858)
 #endif
 
 /* std::vector<icommon__originatingControlledVocabulary *>  has binding name 'std__vectorTemplateOfPointerToicommon__originatingControlledVocabulary' for type 'icommon:originatingControlledVocabulary' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__originatingControlledVocabulary
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__originatingControlledVocabulary (793)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__originatingControlledVocabulary (788)
 #endif
 
 /* std::vector<enum icommon__topicCategory>  has binding name 'std__vectorTemplateOficommon__topicCategory' for type 'icommon:topicCategory' */
 #ifndef SOAP_TYPE_std__vectorTemplateOficommon__topicCategory
-#define SOAP_TYPE_std__vectorTemplateOficommon__topicCategory (790)
+#define SOAP_TYPE_std__vectorTemplateOficommon__topicCategory (785)
 #endif
 
 /* std::vector<enum icommon__languageISO6392B>  has binding name 'std__vectorTemplateOficommon__languageISO6392B' for type 'icommon:languageISO6392B' */
 #ifndef SOAP_TYPE_std__vectorTemplateOficommon__languageISO6392B
-#define SOAP_TYPE_std__vectorTemplateOficommon__languageISO6392B (789)
+#define SOAP_TYPE_std__vectorTemplateOficommon__languageISO6392B (784)
 #endif
 
 /* std::vector<__fes__union_BinaryLogicOpType>  has binding name 'std__vectorTemplateOf__fes__union_BinaryLogicOpType' for type '-fes:union-BinaryLogicOpType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__fes__union_BinaryLogicOpType
-#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BinaryLogicOpType (783)
+#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BinaryLogicOpType (778)
 #endif
 
 /* std::vector<__fes__union_DistanceBufferType>  has binding name 'std__vectorTemplateOf__fes__union_DistanceBufferType' for type '-fes:union-DistanceBufferType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__fes__union_DistanceBufferType
-#define SOAP_TYPE_std__vectorTemplateOf__fes__union_DistanceBufferType (775)
+#define SOAP_TYPE_std__vectorTemplateOf__fes__union_DistanceBufferType (770)
 #endif
 
 /* std::vector<__fes__union_BBOXType>  has binding name 'std__vectorTemplateOf__fes__union_BBOXType' for type '-fes:union-BBOXType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__fes__union_BBOXType
-#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BBOXType (772)
+#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BBOXType (767)
 #endif
 
 /* std::vector<__fes__union_BinaryTemporalOpType>  has binding name 'std__vectorTemplateOf__fes__union_BinaryTemporalOpType' for type '-fes:union-BinaryTemporalOpType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__fes__union_BinaryTemporalOpType
-#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BinaryTemporalOpType (769)
+#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BinaryTemporalOpType (764)
 #endif
 
 /* std::vector<__fes__union_BinarySpatialOpType>  has binding name 'std__vectorTemplateOf__fes__union_BinarySpatialOpType' for type '-fes:union-BinarySpatialOpType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__fes__union_BinarySpatialOpType
-#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BinarySpatialOpType (766)
+#define SOAP_TYPE_std__vectorTemplateOf__fes__union_BinarySpatialOpType (761)
 #endif
 
 /* std::vector<ows__BoundingBoxType *>  has binding name 'std__vectorTemplateOfPointerToows__BoundingBoxType' for type 'ows:BoundingBoxType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToows__BoundingBoxType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToows__BoundingBoxType (724)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToows__BoundingBoxType (719)
 #endif
 
 /* std::vector<wfs__PropertyType *>  has binding name 'std__vectorTemplateOfPointerTowfs__PropertyType' for type 'wfs:PropertyType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__PropertyType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__PropertyType (719)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__PropertyType (714)
 #endif
 
 /* std::vector<struct __wfs__TransactionType_sequence>  has binding name 'std__vectorTemplateOf__wfs__TransactionType_sequence' for type '-wfs:TransactionType-sequence' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__wfs__TransactionType_sequence
-#define SOAP_TYPE_std__vectorTemplateOf__wfs__TransactionType_sequence (717)
+#define SOAP_TYPE_std__vectorTemplateOf__wfs__TransactionType_sequence (712)
 #endif
 
 /* std::vector<wfs__ParameterType *>  has binding name 'std__vectorTemplateOfPointerTowfs__ParameterType' for type 'wfs:ParameterType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__ParameterType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__ParameterType (697)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__ParameterType (692)
 #endif
 
 /* std::vector<_icommon__layers_Layer_CoordinateReferenceSystems_CRS>  has binding name 'std__vectorTemplateOf_icommon__layers_Layer_CoordinateReferenceSystems_CRS' for type '' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf_icommon__layers_Layer_CoordinateReferenceSystems_CRS
-#define SOAP_TYPE_std__vectorTemplateOf_icommon__layers_Layer_CoordinateReferenceSystems_CRS (685)
+#define SOAP_TYPE_std__vectorTemplateOf_icommon__layers_Layer_CoordinateReferenceSystems_CRS (680)
 #endif
 
 /* std::vector<icommon__uniqueResourceIdentifier *>  has binding name 'std__vectorTemplateOfPointerToicommon__uniqueResourceIdentifier' for type 'icommon:uniqueResourceIdentifier' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__uniqueResourceIdentifier
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__uniqueResourceIdentifier (682)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__uniqueResourceIdentifier (677)
 #endif
 
 /* std::vector<icommon__languageElementISO6392B *>  has binding name 'std__vectorTemplateOfPointerToicommon__languageElementISO6392B' for type 'icommon:languageElementISO6392B' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__languageElementISO6392B
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__languageElementISO6392B (679)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__languageElementISO6392B (674)
 #endif
 
 /* std::vector<icommon__classificationOfSpatialDataService *>  has binding name 'std__vectorTemplateOfPointerToicommon__classificationOfSpatialDataService' for type 'icommon:classificationOfSpatialDataService' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__classificationOfSpatialDataService
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__classificationOfSpatialDataService (678)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__classificationOfSpatialDataService (673)
 #endif
 
 /* std::vector<enum icommon__mediaType>  has binding name 'std__vectorTemplateOficommon__mediaType' for type 'icommon:mediaType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOficommon__mediaType
-#define SOAP_TYPE_std__vectorTemplateOficommon__mediaType (670)
+#define SOAP_TYPE_std__vectorTemplateOficommon__mediaType (665)
 #endif
 
 /* std::vector<icommon__temporalExtent *>  has binding name 'std__vectorTemplateOfPointerToicommon__temporalExtent' for type 'icommon:temporalExtent' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__temporalExtent
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__temporalExtent (664)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__temporalExtent (659)
 #endif
 
 /* std::vector<std::string>  has binding name 'std__vectorTemplateOficommon__iso8601Date' for type 'icommon:iso8601Date' */
 #ifndef SOAP_TYPE_std__vectorTemplateOficommon__iso8601Date
-#define SOAP_TYPE_std__vectorTemplateOficommon__iso8601Date (662)
+#define SOAP_TYPE_std__vectorTemplateOficommon__iso8601Date (657)
 #endif
 
 /* std::vector<icommon__metadataPointOfContact *>  has binding name 'std__vectorTemplateOfPointerToicommon__metadataPointOfContact' for type 'icommon:metadataPointOfContact' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__metadataPointOfContact
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__metadataPointOfContact (657)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__metadataPointOfContact (652)
 #endif
 
 /* std::vector<icommon__responsibleOrganisation *>  has binding name 'std__vectorTemplateOfPointerToicommon__responsibleOrganisation' for type 'icommon:responsibleOrganisation' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__responsibleOrganisation
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__responsibleOrganisation (655)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__responsibleOrganisation (650)
 #endif
 
 /* std::vector<std::string>  has binding name 'std__vectorTemplateOficommon__notEmptyString' for type 'icommon:notEmptyString' */
 #ifndef SOAP_TYPE_std__vectorTemplateOficommon__notEmptyString
-#define SOAP_TYPE_std__vectorTemplateOficommon__notEmptyString (653)
+#define SOAP_TYPE_std__vectorTemplateOficommon__notEmptyString (648)
 #endif
 
 /* std::vector<icommon__conformity *>  has binding name 'std__vectorTemplateOfPointerToicommon__conformity' for type 'icommon:conformity' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__conformity
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__conformity (652)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__conformity (647)
 #endif
 
 /* std::vector<icommon__spatialResolution *>  has binding name 'std__vectorTemplateOfPointerToicommon__spatialResolution' for type 'icommon:spatialResolution' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__spatialResolution
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__spatialResolution (650)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__spatialResolution (645)
 #endif
 
 /* std::vector<icommon__temporalReference *>  has binding name 'std__vectorTemplateOfPointerToicommon__temporalReference' for type 'icommon:temporalReference' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__temporalReference
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__temporalReference (648)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__temporalReference (643)
 #endif
 
 /* std::vector<icommon__geographicBoundingBox *>  has binding name 'std__vectorTemplateOfPointerToicommon__geographicBoundingBox' for type 'icommon:geographicBoundingBox' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__geographicBoundingBox
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__geographicBoundingBox (646)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__geographicBoundingBox (641)
 #endif
 
 /* std::vector<icommon__keyword *>  has binding name 'std__vectorTemplateOfPointerToicommon__keyword' for type 'icommon:keyword' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__keyword
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__keyword (644)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__keyword (639)
 #endif
 
 /* std::vector<icommon__resourceLocatorType *>  has binding name 'std__vectorTemplateOfPointerToicommon__resourceLocatorType' for type 'icommon:resourceLocatorType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToicommon__resourceLocatorType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__resourceLocatorType (642)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToicommon__resourceLocatorType (637)
 #endif
 
 /* std::vector<fes__SortPropertyType *>  has binding name 'std__vectorTemplateOfPointerTofes__SortPropertyType' for type 'fes:SortPropertyType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__SortPropertyType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__SortPropertyType (632)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__SortPropertyType (627)
 #endif
 
 /* std::vector<fes__ExtensionOperatorType *>  has binding name 'std__vectorTemplateOfPointerTofes__ExtensionOperatorType' for type 'fes:ExtensionOperatorType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__ExtensionOperatorType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__ExtensionOperatorType (630)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__ExtensionOperatorType (625)
 #endif
 
 /* std::vector<fes__TemporalOperatorType *>  has binding name 'std__vectorTemplateOfPointerTofes__TemporalOperatorType' for type 'fes:TemporalOperatorType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__TemporalOperatorType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__TemporalOperatorType (627)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__TemporalOperatorType (622)
 #endif
 
 /* std::vector<_fes__TemporalOperandsType_TemporalOperand>  has binding name 'std__vectorTemplateOf_fes__TemporalOperandsType_TemporalOperand' for type '' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf_fes__TemporalOperandsType_TemporalOperand
-#define SOAP_TYPE_std__vectorTemplateOf_fes__TemporalOperandsType_TemporalOperand (625)
+#define SOAP_TYPE_std__vectorTemplateOf_fes__TemporalOperandsType_TemporalOperand (620)
 #endif
 
 /* std::vector<fes__SpatialOperatorType *>  has binding name 'std__vectorTemplateOfPointerTofes__SpatialOperatorType' for type 'fes:SpatialOperatorType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__SpatialOperatorType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__SpatialOperatorType (620)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__SpatialOperatorType (615)
 #endif
 
 /* std::vector<_fes__GeometryOperandsType_GeometryOperand>  has binding name 'std__vectorTemplateOf_fes__GeometryOperandsType_GeometryOperand' for type '' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf_fes__GeometryOperandsType_GeometryOperand
-#define SOAP_TYPE_std__vectorTemplateOf_fes__GeometryOperandsType_GeometryOperand (618)
+#define SOAP_TYPE_std__vectorTemplateOf_fes__GeometryOperandsType_GeometryOperand (613)
 #endif
 
 /* std::vector<fes__ArgumentType *>  has binding name 'std__vectorTemplateOfPointerTofes__ArgumentType' for type 'fes:ArgumentType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__ArgumentType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__ArgumentType (614)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__ArgumentType (609)
 #endif
 
 /* std::vector<fes__AvailableFunctionType *>  has binding name 'std__vectorTemplateOfPointerTofes__AvailableFunctionType' for type 'fes:AvailableFunctionType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__AvailableFunctionType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__AvailableFunctionType (611)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__AvailableFunctionType (606)
 #endif
 
 /* std::vector<struct __fes__ComparisonOperatorsType_sequence>  has binding name 'std__vectorTemplateOf__fes__ComparisonOperatorsType_sequence' for type '-fes:ComparisonOperatorsType-sequence' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__fes__ComparisonOperatorsType_sequence
-#define SOAP_TYPE_std__vectorTemplateOf__fes__ComparisonOperatorsType_sequence (609)
+#define SOAP_TYPE_std__vectorTemplateOf__fes__ComparisonOperatorsType_sequence (604)
 #endif
 
 /* std::vector<fes__ResourceIdentifierType *>  has binding name 'std__vectorTemplateOfPointerTofes__ResourceIdentifierType' for type 'fes:ResourceIdentifierType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTofes__ResourceIdentifierType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__ResourceIdentifierType (604)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTofes__ResourceIdentifierType (599)
 #endif
 
 /* std::vector<__xlink__union_extended>  has binding name 'std__vectorTemplateOf__xlink__union_extended' for type '-xlink:union-extended' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__xlink__union_extended
-#define SOAP_TYPE_std__vectorTemplateOf__xlink__union_extended (585)
+#define SOAP_TYPE_std__vectorTemplateOf__xlink__union_extended (580)
 #endif
 
 /* std::vector<__ows__union_AllowedValues>  has binding name 'std__vectorTemplateOf__ows__union_AllowedValues' for type '-ows:union-AllowedValues' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__ows__union_AllowedValues
-#define SOAP_TYPE_std__vectorTemplateOf__ows__union_AllowedValues (582)
+#define SOAP_TYPE_std__vectorTemplateOf__ows__union_AllowedValues (577)
 #endif
 
 /* std::vector<__ows__union_HTTP>  has binding name 'std__vectorTemplateOf__ows__union_HTTP' for type '-ows:union-HTTP' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__ows__union_HTTP
-#define SOAP_TYPE_std__vectorTemplateOf__ows__union_HTTP (578)
+#define SOAP_TYPE_std__vectorTemplateOf__ows__union_HTTP (573)
 #endif
 
 /* std::vector<_ows__DCP *>  has binding name 'std__vectorTemplateOfPointerTo_ows__DCP' for type '' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTo_ows__DCP
-#define SOAP_TYPE_std__vectorTemplateOfPointerTo_ows__DCP (572)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTo_ows__DCP (567)
 #endif
 
 /* std::vector<ows__DomainType *>  has binding name 'std__vectorTemplateOfPointerToows__DomainType' for type 'ows:DomainType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToows__DomainType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToows__DomainType (569)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToows__DomainType (565)
 #endif
 
 /* std::vector<_ows__Operation *>  has binding name 'std__vectorTemplateOfPointerTo_ows__Operation' for type '' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTo_ows__Operation
-#define SOAP_TYPE_std__vectorTemplateOfPointerTo_ows__Operation (567)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTo_ows__Operation (563)
 #endif
 
 /* std::vector<ows__ExceptionType *>  has binding name 'std__vectorTemplateOfPointerToows__ExceptionType' for type 'ows:ExceptionType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToows__ExceptionType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToows__ExceptionType (563)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToows__ExceptionType (559)
 #endif
 
 /* std::vector<ows__DatasetDescriptionSummaryBaseType *>  has binding name 'std__vectorTemplateOfPointerToows__DatasetDescriptionSummaryBaseType' for type 'ows:DatasetDescriptionSummaryBaseType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToows__DatasetDescriptionSummaryBaseType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToows__DatasetDescriptionSummaryBaseType (561)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToows__DatasetDescriptionSummaryBaseType (557)
 #endif
 
 /* std::vector<std::string>  has binding name 'std__vectorTemplateOfows__MimeType' for type 'ows:MimeType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfows__MimeType
-#define SOAP_TYPE_std__vectorTemplateOfows__MimeType (551)
+#define SOAP_TYPE_std__vectorTemplateOfows__MimeType (547)
 #endif
 
 /* std::vector<std::string>  has binding name 'std__vectorTemplateOfows__VersionType' for type 'ows:VersionType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfows__VersionType
-#define SOAP_TYPE_std__vectorTemplateOfows__VersionType (550)
+#define SOAP_TYPE_std__vectorTemplateOfows__VersionType (546)
 #endif
 
 /* std::vector<ows__LanguageStringType *>  has binding name 'std__vectorTemplateOfPointerToows__LanguageStringType' for type 'ows:LanguageStringType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerToows__LanguageStringType
-#define SOAP_TYPE_std__vectorTemplateOfPointerToows__LanguageStringType (535)
+#define SOAP_TYPE_std__vectorTemplateOfPointerToows__LanguageStringType (531)
 #endif
 
 /* std::vector<std::string>  has binding name 'std__vectorTemplateOfstd__string' for type 'xsd:string' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfstd__string
-#define SOAP_TYPE_std__vectorTemplateOfstd__string (532)
+#define SOAP_TYPE_std__vectorTemplateOfstd__string (528)
 #endif
 
 /* std::vector<struct __wfs__CreatedOrModifiedFeatureType_sequence>  has binding name 'std__vectorTemplateOf__wfs__CreatedOrModifiedFeatureType_sequence' for type '-wfs:CreatedOrModifiedFeatureType-sequence' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__wfs__CreatedOrModifiedFeatureType_sequence
-#define SOAP_TYPE_std__vectorTemplateOf__wfs__CreatedOrModifiedFeatureType_sequence (527)
+#define SOAP_TYPE_std__vectorTemplateOf__wfs__CreatedOrModifiedFeatureType_sequence (523)
 #endif
 
 /* std::vector<wfs__CreatedOrModifiedFeatureType *>  has binding name 'std__vectorTemplateOfPointerTowfs__CreatedOrModifiedFeatureType' for type 'wfs:CreatedOrModifiedFeatureType' */
 #ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__CreatedOrModifiedFeatureType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__CreatedOrModifiedFeatureType (525)
+#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__CreatedOrModifiedFeatureType (521)
 #endif
 
 /* std::vector<struct __wfs__FeaturesNotLockedType_sequence>  has binding name 'std__vectorTemplateOf__wfs__FeaturesNotLockedType_sequence' for type '-wfs:FeaturesNotLockedType-sequence' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__wfs__FeaturesNotLockedType_sequence
-#define SOAP_TYPE_std__vectorTemplateOf__wfs__FeaturesNotLockedType_sequence (519)
+#define SOAP_TYPE_std__vectorTemplateOf__wfs__FeaturesNotLockedType_sequence (515)
 #endif
 
 /* std::vector<struct __wfs__FeaturesLockedType_sequence>  has binding name 'std__vectorTemplateOf__wfs__FeaturesLockedType_sequence' for type '-wfs:FeaturesLockedType-sequence' */
 #ifndef SOAP_TYPE_std__vectorTemplateOf__wfs__FeaturesLockedType_sequence
-#define SOAP_TYPE_std__vectorTemplateOf__wfs__FeaturesLockedType_sequence (517)
-#endif
-
-/* std::vector<wfs__QueryType *>  has binding name 'std__vectorTemplateOfPointerTowfs__QueryType' for type 'wfs:QueryType' */
-#ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__QueryType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__QueryType (510)
-#endif
-
-/* std::vector<wfs__StoredQueryType *>  has binding name 'std__vectorTemplateOfPointerTowfs__StoredQueryType' for type 'wfs:StoredQueryType' */
-#ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__StoredQueryType
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__StoredQueryType (508)
+#define SOAP_TYPE_std__vectorTemplateOf__wfs__FeaturesLockedType_sequence (513)
 #endif
 
 /* std::vector<char *>  has binding name 'std__vectorTemplateOf_XML' for type '' */

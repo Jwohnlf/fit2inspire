@@ -123,7 +123,7 @@
    <!-- =   QUERY ELEMENTS                                               = -->
    <!-- ================================================================== -->
    <!-- === ADHOC QUERY ================================================== -->   
-   <xsd:element name="Query" type="wfs:QueryType" substitutionGroup="fes:AbstractAdhocQueryExpression"/>
+   <xsd:element name="Query" type="wfs:QueryType" substitutionGroup="fes:AbstractQueryExpression"/>
    <xsd:complexType name="QueryPropertyType">
 		<xsd:sequence minOccurs="0">
 			<xsd:element ref="wfs:Query"/>

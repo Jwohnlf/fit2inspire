@@ -17,7 +17,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 #endif
 #include "soapH.h"
 
-SOAP_SOURCE_STAMP("@(#) soapClient.cpp ver 2.8.92 2020-05-03 21:39:58 GMT")
+SOAP_SOURCE_STAMP("@(#) soapClient.cpp ver 2.8.92 2021-01-26 22:36:34 GMT")
 
 
 SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002ecreateStoredQuery(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__CreateStoredQueryType *wfs__CreateStoredQuery, wfs__CreateStoredQueryResponseType &wfs__CreateStoredQueryResponse)
@@ -29,7 +29,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002ecreateStoredQuery(struct
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002ecreateStoredQuery(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__CreateStoredQueryType *wfs__CreateStoredQuery)
 {	struct __f2i_plu__wfs_x002ecreateStoredQuery soap_tmp___f2i_plu__wfs_x002ecreateStoredQuery;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:CreateStoredQueryRequest";
 	soap_tmp___f2i_plu__wfs_x002ecreateStoredQuery.wfs__CreateStoredQuery = wfs__CreateStoredQuery;
@@ -91,7 +91,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002edescribeFeatureType(stru
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002edescribeFeatureType(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__DescribeFeatureTypeType *wfs__DescribeFeatureType)
 {	struct __f2i_plu__wfs_x002edescribeFeatureType soap_tmp___f2i_plu__wfs_x002edescribeFeatureType;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:DescribeFeatureTypeRequest";
 	soap_tmp___f2i_plu__wfs_x002edescribeFeatureType.wfs__DescribeFeatureType = wfs__DescribeFeatureType;
@@ -151,7 +151,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002egetFeature(struct soap *
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetFeature(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__GetFeatureType *wfs__GetFeature)
 {	struct __f2i_plu__wfs_x002egetFeature soap_tmp___f2i_plu__wfs_x002egetFeature;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureRequest";
 	soap_tmp___f2i_plu__wfs_x002egetFeature.wfs__GetFeature = wfs__GetFeature;
@@ -211,7 +211,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002edescribeStoredQueries(st
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002edescribeStoredQueries(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__DescribeStoredQueriesType *wfs__DescribeStoredQueries)
 {	struct __f2i_plu__wfs_x002edescribeStoredQueries soap_tmp___f2i_plu__wfs_x002edescribeStoredQueries;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:DescribeStoredQueriesRequest";
 	soap_tmp___f2i_plu__wfs_x002edescribeStoredQueries.wfs__DescribeStoredQueries = wfs__DescribeStoredQueries;
@@ -271,7 +271,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002elistStoredQueries(struct
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002elistStoredQueries(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__ListStoredQueriesType *wfs__ListStoredQueries)
 {	struct __f2i_plu__wfs_x002elistStoredQueries soap_tmp___f2i_plu__wfs_x002elistStoredQueries;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:ListStoredQueriesRequest";
 	soap_tmp___f2i_plu__wfs_x002elistStoredQueries.wfs__ListStoredQueries = wfs__ListStoredQueries;
@@ -331,7 +331,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002edropStoredQuery(struct s
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002edropStoredQuery(struct soap *soap, const char *soap_endpoint, const char *soap_action, _wfs__DropStoredQuery *wfs__DropStoredQuery)
 {	struct __f2i_plu__wfs_x002edropStoredQuery soap_tmp___f2i_plu__wfs_x002edropStoredQuery;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:DropStoredQueryRequest";
 	soap_tmp___f2i_plu__wfs_x002edropStoredQuery.wfs__DropStoredQuery = wfs__DropStoredQuery;
@@ -393,7 +393,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002egetCapabilities(struct s
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetCapabilities(struct soap *soap, const char *soap_endpoint, const char *soap_action, ows__GetCapabilitiesType *ows__GetCapabilities)
 {	struct __f2i_plu__wfs_x002egetCapabilities soap_tmp___f2i_plu__wfs_x002egetCapabilities;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetCapabilitiesRequest";
 	soap_tmp___f2i_plu__wfs_x002egetCapabilities.ows__GetCapabilities = ows__GetCapabilities;
@@ -453,7 +453,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002egetFeatureWithLock(struc
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetFeatureWithLock(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__GetFeatureWithLockType *wfs__GetFeatureWithLock)
 {	struct __f2i_plu__wfs_x002egetFeatureWithLock soap_tmp___f2i_plu__wfs_x002egetFeatureWithLock;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetFeatureWithLockRequest";
 	soap_tmp___f2i_plu__wfs_x002egetFeatureWithLock.wfs__GetFeatureWithLock = wfs__GetFeatureWithLock;
@@ -513,7 +513,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002egetPropertyValue(struct 
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002egetPropertyValue(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__GetPropertyValueType *wfs__GetPropertyValue)
 {	struct __f2i_plu__wfs_x002egetPropertyValue soap_tmp___f2i_plu__wfs_x002egetPropertyValue;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:GetPropertyValueRequest";
 	soap_tmp___f2i_plu__wfs_x002egetPropertyValue.wfs__GetPropertyValue = wfs__GetPropertyValue;
@@ -573,7 +573,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002elockFeature(struct soap 
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002elockFeature(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__LockFeatureType *wfs__LockFeature)
 {	struct __f2i_plu__wfs_x002elockFeature soap_tmp___f2i_plu__wfs_x002elockFeature;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:LockFeatureRequest";
 	soap_tmp___f2i_plu__wfs_x002elockFeature.wfs__LockFeature = wfs__LockFeature;
@@ -633,7 +633,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call___f2i_plu__wfs_x002etransaction(struct soap 
 SOAP_FMAC5 int SOAP_FMAC6 soap_send___f2i_plu__wfs_x002etransaction(struct soap *soap, const char *soap_endpoint, const char *soap_action, wfs__TransactionType *wfs__Transaction)
 {	struct __f2i_plu__wfs_x002etransaction soap_tmp___f2i_plu__wfs_x002etransaction;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://plu.fit2inspire.eu/";
+		soap_endpoint = "http://plu.fit2inspire.eu";
 	if (soap_action == NULL)
 		soap_action = "http://plu.fit2inspire.eu/wfs/wfs-req:TransactionRequest";
 	soap_tmp___f2i_plu__wfs_x002etransaction.wfs__Transaction = wfs__Transaction;

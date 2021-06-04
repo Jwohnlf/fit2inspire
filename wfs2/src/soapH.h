@@ -56431,7 +56431,7 @@ inline _ows__OperationsMetadata * soap_new_set__ows__OperationsMetadata(
 	const std::vector<_ows__Operation *> & Operation,
 	const std::vector<ows__DomainType *> & Parameter,
 	const std::vector<ows__DomainType *> & Constraint,
-	idls__ExtendedCapabilitiesType *ExtendedCapabilities)
+	xsd__anyType *ExtendedCapabilities)
 {
 	_ows__OperationsMetadata *_p = ::soap_new__ows__OperationsMetadata(soap);
 	if (_p)
@@ -72251,15 +72251,6 @@ SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTo_ows__DCP(struct soap*, _ows__DCP *c
 SOAP_FMAC3 _ows__DCP ** SOAP_FMAC4 soap_get_PointerTo_ows__DCP(struct soap*, _ows__DCP **, const char*, const char*);
 #endif
 
-#ifndef SOAP_TYPE_PointerToidls__ExtendedCapabilitiesType_DEFINED
-#define SOAP_TYPE_PointerToidls__ExtendedCapabilitiesType_DEFINED
-SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerToidls__ExtendedCapabilitiesType(struct soap*, idls__ExtendedCapabilitiesType *const*);
-SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToidls__ExtendedCapabilitiesType(struct soap*, const char *, int, idls__ExtendedCapabilitiesType *const*, const char *);
-SOAP_FMAC3 idls__ExtendedCapabilitiesType ** SOAP_FMAC4 soap_in_PointerToidls__ExtendedCapabilitiesType(struct soap*, const char*, idls__ExtendedCapabilitiesType **, const char*);
-SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerToidls__ExtendedCapabilitiesType(struct soap*, idls__ExtendedCapabilitiesType *const*, const char*, const char*);
-SOAP_FMAC3 idls__ExtendedCapabilitiesType ** SOAP_FMAC4 soap_get_PointerToidls__ExtendedCapabilitiesType(struct soap*, idls__ExtendedCapabilitiesType **, const char*, const char*);
-#endif
-
 #ifndef SOAP_TYPE_PointerToows__DomainType_DEFINED
 #define SOAP_TYPE_PointerToows__DomainType_DEFINED
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerToows__DomainType(struct soap*, ows__DomainType *const*);
@@ -72582,24 +72573,6 @@ SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowfs__FeaturesLockedType(struct soap*
 SOAP_FMAC3 wfs__FeaturesLockedType ** SOAP_FMAC4 soap_in_PointerTowfs__FeaturesLockedType(struct soap*, const char*, wfs__FeaturesLockedType **, const char*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTowfs__FeaturesLockedType(struct soap*, wfs__FeaturesLockedType *const*, const char*, const char*);
 SOAP_FMAC3 wfs__FeaturesLockedType ** SOAP_FMAC4 soap_get_PointerTowfs__FeaturesLockedType(struct soap*, wfs__FeaturesLockedType **, const char*, const char*);
-#endif
-
-#ifndef SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__QueryType_DEFINED
-#define SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__QueryType_DEFINED
-SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTostd__vectorTemplateOfPointerTowfs__QueryType(struct soap*, std::vector<wfs__QueryType *> *const*);
-SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTostd__vectorTemplateOfPointerTowfs__QueryType(struct soap*, const char *, int, std::vector<wfs__QueryType *> *const*, const char *);
-SOAP_FMAC3 std::vector<wfs__QueryType *> ** SOAP_FMAC4 soap_in_PointerTostd__vectorTemplateOfPointerTowfs__QueryType(struct soap*, const char*, std::vector<wfs__QueryType *> **, const char*);
-SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTostd__vectorTemplateOfPointerTowfs__QueryType(struct soap*, std::vector<wfs__QueryType *> *const*, const char*, const char*);
-SOAP_FMAC3 std::vector<wfs__QueryType *> ** SOAP_FMAC4 soap_get_PointerTostd__vectorTemplateOfPointerTowfs__QueryType(struct soap*, std::vector<wfs__QueryType *> **, const char*, const char*);
-#endif
-
-#ifndef SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType_DEFINED
-#define SOAP_TYPE_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType_DEFINED
-SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, std::vector<wfs__StoredQueryType *> *const*);
-SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, const char *, int, std::vector<wfs__StoredQueryType *> *const*, const char *);
-SOAP_FMAC3 std::vector<wfs__StoredQueryType *> ** SOAP_FMAC4 soap_in_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, const char*, std::vector<wfs__StoredQueryType *> **, const char*);
-SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, std::vector<wfs__StoredQueryType *> *const*, const char*, const char*);
-SOAP_FMAC3 std::vector<wfs__StoredQueryType *> ** SOAP_FMAC4 soap_get_PointerTostd__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, std::vector<wfs__StoredQueryType *> **, const char*, const char*);
 #endif
 
 #ifndef SOAP_TYPE_PointerTostd__vectorTemplateOf_XML_DEFINED
@@ -75735,34 +75708,6 @@ SOAP_FMAC1 std::vector<struct __wfs__FeaturesLockedType_sequence>  * SOAP_FMAC2 
 inline std::vector<struct __wfs__FeaturesLockedType_sequence>  * soap_new_std__vectorTemplateOf__wfs__FeaturesLockedType_sequence(struct soap *soap, int n = -1)
 {
 	return soap_instantiate_std__vectorTemplateOf__wfs__FeaturesLockedType_sequence(soap, n, NULL, NULL, NULL);
-}
-#endif
-
-#ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__QueryType_DEFINED
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__QueryType_DEFINED
-SOAP_FMAC3 void SOAP_FMAC4 soap_default_std__vectorTemplateOfPointerTowfs__QueryType(struct soap*, std::vector<wfs__QueryType *> *);
-SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_std__vectorTemplateOfPointerTowfs__QueryType(struct soap*, const std::vector<wfs__QueryType *> *);
-SOAP_FMAC3 int SOAP_FMAC4 soap_out_std__vectorTemplateOfPointerTowfs__QueryType(struct soap*, const char*, int, const std::vector<wfs__QueryType *> *, const char*);
-SOAP_FMAC3 std::vector<wfs__QueryType *> * SOAP_FMAC4 soap_in_std__vectorTemplateOfPointerTowfs__QueryType(struct soap*, const char*, std::vector<wfs__QueryType *> *, const char*);
-SOAP_FMAC1 std::vector<wfs__QueryType *>  * SOAP_FMAC2 soap_instantiate_std__vectorTemplateOfPointerTowfs__QueryType(struct soap*, int, const char*, const char*, size_t*);
-
-inline std::vector<wfs__QueryType *>  * soap_new_std__vectorTemplateOfPointerTowfs__QueryType(struct soap *soap, int n = -1)
-{
-	return soap_instantiate_std__vectorTemplateOfPointerTowfs__QueryType(soap, n, NULL, NULL, NULL);
-}
-#endif
-
-#ifndef SOAP_TYPE_std__vectorTemplateOfPointerTowfs__StoredQueryType_DEFINED
-#define SOAP_TYPE_std__vectorTemplateOfPointerTowfs__StoredQueryType_DEFINED
-SOAP_FMAC3 void SOAP_FMAC4 soap_default_std__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, std::vector<wfs__StoredQueryType *> *);
-SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_std__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, const std::vector<wfs__StoredQueryType *> *);
-SOAP_FMAC3 int SOAP_FMAC4 soap_out_std__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, const char*, int, const std::vector<wfs__StoredQueryType *> *, const char*);
-SOAP_FMAC3 std::vector<wfs__StoredQueryType *> * SOAP_FMAC4 soap_in_std__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, const char*, std::vector<wfs__StoredQueryType *> *, const char*);
-SOAP_FMAC1 std::vector<wfs__StoredQueryType *>  * SOAP_FMAC2 soap_instantiate_std__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap*, int, const char*, const char*, size_t*);
-
-inline std::vector<wfs__StoredQueryType *>  * soap_new_std__vectorTemplateOfPointerTowfs__StoredQueryType(struct soap *soap, int n = -1)
-{
-	return soap_instantiate_std__vectorTemplateOfPointerTowfs__StoredQueryType(soap, n, NULL, NULL, NULL);
 }
 #endif
 

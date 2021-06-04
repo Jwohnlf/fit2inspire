@@ -12,7 +12,7 @@ SOAP_NMAC struct Namespace namespaces[] =
     {"icommon", "http://inspire.ec.europa.eu/schemas/common/1.0", NULL, NULL},
 	{"wfs-util", "http://www.opengis.net/wfs-util/2.0", NULL, NULL},
 	{"ows", "http://www.opengis.net/ows/1.1", NULL, NULL},
-    {"f2i-plu", "http://plu.fit2inspire.eu/", NULL, NULL },
+    {"f2i-plu", "http://plu.fit2inspire.eu", NULL, NULL },
 	{"wfs", "http://www.opengis.net/wfs/2.0", NULL, NULL},
     {"sc", "http://www.interactive-instruments.de/ShapeChange/AppInfo", NULL, NULL},
     {"lunom", "http://inspire.ec.europa.eu/schemas/lunom/3.0", NULL, NULL},
