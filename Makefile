@@ -42,7 +42,8 @@ OBJS=	.obj/logging.o \
 		.obj/wfs_getfeature.o \
 		.obj/wfs_getcapabilities.o
 
-DOBJS=	.obj/logging.o \
+DOBJS=	.obj/dstdsoap.o \
+		.obj/logging.o \
 		.obj/get.o \
 		.obj/smdevp.o \
 		.obj/md5evp.o \
@@ -50,7 +51,7 @@ DOBJS=	.obj/logging.o \
 		.obj/threads.o \
 		.obj/options.o \
 		.obj/soapC.o \
-		.obj/pluC.o \
+		.obj/dpluC.o \
 		.obj/soapServer.o \
 		.obj/dows_si.o \
 		.obj/dgml_si.o \
@@ -63,7 +64,7 @@ plu3WfsMongo : $(OBJS) webserver.c
 	$(CPP) $(CFLAGS) $^ $(SOAPCPP) $(LIBW) $(LIBS) -o plu3WfsMongo
 
 debug_plu3WfsMongo : $(DOBJS) webserver.c
-	$(CPP) -g -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) $^ $(SOAPCPP) $(LIBW) -o debug_plu3WfsMongo
+	$(CPP) -g -DDEBUG -DSOAP_MEM_DEBUG $(CFLAGS) $^ $(LIBW) -o debug_plu3WfsMongo
 
 wfsTester : .obj/soapC.o .obj/soapServer.o wfs2/src/soapTester.cpp
 	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp .obj/soapC.o .obj/soapServer.o $(LIBS) -o wfsTester
@@ -137,6 +138,9 @@ wfsTester : .obj/soapC.o .obj/soapServer.o wfs2/src/soapTester.cpp
 
 .obj/soapC.o : wfs2/src/soapC.cpp
 	$(CPP) $(CFLAGS) -c wfs2/src/soapC.cpp -o .obj/soapC.o
+
+.obj/dpluC.o : plu3/src/pluC.cpp
+	$(CPP) -g $(CFLAGS) -c plu3/src/pluC.cpp -o .obj/dpluC.o
 
 .obj/pluC.o : plu3/src/pluC.cpp
 	$(CPP) $(CFLAGS) -c plu3/src/pluC.cpp -o .obj/pluC.o
