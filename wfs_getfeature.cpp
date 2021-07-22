@@ -101,9 +101,34 @@ int fgetfeature(struct soap *soap, string inputId, string srs, string typeNames,
         }
         else
         {
-            wfs__QueryType *query = soap_new_wfs__QueryType(soap);
+            wfs__QueryType *pQuery = soap_new_wfs__QueryType(soap);
 
-        }//end if adhoc query
+            //Parse inputid to retrieve information needed to query the DB
+            cout << "Adhoc query request received" << endl;
+            getFeature->version.assign("2.0.0");
+            getFeature->__union_GetFeatureType = soap_new___wfs__union_GetFeatureType(soap);
+            //Use SOAP_UNION__wfs__union_GetFeatureType_Query_ to indicate a KVP query
+            getFeature->__union_GetFeatureType->__unionAbstractQueryExpression = SOAP_UNION__wfs__union_GetFeatureType_Query_;
+
+            pQuery->srsName = (char**)soap_malloc(soap, sizeof(char**));
+            *pQuery->srsName = (char*)soap_malloc(soap, srs.size()+1);
+            strcpy(*pQuery->srsName, srs.c_str());
+
+            pQuery->typeNames.append(typeNames);
+            pQuery->union_AbstractAdhocQueryExpressionType_.Filter = soap_new_fes__FilterType(soap);            
+            pQuery->union_AbstractAdhocQueryExpressionType_.Filter->union_FilterType.BBOX = soap_new_fes__BBOXType(soap);
+            
+            __fes__union_BBOXType bbox;
+            fes__LiteralType* literal = soap_new_fes__LiteralType(soap);
+            literal->__any = (char*)soap_malloc(soap, BBox.size()+1);
+            strcpy(literal->__any, BBox.c_str());
+            bbox.union_BBOXType.Literal = literal;
+
+            pQuery->union_AbstractAdhocQueryExpressionType_.Filter->union_FilterType.BBOX->__union_BBOXType.insert(
+                pQuery->union_AbstractAdhocQueryExpressionType_.Filter->union_FilterType.BBOX->__union_BBOXType.begin(), bbox);
+            
+            getFeature->__union_GetFeatureType->union_GetFeatureType.Query = pQuery;    
+        }
 
         wfs__FeatureCollectionType featureCollection;
         __f2i_plu__wfs_x002egetFeature(soap, getFeature, featureCollection);
@@ -196,7 +221,8 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                 return http_fget_error(soap, "InvalidParameterValue", e.str(), "StoredQuery_Id", 400);
             }
         }
-        else {
+        else
+        {
             adhocquery = true;
             // Ad hoc query
             string srs;
@@ -230,49 +256,40 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             fes__BBOXType *BBox = wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->union_AbstractAdhocQueryExpressionType_.Filter->union_FilterType.BBOX;
             cout << "bbox received : " << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
             
-            //struct soap *soap1 = soap_new1(SOAP_XML_INDENT);
-            std::stringstream ss; //("<gml:Envelope><gml:lowerCorner>5.15 45.58</gml:lowerCorner><gml:upperCorner>5.21 45.68</gml:upperCorner></gml:Envelope>");
-            ss << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
-            soap->is = &ss;
-            gml__EnvelopeType *envl = soap_new_gml__EnvelopeType(soap, -1);
-            if (soap_read_gml__EnvelopeType(soap, envl) != SOAP_OK) {
-                e << "The server failed in parsing bbox parameter";
-                soap_print_fault(soap, stderr);
-                cout << "parsing error :" << endl;
-                soap_print_fault_location(soap, stderr);                
-                return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
-            }            
+            if (wfs__GetFeature->__union_GetFeatureType->__unionAbstractQueryExpression == SOAP_UNION__wfs__union_GetFeatureType_Query )
+            {
+                // SOAP RPC XML query
+                //struct soap *soap1 = soap_new1(SOAP_XML_INDENT);
+                std::stringstream ss; //("<gml:Envelope><gml:lowerCorner>5.15 45.58</gml:lowerCorner><gml:upperCorner>5.21 45.68</gml:upperCorner></gml:Envelope>");
+                ss << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
+                soap->is = &ss;
+                gml__EnvelopeType *envl = soap_new_gml__EnvelopeType(soap, -1);
+                if (soap_read_gml__EnvelopeType(soap, envl) != SOAP_OK)
+                {
+                    e << "The server failed in parsing bbox parameter";
+                    soap_print_fault(soap, stderr);
+                    cout << "parsing error :" << endl;
+                    soap_print_fault_location(soap, stderr);
+                    return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
+                }
+
+                bbox[0] = envl->lowerCorner->__item.at(0);
+                bbox[1] = envl->lowerCorner->__item.at(1);
+                bbox[2] = envl->upperCorner->__item.at(0);
+                bbox[3] = envl->upperCorner->__item.at(1);
+            }
+            else if (wfs__GetFeature->__union_GetFeatureType->__unionAbstractQueryExpression == SOAP_UNION__wfs__union_GetFeatureType_Query_ )
+            {
+                // GET KVP query
+
+                //Parse WGS84BoundingBox of type "LatLC,LonLC,LatUC,LonUC"
+                if( !sscanf(BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any, "%lf,%lf,%lf,%lf,urn:ogc:def:crs:%s", &minLon, &minLat, &maxLon, &maxLat, bbox_srs) ) {
+                    e << "The server failed in parsing bbox parameter";
+                    return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
+                }
+            }
             
-            bbox[0] = envl->lowerCorner->__item.at(0);
-            bbox[1] = envl->lowerCorner->__item.at(1);
-            bbox[2] = envl->upperCorner->__item.at(0);
-            bbox[3] = envl->upperCorner->__item.at(1);
-
-            cout << "Input bbox_ : minLon = " << bbox[0]
-                 << ", minLat = " << bbox[1]
-                 << ", maxLon = " << bbox[2]
-                 << ", maxLat = " << bbox[3]
-                 << ", with input srs = " << epsgbbox
-                 << endl;
-
-            //soap_destroy(soap1);
-            //soap_end(soap1);
-            //soap_free(soap1);
-
-            /*
-            if( !sscanf(BBox.c_str(), "%lf,%lf,%lf,%lf,urn:ogc:def:crs:%s", &minLon, &minLat, &maxLon, &maxLat, bbox_srs) ) {
-                e << "The server failed in parsing bbox parameter";
-                return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
-            }
-
-
-            //Parse WGS84BoundingBox of type "LatLC,LonLC,LatUC,LonUC"
-            if( !sscanf(BBox.c_str(), "%lf,%lf,%lf,%lf,urn:ogc:def:crs:%s", &minLon, &minLat, &maxLon, &maxLat, bbox_srs) ) {
-                e << "The server failed in parsing bbox parameter";
-                return http_fget_error(soap, "OperationParsingFailed", e.str().c_str(), "GetFeature", 500);
-            }
             sscanf(bbox_srs, "epsg::%d", &epsgbbox);
-
 
             //Test of the bbox srsid parameter, and transformation in WGS84 coordinates if relevant
             if ( epsgbbox == 4326 || epsgbbox == 4171 ) {
@@ -327,7 +344,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                  ( ((maxLon - minLon) < 0.000000001) || ((maxLat - minLat) < 0.000000001) ) )
                 return http_fget_ParseError(soap, "getFeature", "BBox");
 
-            //Implementation of the polygon used for the query intersection                       
+/*            //Implementation of the polygon used for the query intersection                       
             BSONObj query = BSON("$geoWithin" << BSON("$polygon"
                                                       << BSON_ARRAY( BSON_ARRAY(minLon<<minLat)
                                                                      << BSON_ARRAY(minLon<<maxLat)
@@ -357,8 +374,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
 
                 features.pop_back();
             }//end while
-*/
+            */
         }
+
         /* Init of a pointer used to answer the request */
         vector<wfs__MemberPropertyType *> *pwfsm;
         if (!(pwfsm = soap_new_std__vectorTemplateOfPointerTowfs__MemberPropertyType(soap)))
