@@ -63,7 +63,8 @@
 			"random": "cpp",
 			"set": "cpp",
 			"*.ipp": "cpp",
-			"variant": "cpp"
+			"variant": "cpp",
+			"stdsoap2.h": "c"
 		}
 	}
 }

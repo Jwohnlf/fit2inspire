@@ -25,7 +25,7 @@
         },
         {
             "label": "Run-PLU-server",
-            "type": "shell",
+            "type": "process",
             "dependsOn": [
                 "Build-PLU-server"
             ],
