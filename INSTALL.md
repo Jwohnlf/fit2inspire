@@ -141,3 +141,9 @@ sudo ./b2 --with=atomic,date_time,exception,filesystem,iostreams,locale,program_
 # check the version number of your installed lib
 cat /usr/local/include/boost/version.hpp | grep "BOOST_LIB_VERSION"
 ```
+
+### Proj.4
+
+```bash
+sudo apt-get install libproj-dev
+```

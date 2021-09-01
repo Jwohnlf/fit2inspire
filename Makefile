@@ -16,7 +16,7 @@ GSOAP=soapcpp2
 CPP=g++
 SOAPCPP=/home/jeanloup/appli/gsoap-2.8/gsoap/stdsoap2.cpp
 LIBS=-lgsoap++
-LIBW=-lmongocxx -lbsoncxx -lgdal -lpthread -lz -lssl -lcrypto
+LIBW=-lmongocxx -lbsoncxx -lgdal -lproj -lpthread -lz -lssl -lcrypto
 
 COFLAGS=-O2
 CWFLAGS=-std=c++11 -Wno-deprecated-declarations

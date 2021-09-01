@@ -225,11 +225,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         {
             adhocquery = true;
             // Ad hoc query
-            string srs;
-            char bbox_srs[14+1];
+            string srs, typeNames;
+            char bbox_srs[15];
             int epsgbbox = 0;
-
-            cout << "Ad hoc request received : " << *wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->handle << endl;
 
             //Parse srsName parameter (should be of type http://www.opengis.net/def/crs/[epsg|ogc]/0/{code})
             srs.append(*wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->srsName);
@@ -254,7 +252,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             //*query_sp->srsName = (char*)soap_malloc(soap, sizeof("http://www.opengis.net/def/crs/epsg/0/")+sizeof(outcrs)+1);
 
             fes__BBOXType *BBox = wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query->union_AbstractAdhocQueryExpressionType_.Filter->union_FilterType.BBOX;
-            cout << "bbox received : " << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
+            //cout << "bbox received : " << BBox->__union_BBOXType.at(0).union_BBOXType.Literal->__any;
             
             if (wfs__GetFeature->__union_GetFeatureType->__unionAbstractQueryExpression == SOAP_UNION__wfs__union_GetFeatureType_Query )
             {
@@ -301,10 +299,9 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                 ftmp = maxLon;
                 maxLon = maxLat;
                 maxLat = ftmp;
-            } // end transformation bbox
+            }
             else if (epsgbbox != 0) {
-                // different projection, process transformation using GDAL
-                // transformation of Bbox in WGS84 geographic coordinates              
+                // different input projection, process transformation of BBOX parameter using GDAL in WGS84 geographic coordinates              
                 oSourceSRS.importFromEPSGA(epsgbbox);
                 oTargetSRS.importFromEPSG(4326);
                 poCT = OGRCreateCoordinateTransformation( &oSourceSRS, &oTargetSRS );
@@ -323,7 +320,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                     poCT->~OGRCoordinateTransformation();
                     return http_fget_error(soap, "OperationProcessingFailed", e.str().c_str(), "GetFeature", 500);
                 }
-            }
+            } // end transformation bbox
             else
                 return http_fget_ParseError(soap, "GetFeature", "BBox");
 
@@ -344,37 +341,44 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                  ( ((maxLon - minLon) < 0.000000001) || ((maxLat - minLat) < 0.000000001) ) )
                 return http_fget_ParseError(soap, "getFeature", "BBox");
 
-/*            //Implementation of the polygon used for the query intersection                       
-            BSONObj query = BSON("$geoWithin" << BSON("$polygon"
-                                                      << BSON_ARRAY( BSON_ARRAY(minLon<<minLat)
-                                                                     << BSON_ARRAY(minLon<<maxLat)
-                                                                     << BSON_ARRAY(maxLon<<maxLat)
-                                                                     << BSON_ARRAY(maxLon<<minLat)) ) );
-
+            //Implementation of the query for the geo-intersection
+            auto builder = bsoncxx::builder::stream::document{};
+            bsoncxx::document::value query = builder 
+                << "$geoWithin" << bsoncxx::builder::stream::open_document
+                << "$polygon" << bsoncxx::builder::stream::open_array
+                << bsoncxx::builder::stream::open_array << minLon << minLat << bsoncxx::builder::stream::close_array
+                << bsoncxx::builder::stream::open_array << minLon << maxLat << bsoncxx::builder::stream::close_array
+                << bsoncxx::builder::stream::open_array << maxLon << maxLat << bsoncxx::builder::stream::close_array
+                << bsoncxx::builder::stream::open_array << maxLon << minLat << bsoncxx::builder::stream::close_array
+                << bsoncxx::builder::stream::close_array  
+            << bsoncxx::builder::stream::close_document
+            << bsoncxx::builder::stream::finalize;
+            
+            
             //Parse typeNames which could contain multiple comma-separated values
+            typeNames.append(wfs__GetFeature->__union_GetFeatureType->union_GetFeatureType.Query_->typeNames);
             std::vector<std::string> features;
             boost::split(features, typeNames, boost::is_any_of(","), boost::token_compress_on);
 
             while(!features.empty())
             {
                 string feature = features.back();
-                //cout << "feature found :" << feature << endl;
+                cout << "feature found :" << feature << endl;
 
                 //Selection of the 'feature' objets that interects the BBox (one point must be entirely within the bbox)
-
-                //On prend l'enveloppe extérieure car MongoDB 2.4 ne semble pas gérer le GeoJSON
+                //To select multi-surface geometry, the request is limited to the outter ring of the first geometry
                 if(0 == feature.compare("plu:spatialplan"))
-                    cursor_sp = c.query("test.demosp", BSON("extent.coordinates0.0" << query));
+                    query_sp << "extent.coordinates0.0.0" << query ;
                 else if (0 == feature.compare("plu:zoningelement"))
-                    cursor_ze = c.query("test.demoze", BSON("geometry.coordinates0.0" << query));
-                else if (0 == feature.compare("plu:supplementaryregulation"))
-                    cursor_sr = c.query("test.demosr", BSON("geometry.coordinates0.0" << query));
+                    query_ze << "geometry.coordinates0.0.0" << query ;
+                /*else if (0 == feature.compare("plu:supplementaryregulation"))
+                    query_sr << "extent.coordinates0.0" << query ;*/
                 else
                     return http_fget_ParseError(soap, "GetFeature","typeNames");
 
                 features.pop_back();
             }//end while
-            */
+            
         }
 
         /* Init of a pointer used to answer the request */
