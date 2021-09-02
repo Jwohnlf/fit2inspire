@@ -876,22 +876,7 @@ int wfs2get(struct soap *soap)
 
         if (key && val)
         {
-            /* transform value to lowercase
-            int counter=0;
-            char mychar;
-            while (key[counter])
-            {
-                mychar=key[counter];
-                key[counter] = tolower(mychar);
-                counter++;
-            }
-            counter=0;
-            while (val[counter])
-            {
-                mychar=val[counter];
-                val[counter] = tolower(mychar);
-                counter++;
-            }*/
+            // transform value to lowercase
             boost::to_lower(key);
             if (!strcmp(key, "service")){
                 boost::to_lower(val);

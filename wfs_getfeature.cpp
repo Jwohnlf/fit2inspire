@@ -496,6 +496,50 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         wfs__FeatureCollection.numberMatched = e.str();
         wfs__FeatureCollection.timeStamp = time(0);
         
+
+        /* wfs:boundedBy for the entire collection */
+        if ( !(bbox[0] < 0.0000001 && bbox[1] < 0.0000001 && bbox[2] < 0.0000001 && bbox[3] < 0.0000001) && i > 0 ){
+            wfs__FeatureCollection.boundedBy = soap_new_wfs__EnvelopePropertyType(soap);
+            if(wfs__FeatureCollection.boundedBy != NULL)
+            {
+                string strbbox;
+                char sxy[30];
+                strbbox.assign("<gml:Envelope srsName=\"");
+                strbbox.append("urn:ogc:def:crs:EPSG::");
+                sprintf(sxy, "%d", outcrs);
+                strbbox.append(sxy);
+                strbbox.append("\"><gml:lowerCorner>");
+                oTargetSRS.importFromEPSGA(outcrs);
+                if(outcrs != 4326) {
+                    if (outcrs != 4171) {
+                        oSourceSRS.importFromEPSGA(4326);
+                        poCT = OGRCreateCoordinateTransformation( &oSourceSRS, &oTargetSRS );
+                        if( poCT == NULL || !poCT->Transform( 1, &bbox[0], &bbox[1] ) || !poCT->Transform( 1, &bbox[2], &bbox[3] ) )
+                        {
+                            e << "The server failed to reproject the BoundedBy coordinates";
+                            return http_fget_error(soap, "OperationProcessingFailed", e.str().c_str(), "GetFeature", 500);
+                        }
+                    }
+                }
+                if(oTargetSRS.EPSGTreatsAsLatLong())
+                    //Lat Lon order
+                    sprintf(sxy, "%.6f %.6f", bbox[1], bbox[0]);
+                else
+                    sprintf(sxy, "%.6f %.6f", bbox[0], bbox[1]);
+                strbbox.append(sxy);
+                strbbox.append("</gml:lowerCorner><gml:upperCorner>");
+                if(oTargetSRS.EPSGTreatsAsLatLong())
+                    //Lat Lon order
+                    sprintf(sxy, "%.6f %.6f", bbox[3], bbox[2]);
+                else
+                    sprintf(sxy, "%.6f %.6f", bbox[2], bbox[3]);
+                strbbox.append(sxy);
+                strbbox.append("</gml:upperCorner></gml:Envelope>");
+                wfs__FeatureCollection.boundedBy->__any = (char*)soap_malloc(soap, strbbox.length()+1);
+                strcpy(wfs__FeatureCollection.boundedBy->__any, strbbox.c_str());
+            }
+        }
+
         //binding wfs member type to wfs return type
         wfs__FeatureCollection.member = *pwfsm;
         
