@@ -500,15 +500,19 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         /* wfs:boundedBy for the entire collection */
         if ( !(bbox[0] < 0.0000001 && bbox[1] < 0.0000001 && bbox[2] < 0.0000001 && bbox[3] < 0.0000001) && i > 0 ){
             wfs__FeatureCollection.boundedBy = soap_new_wfs__EnvelopePropertyType(soap);
-            if(wfs__FeatureCollection.boundedBy != NULL)
+            gml__EnvelopeType* envelop = soap_new_gml__EnvelopeType(soap);
+            if(envelop != NULL)
             {
                 string strbbox;
                 char sxy[30];
-                strbbox.assign("<gml:Envelope srsName=\"");
                 strbbox.append("urn:ogc:def:crs:EPSG::");
                 sprintf(sxy, "%d", outcrs);
                 strbbox.append(sxy);
-                strbbox.append("\"><gml:lowerCorner>");
+
+                envelop->srsName = (char **) soap_malloc(soap, sizeof(char*));
+                *envelop->srsName = (char *) soap_malloc(soap, strbbox.size() ),
+                strcpy(*envelop->srsName, strbbox.c_str());
+
                 oTargetSRS.importFromEPSGA(outcrs);
                 if(outcrs != 4326) {
                     if (outcrs != 4171) {
@@ -521,22 +525,26 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                         }
                     }
                 }
+                
                 if(oTargetSRS.EPSGTreatsAsLatLong())
                     //Lat Lon order
-                    sprintf(sxy, "%.6f %.6f", bbox[1], bbox[0]);
+                    sprintf(sxy, "%.6f %.6f", bbox[1], bbox[0]);                                    
                 else
                     sprintf(sxy, "%.6f %.6f", bbox[0], bbox[1]);
-                strbbox.append(sxy);
-                strbbox.append("</gml:lowerCorner><gml:upperCorner>");
+                gml__DirectPositionType* lcorner = soap_new_gml__DirectPositionType(soap);
+                lcorner->__item.assign(sxy);
+                envelop->lowerCorner = lcorner;                
+                
                 if(oTargetSRS.EPSGTreatsAsLatLong())
                     //Lat Lon order
                     sprintf(sxy, "%.6f %.6f", bbox[3], bbox[2]);
                 else
                     sprintf(sxy, "%.6f %.6f", bbox[2], bbox[3]);
-                strbbox.append(sxy);
-                strbbox.append("</gml:upperCorner></gml:Envelope>");
-                wfs__FeatureCollection.boundedBy->__any = (char*)soap_malloc(soap, strbbox.length()+1);
-                strcpy(wfs__FeatureCollection.boundedBy->__any, strbbox.c_str());
+                gml__DirectPositionType* ucorner = soap_new_gml__DirectPositionType(soap);
+                ucorner->__item.assign(sxy);
+                envelop->upperCorner = ucorner;
+                
+                wfs__FeatureCollection.boundedBy = (wfs__EnvelopePropertyType*) envelop;
             }
         }
 
