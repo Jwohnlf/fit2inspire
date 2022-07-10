@@ -69,6 +69,9 @@ debug_plu3WfsMongo : $(DOBJS) webserver.c
 wfsTester : .obj/soapC.o .obj/soapServer.o wfs2/src/soapTester.cpp
 	$(CPP) $(CFLAGS) wfs2/src/soapTester.cpp .obj/soapC.o .obj/soapServer.o $(LIBS) -o wfsTester
 
+mongoTester :
+	$(CPP) $(CFLAGS) mongo-cxx-test.cpp $(LIBW) -o mongoTester
+
 .obj/dstdsoap.o : $(SOAPCPP)
 	$(CPP) -g $(CFLAGS) -c $(SOAPCPP) -o .obj/dstdsoap.o
 

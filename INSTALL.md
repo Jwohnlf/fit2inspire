@@ -2,24 +2,27 @@
 
 ## Prerequesites
 
--- Linux platform (tested on Ubuntu Xenial 16.04)
+-- Linux platform 
+        tested on Ubuntu Xenial 16.04 LTS
+        Update on Ubuntu Jammy 22.04 LTS
 -- A compiler that supports C++11 (tested with gcc 5.4.0)
 -- CMake 3.18.1 or later
 
 ## Install dependencies before building gSOAP
 
-### Flex
+### Bison
 
 ```bash
 wget <http://ftp.gnu.org/gnu/bison/bison-2.3.tar.gz>
 tar -xvzf bison-2.3.tar.gz
 cd  bison-2.3/
 ./configure --with-libiconv-prefix=/usr/local/libiconv/
+! update for Ubuntu Jammy 22.04 do : ./configure
 make
 sudo make install
 ```
 
-### Bison
+### Flex
 
 ```bash
 wget <https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz>
@@ -35,6 +38,18 @@ sudo make install
 ```bash
 wget <https://netix.dl.sourceforge.net/project/gsoap2/gsoap-2.8/gsoap_2.8.92.zip>
 tar xvzf gsoap_2.8.92.zip
+cd gsoap-2.8
+./configure
+make
+sudo make install
+which wsdl2h
+```
+
+! update for Ubuntu Jammy 22.04 :
+
+```bash
+wget <https://netix.dl.sourceforge.net/project/gsoap2/gsoap-2.8/gsoap_2.8.122.zip>
+unzip gsoap_2.8.122.zip
 cd gsoap-2.8
 ./configure
 make
@@ -71,6 +86,18 @@ libmongoc-static-1.0.a
 
 mongoc-stat
 
+! update for Ubuntu Jammy 22.04 :
+Mongo CXX driver r3.7.0-beta1 needs previously the Mongo C driver version 1.19
+
+```bash
+unzip mongo-c-driver-r1.19.zip
+cd mongo-c-driver-r1.19/
+mkdir cmake-build
+cd cmake-build/
+cmake -DBUILD_VERSION=1.19.0 -DENABLE_AUTOMATIC_INIT_AND_CLEANUP=OFF ..
+sudo make install
+```
+
 ### Build Mongo CXX driver
 
 ```bash
@@ -101,14 +128,63 @@ found libmongoc version 1.17.0
 -- build system: Unix Makefiles
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jeanloup/setup/mongo-cxx-driver-r3.6.0/build
+-- Build files have been written to: /home/jeanloup/appli/mongo-cxx-driver-r3.6.0/build
 
 ```bash
-sudo cmake --build . --target EP_mnmlstc_core
+cmake --build . --target EP_mnmlstc_core
 sudo cmake --build . --target install
 ```
 
 Log copied in Mongo-CXX-INSTALL.log
+
++ ! update for Ubuntu Jammy 22.04:
+Mongo CXX driver r3.7.0-beta1 needed for Jammy (bug fix wih the good version of lib Catch)
+See https://jira.mongodb.org/browse/CXX-2358
+
+```bash
+curl -OL <https://github.com/mongodb/mongo-cxx-driver/releases/download/r3.7.0-beta1/mongo-cxx-driver-r3.7.0-beta1.tar.gz>
+tar -xvzf mongo-cxx-driver-r3.7.0-beta1.tar.gz
+cd mongo-cxx-driver-r3.7.0-beta1/build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DBSONCXX_POLY_USE_BOOST=1 -Dlibmongoc-1.0_DIR:PATH=/usr/local/lib/
+```
+
+Command 'cmake .. -L' outputs :
+
+bsoncxx version: 3.7.0-pre
+found libbson version 1.19.0
+mongocxx version: 3.7.0-pre
+found libmongoc version 1.19.0
+-- Build files generated for:
+-- 	build system: Unix Makefiles
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jeanloup/appli/mongo-cxx-driver-r3.7.0-beta1/build
+-- Cache values
+BSONCXX_OUTPUT_BASENAME:STRING=bsoncxx
+BSONCXX_POLY_USE_BOOST:BOOL=1
+BSONCXX_POLY_USE_MNMLSTC:BOOL=OFF
+BSONCXX_POLY_USE_STD:BOOL=OFF
+BSONCXX_POLY_USE_STD_EXPERIMENTAL:BOOL=OFF
+BSONCXX_POLY_USE_SYSTEM_MNMLSTC:BOOL=OFF
+BUILD_SHARED_AND_STATIC_LIBS:BOOL=OFF
+BUILD_SHARED_LIBS:BOOL=ON
+BUILD_SHARED_LIBS_WITH_STATIC_MONGOC:BOOL=OFF
+BUILD_VERSION:STRING=0.0.0
+Boost_INCLUDE_DIR:PATH=/usr/local/include
+CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_INSTALL_PREFIX:PATH=/usr/local
+ENABLE_CODE_COVERAGE:BOOL=OFF
+ENABLE_TESTS:BOOL=ON
+ENABLE_UNINSTALL:BOOL=ON
+MONGOCXX_ENABLE_SLOW_TESTS:BOOL=OFF
+MONGOCXX_ENABLE_SSL:BOOL=ON
+MONGOCXX_OUTPUT_BASENAME:STRING=mongocxx
+bson-1.0_DIR:PATH=/usr/local/lib/cmake/bson-1.0
+mongoc-1.0_DIR:PATH=/usr/local/lib/cmake/mongoc-1.0
+
+```bash
+sudo cmake --build . --target install
+```
 
 ### Check Mongo connection
 
