@@ -431,13 +431,12 @@ plu__OfficialDocumentationPropertyType * init_plu_OfficialDocumentation(soap *so
             odseq->__unionDocumentCitation = 1;
             odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation = soap_new_base2__DocumentCitationType(soap,1);
             odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation->name.append(name.to_string());
-            odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation->link = soap_new_std__vectorTemplateOf_base2__DocumentCitationType_link(soap,-1);
             _base2__DocumentCitationType_link *dlink = soap_new__base2__DocumentCitationType_link(soap,-1);
 
             soap ? dlink->__item = (char*)soap_malloc(soap, url.size()+1) : dlink->__item = (char*)malloc(url.size()+1);
             //url.copy(dlink->__item, url.length(), 0);
             strcpy(dlink->__item, url.to_string().c_str());
-            odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation->link->insert(odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation->link->begin(), *dlink);
+            odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation->link.insert(odseq->union_OfficialDocumentationType_planDocument.base2__DocumentCitation->link.begin(), *dlink);
 
             document->planDocument->__OfficialDocumentationType_planDocument_sequence = odseq;
         }
@@ -451,8 +450,7 @@ plu__OfficialDocumentationPropertyType * init_plu_OfficialDocumentation(soap *so
             //add document url
             soap ? dlink->__item = (char*)soap_malloc(soap, url.size()+1) : dlink->__item = (char*)malloc(url.size()+1);
             strcpy(dlink->__item, url.to_string().c_str());
-            legalcit->link = soap_new_std__vectorTemplateOf_base2__DocumentCitationType_link(soap,-1);
-            legalcit->link->insert(legalcit->link->begin(), *dlink);
+            legalcit->link.insert(legalcit->link.begin(), *dlink);
 
             //add document name
             legalcit->name.append(name.to_string());
@@ -725,3 +723,245 @@ plu__ZoningElementPropertyType * init_plu_ZoningElement(soap *soap, view_or_valu
     return zoning;
 }//end of init_plu_zoningelement
 
+
+
+/************* init_plu_SupplementaryRegulation ***************/
+
+plu__SupplementaryRegulationPropertyType * init_plu_SupplementaryRegulation(soap *soap, bsoncxx::document::view_or_value o, int outcrs, double bbox[])
+{
+    plu__SupplementaryRegulationPropertyType *propsup;
+    __plu__SupplementaryRegulationPropertyType_sequence *seqsup = soap_new___plu__SupplementaryRegulationPropertyType_sequence(soap);
+    plu__SupplementaryRegulationType *psup;
+
+
+    mongocxx::stdx::string_view strview;
+    string str, strtmp, code;
+
+    auto elem = o.view();
+
+    if(!(propsup = soap_new_plu__SupplementaryRegulationPropertyType(soap, -1))){
+            fprintf(stderr, "Allocation of SupplementaryRegulationPropertyType pointer failed\n");
+            soap->error = SOAP_NULL;
+            return NULL;
+    }
+
+    if(!(psup = soap_new_plu__SupplementaryRegulationType(soap, -1))){
+            fprintf(stderr, "Allocation of SupplementaryRegulationType pointer failed\n");
+            soap->error = SOAP_NULL;
+            return NULL;
+    }
+
+    //Get MongoDB id of the current document
+    oid lid = elem["_id"].get_oid().value;
+
+    // Init SupplementaryRegulation inspireId and gml:id
+        // *****************
+        str.append("http://dataproviderns/sr");
+        if( elem["gid"] && elem["gid_urba"] && elem["_id"] )
+        {
+            strview = elem["gid_urba"].get_utf8().value;
+            code.append(strview.to_string());
+            code.append("_");
+            strview = elem["gid"].get_utf8().value;
+            code.append(strview.to_string());
+
+            psup->inspireId = init_base_Identifier(soap, code, lid, str);
+
+            // ********* Init SupplementaryRegulation gml:id
+            // *****************
+            str.assign("f2i.");
+            str.append(code);
+            psup->gml__id = (char**) soap_malloc(soap, sizeof(char**));
+            *psup->gml__id = init_gml_id(soap, str, lid);
+
+            std::size_t found = str.find_first_of("_");
+            while (found!=std::string::npos)
+            {
+                str.erase(found,1);
+                found=str.find_first_of("_",found+1);
+            }
+
+        }
+        code.clear();
+
+        // ********* geometry
+        // *****************
+        if( elem["geometry"] )
+        {
+            auto bo = elem["geometry"].get_document().value;
+            int nring=0;
+            __gml__GeometryPropertyType_sequence *seqgml;
+
+            if(!(seqgml = soap_new___gml__GeometryPropertyType_sequence(soap, -1)))
+            {
+                fprintf(stderr, "SR : Allocation of __gml__GeometryPropertyType_sequence pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+
+            if(!(psup->geometry = soap_new_gml__GeometryPropertyType(soap, -1)))
+            {
+                fprintf(stderr, "SR : Allocation of GeometryPropertyType pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+
+            seqgml->union_GeometryPropertyType.GeometricComplex = soap_new_gml__GeometricComplexType(soap, -1);
+
+            strview = bo["gtype"].get_utf8().value;
+            str.assign(strview.to_string());
+
+            if(0 == str.compare("Point"))
+            {
+                //we use the 'Point' type
+                seqgml->__unionAbstractGeometry = 16;
+                auto belem = bo["coordinates0"];
+                gml__GeometricPrimitivePropertyType* geoprim = soap_new_gml__GeometricPrimitivePropertyType(soap);
+                geoprim->__GeometricPrimitivePropertyType_sequence = soap_new___gml__GeometricPrimitivePropertyType_sequence(soap);
+                geoprim->__GeometricPrimitivePropertyType_sequence->union_GeometricPrimitivePropertyType.Point = init_gml_PointType(soap, belem, outcrs, bbox);
+                seqgml->union_GeometryPropertyType.GeometricComplex->element.insert(seqgml->union_GeometryPropertyType.GeometricComplex->element.begin(), geoprim); 
+            }
+            psup->geometry->__GeometryPropertyType_sequence = seqgml;
+        }//end if geometry
+        str.clear();
+
+
+        // ********* validFrom
+        // *****************
+
+        if( elem["validfrom"] ) {
+            if(!(psup->validFrom = soap_new__plu__SupplementaryRegulationType_validFrom(soap))){
+                fprintf(stderr, "Warning SR : Allocation of validFrom pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+            if( elem["validfrom"].type() == bsoncxx::type::k_date ) {
+                auto ldate = elem["validfrom"].get_date().value;
+                stringstream sDate ;            
+                time_t t = ldate.count()/1000;            
+                sDate << put_time( gmtime(&t), "%F");
+                psup->validFrom->__item = (char*)soap_malloc(soap, sizeof(put_time( gmtime(&t), "%F"))+1);
+                strcpy(psup->validFrom->__item, sDate.str().c_str());
+            }
+        } // end validfrom
+
+
+        // ********* beginlifespanVersion
+        // *****************
+        if( elem["beginlifespanversion"] ){
+            if(!(psup->beginLifespanVersion = soap_new__plu__SupplementaryRegulationType_beginLifespanVersion(soap,-1)))
+            {
+                fprintf(stderr, "SR : Allocation of beginLifespanVersion pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+            if( elem["beginlifespanversion"].type() == bsoncxx::type::k_date ) {
+                auto bls = elem["beginlifespanversion"].get_date().value;
+                time_t time = bls.count()/1000;
+                psup->beginLifespanVersion->__item = time;
+            }
+            else
+            {
+                //if the returned value is not a date
+                psup->beginLifespanVersion->nilReason = plu::soap_new_std__string(soap);
+                psup->beginLifespanVersion->nilReason->append("unknown");
+            }
+        }        
+        else
+        {
+            psup->beginLifespanVersion->nilReason = plu::soap_new_std__string(soap);
+            psup->beginLifespanVersion->nilReason->append("missing");
+        }
+
+        // ********* endLifespanVersion
+        // *****************
+        if( elem["endlifespanversion"] ){
+            if(!(psup->endLifespanVersion = soap_new__plu__SupplementaryRegulationType_endLifespanVersion(soap))){
+                fprintf(stderr, "ZE : Allocation of endLifespanVersion pointer failed\n");
+                soap->error = SOAP_NULL;
+                return NULL;
+            }
+            if( elem["endlifespanversion"] ) {
+                if( elem["endlifespanversion"].type() == bsoncxx::type::k_date )
+                {
+                    auto els = elem["endlifespanversion"].get_date().value;
+                    time_t time = els.count()/1000;
+                    psup->endLifespanVersion->__item = time;
+                }
+                else
+                {
+                    //if the returned value is not a date
+                    psup->endLifespanVersion->nilReason = plu::soap_new_std__string(soap);
+                    psup->endLifespanVersion->nilReason->append("unknown");
+                }
+            }
+            else
+            {
+                psup->endLifespanVersion->nilReason = plu::soap_new_std__string(soap);
+                psup->endLifespanVersion->nilReason->append("missing");
+            }
+        }
+
+        // ********* name (optionnal)
+        // *****************
+        if( elem["name"] ){            
+            _plu__SupplementaryRegulationType_name supname;
+            supname.__item.assign(elem["name"].get_utf8().value.to_string());
+            psup->name.insert(psup->name.begin(), supname);            
+        }
+
+        // ******** regulationNature
+        // *****************
+        if( elem["regulationNature"] )
+        {
+            code.append(E_CODELIST_REGISTER);
+            code.append("RegulationNatureValue/");
+            str.append( elem["regulationNature"].get_utf8().value.to_string() );
+            code.append(str);
+            psup->regulationNature = init_gml_ReferenceType(soap, str, code);
+        }
+
+        code.clear();
+
+        // ******** specificSupplementaryRegulation
+        // *****************
+        if( elem["specificsuppregulation"] )
+        {
+            code.append(E_CODELIST_REGISTER);
+            str.compare("generallyBinding") ? code.append("SpecificSupplementaryRegulationValue/FR_P") : code.append("SpecificSupplementaryRegulationValue/FR_I") ;
+            code.append( elem["specificsuppregulation"]["valin"].get_utf8().value.to_string() );
+            str = elem["specificsuppregulation"]["valstd"].get_utf8().value.to_string();
+            psup->specificSupplementaryRegulation.insert(psup->specificSupplementaryRegulation.begin(), init_gml_ReferenceType(soap, str, code));
+        }
+
+        code.clear();
+        str.clear();
+
+        // ******** supplementaryRegulation
+        // *****************
+        if( elem["suppregulation"] )
+        {
+            code.append(E_CODELIST_REGISTER);
+            code.append("SupplementaryRegulationValue/");
+            str.append( elem["suppregulation"]["valstd"].get_utf8().value.to_string() );
+            code.append(str);
+            psup->supplementaryRegulation.insert(psup->supplementaryRegulation.begin(), init_gml_ReferenceType(soap, str, code));
+        }
+
+
+        // ********* Init association to SpatialPlan
+        // *****************
+        if( elem["plan"] )
+        {
+            str = "#";
+            //lid. elem["plan"].get_utf8().value.to_string();
+            str.append(init_gml_id(soap, elem["gid_urba"].get_utf8().value.to_string(), lid));
+            psup->plan = init_gml_ReferenceType(soap, "", str);
+        }
+
+        seqsup->SupplementaryRegulation = psup;
+        propsup->__SupplementaryRegulationPropertyType_sequence = seqsup;
+
+    return propsup;
+
+} //end of init_plu_supplementaryRegulation

@@ -13,7 +13,6 @@
 #include "plu3/plu_schema_instantiate.h"
 #include <ogr_spatialref.h>
 
-
 /* 
     fgetfeature : prepare WFS download after a get call 
     This function initializes a wfs__GetFeatureClass according to query arguments 
@@ -176,6 +175,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
         
         auto query_ze = bsoncxx::builder::stream::document{};
         auto query_sp = bsoncxx::builder::stream::document{};
+        auto query_sr = bsoncxx::builder::stream::document{};
         
         // TODO : make an index with a unique key constraint
 
@@ -371,8 +371,8 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                     query_sp << "extent.coordinates0.0.0" << query ;
                 else if (0 == feature.compare("plu:zoningelement"))
                     query_ze << "geometry.coordinates0.0.0" << query ;
-                /*else if (0 == feature.compare("plu:supplementaryregulation"))
-                    query_sr << "extent.coordinates0.0" << query ;*/
+                else if (0 == feature.compare("plu:supplementaryregulation"))
+                    query_sr << "geometry.coordinates0.0.0" << query ;
                 else
                     return http_fget_ParseError(soap, "GetFeature","typeNames");
 
@@ -474,7 +474,7 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
             std::cout << "ze_value : "<< bsoncxx::to_json(ze_value) << std::endl;
             auto cursor_ze = collze.find( ze_value.view() );
 
-            for (auto ze : cursor_ze) {            
+            for (auto ze : cursor_ze) {
 
                 //binding zoningElement sequence to wfs member type
                 member = (wfs__MemberPropertyType *) init_plu_ZoningElement(soap, ze, outcrs, bbox);
@@ -487,6 +487,30 @@ int __f2i_plu__wfs_x002egetFeature(struct soap *soap, wfs__GetFeatureType *wfs__
                 pwfsm->insert(pwfsm->end(), member);
                 i++;
             } //end for cursor_ze
+        }
+
+        mongocxx::collection collsr = db["demosr"];
+        bsoncxx::document::value sr_value = query_sr << bsoncxx::builder::stream::finalize;
+
+        if(!sr_value.view().empty()) 
+        {
+            auto cursor_sr = collsr.find( sr_value.view() );
+
+            for (auto sr : cursor_sr) {
+
+                std::cout << "sr_value : "<< bsoncxx::to_json(ze_value) << std::endl;
+
+                //binding SupplementaryRegulation sequence to wfs member type
+                member = (wfs__MemberPropertyType *)init_plu_SupplementaryRegulation(soap, sr, outcrs, bbox);
+                if(!member)
+                {
+                    e << "Error nb " << soap->error;
+                    return http_fget_error(soap, "OperationProcessingFailed", e.str(), "Internal server error initializing SupplementaryRegulation object" , 400);
+                }
+
+                pwfsm->insert(pwfsm->end(),member);
+                i++;
+            } //end for cursor_sr
         }
 
         //adding attributes to FeatureCollection
