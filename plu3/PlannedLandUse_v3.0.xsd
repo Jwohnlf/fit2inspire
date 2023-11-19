@@ -5,7 +5,8 @@
 		<documentation>-- Name --
 planned land use</documentation>
 	</annotation>
-	<import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="http://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd"/>
+	<!--import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="http://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd"/-->
+	<import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="BaseTypes.xsd"/>
 	<!--import namespace="http://inspire.ec.europa.eu/schemas/base2/1.0" schemaLocation="http://inspire.ec.europa.eu/schemas/base2/1.0/BaseTypes2.xsd"/ jld: replaced by the following local XSD file-->
 	<import namespace="http://inspire.ec.europa.eu/schemas/base2/1.0" schemaLocation="BaseTypes2.xsd"/>
 	<!--import namespace="http://inspire.ec.europa.eu/schemas/lunom/3.0" schemaLocation="http://inspire.ec.europa.eu/schemas/lunom/3.0/LandUseNomenclature.xsd"/ jld: replaced by the following local XSD file-->

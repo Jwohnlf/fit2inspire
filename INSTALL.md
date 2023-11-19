@@ -2,7 +2,7 @@
 
 ## Prerequesites
 
--- Linux platform 
+-- Linux platform
         tested on Ubuntu Xenial 16.04 LTS
         Update on Ubuntu Jammy 22.04 LTS
 -- A compiler that supports C++11 (tested with gcc 5.4.0)
@@ -17,7 +17,6 @@ wget <http://ftp.gnu.org/gnu/bison/bison-2.3.tar.gz>
 tar -xvzf bison-2.3.tar.gz
 cd  bison-2.3/
 ./configure --with-libiconv-prefix=/usr/local/libiconv/
-! update for Ubuntu Jammy 22.04 do : ./configure
 make
 sudo make install
 ```
@@ -39,7 +38,7 @@ sudo make install
 wget <https://netix.dl.sourceforge.net/project/gsoap2/gsoap-2.8/gsoap_2.8.92.zip>
 tar xvzf gsoap_2.8.92.zip
 cd gsoap-2.8
-./configure
+./configure 
 make
 sudo make install
 which wsdl2h
@@ -49,13 +48,15 @@ which wsdl2h
 
 ```bash
 wget <https://netix.dl.sourceforge.net/project/gsoap2/gsoap-2.8/gsoap_2.8.122.zip>
-unzip gsoap_2.8.122.zip
+unzip gsoap_2.8.124.zip
 cd gsoap-2.8
 ./configure
 make
 sudo make install
 which wsdl2h
 ```
+
+Note : default configuration file generates a non-SSL-enabled wsdl2h tool that is not working with HTTPS website.
 
 ## Install Mongo CXX driver
 
@@ -137,9 +138,9 @@ sudo cmake --build . --target install
 
 Log copied in Mongo-CXX-INSTALL.log
 
-+ ! update for Ubuntu Jammy 22.04:
+! update for Ubuntu Jammy 22.04:
 Mongo CXX driver r3.7.0-beta1 needed for Jammy (bug fix wih the good version of lib Catch)
-See https://jira.mongodb.org/browse/CXX-2358
+See <https://jira.mongodb.org/browse/CXX-2358>
 
 ```bash
 curl -OL <https://github.com/mongodb/mongo-cxx-driver/releases/download/r3.7.0-beta1/mongo-cxx-driver-r3.7.0-beta1.tar.gz>
@@ -155,7 +156,7 @@ found libbson version 1.19.0
 mongocxx version: 3.7.0-pre
 found libmongoc version 1.19.0
 -- Build files generated for:
--- 	build system: Unix Makefiles
+-- build system: Unix Makefiles
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/jeanloup/appli/mongo-cxx-driver-r3.7.0-beta1/build
@@ -218,8 +219,56 @@ sudo ./b2 --with=atomic,date_time,exception,filesystem,iostreams,locale,program_
 cat /usr/local/include/boost/version.hpp | grep "BOOST_LIB_VERSION"
 ```
 
+### SQLite3
+
+```bash
+unzip tar xvf proj-9.3.0.tar.gz
+cd sqlite-src-3390000
+./configure
+cmake -DSQLITE3_INCLUDE_DIR=/usr/local/include -DSQLITE3_LIBRARY=/usr/local/lib/libsqlite3.so ..
+cmake --build .
+sudo cmake --build . --target install
+
+```
+
 ### Proj.4
+
+On Ubuntu Xenial 18.04
 
 ```bash
 sudo apt-get install libproj-dev
+```
+
+Update Jammy 22.04
+
+Build from source
+
+Dependency with TIFF library :
+
+```bash
+sudo apt install libtiff-dev:i386
+sudo apt install libtiff-dev
+```
+
+```bash
+wget https://download.osgeo.org/proj/proj-9.3.0.tar.gz
+tar xvf proj-9.3.0.tar.gz
+cd proj-9.3.0/
+mkdir build && cd build
+cmake -DSQLITE3_INCLUDE_DIR=/usr/local/include -DSQLITE3_LIBRARY=/usr/local/lib/libsqlite3.so ..
+cmake --build .
+sudo cmake --build . --target install
+```
+
+### GDAL
+
+Build from source (dependency with SQLite3 & Proj.4)
+
+```bash
+cd master-gdal/
+mkdir build && cd build
+cmake -DSQLITE3_INCLUDE_DIR=/usr/local/include -DSQLITE3_LIBRARY=/usr/local/lib/libsqlite3.so ..
+cmake --build .
+sudo cmake --build . --target install
+sudo ldconfig
 ```

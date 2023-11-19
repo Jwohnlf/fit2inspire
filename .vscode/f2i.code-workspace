@@ -64,7 +64,8 @@
 			"set": "cpp",
 			"*.ipp": "cpp",
 			"variant": "cpp",
-			"stdsoap2.h": "c"
+			"stdsoap2.h": "c",
+			"wfs_getfeature.h": "c"
 		}
 	}
 }

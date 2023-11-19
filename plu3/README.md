@@ -47,7 +47,7 @@ Create a directory for generated files
 
 Parse the input XSD files
 
-`$ wsdl2h -m -x -qplu -_ -t../typemap.dat PlannedLandUse-v3.0.xsd 2> xsd_plu2h.log`
+`$ wsdl2h -m -x -qplu -_ -t../typemap.dat PlannedLandUse_v3.0.xsd 2> xsd_plu2h.log`
 
 Generate CPP source code
 

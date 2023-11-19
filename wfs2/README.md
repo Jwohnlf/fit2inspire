@@ -19,7 +19,7 @@ Each modified XSD file is added to this repo. They are the inputs for code gener
 The gSoap configuration file typemap.dat must be completed of every namespaces your XSD are using.
 By adding this section in the condig file, gSoap generates code using correct namespaces and prefixes.
 
-plu = "http://inspire.ec.europa.eu/schemas/plu/3.0"
+plu = "<http://inspire.ec.europa.eu/schemas/plu/3.0>"
 
 ...
 
@@ -48,7 +48,7 @@ Launch soapcpp2 command again
 Check that every warnings have been solved in fcompile.log file
 Done !
 
-# BUILD STANDALONE WFS SERVER
+## BUILD STANDALONE WFS SERVER
 
 First load into Mongo 3.6 the document containing the server capabilities
 
