@@ -1,54 +1,21 @@
 
-**  The gSOAP code generator for C and C++, soapcpp2 release 2.8.40
-**  Copyright (C) 2000-2016, Robert van Engelen, Genivia Inc.
+**  The gSOAP code generator for C and C++, soapcpp2 release 2.8.92
+**  Copyright (C) 2000-2019, Robert van Engelen, Genivia Inc.
 **  All Rights Reserved. This product is provided "as is", without any warranty.
 **  The soapcpp2 tool and its generated software are released under the GPL.
 **  ----------------------------------------------------------------------------
 **  A commercial use license is available from Genivia Inc., contact@genivia.com
 **  ----------------------------------------------------------------------------
 
-
-PlannedLandUse_v3.0.h(28385): *WARNING*: Duplicate declaration of 'rows' (already declared at line 28382), changing conflicting identifier name to new name 'rows_'. Note: this problem may be caused by importing invalid XML schemas
-
 Using project directory path: src/
-Using code namespace: plu
-Saving src/pluStub.h annotated copy of the source interface file
+Using C++ namespace: plu
+Saving src/pluStub.h annotated copy of the source interface header file
 Saving src/pluH.h serialization functions to #include in projects
 
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_RangeSetType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_RangeSetType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_LineStringSegmentType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_LineStringSegmentType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_ArcStringType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_ArcStringType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_ArcStringByBulgeType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_ArcStringByBulgeType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_CubicSplineType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_CubicSplineType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_BSplineType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_BSplineType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_ArcType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_ArcType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_ArcByBulgeType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_ArcByBulgeType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_BezierType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_BezierType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_LineStringType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_LineStringType'
-
-
-PlannedLandUse_v3.0.h(42876): *WARNING*: struct '___gml__union_LinearRingType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_LinearRingType'
+PlannedLandUse_v3.0.h(45342): *WARNING*: struct '___gml__union_RangeSetType_' cannot be assigned a default constructor because it is directly or indirectly used as a member of union '_gml__union_RangeSetType'
 
 Saving src/sc.nsmap namespace mapping table
 Saving src/pluC.cpp serialization functions
 
-Compilation successful (12 warnings)
+Compilation successful (1 warning)
 

@@ -18,7 +18,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 
 #include "optH.h"
 
-SOAP_SOURCE_STAMP("@(#) optC.c ver 2.8.92 2021-06-04 09:03:55 GMT")
+SOAP_SOURCE_STAMP("@(#) optC.c ver 2.8.92 2023-11-19 13:41:38 GMT")
 
 
 #ifndef WITH_NOGLOBAL

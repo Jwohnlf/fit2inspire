@@ -1,8 +1,8 @@
 Saving PlannedLandUse_v3.0.h
 
 
-**  The gSOAP WSDL/WADL/XSD processor for C and C++, wsdl2h release 2.8.40
-**  Copyright (C) 2000-2016 Robert van Engelen, Genivia Inc.
+**  The gSOAP WSDL/WADL/XSD processor for C and C++, wsdl2h release 2.8.92
+**  Copyright (C) 2000-2019 Robert van Engelen, Genivia Inc.
 **  All Rights Reserved. This product is provided "as is", without any warranty.
 **  The wsdl2h tool and its generated software are released under the GPL.
 **  ----------------------------------------------------------------------------
@@ -11,7 +11,7 @@ Saving PlannedLandUse_v3.0.h
 
 Reading type definitions from type map "../typemap.dat"
 Reading 'PlannedLandUse_v3.0.xsd'...
-  Connecting to 'http://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd' to retrieve schema... connected, receiving...
+  Reading schema 'BaseTypes.xsd'...
     Connecting to 'http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd' to retrieve schema... connected, receiving...
       Connecting to 'http://schemas.opengis.net/iso/19139/20070417/gmd/metadataApplication.xsd' to retrieve schema... connected, receiving...
         Connecting to 'http://schemas.opengis.net/iso/19139/20070417/gco/gco.xsd' to retrieve schema... connected, receiving...
@@ -134,7 +134,7 @@ Reading 'PlannedLandUse_v3.0.xsd'...
         Done reading 'http://schemas.opengis.net/iso/19139/20070417/gmd/metadataEntity.xsd'
       Done reading 'http://schemas.opengis.net/iso/19139/20070417/gmd/metadataApplication.xsd'
     Done reading 'http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd'
-  Done reading 'http://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd'
+  Done reading 'BaseTypes.xsd'
   Reading schema 'BaseTypes2.xsd'...
     Connecting to 'http://portele.de/ShapeChangeAppinfo.xsd' to retrieve schema... connected, receiving...
     Done reading 'http://portele.de/ShapeChangeAppinfo.xsd'
@@ -142,6 +142,8 @@ Reading 'PlannedLandUse_v3.0.xsd'...
   Reading schema 'LandUseNomenclature.xsd'...
   Done reading 'LandUseNomenclature.xsd'
 Done reading 'PlannedLandUse_v3.0.xsd'
+
+Note: option -p auto-enabled to generate wrappers for built-in types derived from xsd__anyType to support polymorphism in XML by (de)serializing any derived type of xsd:anyType (or xsd:anySimpleType) as elements annotated by xsi:type attributes in XML, use option -P to suppress and disable this feature
 
 To finalize code generation, execute:
 > soapcpp2 PlannedLandUse_v3.0.h
